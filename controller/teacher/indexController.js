@@ -44,7 +44,7 @@
         }, function errorCallback(response) {
                 alert("insert data gagal");
         });  
-      }  
+      };
  });
  app.controller("cLogin",function($scope,$http,$window){
      $scope.login = function(){
@@ -63,7 +63,7 @@
          }, function errorCallback(response) {
              alert("koneksi bermasalah");
          });
-     }
+     };
 
  });
 

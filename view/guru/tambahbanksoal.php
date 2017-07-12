@@ -7,23 +7,26 @@
 <head>
 	<title>Teacher Dashboard</title>
 
-	<script src="../../library/node_modules/angular/angular.min.js"></script>
+    <script src="../../library/node_modules/angular/angular.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
+    //belum
+	<script src="../../controller/teacher/tambahbanksoal.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="../../library/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
+
+    <link rel="stylesheet" type="text/css" href="../../library/css/font-awesome.min.css">
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="../../library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../library/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 	<!-- Animate CSS -->
-	<link rel="stylesheet" href="../../library/css/animate.css">
+    <link rel="stylesheet" href="../../library/css/animate.css">
 
 	<!-- CSS CUSTOM -->
-	<link rel="stylesheet" type="text/css" href="../../library/css/mine.css">
+    <link rel="stylesheet" type="text/css" href="../../library/css/mine.css">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="../../library/node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../../library/node_modules/bootstrap/dist/css/bootstrap-theme.css">
 
 	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -31,17 +34,15 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 
-	<script src="../../library/js/jquery-2.1.1.min.js"></script>
-	<script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-	<!-- angular -->
-	<script src="../../controller/teacher/tambahmapel.js"></script>
+    <script src="../../library/js/jquery-2.1.1.min.js"></script>
+    <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
 
+
 	<!-- ALL META TAG -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8">        
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1">
 	<meta name="description" content="Sistem Pendukung Keputusan">
 	<meta name="keywords" content="Learning, Pembelajaran, Pendukung Keputusan">
@@ -60,9 +61,9 @@
 		<!-- Profile Admin -->
 		<div class="col-md-12 profil">
 			<div class="cen">
-				<img src="../../assets/default-img.png" class="img-circle">
+                <img src="../../assets/default-img.png" class="img-circle">
 				<span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
-				<span id="level">Guru</span>
+				<span id="level">Guru</span><br />
 			</div>
 		</div>
 
@@ -77,7 +78,7 @@
 			</div>
 		</a>
 		<a href="tambahmapel.php">
-			<div class="col-md-12 menu active">
+			<div class="col-md-12 menu">
 				<div class="col-md-10">
 					<span>Tambah Mapel</span>
 				</div>
@@ -97,7 +98,7 @@
 			</div>
 		</a>
 		<a href="tambahbanksoal.php">
-			<div class="col-md-12 menu ">
+			<div class="col-md-12 menu active">
 				<div class="col-md-10">
 					<span>Tambah Bank Soal</span>
 				</div>
@@ -158,62 +159,86 @@
 			</div>
 		</a>
 	</div>
-<nav id="nav-barbar" class="navbar navbar-default navbar-fixed-top">
+
+	<!-- Use any element to open the sidenav -->
+
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<nav id="nav-barbar" class="navbar navbar-default navbar-fixed-top">
 				  <div class="container-fluid">
 				    <div class="navbar-header">
-
+				      
 				        <span onclick="openNav()" id="open" class="navbar-brand"><i class="fa fa-bars" aria-hidden="true"></i></span>
 
 				     	<span onclick="closeNav()" id="close" class="navbar-brand"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
-
+				      
 				    </div>
 				    <div class="time">
 				      	<span id="time"></span>
 				      </div>
 				  </div>
 			</nav>
+
+			<!-- content -->
 	<div id="main">
+	<!-- Content Isi Atas -->
 		<div class="no-padd col-md-12" id="homeTop">
 			<div class="col-md-12 soal">
-				<div class="generateSoal" ng-app="moduleTambahMapel">
-					<form ng-controller="addMapel" name="formAddMapel">
-						<div class="col-md-12" id="paramMapel">
+				<div class="generateSoal" ng-app="moduleTambahBankSoal">
+                    <form ng-controller="addBankSoal" ng-init="initial()">
+                        <div class="col-md-12" id="paramMapel">
+                            <div class="col-md-12 titleGenerate">
+                                <span>Mata Pelajaran</span>
+                            </div>
+                            <div class="col-md-12 contentGenerate" ng-init="loadMapel()">
+                                <div class="input-group">
+                                    <select name="mapel" ng-model="mapel" class="form-control" ng-change="cekMapel(mapel)" required="true">
+                                        <option value="">pilih mapel</option>
+										<option ng-repeat="mapel in mapels" value="{{mapel.idMapel}}">{{mapel.namaMapel}}</option>
+                                    </select>
+                                </div>
+                            </div>
 							<div class="col-md-12 titleGenerate">
-								<span>Nama Mata Pelajaran</span>
+								<span>Nama Mata Nama Bank Soal</span>
 							</div>
 							<div class="col-md-12 contentGenerate">
 								<div class="form-group">
-									<input ng-model="namamapel" type="text" name="namamapel" placeholder="masukan nama mapel" class="form-control" ng-change="cekNamaMapel()" required></input>
+									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true" ng-disabled="!mapelValid" ng-change="cekBankSoal(namabanksoal)"></input>
 								</div>
-                                <span ng-hide="!isNamaNotValid" style="color: red">{{message}}</span>
 							</div>
-							<br />
 							<div class="col-md-12 titleGenerate">
-								<span>Deskripsi Mata Pelajaran</span>
+								<span>Jumlah Soal</span>
 							</div>
 							<div class="col-md-12 contentGenerate">
-								<textarea class="form-control" name="deskripsimapel" ng-model="deskripsimapel" ng-init="isNamaNotValid = true" required ng-disabled="isNamaNotValid" ></textarea>
+								<div class="form-group">
+									<input ng-model="jumlahsoal" type="number" name="jumlahsoal" placeholder="jumlah soal ..." class="form-control" required="true" ng-disabled="!bankSoalValid" ng-change="cekJumlahSoal(jumlahsoal)"></input>
+								</div>
 							</div>
-						</div>
-
-						<div class="col-md-12" id="paramGenerate">
-							<div class="col-md-12 tombol">
-									<div class="input-group">
-										<span class="input-group-btn">
-                                            <input ng-disabled="formAddMapel.$invalid" class="btn btn-primary btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Input Soal" name="input_soal" ng-click="pushMapel()">Tambah Mata Pelajaran</input>
-										</span>
-									</div>
+							
+							<div class="col-md-12 titleGenerate">
+								<span>Deskripsi Bank Soal</span>
 							</div>
-						</div>
-					</form>
+							<div class="col-md-12 contentGenerate">
+								<textarea class="form-control" placeholder="keteragan bank soal" required="true" name="deskripsibanksoal" ng-model="deskripsibanksoal" ng-disabled="!bankSoalValid"></textarea>
+							</div>
+                        </div>
+                        <div class="col-md-12" id="paramGenerate">
+                                <div class="col-md-12 tombol">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!dataValid">Tambah Bank Soal</button>
+                                            </span>
+                                        </div>
+                                </div>
+                        </div>
+                    </form>
 				</div>
 			</div>
-		</div>
-
-
+		</div>	
+		<!-- Content Bawah -->
+		
 	</div>
 </body>
-
+<script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
 <script src="../../library/js/creartive.js"></script>
 </html>
 <?php

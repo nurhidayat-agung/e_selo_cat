@@ -12,7 +12,7 @@
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
   <link rel="stylesheet" href="style/styleIndex.css">
   <script src="library/node_modules/angular/angular.min.js"></script>
-  <script src="controller/indexController.js"></script>  
+  <script src="controller/teacher/indexController.js"></script>
 </head>
 
 <body>

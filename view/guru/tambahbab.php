@@ -5,7 +5,7 @@ if($_SESSION['job'] == 'guru'){
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Guru Dashboard</title>
+        <title>Teacher Dashboard</title>
 
         <script src="../../library/node_modules/angular/angular.min.js"></script>
 
@@ -35,7 +35,7 @@ if($_SESSION['job'] == 'guru'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!-- angular -->
-        <script src="../../controller/tambahbab.js"></script>
+        <script src="../../controller/teacher/tambahbab.js"></script>
 
         <!-- Jquery Loaded -->
         <!-- <script src="js/jquery-2.1.1.min.js"></script> -->
@@ -192,10 +192,12 @@ if($_SESSION['job'] == 'guru'){
                             </div>
                             <div class="col-md-12 titleGenerate">
                                 <span>Nama Bab Mapel</span>
+                                <br/>
+                                <span ng-hide="!isBabNotValid" style="color: red">{{message}}</span>
                             </div>
                             <div class="col-md-12 contentGenerate">
                                 <div class="form-group">
-                                    <input ng-model="namaBabMapel" ng-disabled="!isMapel" type="text" name="namaBabMapel" placeholder="masukan nama bab mapel" class="form-control" required="true"></input>
+                                    <input ng-model="namaBabMapel" ng-disabled="!isMapel" type="text" name="namaBabMapel" placeholder="masukan nama bab mapel" class="form-control" required="true" ng-change="cekBab(namaBabMapel)"></input>
                                 </div>
                             </div>
 
@@ -210,7 +212,7 @@ if($_SESSION['job'] == 'guru'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                             <span class="input-group-btn">
-                                                <button ng-disabled="formBab.$invalid" class="btn btn-primary btn-sm sharp" type="submit" id="buttonGeneratebab" value="input_bab" name="input_bab" ng-click="cekMapel()">Tambah Bab</button>
+                                                <button ng-disabled="!isDataValid" class="btn btn-primary btn-sm sharp" type="submit" id="buttonGeneratebab" value="input_bab" name="input_bab" ng-click="tambahBab()">Tambah Bab</button>
                                             </span>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Guru Dashboard</title>
+	<title>Teacher Dashboard</title>
 
 	<link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
 
@@ -340,3 +340,4 @@ $(document).ready(function() {
 	}
 
 ?>
+
