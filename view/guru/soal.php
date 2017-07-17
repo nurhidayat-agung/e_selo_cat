@@ -181,7 +181,7 @@ if($_SESSION['job'] == 'guru'){
             <div class="col-md-12 soal" ng-controller="addSoal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="col-md-12 titleGenerate">
                                 <div>Mapel</div>
                             </div>
@@ -194,47 +194,24 @@ if($_SESSION['job'] == 'guru'){
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="col-md-12 titleGenerate">
                                 <span>Bank Soal</span>
                             </div>
                             <div class="col-md-12 contentGenerate">
                                 <div class="input-group">
-                                    <select name="banksoal" ng-model="banksoal" class="form-control" ng-change="loadbabmapel()">
+                                    <select name="banksoal" ng-model="banksoal" class="form-control" ng-change="loadSoal()">
                                         <option value="">Select banksoal</option>
                                         <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="col-md-12 titleGenerate">
-                                <span>Bab</span>
-                            </div>
-                            <div class="col-md-12 contentGenerate">
-                                <div class="input-group">
-                                    <select class="form-control" name="bab" ng-model="bab" ng-change="pushBab()">
-                                        <option value="">Select banksoal</option>
-                                        <option ng-repeat="bab in babs" value="{{bab.idBabMapel}}">{{bab.namaBabMapel}}</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="col-md-12 titleGenerate">
-                                <span>Jumlah Soal</span>
-                            </div>
-                            <div class="col-md-12 contentGenerate">
-                                <div class="input-group">
-                                    <input type="number" id="jumlah-soal" class="form-control" ng-model="jml_soal" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
+                        <div class="col-md-4">
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
 							     	<span class="input-group-btn">
-							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="generateFormsoal()">Input Soal</button>
+							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="showSoal()">Tambah Soal</button>
 							    	</span>
                                 </div>
                             </div>
@@ -242,118 +219,36 @@ if($_SESSION['job'] == 'guru'){
                     </div>
 
                     <div class="col-md-12 soal" id="inputSoal">
-                        <div class="col-md-12 title" id="titleInputSoal">
-                            <div class="col-md-1 titleGenerate">
-                                <span>No</span>
-                            </div>
-                            <div class="col-md-8 titleGenerate">
-                                <span>Soal</span>
-                            </div>
-                            <div class="col-md-3 titleGenerate">
-                                <span>Jawaban</span>
-                            </div>
+                        <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="displayData()">
+                            <table class="table table-bordered" >
+                                <thead>
+                                <tr >
+                                    <th class="col-md-1 titleGenerate" >Id Soal</th>
+                                    <th class="col-md-5 titleGenerate" >Butir Soal</th>
+                                    <th class="col-md-2 titleGenerate" >Jawaban</th>
+                                    <th class="col-md-2 titleGenerate" >Edit</th>
+                                    <th class="col-md-2 titleGenerate" >Hapus</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="analisis in analisises">
+                                    <th class="col-md-1 " >{{analisis.idSoal}}</th>
+                                    <th class="col-md-5 " >{{analisis.isiSoal}}</th>
+                                    <th class="col-md-2 " >{{analisis.tingkatKesulitanSoal}}</th>
+                                    <th class="col-md-2 " >{{analisis.dayaBeda}}</th>
+                                    <th class="col-md-2 " >{{analisis.cluster}}</th>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div id="isiLoop">
-                            <!-- Output Generate -->
-                            <!-- <div class="col-md-1 contentGenerate">
-                                <span>1</span>
-                            </div>
-                            <div class="col-md-5 contentGenerate">
-                                <div class="form-group">
-                                    <textarea class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-3 contentGenerate">
-                                <div class="input-group">
-                                    <select class="form-control" name="parameterBab">
-                                        <option value="one">A</option>
-                                        <option value="two">B</option>
-                                        <option value="three">C</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3 contentGenerate">
-                                <div class="input-group">
-                                    <select class="form-control" name="parameterBab">
-                                        <option value="one">Sulit</option>
-                                        <option value="two">Sedang</option>
-                                        <option value="three">Mudah</option>
-                                    </select>
-                                </div>
-                            </div> -->
-
-                            <!--
-                            <div class="col-md-12 title animated fadeIn" id="isiInputSoal">
-                                <div class="col-md-1 contentGenerate">
-                                    <span>1</span>
-                                </div>
-                                <div class="col-md-8 contentGenerate">
-                                    <div class="form-group">
-                                        <textarea class="form-control" ng-model = "arrsoal[0]"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 contentGenerate">
-                                    <div class="input-group">
-                                        <select class="form-control" name="parameterBab" ng-model="arrjawab[0]">
-                                            <option value="a">A</option>
-                                            <option value="b">B</option>
-                                            <option value="c">C</option>
-                                            <option value="d">D</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 contentGenerate">
-                                <div class="form-group">
-                                    <textarea class="form-control" ng-model = "arropsi1[0]"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-3 contentGenerate">
-                                <div class="form-group">
-                                    <textarea class="form-control" ng-model = "arropsi2[0]"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-3 contentGenerate">
-                                <div class="form-group">
-                                    <textarea class="form-control" ng-model = "arropsi3[0]"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-3 contentGenerate">
-                                <div class="form-group">
-                                    <textarea class="form-control" ng-model = "arropsi4[0]"></textarea>
-                                </div>
-                            </div>
-                            -->
-
-
-                        </div>
-                        <div id="btn_inputSoal">
-
-                            <div class="col-md-1 tombol">
-                                <div class="input-group">
-									<span class="input-group-btn">
-										<input class="btn btn-primary btn-sm sharp" type="submit" id="buttonInputSoal" value="input_soal" name="lihat_soal" ng-click="pushSoal()">Input Soal</input>
-									</span>
-                                </div>
-                            </div>
-
+                        <div>
+                            <span class="col-md-12 "><center>Tidak Ada soal dalam data base</center></span>
                         </div>
                         <div>
                             {{response}}
                         </div>
                     </div>
 
-
-                    <!-- <div class="col-md-2" id="paramPilihan">
-                        <div class="col-md-12 titleGenerate">
-                            <span>Jumlah Pilihan</span>
-                        </div>
-                        <div class="col-md-12 contentGenerate">
-                            <div class="input-group">
-                                <input type="number" class="form-control" required>
-                            </div>
-                        </div>
-                    </div> -->
 
                 </div> <!-- <div class="col-md-12 soal" ng-controller="addSoal"> -->
             </div>
@@ -366,73 +261,6 @@ if($_SESSION['job'] == 'guru'){
 
     <script>
 
-        /*
-         $(document).ready(function() {
-         $(".data").hover(function(){ $(this).toggleClass('.shad'); });
-
-         var i = 0;
-
-         var btn_inputSoalan = ('<div class="col-md-1 tombol">'+
-         '<div class="input-group">'+
-         '<span class="input-group-btn">'+
-         '<button class="btn btn-primary btn-sm sharp" type="button" id="buttonInputSoal" value="input_soal" name="lihat_soal" ng-click="pushSoal()">Input Soal</button>'+
-         '</span>'+
-         '</div>'+
-         '</div>');
-         */
-
-        /*
-         $('#buttonGenerateSoal').click(function() {
-         var jumlahSoal = $('#jumlah-soal').val();
-
-         $('#isiLoop').html('');
-
-         for (i = 0; i < jumlahSoal; i++) {
-         $('#isiLoop').append('<div class="col-md-12 title animated fadeIn" id="isiInputSoal">'+
-         '<div class="col-md-1 contentGenerate">'+
-         '<span>'+(i+1)+'</span>'+
-         '</div>'+
-         '<div class="col-md-8 contentGenerate">'+
-         '<div class="form-group">'+
-         '<textarea class="form-control" ng-model ="arrsoal['+ i +']" ></textarea>'+
-         '</div>'+
-         '</div>'+
-         '<div class="col-md-3 contentGenerate">'+
-         '<div class="input-group">'+
-         '<select class="form-control" name="parameterBab" ng-model="arrjawab['+ i +']>'+
-         '<option value="">pilih kunci</option>'+
-         '<option value="a">A</option>'+
-         '<option value="b">B</option>'+
-         '<option value="c">C</option>'+
-         '<option value="d">D</option>'+
-
-         '</select>'+
-         '</div>'+
-         '</div>'+
-         '</div>'+
-         '<div class="col-md-3 contentGenerate">'+
-         '<div class="form-group">'+
-         '<textarea class="form-control" ng-model = "arropsi1['+ i +']"></textarea>'+
-         '</div>'+
-         '</div>'+
-         '<div class="col-md-3 contentGenerate">'+
-         '<div class="form-group">'+
-         '<textarea class="form-control" ng-model = "arropsi2['+ i +']"></textarea>'+
-         '</div>'+
-         '</div>'+
-         '<div class="col-md-3 contentGenerate">'+
-         '<div class="form-group">'+
-         '<textarea class="form-control" ng-model = "arropsi3['+ i +']"></textarea>'+
-         '</div>'+
-         '</div>'+
-         '<div class="col-md-3 contentGenerate">'+
-         '<div class="form-group">'+
-         '<textarea class="form-control" ng-model = "arropsi4['+ i +']"></textarea>'+
-         '</div>'+
-         '</div>');
-         }
-         });
-         });*/
     </script>
     <script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
     <script src="../../library/js/creartive.js"></script>
