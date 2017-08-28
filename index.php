@@ -1,4 +1,4 @@
-
+<?php include('php/connection.php'); ?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -13,16 +13,47 @@
   <link rel="stylesheet" href="style/styleIndex.css">
   <script src="library/node_modules/angular/angular.min.js"></script>
   <script src="controller/teacher/indexController.js"></script>
+  <style type="text/css">
+    .container {
+        width: 1000px; 
+        height: 100%; 
+        max-width: none;
+        border:1px solid;
+        vertical-align: top;
+        position: relative;
+       
+      }
+
+      .image {
+        background-image: url('assets/background-1.jpg'); 
+        position: relative;
+      }
+
+      .overlay:before{
+        position: absolute;
+        content:" ";
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display: block;
+        z-index:0;
+        background-color: rgba(100,19,0,0.5);
+      }
+
+    }
+  </style>
 </head>
 
 <body>
-<div class="container">
+<div class="container image overlay" style="">
   <div class="info">
-    <h1>Login CAT System</h1>
+    <h1></h1>
   </div>
-</div>
+
 <div class="form" ng-app="myapp">
-  <div class="thumbnail"><img src="assets/hat.svg"/></div>
+  <h1 style="color: red;">Login E-Selo</h1>
+  <div class="thumbnail" style="padding: 20px 30px"><img src="assets/sekpol.png"/></div>
   <form class="register-form" ng-controller="cRegis" name="formRegis">
     <input type="text" placeholder="username" name="username" ng-model="username" ng-change="change()" required class="form-username"/>
     <span ng-style="myStyle" ng-hide="!isusername">{{message}}</span>
@@ -46,7 +77,9 @@
     <p class="message">Not registered? <a href="#">Create an account</a></p>
   </form>
 </div>
-  <script src='library/js/jquery-2.1.1.min.js'></script>
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="library/js/animateIndex.js"></script>
 </body>
 </html>

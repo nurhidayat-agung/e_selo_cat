@@ -211,9 +211,9 @@ if($_SESSION['job'] == 'guru'){
                         <div class="col-md-4">
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
-							     	<span class="input-group-btn">
-							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)">Tambah Soal</button>
-							    	</span>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)">Tambah Soal</button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -226,16 +226,24 @@ if($_SESSION['job'] == 'guru'){
                                 <tr >
                                     <th class="col-md-1 titleGenerate" ><center>Id Soal</center></th>
                                     <th class="col-md-7 titleGenerate" ><center>Butir Soal</center></th>
-                                    <th class="col-md-2 titleGenerate" ><center>Edit</center></th>
-                                    <th class="col-md-2 titleGenerate" ><center>Hapus</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr ng-repeat="soal in soals">
                                     <th class="col-md-1 " >{{soal.idSoal}}</th>
                                     <th class="col-md-7 " >{{soal.isiSoal}}</th>
-                                    <th class="col-md-2 " ng-click="editTambahSoal(soal.idSoal,mapel)" ><button class="btn btn-primary sharp">Edit</button></th>
-                                    <th class="col-md-2 " ><button class="btn btn-danger sharp" ng-click="deleteSoal(soal.idSoal)">Delete</button></th>
+                                    <th class="col-md-1 btn-lg" ng-click="editTambahSoal(soal.idSoal,mapel)" >
+                                    <a href="#">
+                                    <span class="glyphicon glyphicon-edit" ></span>
+                                    </a>
+                                    </th> 
+                                    <th class="col-md-1 btn-lg">
+                                    <a href="#">
+                                    <span class="glyphicon glyphicon-trash"   ng-click="deleteSoal(soal.idSoal)"></span>
+                                    </a>
+                                    </th>
                                 </tr>
                                 </tbody>
                             </table>
