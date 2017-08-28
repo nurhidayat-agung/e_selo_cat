@@ -30,6 +30,8 @@
 
 	<script src="../../library/js/jquery-2.1.1.min.js"></script>
 	<script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../library/node_modules/angular/angular.min.js"></script>
+    <script src="../../controller/teacher/indexGuru.js"></script>
 
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
@@ -172,7 +174,7 @@
 			</nav>
 
 			<!-- content -->
-	<div id="main">
+	<div id="main" ng-app="indekGuru">
 	<!-- Content Isi Atas -->
 		<div class="no-padd col-md-12" id="homeTop">
 			<a href="soal.php">
@@ -219,8 +221,7 @@
 			</a>
 		</div>	
 		<!-- Content Atas -->
-		<div class="no-padd col-md-12" id="homeBottom">
-			
+		<div class="no-padd col-md-12" id="homeBottom" ng-controller="contentController">
 				<div class="col-md-6 recent">
 					<div class="col-md-12 recentIn">
 						<div class="col-md-12 recentTitle" id="jumlahSoal">
@@ -229,27 +230,19 @@
 							<div class="divider"></div>
 						</div>
 						<div class="col-md-12 recentContent">
-							<table class="table table-hover">
+							<table class="table table-hover" ng-init="getLastBankSoal()">
 							    <thead>
 							      <tr>
-							        <th>Nama</th>							        
+                                      <th>Nama Bank Soal</th>
+                                      <th>Jumlah Item Test</th>
+                                      <th>Nama Mapel</th>
 							      </tr>
 							    </thead>
 							    <tbody>
-							      <tr>
-							        <td>Arif Indarto</td>
-							      </tr>
-							      <tr>
-							        <td>Rudy Arifin</td>
-							      </tr>
-							      <tr>
-							        <td>Juliana Haris</td>
-							      </tr>
-							      <tr>
-							        <td>Budiman</td>
-							      </tr>
-							      <tr>
-							        <td>Lina Febriana</td>
+							      <tr ng-repeat="banksoal in banksoals">
+							        <td>{{banksoal.namaBankSoal}}</td>
+							        <td>{{banksoal.jml_soal}}</td>
+							        <td>{{banksoal.namaMapel}}</td>
 							      </tr>
 							    </tbody>
 						  	</table>
@@ -273,39 +266,19 @@
 							<div class="divider"></div>
 						</div>
 						<div class="col-md-12 recentContent">
-							<table class="table table-hover">
+							<table class="table table-hover" ng-init="getLastRespon()">
 							    <thead>
 							      <tr>
-							        <th>Nama</th>
-							        <th>Matapelajaran</th>
+							        <th>Nama Siswa</th>
+							        <th>Bank Soal</th>
 							        <th>Nilai</th>
 							      </tr>
 							    </thead>
 							    <tbody>
-							      <tr>
-							        <td>Joni Abi</td>
-							        <td>Fisika</td>
-							        <td>90</td>
-							      </tr>
-							      <tr>
-							        <td>Abdillah Rizky</td>
-							        <td>Fisika</td>
-							        <td>80</td>
-							      </tr>
-							      <tr>
-							        <td>Juliana Haris</td>
-							        <td>Fisika</td>
-							        <td>95</td>
-							      </tr>
-							      <tr>
-							        <td>Heri Ariawan Sulistyo</td>
-							        <td>Fisika</td>
-							        <td>80</td>
-							      </tr>
-							      <tr>
-							        <td>Roby Purba</td>
-							        <td>Fisika</td>
-							        <td>85</td>
+							      <tr ng-repeat="respon in respons">
+							        <td>{{respon.nama}}</td>
+							        <td>{{respon.namaBankSoal}}</td>
+							        <td>{{respon.nilaiResponTest}}</td>
 							      </tr>
 							    </tbody>
 						  	</table>
@@ -324,7 +297,7 @@
 		<!-- Content Bawah -->
 	</div>
 </body>
-
+<script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
 <script>
 $(document).ready(function() {
   $(".data").hover(function(){ $(this).toggleClass('.shad'); });

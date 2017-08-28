@@ -16,7 +16,7 @@
 
         $query = "INSERT INTO detailrespon(idResponTest, idSoal, jawab, croscek) VALUES ($idResponTest,$idSoal,'$jawab',$croscek)";
         if (mysqli_query($conn,$query)){
-            $queryNext = "SELECT idSoal, isiSoal, pil1, pil2, pil3, pil4, kunci, dayaBeda, tingkatKesulitanSoal, cluster FROM `soalDetail` WHERE idSoal not in (SELECT idSoal FROM `detailrespon` WHERE idResponTest = $idResponTest) and idBankSoal = $bankSoal limit 1";
+            $queryNext = "SELECT idSoal, isiSoal, pil1, pil2, pil3, pil4, kunci, dayaBeda, tingkatKesulitanSoal, cluster FROM `soalDetail` WHERE idSoal not in (SELECT idSoal FROM `detailrespon` WHERE idResponTest = $idResponTest) and idBankSoal = $bankSoal ORDER BY RAND() limit 1";
             $getNext = mysqli_query($conn, $queryNext);
             while($rowNext = mysqli_fetch_array($getNext))
             {

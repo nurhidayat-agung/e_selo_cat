@@ -16,4 +16,14 @@ app.controller("indexSiswaController", function ($scope,$http,$window,$compile) 
             alert("sambungan gagal");
         });
     };
+    $scope.getResponData = function () {
+        $http.post(
+            "../../php/siswa/getLastRespon.php",
+            {'idUser':$scope.idUser}
+        ).then(function successCallback(response) {
+            $scope.respons = response.data;
+        },function errorCallback(response) {
+            alert("sambungan gagal");
+        });
+    };
 });

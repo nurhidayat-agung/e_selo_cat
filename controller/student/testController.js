@@ -90,6 +90,7 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
         console.log("idBanksoal : " + $scope.banksoal);
         console.log("idUser : " + $scope.idUser);
         $scope.myValue = false;
+        $scope.countSoal = 1;
         $http.post(
             "../../php/siswa/pushResponTest.php",
             {'idBankSoal':$scope.banksoal,'idUser':$scope.idUser}
@@ -147,10 +148,10 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
                 },function errorCallback(response) {
                     alert("sambungan gagal");
                 });
-                alert("score anda : " + $scope.score);
+                // alert("score anda : " + $scope.score);
             }else{
                 $scope.score += 1;
-                alert("score anda : " + $scope.score);
+                // alert("score anda : " + $scope.score);
                 $http.post(
                     "../../php/siswa/pushFinishRespon.php",
                     {'idResponTest':$scope.idResponTest,'score':$scope.score}
@@ -184,9 +185,9 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
                 },function errorCallback(response) {
                     alert("sambungan gagal");
                 });
-                alert("score anda : " + $scope.score);
+                // alert("score anda : " + $scope.score);
             }else{
-                alert("score anda : " + $scope.score);
+                // alert("score anda : " + $scope.score);
                 $http.post(
                     "../../php/siswa/pushFinishRespon.php",
                     {'idResponTest':$scope.idResponTest,'score':$scope.score}
@@ -205,6 +206,20 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
     };
     $scope.readyNext = function(){
         $scope.cekJawab = false;
+    };
+    $scope.submitRespon = function () {
+        $http.post(
+            "../../php/siswa/pushFinishRespon.php",
+            {'idResponTest':$scope.idResponTest,'score':$scope.score}
+        ).then(function successCallback(response) {
+            if (response.data){
+                $window.location = 'index.php';
+            }else {
+                alert("gagal mengupdate nilai test");
+            }
+        },function errorCallback(response) {
+            alert("sambungan gagal");
+        });
     };
 
 });

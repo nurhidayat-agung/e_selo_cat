@@ -231,40 +231,18 @@ if($_SESSION['job'] == 'siswa'){
                         <span>Respon Terbaru</span>
                         <div class="divider"></div>
                     </div>
-                    <div class="col-md-12 recentContent">
+                    <div class="col-md-12 recentContent" ng-init="getResponData()">
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>Nama</th>
-                                <th>Soal</th>
+                                <th>Nama Test</th>
                                 <th>Nilai</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>90</td>
-                            </tr>
-                            <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>80</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>95</td>
-                            </tr>
-                            <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>80</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>85</td>
+                            <tr ng-repeat="respon in respons">
+                                <td>{{respon.namaBankSoal}}</td>
+                                <td>{{respon.nilaiResponTest}}</td>
                             </tr>
                             </tbody>
                         </table>

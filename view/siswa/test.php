@@ -209,7 +209,7 @@
 						<div class="col-md-1 tombol">
 							<div class="input-group">
 								<span class="input-group-btn">
-									<input class="btn btn-primary btn-sm sharp" type="submit" id="buttonInputSoal" value="Submit Response" name="submitResponse" ng-click="">Submit Response</input>
+									<input class="btn btn-primary btn-sm sharp" type="submit" id="buttonInputSoal" value="Submit Response" name="submitResponse" ng-click="submitRespon()">Ahiri Test</input>
 								</span>
 							</div>
 						</div>
