@@ -191,38 +191,34 @@ if($_SESSION['job'] == 'siswa'){
                         <span>Profil Siswa</span>
                         <div class="divider"></div>
                     </div>
-                    <div class="col-md-12 recentContent">
+                    <div class="col-md-12 recentContent" ng-init="getUserInformation()">
                         <table class="table table-hover">
                             <thead>
                             <tr>
+                                <th>IdUser</th>
+                                <th>: {{idUser}}</th>
+                            </tr>
+                            <tr>
+                                <th>Username</th>
+                                <th>: {{username}}</th>
+                            </tr>
+                            <tr>
+                                <th>Password</th>
+                                <th>: {{maskPass}}</th>
+                            </tr>
+                            <tr>
+                                <th>Status</th>
+                                <th>: {{status}}</th>
+                            </tr>
+                            <tr>
                                 <th>Nama</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Arif Indarto</td>
+                                <th>: {{nama}}</th>
                             </tr>
                             <tr>
-                                <td>Rudy Arifin</td>
+                                <th>Email</th>
+                                <th>: {{email}}</th>
                             </tr>
-                            <tr>
-                                <td>Juliana Haris</td>
-                            </tr>
-                            <tr>
-                                <td>Budiman</td>
-                            </tr>
-                            <tr>
-                                <td>Lina Febriana</td>
-                            </tr>
-                            </tbody>
                         </table>
-                    </div>
-                    <div class="col-md-12 recentButton">
-                        <div class="input-group">
-						     	<span class="input-group-btn">
-						    		<button class="btn btn-primary btn-sm sharp" type="button">More</button>
-						    	</span>
-                        </div>
                     </div>
                 </div>
             </div>
