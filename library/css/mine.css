@@ -166,3 +166,14 @@ div .login-form .login .input-group select{
 }
 
     /*Dashbard*/
+
+#myModal
+{
+    width: 700px;
+    margin-top: -300px;
+    margin-left:  -350px;
+}
+
+#deleteModalContent{
+    font-size: large;
+}

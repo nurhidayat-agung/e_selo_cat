@@ -6,7 +6,6 @@ if($_SESSION['job'] == 'guru'){
     <html>
     <head>
         <title>Teacher Dashboard</title>
-
         <link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
 
         <link rel="stylesheet" type="text/css" href="../../library/css/font-awesome.min.css">
@@ -23,15 +22,17 @@ if($_SESSION['job'] == 'guru'){
         <!-- Optional theme -->
         <link rel="stylesheet" href="../../library/node_modules/bootstrap/dist/css/bootstrap-theme.css">
 
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="../../library/js/jquery-2.1.1.min.js"></script>
+        <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../library/node_modules/angular/angular.min.js"></script>
+        <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
+        <script src="../../controller/teacher/soalController.js"></script>
+
         <!-- FONT -->
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-        <!-- Latest compiled and minified JavaScript -->
-
-        <script src="../../library/node_modules/angular/angular.min.js"></script>
-        <script src="../../controller/teacher/soalController.js"></script>
-        <script src="../../library/js/jquery-2.1.1.min.js"></script>
-        <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!-- Jquery Loaded -->
         <!-- <script src="js/jquery-2.1.1.min.js"></script> -->
@@ -160,7 +161,7 @@ if($_SESSION['job'] == 'guru'){
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <nav id="nav-barbar" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid" id="navbar-conteent">
             <div class="navbar-header">
 
                 <span onclick="openNav()" id="open" class="navbar-brand"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -211,7 +212,7 @@ if($_SESSION['job'] == 'guru'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
 							     	<span class="input-group-btn">
-							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="showSoal()">Tambah Soal</button>
+							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)">Tambah Soal</button>
 							    	</span>
                                 </div>
                             </div>
@@ -223,31 +224,147 @@ if($_SESSION['job'] == 'guru'){
                             <table class="table table-bordered" >
                                 <thead>
                                 <tr >
-                                    <th class="col-md-1 titleGenerate" >Id Soal</th>
-                                    <th class="col-md-5 titleGenerate" >Butir Soal</th>
-                                    <th class="col-md-2 titleGenerate" >Jawaban</th>
-                                    <th class="col-md-2 titleGenerate" >Edit</th>
-                                    <th class="col-md-2 titleGenerate" >Hapus</th>
+                                    <th class="col-md-1 titleGenerate" ><center>Id Soal</center></th>
+                                    <th class="col-md-7 titleGenerate" ><center>Butir Soal</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Edit</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="analisis in analisises">
-                                    <th class="col-md-1 " >{{analisis.idSoal}}</th>
-                                    <th class="col-md-5 " >{{analisis.isiSoal}}</th>
-                                    <th class="col-md-2 " >{{analisis.tingkatKesulitanSoal}}</th>
-                                    <th class="col-md-2 " >{{analisis.dayaBeda}}</th>
-                                    <th class="col-md-2 " >{{analisis.cluster}}</th>
+                                <tr ng-repeat="soal in soals">
+                                    <th class="col-md-1 " >{{soal.idSoal}}</th>
+                                    <th class="col-md-7 " >{{soal.isiSoal}}</th>
+                                    <th class="col-md-2 " ng-click="editTambahSoal(soal.idSoal,mapel)" ><button class="btn btn-primary sharp">Edit</button></th>
+                                    <th class="col-md-2 " ><button class="btn btn-danger sharp" ng-click="deleteSoal(soal.idSoal)">Delete</button></th>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div>
-                            <span class="col-md-12 "><center>Tidak Ada soal dalam data base</center></span>
+                            <span class="col-md-12 " ng-hide="!isNoSoal"><center>Tidak Ada soal dalam data base</center></span>
+                        </div>
+                        <div>
+                            <span class="col-md-12 " ng-hide="!isNoSoal"><center>{{message}}</center></span>
                         </div>
                         <div>
                             {{response}}
                         </div>
                     </div>
+
+
+                    <!-- The actual modal template, just a bit o bootstrap -->
+                    <script type="text/ng-template" id="delete.html" id="delete">
+                        <div class="modal fade container">
+                            <div class="modal-dialog">
+                                <div class="modal-content col-md-12">
+                                    <div class="modal-header col-md-12">
+                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                                    </div>
+                                    <div class="modal-body col-md-12">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus soal nomor {{idSoal}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer col-md-12">
+                                        <div class="col-md-6">
+                                            <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                                            <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-warning">Hapus</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </script>
+
+
+                    <!-- The actual modal template, just a bit o bootstrap -->
+                    <script type="text/ng-template" id="modal.html" id="myModal">
+                        <div class="modal fade container" ng-init="init()">
+                            <div class="modal-dialog">
+                                <div class="modal-content col-md-12">
+                                    <div class="modal-header col-md-12">
+                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title titleGenerate">Tambah/Edit Soal</h4>
+                                    </div>
+                                    <div class="modal-body col-md-12">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate">Isi Butir Soal</span>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="tambahIsiSoal" placeholder="Masukan Isi Butir Soal" ng-init="fromInit()"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <span ng-style="mWarning">
+                                                    <center>
+                                                        {{mMessage}}
+                                                    </center>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Pilihan 1</span>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan1" placeholder="pilihan 1"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Pilihan 2</span>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan2" placeholder="pilihan 2"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Pilihan 3</span>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan3" placeholder="pilihan 3"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Pilihan 4</span>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan4" placeholder="pilihan 4"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group ">
+                                                    <span class="titleGenerate">Bab Mapel</span>
+                                                    <select class="form-control" name="bab" ng-model="bab" ng-change="pushBab()">
+                                                        <option value="">Select banksoal</option>
+                                                        <option ng-repeat="bab in babs" value="{{bab.idBabMapel}}">{{bab.namaBabMapel}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <span class="titleGenerate">Kunci Jawaban</span>
+                                                    <select class="form-control" name="parameterBab" ng-model="jawaban" >
+                                                        <option value="">pilih kunci jawab</option>
+                                                        <option value="a">A</option>
+                                                        <option value="b">B</option>
+                                                        <option value="c">C</option>
+                                                        <option value="d">D</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer col-md-12">
+                                        <div class="col-md-6">
+<!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                                        </div>
+                                        <div class="col-lg-6">
+<!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                                            <button type="button" ng-click="modalyes()" class="btn btn-primary">Simpan</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </script>
 
 
                 </div> <!-- <div class="col-md-12 soal" ng-controller="addSoal"> -->

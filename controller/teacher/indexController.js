@@ -7,7 +7,7 @@
      $scope.isavailable = false;
      $scope.isusername = true;
      $scope.change = function(){
-        if ($scope.username == "") {
+        if ($scope.username === "") {
             $scope.isusername = false;
             $scope.message = "username harus diisis";
         }else{
@@ -52,10 +52,9 @@
          "php/index/login.php",
          {'username':$scope.lUsername, 'password':$scope.lPassword}
          ).then(function successCallback(response) {
-             if(response.data == "siswa"){
-                 // $window.location = 'masagung/siswa/index.php';
-                 alert("siswa");
-             }else if(response.data == "guru"){
+             if(response.data === "siswa"){
+                 $window.location = 'view/siswa/index.php';
+             }else if(response.data === "guru"){
                  $window.location = 'view/guru/index.php';
              }else{
                  alert("username and password salah");

@@ -164,7 +164,7 @@
 
 	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 	<nav id="nav-barbar" class="navbar navbar-default navbar-fixed-top">
-				  <div class="container-fluid">
+				  <div class="container-fluid" id="navbar-conteent">
 				    <div class="navbar-header">
 				      
 				        <span onclick="openNav()" id="open" class="navbar-brand"><i class="fa fa-bars" aria-hidden="true"></i></span>

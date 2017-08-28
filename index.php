@@ -46,7 +46,7 @@
     <p class="message">Not registered? <a href="#">Create an account</a></p>
   </form>
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='library/js/jquery-2.1.1.min.js'></script>
     <script src="library/js/animateIndex.js"></script>
 </body>
 </html>

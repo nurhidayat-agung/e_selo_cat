@@ -159,7 +159,7 @@ if($_SESSION['job'] == 'guru'){
             </a>
     </div>
     <nav id="nav-barbar" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid" id="navbar-conteent">
             <div class="navbar-header">
 
                 <span onclick="openNav()" id="open" class="navbar-brand"><i class="fa fa-bars" aria-hidden="true"></i></span>
