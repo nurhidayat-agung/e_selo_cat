@@ -59,8 +59,8 @@
 		<div class="col-md-12 profil">
 			<div class="cen">
 				<img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-				<span id="nama"><?php echo $_SESSION['login_username']; ?></span><br />
-				<span id="level">Siswa</span>
+                <span id="nama"><h4 style="margin-bottom: 0px;"><?php echo $_SESSION['login_username']; ?></h4></span><br />
+                <span id="level">Siswa</span>
 			</div>
 		</div>
 
@@ -152,7 +152,7 @@
 							<div class="col-md-6 tombol">
 									<div class="input-group">
 										<span class="input-group-btn">
-											<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="mulai_ujian" name="mulai_ujian" ng-click="mulaiUjian()">Mulai Ujian</button>
+											<button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="mulai_ujian" name="mulai_ujian" ng-click="mulaiUjian()">Mulai Ujian</button>
 										</span>
 									</div>
 							</div>
@@ -195,7 +195,7 @@
 											<div class="col-md-6 tombolNextPrev">
 													<div class="input-group">
 														<span class="input-group-btn">
-															<button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="nextQuestion()" ng-disabled="cekJawab">></button>
+															<button class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="nextQuestion()" ng-disabled="cekJawab"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"> <strong>Next</strong></span></button>
 														</span>
 													</div>
 											</div>
@@ -209,7 +209,7 @@
 						<div class="col-md-1 tombol">
 							<div class="input-group">
 								<span class="input-group-btn">
-									<input class="btn btn-primary btn-sm sharp" type="submit" id="buttonInputSoal" value="Submit Response" name="submitResponse" ng-click="submitRespon()">Ahiri Test</input>
+									<input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonInputSoal" value="Submit Response" name="submitResponse" ng-click="submitRespon()">Ahiri Test</input>
 								</span>
 							</div>
 						</div>

@@ -58,7 +58,7 @@ if($_SESSION['job'] == 'siswa'){
         <div class="col-md-12 profil">
             <div class="cen">
                 <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-                <span id="nama"><?php echo $_SESSION['login_username']; ?></span><br />
+                <span id="nama"><h4 style="margin-bottom: 0px;"><?php echo $_SESSION['login_username']; ?></h4></span><br />
                 <span id="level">Siswa</span>
             </div>
         </div>
@@ -192,10 +192,10 @@ if($_SESSION['job'] == 'siswa'){
                         <div class="divider"></div>
                     </div>
                     <div class="col-md-12 recentContent" ng-init="getUserInformation()">
-                        <table class="table table-hover">
+                        <table class="table ">
                             <thead>
                             <tr>
-                                <th>IdUser</th>
+                                <th><label>ID User</label></th>
                                 <th>: {{idUser}}</th>
                             </tr>
                             <tr>
@@ -207,16 +207,16 @@ if($_SESSION['job'] == 'siswa'){
                                 <th>: {{maskPass}}</th>
                             </tr>
                             <tr>
-                                <th>Status</th>
+                                <th>Nomor Siswa</th>
                                 <th>: {{status}}</th>
                             </tr>
                             <tr>
-                                <th>Nama</th>
-                                <th>: {{nama}}</th>
+                                <th>Pangkat</th>
+                                <th>: brigadir</th>
                             </tr>
                             <tr>
                                 <th>Email</th>
-                                <th>: {{email}}</th>
+                                <th>: <a href="mailto:{{email}}">{{email}}</a></th>
                             </tr>
                         </table>
                     </div>
@@ -250,7 +250,7 @@ if($_SESSION['job'] == 'siswa'){
                     <div class="col-md-12 recentButton">
                         <div class="input-group">
 						     	<span class="input-group-btn">
-						    		<button class="btn btn-primary btn-sm sharp" type="button">More</button>
+						    		<button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button">More</button>
 						    	</span>
                         </div>
                     </div>

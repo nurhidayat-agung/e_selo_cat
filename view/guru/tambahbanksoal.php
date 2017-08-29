@@ -77,7 +77,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="tambahmapel.php">
+		<!-- <a href="tambahmapel.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
 					<span>Tambah Mapel</span>
@@ -96,7 +96,7 @@
 					<span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
 				</div>
 			</div>
-		</a>
+		</a> -->
 		<a href="tambahbanksoal.php">
 			<div class="col-md-12 menu active">
 				<div class="col-md-10">
@@ -186,7 +186,7 @@
 				<div class="generateSoal" ng-app="moduleTambahBankSoal">
                     <form ng-controller="addBankSoal" ng-init="initial()">
                         <div class="col-md-12" id="paramMapel">
-                            <div class="col-md-12 titleGenerate">
+                            <!-- <div class="col-md-12 titleGenerate">
                                 <span>Mata Pelajaran</span>
                             </div>
                             <div class="col-md-12 contentGenerate" ng-init="loadMapel()">
@@ -196,7 +196,7 @@
 										<option ng-repeat="mapel in mapels" value="{{mapel.idMapel}}">{{mapel.namaMapel}}</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
 							<div class="col-md-12 titleGenerate">
 								<span>Nama Mata Nama Bank Soal</span>
 							</div>
@@ -205,7 +205,7 @@
 									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true" ng-disabled="!mapelValid" ng-change="cekBankSoal(namabanksoal)"></input>
 								</div>
 							</div>
-							<div class="col-md-12 titleGenerate">
+							<!-- <div class="col-md-12 titleGenerate">
 								<span>Jumlah Soal</span>
 							</div>
 							<div class="col-md-12 contentGenerate">
@@ -213,7 +213,7 @@
 									<input ng-model="jumlahsoal" type="number" name="jumlahsoal" placeholder="jumlah soal ..." class="form-control" required="true" ng-disabled="!bankSoalValid" ng-change="cekJumlahSoal(jumlahsoal)"></input>
 								</div>
 							</div>
-							
+							 -->
 							<div class="col-md-12 titleGenerate">
 								<span>Deskripsi Bank Soal</span>
 							</div>

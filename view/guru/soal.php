@@ -31,7 +31,7 @@ if($_SESSION['job'] == 'guru'){
         <script src="../../controller/teacher/soalController.js"></script>
 
         <!-- FONT -->
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
 
 
         <!-- Jquery Loaded -->
@@ -74,7 +74,7 @@ if($_SESSION['job'] == 'guru'){
                 </div>
             </div>
         </a>
-        <a href="tambahmapel.php">
+       <!--  <a href="tambahmapel.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Tambah Mapel</span>
@@ -93,7 +93,7 @@ if($_SESSION['job'] == 'guru'){
                     <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
                 </div>
             </div>
-        </a>
+        </a> -->
         <a href="tambahbanksoal.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
@@ -182,7 +182,7 @@ if($_SESSION['job'] == 'guru'){
             <div class="col-md-12 soal" ng-controller="addSoal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
-                        <div class="col-md-4">
+                        <!-- <div class="col-md-4">
                             <div class="col-md-12 titleGenerate">
                                 <div>Mapel</div>
                             </div>
@@ -194,6 +194,8 @@ if($_SESSION['job'] == 'guru'){
                                     </select>
                                 </div>
                             </div>
+                        </div> -->
+                        <div class="col-md-2">
                         </div>
                         <div class="col-md-4">
                             <div class="col-md-12 titleGenerate">
@@ -212,10 +214,12 @@ if($_SESSION['job'] == 'guru'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Soal</button>
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Soal</button>
                                     </span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-2">
                         </div>
                     </div>
 

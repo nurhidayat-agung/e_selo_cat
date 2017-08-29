@@ -78,7 +78,7 @@ if($_SESSION['job'] == 'guru'){
                 </div>
             </div>
         </a>
-        <a href="tambahmapel.php">
+        <!-- <a href="tambahmapel.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Tambah Mapel</span>
@@ -97,7 +97,7 @@ if($_SESSION['job'] == 'guru'){
                     <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
                 </div>
             </div>
-        </a>
+        </a> -->
         <a href="tambahbanksoal.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">

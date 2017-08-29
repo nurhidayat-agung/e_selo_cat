@@ -82,7 +82,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="tambahbab.php">
+		<!-- <a href="tambahbab.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
 					<span>Tambah Bab Mapel</span>
@@ -101,7 +101,7 @@
 					<span><i class="fa fa-plus" aria-hidden="true"></i></span>
 				</div>
 			</div>
-		</a>
+		</a> -->
 		<a href="soal.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
@@ -225,12 +225,12 @@
 				<div class="col-md-6 recent">
 					<div class="col-md-12 recentIn">
 						<div class="col-md-12 recentTitle" id="jumlahSoal">
-							<i class="fa fa-file-text"></i>
-							<span>Daftar Bank Soal</span>
-							<div class="divider"></div>
+							<i class="fa fa-user-circle-o"></i>
+							<span style="margin-bottom: 10px; padding-bottom: 10px;">Profil : <?php echo $_SESSION['login_username']; ?>, S.Pd</span>
+							
 						</div>
-						<div class="col-md-12 recentContent">
-							<table class="table table-hover" ng-init="getLastBankSoal()">
+						<div class="col-md-12 recentContent" style="padding-top: 15px;">
+							<!-- <table class="table table-hover" ng-init="getLastBankSoal()">
 							    <thead>
 							      <tr>
                                       <th>Nama Bank Soal</th>
@@ -245,12 +245,43 @@
 							        <td>{{banksoal.namaMapel}}</td>
 							      </tr>
 							    </tbody>
-						  	</table>
+						  	</table> -->
+						  	<table class="table table-user-information">
+			                    <tbody>
+			                      <tr>
+			                        <td>Guru</td>
+			                        <td>Programming</td>
+			                      </tr>
+			                      <tr>
+			                        <td>Hire date:</td>
+			                        <td>06/23/2013</td>
+			                      </tr>
+			                      <tr>
+			                        <td>Date of Birth</td>
+			                        <td>01/24/1988</td>
+			                      </tr>
+			                   
+			                         <tr>
+			                             <tr>
+			                        <td>Gender</td>
+			                        <td>Female</td>
+			                      </tr>
+			                        <tr>
+			                        <td>Home Address</td>
+			                        <td>Kathmandu,Nepal</td>
+			                      </tr>
+			                      <tr>
+			                        <td>Email</td>
+			                        <th>: <a href="mailto:{{email}}">{{email}}</a></th>
+			                      </tr>
+			                     
+			                    </tbody>
+			                  </table>
 						</div>
 						<div class="col-md-12 recentButton">
 							<div class="input-group">
 						     	<span class="input-group-btn">
-						    		<button class="btn btn-primary btn-sm sharp" type="button">More</button>
+						    		<button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button">More</button>
 						    	</span>
 						    </div>
 						</div>
@@ -286,7 +317,7 @@
 						<div class="col-md-12 recentButton">
 							<div class="input-group">
 						     	<span class="input-group-btn">
-						    		<button class="btn btn-primary btn-sm sharp" type="button">More</button>
+						    		<button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp " type="button">More</button>
 						    	</span>
 						    </div>
 						</div>
