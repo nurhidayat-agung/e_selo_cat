@@ -115,6 +115,16 @@ if($_SESSION['job'] == 'guru'){
                     </div>
                 </div>
             </a>
+            <a href="test.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Test</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            </a> 
             <a href="respon.php">
                 <div class="col-md-12 menu">
                     <div class="col-md-10">

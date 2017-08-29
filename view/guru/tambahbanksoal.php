@@ -116,6 +116,16 @@
 				</div>
 			</div>
 		</a>
+		<a href="test.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Test</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a> 
 		<a href="respon.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
@@ -225,7 +235,7 @@
                                 <div class="col-md-12 tombol">
                                         <div class="input-group">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-primary btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!dataValid">Tambah Bank Soal</button>
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!dataValid">Tambah Bank Soal</button>
                                             </span>
                                         </div>
                                 </div>
