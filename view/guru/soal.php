@@ -58,7 +58,7 @@ if($_SESSION['job'] == 'guru'){
         <!-- Profile Admin -->
         <div class="col-md-12 profil">
             <div class="cen">
-                <img src="../../assets/default-img.png" class="img-circle">
+                <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
                 <span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
                 <span id="level">Guru</span>
             </div>
@@ -212,7 +212,7 @@ if($_SESSION['job'] == 'guru'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)">Tambah Soal</button>
+                                        <button class="btn btn-primary btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Soal</button>
                                     </span>
                                 </div>
                             </div>

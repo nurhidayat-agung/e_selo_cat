@@ -1,4 +1,4 @@
-<?php include('php/connection.php'); ?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -6,14 +6,18 @@
   <title>Login CAT</title>
   
   <link rel="stylesheet" href="library/css/reset.min.css">
-  <link rel="stylesheet" href="library/node_modules/bootstrap/dist/css/bootstrap.min.css" />    
+  <link rel="stylesheet" href="library/node_modules/bootstrap/dist/css/bootstrap.min.css" />   
+
+  <!-- font --> 
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
-  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='assets/fonts/font-montserrat.css'>
+  <link rel='stylesheet prefetch' href='library/fonts/font-awesome.min.css'>
+    <!-- font -->
+
   <link rel="stylesheet" href="style/styleIndex.css">
   <script src="library/node_modules/angular/angular.min.js"></script>
   <script src="controller/teacher/indexController.js"></script>
-  <style type="text/css">
+<!--   <style type="text/css">
     .container {
         width: 1000px; 
         height: 100%; 
@@ -42,17 +46,24 @@
       }
 
     }
-  </style>
+  </style> -->
 </head>
 
-<body>
-<div class="container image overlay" style="">
-  <div class="info">
-    <h1></h1>
+<body style="background-color: lightgrey;" >
+<nav class="navbar navbar-default" style="background-color: #4d79ff;">
+  <div class="container-fluid">
+    <div class="navbar-header" style="height: 100px; color: white;">
+        <b><strong><h1 style="padding-top: 10px;">E-SELO</h1></strong></b>
+        <b><strong>Electronics System Examination Object </strong></b>  
+    </div>
+    <p class="navbar-text navbar-right" style="padding-right: 40px;">
+      <img src="assets/lemdikpol.png" height="100px" width="70px">
+    </p>
   </div>
-
-<div class="form" ng-app="myapp">
-  <h1 style="color: red;">Login E-Selo</h1>
+</nav>
+<div class="container" style="max-width: 450px;">
+<div class="form" ng-app="myapp" style="max-width: none;">
+  <h1 style="color: #4d79ff;;">Students Login</h1>
   <div class="thumbnail" style="padding: 20px 30px"><img src="assets/sekpol.png"/></div>
   <form class="register-form" ng-controller="cRegis" name="formRegis">
     <input type="text" placeholder="username" name="username" ng-model="username" ng-change="change()" required class="form-username"/>
@@ -79,7 +90,7 @@
 </div>
 
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='library/js/jquery-2-1-3.min.js'></script>
     <script src="library/js/animateIndex.js"></script>
 </body>
 </html>

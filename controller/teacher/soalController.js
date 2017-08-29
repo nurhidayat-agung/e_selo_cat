@@ -56,6 +56,15 @@ app4.controller("addSoal",function($scope,$http,$window,$compile,ModalService){
     };
 
     $scope.loadSoal = function () {
+        // $http({
+        //         url: "../../view/guru/soal.php",
+        //         method: "POST",
+        //         data: {
+        //             data: variable
+        //         }
+        //     }).success(function(response) {
+        //    // console.log(response);
+        // });
         console.log("id bank soal : " + $scope.banksoal);
         console.log("id mapel : " + $scope.selectMapel);
         if ($scope.banksoal > 0){

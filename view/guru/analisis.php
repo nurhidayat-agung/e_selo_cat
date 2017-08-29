@@ -62,7 +62,7 @@ if($_SESSION['job'] == 'guru'){
         <!-- Profile Admin -->
         <div class="col-md-12 profil">
             <div class="cen">
-                <img src="../../assets/default-img.png" class="img-circle">
+                <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
                 <span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
                 <span id="level">Guru</span>
             </div>
@@ -272,6 +272,7 @@ if($_SESSION['job'] == 'guru'){
                                 </div>
                             </div>
                         -->
+                        <p><a href="export.php"><button>Export Data ke Excel</button></a></p>
                         <div id="isiLoop">
                             <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="displayData()">
                                 <table class="table table-bordered" >

@@ -61,7 +61,7 @@
 		<!-- Profile Admin -->
 		<div class="col-md-12 profil">
 			<div class="cen">
-                <img src="../../assets/default-img.png" class="img-circle">
+                <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
 				<span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
 				<span id="level">Guru</span><br />
 			</div>
