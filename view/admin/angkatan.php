@@ -28,7 +28,7 @@ if($_SESSION['job'] == 'admin'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
         <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
-        <script src="../../controller/teacher/soalController.js"></script>
+        <script src="../../controller/admin/angkatan.js"></script>
 
         <!-- FONT -->
         <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
@@ -84,6 +84,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
+        <a href="pleton.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Pleton</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-android" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
         <a href="guru.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
@@ -101,6 +111,26 @@ if($_SESSION['job'] == 'admin'){
                 </div>
                 <div class="col-md-2">
                     <span><i class="fa fa-book" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
+        <a href="siswa.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Data Siswa</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
+        <a href="../../logout.php">
+            <div class="col-md-12 logout">
+                <div class="col-md-10">
+                    <span>Logout</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                 </div>
             </div>
         </a>
@@ -126,10 +156,10 @@ if($_SESSION['job'] == 'admin'){
     </nav>
 
     <!-- content -->
-    <div id="main" ng-app="moduleTambahSoal" >
+    <div id="main" ng-app="moduleTambahAngkatan" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="addSoal" ng-init="loadMapel()">
-            <div class="col-md-12 soal" ng-controller="addSoal">
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="addAngkatan" ng-init="loadMapel()">
+            <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
                         <div class="col-md-4">
@@ -226,8 +256,8 @@ if($_SESSION['job'] == 'admin'){
 
 
                     <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="modal.html" id="myModal">
-                        <div class="modal fade container" ng-init="init()">
+                    <script type="text/ng-template" id="modalAngkatan.html" id="myModal">
+                        <div class="modal fade container">
                             <div class="modal-dialog">
                                 <div class="modal-content col-md-12">
                                     <div class="modal-header col-md-12">
