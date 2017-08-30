@@ -6,9 +6,6 @@
 <html>
 <head>
 	<title>Teacher Dashboard</title>
-
-	<script src="../../library/node_modules/angular/angular.min.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
 
 	<link rel="stylesheet" type="text/css" href="../../library/css/font-awesome.min.css">
@@ -33,9 +30,9 @@
 
 	<script src="../../library/js/jquery-2.1.1.min.js"></script>
 	<script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="../../library/node_modules/angular/angular.min.js"></script>
 	<!-- angular -->
-	<script src="../../controller/teacher/tambahmapel.js"></script>
+	<script src="../../controller/teacher/tambahtest.js"></script>
 
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
@@ -116,7 +113,7 @@
 			</div>
 		</a>
 		<a href="test.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Test</span>
                 </div>
@@ -125,16 +122,16 @@
                 </div>
             </div>
             </a> 
-		<a href="respon.php">
-			<div class="col-md-12 menu">
-				<div class="col-md-10">
-					<span>Input Respon</span>
-				</div>
-				<div class="col-md-2">
-					<span><i class="fa fa-book" aria-hidden="true"></i></span>
-				</div>
-			</div>
-		</a>
+<!--		<a href="respon.php">-->
+<!--			<div class="col-md-12 menu">-->
+<!--				<div class="col-md-10">-->
+<!--					<span>Input Respon</span>-->
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+<!--					<span><i class="fa fa-book" aria-hidden="true"></i></span>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</a>-->
 
 		<a href="analisis.php">
 			<div class="col-md-12 menu ">
@@ -183,85 +180,120 @@
 				  </div>
 			</nav>
 	<div id="main">
-		<div class="no-padd col-md-12" id="homeTop">
+		<div class="no-padd col-md-12" id="homeTop" ng-app="moduleTambahTest">
 			<div class="col-md-12 soal">
-				<div class="" ng-app="">
-					<form ng-controller="" name="">
-						<div class="col-md-12" id="">
-							<div class="col-md-12 titleGenerate">
-								<span>Nama Test</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="form-group">
-									<input ng-model="" type="text" name="namatest" placeholder="masukan nama test" class="form-control" ng-change="" required></input>
-								</div>
-                                <span ng-hide="!isNamaNotValid" style="color: red"><!-- {{message}} --></span>
-							</div>
-							<br />
-							<div class="col-md-12 titleGenerate">
-								<span>Jenis Test</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<input type="radio" name="jenistest" value="adiftip"> Adaftip &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- 								 <input type="radio" name="jenistest" value="classic"> Classic<br>
-							</div>
-                                <span ng-hide="!isNamaNotValid" style="color: red"><!-- {{message}} --></span>
-							<br />
-							<div class="col-md-12 titleGenerate">
-								<span>Komposisi Soal</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="input-group">
-								  <span class="input-group-addon" id="sizing-addon2">Pilihan Ganda </span>
-								  <input type="number" name="pilihanganda" required="" class="form-control" aria-describedby="sizing-addon2">
-								</div>
-								<div class="input-group">
-								  <span class="input-group-addon" id="sizing-addon2">Uraian &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-								  <input type="number" name="uraian" required="" class="form-control" aria-describedby="sizing-addon2">
-								</div>
-							</div>
-                                <span ng-hide="!isNamaNotValid" style="color: red"><!-- {{message}} --></span>
-							<br />
-							<div class="col-md-12 titleGenerate">
-								<span>Skor per-item</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="form-group">
-									<input ng-model="" type="number" name="skor" class="form-control" ng-change="" required></input>
-								</div>
-                                <span ng-hide="!isNamaNotValid" style="color: red"><!-- {{message}} --></span>
-							</div>
-							<br />
-							<div class="col-md-12 titleGenerate">
-								<span>Jumlah Soal</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="form-group">
-									<input ng-model="" type="number" name="jumlahsoal" class="form-control" ng-change="" required></input>
-								</div>
-                                <span ng-hide="!isNamaNotValid" style="color: red"><!-- {{message}} --></span>
-							</div>
-							<br />
-						</div>
+                <form ng-controller="addTest">
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="col-md-12 titleGenerate">
+                                <span>Nama Test</span>
+                            </div>
+                            <div class="col-md-12 contentGenerate">
+                                <div class="form-group">
+                                    <input ng-model="namaTest" type="text" name="namatest" placeholder="masukan nama test" class="form-control" ng-change="" required></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Sumber Bank Soal</span>
+                                </div>
+                                <div class="col-md-12 contentGenerate">
+                                    <div class="input-group">
+                                        <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()">
+                                            <option value="">Select banksoal</option>
+                                            <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Jenis Test</span>
+                                </div>
+                                <div class="col-md-12 contentGenerate">
+                                    <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaftip &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Classic<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-lg-6">
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Komposisi Soal</span>
+                                </div>
+                                <div class="col-md-12 contentGenerate">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Pilihan Ganda </span>
+                                        <input type="number" name="pilihanganda" required="" class="form-control" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2">Uraian &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <input type="number" name="uraian" required="" class="form-control" aria-describedby="sizing-addon2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Waktu Test</span>
+                                </div>
+                                <div class="col-md-12 contentGenerate">
+                                    <div class="form-group">
+                                        <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-						<div class="col-md-12" id="paramGenerate">
-							<div class="col-md-12 tombol">
-									<div class="input-group">
-										<span class="input-group-btn">
-                                            <input ng-disabled="formAddMapel.$invalid" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Input Soal" name="input_soal" ng-click="pushMapel()">Tambah Mata Pelajaran</input>
-										</span>
-									</div>
-							</div>
-						</div>
-					</form>
-				</div>
+                    <div class="col-md-12" id="paramGenerate">
+                        <div class="col-md-12 tombol">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushMapel()"></input>
+                                    </span>
+                                </div>
+                        </div>
+                    </div>
+                </form>
 			</div>
+            <div class="col-md-12 soal">
+                <div class="col-md-12 recent">
+                    <div class="col-md-6">
+                        <div class="col-md-12 titleGenerate">
+                            <span>Sumber Bank Soal</span>
+                        </div>
+                        <div class="col-md-12 contentGenerate">
+                            <div class="input-group">
+                                <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()">
+                                    <option value="">Select banksoal</option>
+                                    <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12 titleGenerate">
+                            <span>Sumber Bank Soal</span>
+                        </div>
+                        <div class="col-md-12 contentGenerate">
+                            <div class="input-group">
+                                <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()">
+                                    <option value="">Select banksoal</option>
+                                    <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 
 
 	</div>
 </body>
-
+<script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
 <script src="../../library/js/creartive.js"></script>
 </html>
 <?php

@@ -2,21 +2,21 @@
 /**
  * Created by PhpStorm.
  * User: kazt
- * Date: 7/31/2017
- * Time: 5:30 AM
+ * Date: 8/9/2017
+ * Time: 1:06 PM
  */
     include "../connection.php";
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
-        $idBankSoal = $data->idBankSoal;
+        $idSoal = $data->idSoal;
         $isiSoal = $data->isiSoal;
         $pil1 = $data->pil1;
         $pil2 = $data->pil2;
         $pil3 = $data->pil3;
         $pil4 = $data->pil4;
-        $babmapel = $data->babmapel;
+        $pil5 = $data->pil5;
         $kunci = $data->kunci;
-        $query = "INSERT INTO soaldetail(idBankSoal, isiSoal, pil1, pil2, pil3, pil4, idBabMapel, kunci) VALUES($idBankSoal,'$isiSoal','$pil1','$pil2','$pil3','$pil4',$babmapel,'$kunci')";
+        $query = "UPDATE soaldetail SET isiSoal = '$isiSoal', pil1 = '$pil1', pil2 = '$pil2', pil3 = '$pil3', pil4 = '$pil4', kunci = '$kunci', pil5 = '$pil5' WHERE idSoal = $idSoal;";
         if (mysqli_query($conn, $query)){
             echo true;
             exit;
@@ -25,6 +25,8 @@
             exit;
         }
         mysqli_close($conn);
-//        echo $babmapel;
+    //        echo $babmapel;
     }
+
+
 ?>

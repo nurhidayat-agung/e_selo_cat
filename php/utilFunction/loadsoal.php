@@ -35,4 +35,32 @@
                 exit;
             }
         }
+//    }else{
+//        $postData = array(
+//            'status' => false,
+//            'message' => 'wrong input'
+//        );
+//        echo json_encode($postData);
+//        exit;
+//    }
+//    $output = array();
+//    $query = "SELECT * FROM `soaldetail` WHERE idBankSoal = 4";
+//    $result = mysqli_query($conn, $query);
+//    while($row = mysqli_fetch_assoc($result))
+//    {
+//        $output[] = $row;
+//    }
+//    if (count($output) > 0){
+//        $postData = array(
+//            'status' => true,
+//            'data' => $output
+//        );
+//        echo json_encode($postData);
+//    }else{
+//        $postData = array(
+//            'status' => false,
+//            'message' => 'data tidak ditemukan'
+//        );
+//        echo json_encode($postData);
+//    }
 ?>
