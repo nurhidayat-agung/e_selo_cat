@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+if($_SESSION['job'] == 'admin'){
+?>
     <!DOCTYPE html>
     <html>
     <head>
@@ -55,13 +58,13 @@
         <div class="col-md-12 profil">
             <div class="cen">
                 <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-                <span id="nama"><h4 style="margin-bottom: 0px;"></h4></span><br />
+                <span id="nama"><?php echo $_SESSION['login_username']; ?></span><br />
                 <span id="level">Admin</span>
             </div>
         </div>
 
         <a href="index.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Home</span>
                 </div>
@@ -212,4 +215,8 @@
 
     <script src="../../library/js/creartive.js"></script>
     </html>
-/
+    <?php
+}
+else{
+    header("location:index.php");
+}

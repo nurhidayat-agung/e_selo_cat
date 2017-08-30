@@ -48,14 +48,16 @@
  });
  app.controller("cLogin",function($scope,$http,$window){
      $scope.login = function(){
+         console.log("nrp_nip : "+ $scope.nrp_nip);
+         console.log("lPassword : "+ $scope.lPassword);
          $http.post(
-         "php/index/login.php",
-         {'username':$scope.lUsername, 'password':$scope.lPassword}
+         "../php/index/login.php",
+         {'nip_nrp':$scope.nrp_nip, 'password':$scope.lPassword}
          ).then(function successCallback(response) {
-             if(response.data === "siswa"){
-                 $window.location = 'view/siswa/index.php';
+             if(response.data === "admin"){
+                 $window.location = '../view/admin/index.php';
              }else if(response.data === "guru"){
-                 $window.location = 'view/guru/index.php';
+                 $window.location = '../view/guru/index.php';
              }else{
                  alert("username and password salah");
              }
@@ -65,15 +67,3 @@
      };
 
  });
-
-
-// success(function(data){
-//     console.log(data);
-//     if(data.indexOf("siswa") > -1){
-//         $window.location = 'masagung/siswa/index.php';
-//     }else if(data.indexOf("guru") > -1){
-//         $window.location = 'masagung/admin/index.php';
-//     }else{
-//         alert("username and password salah");
-//     }
-// });

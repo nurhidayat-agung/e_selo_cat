@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <title>Login CAT</title>
   
-  <link rel="stylesheet" href="library/css/reset.min.css">
-  <link rel="stylesheet" href="library/node_modules/bootstrap/dist/css/bootstrap.min.css" />   
+  <link rel="stylesheet" href="../library/css/reset.min.css">
+  <link rel="stylesheet" href="../library/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
   <!-- font --> 
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
-  <link rel='stylesheet prefetch' href='assets/fonts/font-montserrat.css'>
-  <link rel='stylesheet prefetch' href='library/fonts/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='../assets/fonts/font-montserrat.css'>
+  <link rel='stylesheet prefetch' href='../library/fonts/font-awesome.min.css'>
     <!-- font -->
 
-  <link rel="stylesheet" href="style/styleIndex.css">
-  <script src="library/node_modules/angular/angular.min.js"></script>
-  <script src="controller/teacher/indexController.js"></script>
+  <link rel="stylesheet" href="../style/styleIndex.css">
+  <script src="../library/node_modules/angular/angular.min.js"></script>
+  <script src="../controller/teacher/indexController.js"></script>
   <style type="text/css">
    
   footer {
@@ -38,14 +38,14 @@
         <b><strong>Electronics System Examination Object </strong></b>  
     </div>
     <p class="navbar-text navbar-right" style="padding-right: 40px;">
-      <img src="assets/lemdikpol.png" height="100px" width="70px">
+      <img src="../assets/lemdikpol.png" height="100px" width="70px">
     </p>
   </div>
 </nav>
 <div class="container" style="max-width: 450px;">
 <div class="form" ng-app="myapp" style="max-width: none;">
-  <h1 style="color: #4d79ff;;">Admin Login</h1>
-  <div class="thumbnail" style="padding: 20px 30px"><img src="assets/sekpol.png"/></div>
+  <h1 style="color: #4d79ff;;">Admin / Guru Login</h1>
+  <div class="thumbnail" style="padding: 20px 30px"><img src="../assets/sekpol.png"/></div>
   <form class="register-form" ng-controller="cRegis" name="formRegis">
     <input type="text" placeholder="username" name="username" ng-model="username" ng-change="change()" required class="form-username"/>
     <span ng-style="myStyle" ng-hide="!isusername">{{message}}</span>
@@ -63,7 +63,7 @@
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>
   <form class="login-form" method="post"  ng-controller="cLogin">
-    <input type="text" placeholder="username" required="true" name="username" ng-model="lUsername"/>
+    <input type="text" placeholder="NIP/NRP" required="true" name="username" ng-model="nrp_nip"/>
     <input type="password" placeholder="password" required="true" name="password" ng-model="lPassword"/>
     <button type="submit" ng-click="login()">login</button>
   
@@ -76,7 +76,7 @@
         <p class="text-muted" align="center"><b><strong>&copy; Copyright SPN Selopamioro - 2017</strong></b> </p>
       </div>
     </footer>
-  <script src='library/js/jquery-2-1-3.min.js'></script>
-    <script src="library/js/animateIndex.js"></script>
+  <script src='../library/js/jquery-2-1-3.min.js'></script>
+    <script src="../library/js/animateIndex.js"></script>
 </body>
 </html>

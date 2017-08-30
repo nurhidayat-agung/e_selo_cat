@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['job'] == 'guru'){
+if($_SESSION['job'] == 'admin'){
     ?>
     <!DOCTYPE html>
     <html>
@@ -59,8 +59,8 @@ if($_SESSION['job'] == 'guru'){
         <div class="col-md-12 profil">
             <div class="cen">
                 <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-                <span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
-                <span id="level">Guru</span>
+                <span id="nama"><?php echo $_SESSION['login_username']; ?></span><br />
+                <span id="level">Admin</span>
             </div>
         </div>
 
@@ -85,7 +85,7 @@ if($_SESSION['job'] == 'guru'){
             </div>
         </a>
         <a href="guru.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Guru</span>
                 </div>
@@ -306,7 +306,7 @@ if($_SESSION['job'] == 'guru'){
     <?php
 }
 else{
-    header("location:../../index.php");
+    header("location:index.php");
 }
 
 ?>
