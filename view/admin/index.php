@@ -5,7 +5,7 @@ if($_SESSION['job'] == 'admin'){
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Student Dashboard</title>
+        <title>Admin Dashboard</title>
 
         <link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
 

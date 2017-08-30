@@ -28,7 +28,7 @@ if($_SESSION['job'] == 'admin'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
         <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
-        <script src="../../controller/teacher/soalController.js"></script>
+        <script src="../../controller/admin/angkatan.js"></script>
 
         <!-- FONT -->
         <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
@@ -126,10 +126,10 @@ if($_SESSION['job'] == 'admin'){
     </nav>
 
     <!-- content -->
-    <div id="main" ng-app="moduleTambahSoal" >
+    <div id="main" ng-app="moduleTambahAngkatan" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="addSoal" ng-init="loadMapel()">
-            <div class="col-md-12 soal" ng-controller="addSoal">
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="addAngkatan" ng-init="loadMapel()">
+            <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
                         <div class="col-md-4">
@@ -226,8 +226,8 @@ if($_SESSION['job'] == 'admin'){
 
 
                     <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="modal.html" id="myModal">
-                        <div class="modal fade container" ng-init="init()">
+                    <script type="text/ng-template" id="modalAngkatan.html" id="myModal">
+                        <div class="modal fade container">
                             <div class="modal-dialog">
                                 <div class="modal-content col-md-12">
                                     <div class="modal-header col-md-12">

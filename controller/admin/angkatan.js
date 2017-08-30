@@ -3,8 +3,8 @@
  */
 
 
-var app4 = angular.module("moduleTambahSoal",['angularModalService']);
-app4.controller("addSoal",function($scope,$http,$window,$compile,ModalService){
+var app4 = angular.module("moduleTambahAngkatan",['angularModalService']);
+app4.controller("addAngkatan",function($scope,$http,$window,$compile,ModalService){
 
 });
 
