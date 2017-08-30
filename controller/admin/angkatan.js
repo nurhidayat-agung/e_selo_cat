@@ -8,7 +8,7 @@ app4.controller("addAngkatan",function($scope,$http,$window,$compile,ModalServic
 
 });
 
-app4.controller('EditModalEsayController', function($scope,$http,$window,close,idSoal) {
+app4.controller('tambahAngkatan', function($scope,$http,$window,close,idSoal) {
     $scope.modalno = function (result) {
         close(result, 500);
     };

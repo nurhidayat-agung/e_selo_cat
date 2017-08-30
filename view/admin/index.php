@@ -83,6 +83,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
+        <a href="pleton.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Pleton</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-android" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
         <a href="guru.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
@@ -103,28 +113,18 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
-        
-          
-        <!-- <a href="#">
+
+
+        <a href="siswa.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
-                    <span>Analisis</span>
+                    <span>Data Siswa</span>
                 </div>
                 <div class="col-md-2">
-                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
                 </div>
             </div>
         </a>
-        <a href="#">
-            <div class="col-md-12 menu">
-                <div class="col-md-10">
-                    <span>Statistik</span>
-                </div>
-                <div class="col-md-2">
-                    <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </a> -->
 
         <a href="../../logout.php">
             <div class="col-md-12 logout">
