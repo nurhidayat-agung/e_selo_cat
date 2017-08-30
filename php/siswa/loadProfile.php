@@ -9,7 +9,7 @@
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
         $idUser = $data->idUser;
-        $query = "SELECT * FROM user WHERE idUser = $idUser";
+        $query = "SELECT * FROM user WHERE nis = $idUser";
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $postData = $row;
