@@ -20,6 +20,7 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
         console.log($scope.idUser);
     };
     $scope.loadbanksoal = function(){
+      
         $scope.selectMapel = $scope.mapel;
         console.log($scope.selectMapel);
         $http.post(

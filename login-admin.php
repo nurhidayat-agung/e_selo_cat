@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style/styleIndex.css">
   <script src="library/node_modules/angular/angular.min.js"></script>
   <script src="controller/teacher/indexController.js"></script>
-    <style type="text/css">
+  <style type="text/css">
    
   footer {
     position: absolute;
@@ -28,36 +28,6 @@
     background-color: #f5f5f5;
   }
   </style>
-<!--   <style type="text/css">
-    .container {
-        width: 1000px; 
-        height: 100%; 
-        max-width: none;
-        border:1px solid;
-        vertical-align: top;
-        position: relative;
-       
-      }
-
-      .image {
-        background-image: url('assets/background-1.jpg'); 
-        position: relative;
-      }
-
-      .overlay:before{
-        position: absolute;
-        content:" ";
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        display: block;
-        z-index:0;
-        background-color: rgba(100,19,0,0.5);
-      }
-
-    }
-  </style> -->
 </head>
 
 <body style="background-color: lightgrey;" >
@@ -74,7 +44,7 @@
 </nav>
 <div class="container" style="max-width: 450px;">
 <div class="form" ng-app="myapp" style="max-width: none;">
-  <h1 style="color: #4d79ff;;">Students Login</h1>
+  <h1 style="color: #4d79ff;;">Admin Login</h1>
   <div class="thumbnail" style="padding: 20px 30px"><img src="assets/sekpol.png"/></div>
   <form class="register-form" ng-controller="cRegis" name="formRegis">
     <input type="text" placeholder="username" name="username" ng-model="username" ng-change="change()" required class="form-username"/>
@@ -96,12 +66,12 @@
     <input type="text" placeholder="username" required="true" name="username" ng-model="lUsername"/>
     <input type="password" placeholder="password" required="true" name="password" ng-model="lPassword"/>
     <button type="submit" ng-click="login()">login</button>
-    <p class="message">Not registered? <a href="#">Create an account</a></p>
+  
   </form>
 </div>
 
 </div>
-<footer>
+    <footer>
       <div class="container" >
         <p class="text-muted" align="center"><b><strong>&copy; Copyright SPN Selopamioro - 2017</strong></b> </p>
       </div>

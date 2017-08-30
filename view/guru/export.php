@@ -1,7 +1,7 @@
 <?php
 
   // memanggil class PHPExcel
-  require_once __DIR__.'../library/PHPExcel-1.8/Classes/PHPExcel.php';
+  require_once '../../library/PHPExcel-1.8/Classes/PHPExcel.php';
 
   // object excel
   $excel = new PHPExcel();
@@ -14,8 +14,8 @@
 
   // menampilkan data users
   $request = json_decode( file_get_contents('php://input') );
-  $variable = $request->data;
-  echo print_r($variable);
+  //$variable = $request->data;
+  echo $request->idUser;
   //$sql = 'SELECT * FROM users';
   //$rs = mysql_query($sql) or die ($sql);
 

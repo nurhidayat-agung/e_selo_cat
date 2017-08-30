@@ -32,7 +32,16 @@
 	<script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../library/node_modules/angular/angular.min.js"></script>
     <script src="../../controller/teacher/indexGuru.js"></script>
-
+    <script>
+	var app = angular.module('myModule', ['ds.clock']);
+	app.controller("myCtrl", function($scope) {
+	    $scope.firstName = "John";
+	    $scope.lastName = "Doe";
+	});
+	</script>
+	<script src="../../library/clock/angular.min.js"></script>
+	<script src="../../library/clock/angular-clock.js"></script>
+	<link rel="stylesheet" href="../../library/clock/angular-clock.css">
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
 
@@ -239,55 +248,35 @@
 							<span style="margin-bottom: 10px; padding-bottom: 10px;">Profil : <?php echo $_SESSION['login_username']; ?>, S.Pd</span>
 							
 						</div>
-						<div class="col-md-12 recentContent" style="padding-top: 15px;">
-							<!-- <table class="table table-hover" ng-init="getLastBankSoal()">
-							    <thead>
-							      <tr>
-                                      <th>Nama Bank Soal</th>
-                                      <th>Jumlah Item Test</th>
-                                      <th>Nama Mapel</th>
-							      </tr>
-							    </thead>
-							    <tbody>
-							      <tr ng-repeat="banksoal in banksoals">
-							        <td>{{banksoal.namaBankSoal}}</td>
-							        <td>{{banksoal.jml_soal}}</td>
-							        <td>{{banksoal.namaMapel}}</td>
-							      </tr>
-							    </tbody>
-						  	</table> -->
-						  	<table class="table table-user-information">
-			                    <tbody>
-			                      <tr>
-			                        <td>Guru</td>
-			                        <td>Programming</td>
-			                      </tr>
-			                      <tr>
-			                        <td>Hire date:</td>
-			                        <td>06/23/2013</td>
-			                      </tr>
-			                      <tr>
-			                        <td>Date of Birth</td>
-			                        <td>01/24/1988</td>
-			                      </tr>
-			                   
-			                         <tr>
-			                             <tr>
-			                        <td>Gender</td>
-			                        <td>Female</td>
-			                      </tr>
-			                        <tr>
-			                        <td>Home Address</td>
-			                        <td>Kathmandu,Nepal</td>
-			                      </tr>
-			                      <tr>
-			                        <td>Email</td>
-			                        <th>: <a href="mailto:{{email}}">{{email}}</a></th>
-			                      </tr>
-			                     
-			                    </tbody>
-			                  </table>
-						</div>
+						<div class="col-md-12 recentContent" ng-init="getUserInformation()">
+	                        <table class="table ">
+	                            <thead>
+	                            <tr>
+	                                <th><label>ID User</label></th>
+	                                <th>: {{idUser}}</th>
+	                            </tr>
+	                            <tr>
+	                                <th>Username</th>
+	                                <th>: {{username}}</th>
+	                            </tr>
+	                            <tr>
+	                                <th>Password</th>
+	                                <th>: {{maskPass}}</th>
+	                            </tr>
+	                            <tr>
+	                                <th>NRP/NIP</th>
+	                                <th>: {{status}}</th>
+	                            </tr>
+	                            <tr>
+	                                <th>Pangkat</th>
+	                                <th>: brigadir</th>
+	                            </tr>
+	                            <tr>
+	                                <th>Email</th>
+	                                <th>: <a href="mailto:{{email}}">{{email}}</a></th>
+	                            </tr>
+	                        </table>
+	                    </div>
 						<div class="col-md-12 recentButton">
 							<div class="input-group">
 						     	<span class="input-group-btn">
