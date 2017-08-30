@@ -72,16 +72,16 @@
 				</div>
 			</div>
 		</a>
-		<a href="tambahmapel.php">
-			<div class="col-md-12 menu">
-				<div class="col-md-10">
-					<span>Tambah Mapel</span>
-				</div>
-				<div class="col-md-2">
-					<span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
-				</div>
-			</div>
-		</a>
+<!--		<a href="tambahmapel.php">-->
+<!--			<div class="col-md-12 menu">-->
+<!--				<div class="col-md-10">-->
+<!--					<span>Tambah Mapel</span>-->
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+<!--					<span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</a>-->
 		<!-- <a href="tambahbab.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
@@ -91,7 +91,7 @@
 					<span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
 				</div>
 			</div>
-		</a>
+		</a> -->
 		<a href="tambahbanksoal.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
@@ -101,7 +101,7 @@
 					<span><i class="fa fa-plus" aria-hidden="true"></i></span>
 				</div>
 			</div>
-		</a> -->
+		</a>
 		<a href="soal.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
@@ -122,16 +122,16 @@
                 </div>
             </div>
             </a> 
-		<a href="respon.php">
-			<div class="col-md-12 menu">
-				<div class="col-md-10">
-					<span>Input Respon</span>
-				</div>
-				<div class="col-md-2">
-					<span><i class="fa fa-book" aria-hidden="true"></i></span>
-				</div>
-			</div>
-		</a>
+<!--		<a href="respon.php">-->
+<!--			<div class="col-md-12 menu">-->
+<!--				<div class="col-md-10">-->
+<!--					<span>Input Respon</span>-->
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+<!--					<span><i class="fa fa-book" aria-hidden="true"></i></span>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</a>-->
 		<a href="analisis.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">

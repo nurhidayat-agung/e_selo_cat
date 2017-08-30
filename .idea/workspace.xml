@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="" />
+    <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/utilFunction/loadbanksoal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/utilFunction/loadsoal.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/teacher/tambahmapel.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/tambahsoal/editSoal.php" afterPath="$PROJECT_DIR$/php/tambahsoal/editSoalPilihanGanda.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/tambahsoal/pushsoal.php" afterPath="$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/soalController.js" afterPath="$PROJECT_DIR$/controller/teacher/soalController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/connection.php" afterPath="$PROJECT_DIR$/php/connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/loadsoal.php" afterPath="$PROJECT_DIR$/php/tambahsoal/loadsoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/analisis.php" afterPath="$PROJECT_DIR$/view/guru/analisis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/index.php" afterPath="$PROJECT_DIR$/view/guru/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/soal.php" afterPath="$PROJECT_DIR$/view/guru/soal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" afterPath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahmapel.php" afterPath="$PROJECT_DIR$/view/guru/tambahmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/test.php" afterPath="$PROJECT_DIR$/view/guru/test.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,12 +32,212 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="soalController.js" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="442">
+                    <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="pushSoalEsay.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="255">
+                    <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="39" />
+                    <folding>
+                      <marker date="1504056656162" expanded="true" signature="429:593" ph="INSERT INTO soaldetail... " />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="1426">
+                    <caret line="188" column="50" lean-forward="true" selection-start-line="188" selection-start-column="50" selection-end-line="188" selection-end-column="50" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="soal.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="475">
+                    <caret line="473" column="4" lean-forward="true" selection-start-line="473" selection-start-column="4" selection-end-line="473" selection-end-column="66" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/guru/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="301" column="16" lean-forward="false" selection-start-line="301" selection-start-column="16" selection-end-line="301" selection-end-column="45" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pushbanksoal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="113" lean-forward="false" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
+              <folding>
+                <marker date="1504040577336" expanded="true" signature="438:550" ph="INSERT INTO banksoal... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadbabmapel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadbabmapel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1503961581026" expanded="true" signature="201:280" ph="SELECT idBab... babMapel" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editSoalEsay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+              <folding>
+                <marker date="1504056656182" expanded="true" signature="462:594" ph="UPDATE soald... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="271" column="41" lean-forward="true" selection-start-line="271" selection-start-column="41" selection-end-line="271" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tambahtest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editSoalPilihanGanda.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalPilihanGanda.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <marker date="1504056656177" expanded="true" signature="468:624" ph="UPDATE soald... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadSoalDetail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadSoalDetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1503961581023" expanded="true" signature="262:304" ph="SELECT * FRO... soaldetail" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pushSoalPilGan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding>
+                <marker date="1504047818664" expanded="true" signature="514:701" ph="INSERT INTO soaldetail... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>EditModalController</find>
+      <find>ng-app</find>
+      <find>ng-con</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/view/guru/analisis.php" />
+        <option value="$PROJECT_DIR$/view/guru/index.php" />
+        <option value="$PROJECT_DIR$/php/connection.php" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
+        <option value="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
+        <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
+        <option value="$PROJECT_DIR$/php/utilFunction/loadsoal.php" />
+        <option value="$PROJECT_DIR$/php/utilFunction/loadbanksoal.php" />
+        <option value="$PROJECT_DIR$/php/tambahsoal/loadsoal.php" />
+        <option value="$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php" />
+        <option value="$PROJECT_DIR$/view/guru/soal.php" />
+        <option value="$PROJECT_DIR$/php/tambahsoal/editSoalPilihanGanda.php" />
+        <option value="$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php" />
+        <option value="$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php" />
+        <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
+        <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
+        <option value="$PROJECT_DIR$/view/guru/test.php" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -22,16 +245,87 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/library/node_modules" />
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="54" />
     <option name="y" value="-8" />
     <option name="width" value="1320" />
     <option name="height" value="784" />
   </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="guru" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="siswa" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\e_selo\php\utilFunction" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,6 +342,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="" />
@@ -56,42 +353,268 @@
       <option name="presentableId" value="Default" />
       <updated>1498171483280</updated>
       <workItem from="1498171484611" duration="637000" />
+      <workItem from="1504011197716" duration="25635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="637000" />
+    <option name="totallyTimeSpent" value="26272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/view/guru/tambahmapel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/analisis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="129" column="16" lean-forward="false" selection-start-line="129" selection-start-column="16" selection-end-line="138" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <marker date="1504040277610" expanded="true" signature="340:402" ph="SELECT * FRO... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1504041901847" expanded="true" signature="258:280" ph="select * fro... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/analisisController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadsoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <marker date="1503961581031" expanded="true" signature="343:389" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <marker date="1504045711355" expanded="true" signature="152:174" ph="SELECT * FRO... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/tambahbanksoal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="94" column="6" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="293" column="161" lean-forward="false" selection-start-line="293" selection-start-column="161" selection-end-line="293" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadsoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <marker date="1504047653335" expanded="true" signature="343:389" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadSoalDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503961581023" expanded="true" signature="262:304" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <marker date="1504047818664" expanded="true" signature="514:701" ph="INSERT INTO soaldetail... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadbabmapel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503961581026" expanded="true" signature="201:280" ph="SELECT idBab... babMapel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalPilihanGanda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <marker date="1504056656177" expanded="true" signature="468:624" ph="UPDATE soald... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <marker date="1504056656162" expanded="true" signature="429:593" ph="INSERT INTO soaldetail... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <marker date="1504056656182" expanded="true" signature="462:594" ph="UPDATE soald... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="188" column="50" lean-forward="true" selection-start-line="188" selection-start-column="50" selection-end-line="188" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="473" column="4" lean-forward="true" selection-start-line="473" selection-start-column="4" selection-end-line="473" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="113" lean-forward="false" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
+          <folding>
+            <marker date="1504040577336" expanded="true" signature="438:550" ph="INSERT INTO banksoal... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="301" column="16" lean-forward="false" selection-start-line="301" selection-start-column="16" selection-end-line="301" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="271" column="41" lean-forward="true" selection-start-line="271" selection-start-column="41" selection-end-line="271" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

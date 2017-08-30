@@ -35,7 +35,7 @@
 	<script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- angular -->
-	<script src="../../controller/teacher/tambahmapel.js"></script>
+	<script src="../../controller/teacher/tambahtest.js"></script>
 
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->

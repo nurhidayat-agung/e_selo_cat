@@ -124,16 +124,16 @@ if($_SESSION['job'] == 'guru'){
                 </div>
             </div>
             </a> 
-        <a href="respon.php">
-            <div class="col-md-12 menu">
-                <div class="col-md-10">
-                    <span>Input Respon</span>
-                </div>
-                <div class="col-md-2">
-                    <span><i class="fa fa-book" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </a>
+<!--        <a href="respon.php">-->
+<!--            <div class="col-md-12 menu">-->
+<!--                <div class="col-md-10">-->
+<!--                    <span>Input Respon</span>-->
+<!--                </div>-->
+<!--                <div class="col-md-2">-->
+<!--                    <span><i class="fa fa-book" aria-hidden="true"></i></span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </a>-->
         <a href="analisis.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
@@ -188,7 +188,7 @@ if($_SESSION['job'] == 'guru'){
     <!-- content -->
     <div id="main" ng-app="moduleTambahSoal" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="addSoal" ng-init="loadMapel()">
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="addSoal">
             <div class="col-md-12 soal" ng-controller="addSoal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
@@ -205,15 +205,13 @@ if($_SESSION['job'] == 'guru'){
                                 </div>
                             </div>
                         </div> -->
-                        <div class="col-md-2">
-                        </div>
                         <div class="col-md-4">
                             <div class="col-md-12 titleGenerate">
                                 <span>Bank Soal</span>
                             </div>
                             <div class="col-md-12 contentGenerate">
                                 <div class="input-group">
-                                    <select name="banksoal" ng-model="banksoal" class="form-control" ng-change="loadSoal()">
+                                    <select name="banksoal" ng-model="banksoal" class="form-control" ng-change="loadSoal()" ng-init="loadBankSoal()">
                                         <option value="">Select banksoal</option>
                                         <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
                                     </select>
@@ -224,12 +222,19 @@ if($_SESSION['job'] == 'guru'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoal(mapel,banksoal)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Soal</button>
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoalPilganda(banksoal)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Pilihan Ganda</button>
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-4">
+                            <div class="col-md-12 tombol">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahSoalEssay(banksoal)"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Essay</button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -239,7 +244,8 @@ if($_SESSION['job'] == 'guru'){
                                 <thead>
                                 <tr >
                                     <th class="col-md-1 titleGenerate" ><center>Id Soal</center></th>
-                                    <th class="col-md-7 titleGenerate" ><center>Butir Soal</center></th>
+                                    <th class="col-md-5 titleGenerate" ><center>Butir Soal</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Jenis Soal</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
@@ -247,8 +253,9 @@ if($_SESSION['job'] == 'guru'){
                                 <tbody>
                                 <tr ng-repeat="soal in soals">
                                     <th class="col-md-1 " >{{soal.idSoal}}</th>
-                                    <th class="col-md-7 " >{{soal.isiSoal}}</th>
-                                    <th class="col-md-1 btn-lg" ng-click="editTambahSoal(soal.idSoal,mapel)" >
+                                    <th class="col-md-5 " >{{soal.isiSoal}}</th>
+                                    <th class="col-md-2 " >{{soal.jenisSoal}}</th>
+                                    <th class="col-md-1 btn-lg" ng-click="editTambahSoal(soal.idSoal,soal.jenisSoal)" >
                                     <a href="#">
                                     <span class="glyphicon glyphicon-edit" ></span>
                                     </a>
@@ -314,13 +321,13 @@ if($_SESSION['job'] == 'guru'){
                                 <div class="modal-content col-md-12">
                                     <div class="modal-header col-md-12">
                                         <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title titleGenerate">Tambah/Edit Soal</h4>
+                                        <h4 class="modal-title titleGenerate">Tambah/Edit Soal Pilihan Ganda</h4>
                                     </div>
                                     <div class="modal-body col-md-12">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <span class="titleGenerate">Isi Butir Soal</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="tambahIsiSoal" placeholder="Masukan Isi Butir Soal" ng-init="fromInit()"></textarea>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="tambahIsiSoal" placeholder="Masukan Isi Butir Soal"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -334,29 +341,24 @@ if($_SESSION['job'] == 'guru'){
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group col-md-6">
-                                                <span class="titleGenerate">Pilihan 1</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan1" placeholder="pilihan 1"></textarea>
+                                                <span class="titleGenerate">Opsi A</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan1" placeholder="pilihan 1"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <span class="titleGenerate">Pilihan 2</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan2" placeholder="pilihan 2"></textarea>
+                                                <span class="titleGenerate">Opsi B</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan2" placeholder="pilihan 2"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <span class="titleGenerate">Pilihan 3</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan3" placeholder="pilihan 3"></textarea>
+                                                <span class="titleGenerate">Opsi C</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan3" placeholder="pilihan 3"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <span class="titleGenerate">Pilihan 4</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="pilihan4" placeholder="pilihan 4"></textarea>
+                                                <span class="titleGenerate">Opsi D</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan4" placeholder="pilihan 4"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <div class="input-group ">
-                                                    <span class="titleGenerate">Bab Mapel</span>
-                                                    <select class="form-control" name="bab" ng-model="bab" ng-change="pushBab()">
-                                                        <option value="">Select banksoal</option>
-                                                        <option ng-repeat="bab in babs" value="{{bab.idBabMapel}}">{{bab.namaBabMapel}}</option>
-                                                    </select>
-                                                </div>
+                                                <span class="titleGenerate">Opsi E</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan5" placeholder="pilihan 5"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <div class="input-group">
@@ -367,6 +369,7 @@ if($_SESSION['job'] == 'guru'){
                                                         <option value="b">B</option>
                                                         <option value="c">C</option>
                                                         <option value="d">D</option>
+                                                        <option value="e">E</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -387,6 +390,73 @@ if($_SESSION['job'] == 'guru'){
                             </div>
                         </div>
                     </script>
+
+                    <script type="text/ng-template" id="modalEsay.html" id="myModal">
+                        <div class="modal fade container">
+                            <div class="modal-dialog">
+                                <div class="modal-content col-md-12">
+                                    <div class="modal-header col-md-12">
+                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title titleGenerate">Tambah/Edit Soal Essay</h4>
+                                    </div>
+                                    <div class="modal-body col-md-12">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate">Isi Butir Soal</span>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="tambahIsiSoal" placeholder="Masukan Isi Butir Soal"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <span ng-style="mWarning">
+                                                    <center>
+                                                        {{mMessage}}
+                                                    </center>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Point ke 1</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan1" placeholder="Essay ke 1"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Point ke 2</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan2" placeholder="Essay ke 2"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <span class="titleGenerate">Point ke 3</span>
+                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan3" placeholder="Essay ke 3"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <span class="titleGenerate">Jumlah Essay</span>
+                                                    <select class="form-control" name="parameterBab" ng-model="jumlahEsay" >
+                                                        <option value="">pilih jumlah esay</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer col-md-12">
+                                        <div class="col-md-6">
+                                            <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                                            <button type="button" ng-click="modalyes()" class="btn btn-primary">Simpan</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </script>
+
 
 
                 </div> <!-- <div class="col-md-12 soal" ng-controller="addSoal"> -->

@@ -6,6 +6,6 @@
  * Time: 3:32
  */
 
-$conn = mysqli_connect("localhost", "root", "","nurhiday_cat") or die("koneksi gagal")
+$conn = mysqli_connect("localhost", "root", "","e_selo") or die("koneksi gagal")
 
 ?>

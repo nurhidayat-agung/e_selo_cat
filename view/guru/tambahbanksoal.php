@@ -7,11 +7,6 @@
 <head>
 	<title>Teacher Dashboard</title>
 
-    <script src="../../library/node_modules/angular/angular.min.js"></script>
-
-    //belum
-	<script src="../../controller/teacher/tambahbanksoal.js"></script>
-
     <link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
 
     <link rel="stylesheet" type="text/css" href="../../library/css/font-awesome.min.css">
@@ -36,7 +31,10 @@
 
     <script src="../../library/js/jquery-2.1.1.min.js"></script>
     <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="../../library/node_modules/angular/angular.min.js"></script>
+    <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
+    //belum
+    <script src="../../controller/teacher/tambahbanksoal.js"></script>
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
 
@@ -126,16 +124,16 @@
                 </div>
             </div>
         </a> 
-		<a href="respon.php">
-			<div class="col-md-12 menu">
-				<div class="col-md-10">
-					<span>Input Respon</span>
-				</div>
-				<div class="col-md-2">
-					<span><i class="fa fa-book" aria-hidden="true"></i></span>
-				</div>
-			</div>
-		</a>
+<!--		<a href="respon.php">-->
+<!--			<div class="col-md-12 menu">-->
+<!--				<div class="col-md-10">-->
+<!--					<span>Input Respon</span>-->
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+<!--					<span><i class="fa fa-book" aria-hidden="true"></i></span>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</a>-->
 
 		<a href="analisis.php">
 			<div class="col-md-12 menu ">
@@ -192,9 +190,9 @@
 	<div id="main">
 	<!-- Content Isi Atas -->
 		<div class="no-padd col-md-12" id="homeTop">
-			<div class="col-md-12 soal">
-				<div class="generateSoal" ng-app="moduleTambahBankSoal">
-                    <form ng-controller="addBankSoal" ng-init="initial()">
+			<div class="col-md-12 soal" ng-app="moduleTambahBankSoal">
+				<div class="generateSoal" ng-controller="addBankSoal">
+                    <form ng-init="initial()">
                         <div class="col-md-12" id="paramMapel">
                             <!-- <div class="col-md-12 titleGenerate">
                                 <span>Mata Pelajaran</span>
@@ -212,7 +210,7 @@
 							</div>
 							<div class="col-md-12 contentGenerate">
 								<div class="form-group">
-									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true" ng-disabled="!mapelValid" ng-change="cekBankSoal(namabanksoal)"></input>
+									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true" ng-change="cekBankSoal(namabanksoal)"></input>
 								</div>
 							</div>
 							<!-- <div class="col-md-12 titleGenerate">
@@ -241,6 +239,79 @@
                                 </div>
                         </div>
                     </form>
+
+                    <div class="col-md-12 soal" id="inputSoal">
+                        <div class="col-md-12 title table-responsive" id="inputSoal">
+                            <table class="table table-bordered" ng-init="getBankSoal()">
+                                <thead>
+                                <tr >
+                                    <th class="col-md-1 titleGenerate" ><center>Id BankSoal</center></th>
+                                    <th class="col-md-7 titleGenerate" ><center>Nama Bank Soal</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="banksoal in banksoals">
+                                    <th class="col-md-1 " >{{banksoal.idBankSoal}}</th>
+                                    <th class="col-md-7 " >{{banksoal.namaBankSoal}}</th>
+                                    <th class="col-md-1 btn-lg" ng-click="editTambahBankSoal(banksoal.idBankSoal)" >
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-edit" ></span>
+                                        </a>
+                                    </th>
+                                    <th class="col-md-1 btn-lg">
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-trash"   ng-click="deleteBankSoal(banksoal.idBankSoal)"></span>
+                                        </a>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="col-md-12 " ng-hide="isThereBankSoal"><center>Tidak Ada BankSoal dalam data base</center></span>
+                        </div>
+                        <div>
+                            <span class="col-md-12 " ng-hide="!isThereBankSoal"><center>{{message}}</center></span>
+                        </div>
+                        <div>
+                            {{response}}
+                        </div>
+
+                        <!-- The actual modal template, just a bit o bootstrap -->
+                        <script type="text/ng-template" id="delete.html" id="delete">
+                            <div class="modal fade container">
+                                <div class="modal-dialog">
+                                    <div class="modal-content col-md-12">
+                                        <div class="modal-header col-md-12">
+                                            <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                                        </div>
+                                        <div class="modal-body col-md-12">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus BankSoal nomor {{idBankSoal}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer col-md-12">
+                                            <div class="col-md-6">
+                                                <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                                                <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                                                <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-warning">Hapus</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+
+                    </div>
 				</div>
 			</div>
 		</div>	
