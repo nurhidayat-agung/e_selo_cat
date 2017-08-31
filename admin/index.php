@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login CAT</title>
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
   <link rel="stylesheet" href="../library/css/reset.min.css">
   <link rel="stylesheet" href="../library/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 

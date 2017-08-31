@@ -6,7 +6,7 @@ if($_SESSION['job'] == 'siswa'){
     <html>
     <head>
         <title>Student Dashboard</title>
-
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
         <link rel="stylesheet" type="text/css" href="../../library/css/coba.css">
 
         <link rel="stylesheet" type="text/css" href="../../library/css/font-awesome.min.css">
