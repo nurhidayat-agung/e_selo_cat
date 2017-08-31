@@ -29,7 +29,7 @@ if($_SESSION['job'] == 'admin'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
         <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
-        <script src="../../controller/admin/angkatan.js"></script>
+        <script src="../../controller/admin/pleton.js"></script>
 
         <!-- FONT -->
         <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
@@ -157,9 +157,9 @@ if($_SESSION['job'] == 'admin'){
     </nav>
 
     <!-- content -->
-    <div id="main" ng-app="moduleTambahAngkatan" >
+    <div id="main" ng-app="moduleTambahPleton" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="addAngkatan">
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="addPleton">
             <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
@@ -170,7 +170,7 @@ if($_SESSION['job'] == 'admin'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahAngkatan()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Angkatan </button>
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahPleton()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Pleton </button>
                                     </span>
                                 </div>
                             </div>
@@ -181,10 +181,10 @@ if($_SESSION['job'] == 'admin'){
 
                     <div class="col-md-12 soal" id="inputSoal">
                         <div class="col-md-12 title table-responsive" id="inputSoal" >
-                            <table class="table table-bordered" ng-init="loadAngkatan()">
+                            <table class="table table-bordered" ng-init="loadPleton()">
                                 <thead>
                                 <tr >
-                                    <th class="col-md-1 titleGenerate" ><center>Id Angkatan</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Id Pleton</center></th>
                                     <th class="col-md-3 titleGenerate" ><center>Nama </center></th>
                                     <th class="col-md-5 titleGenerate" ><center>Deskripsi</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
@@ -192,18 +192,18 @@ if($_SESSION['job'] == 'admin'){
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="angkatan in angkatans">
-                                    <th class="col-md-1 " >{{angkatan.idAngkatan}}</th>
-                                    <th class="col-md-3 " >{{angkatan.namaAngkatan}}</th>
-                                    <th class="col-md-5 " >{{angkatan.deskripsiAngkatan}}</th>
+                                <tr ng-repeat="pleton in pletons">
+                                    <th class="col-md-1 " >{{pleton.idPleton}}</th>
+                                    <th class="col-md-3 " >{{pleton.namaPleton}}</th>
+                                    <th class="col-md-5 " >{{pleton.keterangan}}</th>
                                     <th class="col-md-1">
                                         <a href="#" class="col-md-12">
-                                            <span class="glyphicon glyphicon-edit col-md-12" ng-click="editAngkatan(angkatan)"></span>
+                                            <span class="glyphicon glyphicon-edit col-md-12" ng-click="editPleton(pleton)"></span>
                                         </a>
                                     </th>
                                     <th class="col-md-1">
                                         <a href="#" class="col-md-12">
-                                            <span class="glyphicon glyphicon-trash col-md-12" ng-click="deleteAngkatan(angkatan)"></span>
+                                            <span class="glyphicon glyphicon-trash col-md-12" ng-click="deletePleton(pleton)"></span>
                                         </a>
                                     </th>
                                 </tr>
@@ -234,7 +234,7 @@ if($_SESSION['job'] == 'admin'){
                                     <div class="modal-body col-md-12">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus Angkatan {{angkatan.namaAngkatan}}</span>
+                                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus pleton {{pleton.namaPleton}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -256,25 +256,25 @@ if($_SESSION['job'] == 'admin'){
 
 
                     <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="modalAngkatan.html" id="myModal">
+                    <script type="text/ng-template" id="modalAddEdit.html" id="myModal">
                         <div class="modal fade container">
                             <div class="modal-dialog">
                                 <div class="modal-content col-md-12">
                                     <div class="modal-header col-md-12">
                                         <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title titleGenerate">Tambah/Edit Angkatan </h4>
+                                        <h4 class="modal-title titleGenerate">Tambah/Edit Pleton </h4>
                                     </div>
                                     <div class="modal-body col-md-12">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <span class="titleGenerate">Nama : </span>
-                                                <input type="text" class="form-control" placeholder="masukkan nama angkatan" ng-model="namaAngkatan">
+                                                <input type="text" class="form-control" placeholder="masukkan nama pleton" ng-model="namaPleton">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <span class="titleGenerate">Deskripsi</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model="deskripsiAngkatan" placeholder="Deskripsi angkatan" ></textarea>
+                                                <textarea class="form-control textArea" style="height: 100px;" ng-model="keterangan" placeholder="Deskripsi pleton" ></textarea>
                                             </div>
                                         </div>
 
