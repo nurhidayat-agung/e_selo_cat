@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if($_SESSION['job'] == 'admin'){
@@ -159,7 +160,7 @@ if($_SESSION['job'] == 'admin'){
     <!-- content -->
     <div id="main" ng-app="moduleTambahGuru" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="addGuru" ng-init="#">
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="addGuru">
             <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
@@ -170,7 +171,7 @@ if($_SESSION['job'] == 'admin'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="show()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Guru </button>
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahGuru()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Guru </button>
                                     </span>
                                 </div>
                             </div>
@@ -180,11 +181,11 @@ if($_SESSION['job'] == 'admin'){
                     </div>
 
                     <div class="col-md-12 soal" id="inputSoal">
-                        <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="displayData()">
+                        <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="loadGuru()">
                             <table class="table table-bordered" >
                                 <thead>
                                 <tr >
-                                    <th class="col-md-1 titleGenerate" ><center>NIK</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>nip</center></th>
                                     <th class="col-md-2 titleGenerate" ><center>Nama </center></th>
                                     <th class="col-md-2 titleGenerate" ><center>Job</center></th>
                                     <th class="co2-md-2 titleGenerate" ><center>Email</center></th>
@@ -194,13 +195,13 @@ if($_SESSION['job'] == 'admin'){
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="soal in soals">
-                                    <th class="col-md-1 " >{{soal.NIK}}</th>
-                                    <th class="col-md-2 " >{{soal.Nama}}</th>
-                                    <th class="col-md-2 " >{{soal.Job}}</th>
-                                    <th class="col-md-2 " >{{soal.Email}}</th>
-                                    <th class="col-md-1 " >{{soal.Password}}</th>
-                                    <th class="col-md-1 btn-lg" ng-click="editTambahSoal(soal.idSoal,mapel)" >
+                                <tr ng-repeat="guru in gurus">
+                                    <th class="col-md-1 " >{{guru.nip_nrp}}</th>
+                                    <th class="col-md-2 " >{{guru.username}}</th>
+                                    <th class="col-md-2 " >{{guru.password}}</th>
+                                    <th class="col-md-2 " >{{guru.job}}</th>
+                                    <th class="col-md-1 " >{{guru.email}}</th>
+                                    <th class="col-md-1 btn-lg" ng-click="editGuru(guru)" >
 
                                     <a href="#">
                                     <span class="glyphicon glyphicon-edit" ></span>
@@ -208,7 +209,7 @@ if($_SESSION['job'] == 'admin'){
                                     </th> 
                                     <th class="col-md-1 btn-lg">
                                     <a href="#">
-                                    <span class="glyphicon glyphicon-trash"   ng-click="deleteSoal(soal.idSoal)"></span>
+                                    <span class="glyphicon glyphicon-trash"   ng-click="deleteGuru(guru)"></span>
                                     </a>
                                     </th>
                                 </tr>
@@ -260,46 +261,53 @@ if($_SESSION['job'] == 'admin'){
                     </script>
 
 
-                    <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="modal.html" id="myModal">
-                        <div class="modal fade container" ng-init="init()">
+                     <!-- The actual modal template, just a bit o bootstrap -->
+                    <script type="text/ng-template" id="modalGuru.html" id="myModal">
+                        <div class="modal fade container" >
                             <div class="modal-dialog">
                                 <div class="modal-content col-md-12">
                                     <div class="modal-header col-md-12">
-                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         <h4 class="modal-title titleGenerate">Tambah/Edit Guru </h4>
                                     </div>
                                     <div class="modal-body col-md-12">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <span class="titleGenerate">NIK : </span>
-                                                <input type="text" class="form-control" placeholder="masukkan NIK">
+                                                <span class="titleGenerate">NIK/NRP : </span>
+                                                <input type="text" class="form-control" ng-model="nip_nrp" placeholder="Masukkan NIP/NRP">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <span class="titleGenerate">Nama : </span>
-                                                <input type="text" class="form-control" placeholder="masukkan nama">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Job : </span>
-                                                <input type="text" class="form-control" placeholder="masukkan pekerjaan">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Email : </span>
-                                                <input type="email" class="form-control" placeholder="example@gmail.com">
+                                                <span class="titleGenerate">Username : </span>
+                                                <input type="password" ng-model="username" class="form-control" placeholder="Masukkan Username">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <span class="titleGenerate">Password : </span>
-                                                <input type="password" class="form-control" placeholder="masukkan password">
+                                                <input type="password" ng-model="password" class="form-control" placeholder="Masukkan Password">
                                             </div>
-                                        </div>   
+                                        </div>
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate">Job : </span>
+                                                <input type="text" ng-model="job" class="form-control" placeholder="Masukkan pekerjaan">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate">Nama : </span>
+                                                <input type="text" ng-model="nama" class="form-control" placeholder="Masukkan nama">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate">Email : </span>
+                                                <input type="email" ng-model="email" class="form-control" placeholder="example@gmail.com">
+                                            </div>
+                                        </div>
+                                           
                                     </div>
                                     <div class="modal-footer col-md-12">
                                         <div class="col-md-6">
@@ -316,6 +324,7 @@ if($_SESSION['job'] == 'admin'){
                             </div>
                         </div>
                     </script>
+
 
 
                 </div> <!-- <div class="col-md-12 soal" ng-controller="addSoal"> -->
