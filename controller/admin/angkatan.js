@@ -23,7 +23,7 @@ app4.controller("addAngkatan",function($scope,$http,$window,$compile,ModalServic
         $http.get(
             "../../php/angkatan/loadAngkatan.php"
         ).then(function successCallback(response) {
-            $scope.angkatans = response.data;
+            $scope.angkatans = JSON.parse(response.data);
         },function errorCallback(response) {
             alert("load angkatan gagal");
         });

@@ -192,7 +192,7 @@ if($_SESSION['job'] == 'admin'){
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="pleton in pletons">
+                                <tr ng-repeat="pleton in pletons    ">
                                     <th class="col-md-1 " >{{pleton.idPleton}}</th>
                                     <th class="col-md-3 " >{{pleton.namaPleton}}</th>
                                     <th class="col-md-5 " >{{pleton.keterangan}}</th>

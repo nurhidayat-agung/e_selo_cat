@@ -3,7 +3,7 @@
  */
 var app4 = angular.module("moduleTambahPleton",['angularModalService']);
 app4.controller("addPleton",function($scope,$http,$window,$compile,ModalService){
-    $scope.tambahAngkatan = function () {
+    $scope.tambahPleton = function () {
         ModalService.showModal({
             templateUrl: 'modalAddEdit.html',
             controller: "tambahPleton"
@@ -13,7 +13,6 @@ app4.controller("addPleton",function($scope,$http,$window,$compile,ModalService)
                 // $scope.message = "You said " + result;
                 $scope.loadPleton();
             });
-            $scope.loadPleton();
         });
     };
 
@@ -27,43 +26,41 @@ app4.controller("addPleton",function($scope,$http,$window,$compile,ModalService)
         });
     };
 
-    $scope.editAngkatan = function (pushAngkatan) {
+    $scope.editPleton = function (pushPleton) {
         ModalService.showModal({
             templateUrl: 'modalAddEdit.html',
-            controller: "editAngkatanC",
+            controller: "editPletonC",
             inputs: {
-                angkatan: pushAngkatan
+                pleton: pushPleton
             }
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadAngkatan();
+                $scope.loadPleton();
             });
-            $scope.loadAngkatan();
         });
     };
 
-    $scope.deleteAngkatan = function (pushAngkatan) {
+    $scope.deletePleton = function (pushPleton) {
         ModalService.showModal({
             templateUrl: 'delete.html',
-            controller: "deleteAngkatanC",
+            controller: "deletePletonC",
             inputs: {
-                angkatan: pushAngkatan
+                pleton: pushPleton
             }
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadAngkatan();
+                $scope.loadPleton();
             });
-            $scope.loadAngkatan();
         });
     };
 });
 
-app4.controller('deleteAngkatanC', function($scope,$http,$window,close,angkatan) {
-    $scope.angkatan = angkatan;
+app4.controller('deletePletonC', function($scope,$http,$window,close,pleton) {
+    $scope.pleton = pleton;
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -74,8 +71,8 @@ app4.controller('deleteAngkatanC', function($scope,$http,$window,close,angkatan)
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/angkatan/deleteAngkatan.php",
-            {'idAngkatan':angkatan.idAngkatan}
+            "../../php/pleton/deletePleton.php",
+            {'idPleton':pleton.idPleton}
         ).then(function successCallback(response) {
             $scope.modalno("sukses")
         },function errorCallback(response) {
@@ -84,9 +81,9 @@ app4.controller('deleteAngkatanC', function($scope,$http,$window,close,angkatan)
     };
 });
 
-app4.controller('editAngkatanC', function($scope,$http,$window,close,angkatan) {
-    $scope.namaAngkatan = angkatan.namaAngkatan;
-    $scope.deskripsiAngkatan = angkatan.deskripsiAngkatan;
+app4.controller('editPletonC', function($scope,$http,$window,close,pleton) {
+    $scope.namaPleton = pleton.namaPleton;
+    $scope.keterangan = pleton.keterangan;
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -97,13 +94,13 @@ app4.controller('editAngkatanC', function($scope,$http,$window,close,angkatan) {
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/angkatan/editAngkatan.php",
-            {'idAngkatan':angkatan.idAngkatan,'namaAngkatan':$scope.namaAngkatan,'deskripsiAngkatan':$scope.deskripsiAngkatan}
+            "../../php/pleton/editPleton.php",
+            {'idPleton':pleton.idPleton,'namaPleton':$scope.namaPleton,'keterangan':$scope.keterangan}
         ).then(function successCallback(response) {
             if (response.data){
-                alert("edit angkatan berhasil");
+                alert("edit pleton berhasil");
             }else {
-                alert("edi angkatan gagal");
+                alert("edi pleton gagal");
             }
         },function errorCallback(response) {
             alert("koneksi bermasalah");
@@ -111,7 +108,7 @@ app4.controller('editAngkatanC', function($scope,$http,$window,close,angkatan) {
     };
 });
 
-app4.controller('tambahAngkatan', function($scope,$http,$window,close) {
+app4.controller('tambahPleton', function($scope,$http,$window,close) {
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -122,13 +119,13 @@ app4.controller('tambahAngkatan', function($scope,$http,$window,close) {
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/angkatan/pushAngkatan.php",
-            {'namaAngkatan':$scope.namaAngkatan,'deskripsiAngkatan':$scope.deskripsiAngkatan}
+            "../../php/pleton/pushPleton.php",
+            {'namaPleton':$scope.namaPleton,'keterangan':$scope.keterangan}
         ).then(function successCallback(response) {
             if (response.data){
-                alert("tambah angkatan berhasil");
+                alert("tambah pleton berhasil");
             }else {
-                alert("tambah angkatan gagal");
+                alert("tambah pleton gagal");
             }
         },function errorCallback(response) {
             alert("koneksi bermasalah");
