@@ -10,8 +10,8 @@
         $nama = $request->nama;
         $email = $request->email;
 
-        $query = "INSERT INTO user (nip_nrp,username,password,job,nama,email)
-                    VALUES ('$nip_nrp', '$username', '$password', '$job', '$nama', '$email')";
+        $query = "INSERT INTO user (nip_nrp,password,job,nama,email)
+                    VALUES ('$nip_nrp','$password','$job','$nama','$email')";
         if(mysqli_query($conn, $query))
         {
             echo true;

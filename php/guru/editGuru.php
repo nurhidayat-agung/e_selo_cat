@@ -9,7 +9,7 @@
         $job = $request->job;
         $nama = $request->nama;
         $email = $request->email;
-        $query = "UPDATE 'user' SET 'nip_nrp'='$nip_nrp','username'='$username', 'password'='$password','job'='$job','nama'='$nama','email'='$email' WHERE 'nip_nrp' = '$nip_nrp'";
+        $query = "UPDATE 'user' SET 'nip_nrp'='$nip_nrp','password'='$password','job'='$job','nama'='$nama','email'='$email' WHERE 'nip_nrp' = '$nip_nrp'";
         if(mysqli_query($conn, $query))
         {
             echo true;

@@ -87,11 +87,11 @@ app4.controller('deleteGuruC', function($scope,$http,$window,close,guru) {
 });
 
 app4.controller('editGuruC', function($scope,$http,$window,close,guru) {
-    $scope.username = guru.username;
     $scope.password = guru.password;
     $scope.job = guru.job;
     $scope.nama = guru.nama;
     $scope.email = guru.email;
+    $scope.nip_nrp = guru.nip_nrp;
 
     $scope.modalno = function (result) {
         close(result, 500);
@@ -105,7 +105,6 @@ app4.controller('editGuruC', function($scope,$http,$window,close,guru) {
         $http.post(
             "../../php/guru/editGuru.php",
             {'nip_nrp':$scope.nip_nrp,
-            'username':$scope.username,
             'password':$scope.password,
             'job':$scope.job,
             'nama':$scope.nama,
@@ -113,10 +112,10 @@ app4.controller('editGuruC', function($scope,$http,$window,close,guru) {
         }
         ).then(function successCallback(response) {
             if (response.data){
-                alert("edit angkatan berhasil");
+                alert("edit guru berhasil");
                 
             }else {
-                alert("edit angkatan gagal");;
+                alert("edit guru gagal");;
             }
         },function errorCallback(response) {
             alert("koneksi bermasalah");
@@ -137,7 +136,6 @@ app4.controller('tambahGuru', function($scope,$http,$window,close) {
         $http.post(
             "../../php/angkatan/pushGuru.php",
             {'nip_nrp':$scope.nip_nrp,
-            'username':$scope.username,
             'password':$scope.password,
             'job':$scope.job,
             'nama':$scope.nama,
