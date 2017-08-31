@@ -79,11 +79,7 @@ app4.controller('deleteAngkatanC', function($scope,$http,$window,close,angkatan)
             "../../php/angkatan/deleteAngkatan.php",
             {'idAngkatan':angkatan.idAngkatan}
         ).then(function successCallback(response) {
-            if (response.data){
-                alert("Angkatan Dihapus");
-            }else {
-                alert("Hapus gagal");
-            }
+            $scope.modalno("sukses")
         },function errorCallback(response) {
             alert("koneksi bermasalah");
         });
