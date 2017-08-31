@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
         <script src="../../library/js/jquery-2.1.1.min.js"></script>
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
