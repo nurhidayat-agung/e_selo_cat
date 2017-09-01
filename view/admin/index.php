@@ -169,7 +169,7 @@ if($_SESSION['job'] == 'admin'){
                     <div class="col-md-12" id="jumlahUser" >
                         <span>200</span>
                         <div class="divider"></div>
-                         <span  ng-click="tambahGuru()">Response</span>
+                        <span  ng-click="tambahGuru()">Change My Profile</span>
                     </div>
                 </div>
             </div>
@@ -206,23 +206,23 @@ if($_SESSION['job'] == 'admin'){
                 <div class="col-md-12 recentIn">
                     <div class="col-md-12 recentTitle" id="jumlahSoal">
                         <i class="fa fa-user-circle-o"></i>
-                        <span>Angkatan </span>
+                        <span>Data Pleton </span>
                         <div class="divider"></div>
                     </div>
-                    <div class="col-md-12 recentContent" ng-init="loadAngkatan()">
+                    <div class="col-md-12 recentContent" ng-init="loadPleton()">
                         <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th>ID Pleton</th>
-                                <th>Nama Angkatan</th>
-                                <th>Deskripsi</th>
+                                <th>Nama Pleton</th>
+                                <th>Keterangan</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="respon in respons">
-                                <td>{{respon.idpleton}}</td>
-                                <td>{{respon.namaBankSoal}}</td>
-                                <td>{{respon.nilaiResponTest}}</td>
+                            <tr ng-repeat="pleton in pletons">
+                                <td>{{pleton.idPleton}}</td>
+                                <td>{{pleton.namaPleton}}</td>
+                                <td>{{pleton.keterangan}}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -242,23 +242,23 @@ if($_SESSION['job'] == 'admin'){
                 <div class="col-md-12 recentIn">
                     <div class="col-md-12 recentTitle" id="jumlahResponse">
                         <i class="fa fa-check-circle-o"></i>
-                        <span>Data Pleton</span>
+                        <span>Data Angkatan</span>
                         <div class="divider"></div>
                     </div>
-                    <div class="col-md-12 recentContent" ng-init="getResponData()">
+                   <div class="col-md-12 recentContent" ng-init="loadAngkatan()">
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>Id Pleton</th>
+                                <th>Id Angkatan</th>
                                 <th>Nama Angkatan</th>
                                 <th>Deskripsi</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="respon in respons">
-                                <td>Id Pleton</td>
-                                <td>{{respon.namaBankSoal}}</td>
-                                <td>{{respon.nilaiResponTest}}</td>
+                            <tr ng-repeat="angkatan in angkatans">
+                                <td>{{angkatan.idAngkatan }}</td>
+                                <td>{{angkatan.namaAngkatan}}</td>
+                                <td>{{angkatan.deskripsiAngkatan}}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -298,6 +298,7 @@ if($_SESSION['job'] == 'admin'){
                                 <th class="col-md-2 " >{{guru.username}}</th>
                                 <th class="col-md-2 " >{{guru.password}}</th>
                                 <th class="col-md-2 " >{{guru.job}}</th>
+                                <th class="col-md-2 " >{{guru.nama}}</th>
                                 <th class="col-md-1 " >{{guru.email}}</th>
                             </tr>
                             </tbody>
@@ -319,7 +320,7 @@ if($_SESSION['job'] == 'admin'){
                         <span>Tim Pengajar</span>
                         <div class="divider"></div>
                     </div>
-                    <div class="col-md-12 recentContent" ng-init="getResponData()">
+                    <div class="col-md-12 recentContent" ng-init="loadTimPengajar()">
                         <table class="table table-hover">
                             <thead>
                             <tr>
@@ -329,10 +330,10 @@ if($_SESSION['job'] == 'admin'){
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="respon in respons">
-                                <td>{{respon.idpleton}}</td>
-                                <td>{{respon.namaBankSoal}}</td>
-                                <td>{{respon.nilaiResponTest}}</td>
+                            <tr ng-repeat="pengajar in timpengajars">
+                                <td>{{pengajar.idTimPengajar}}</td>
+                                <td>{{pengajar.namaTimPengajar}}</td>
+                                <td>{{pengajar.keterangan}}</td>
                             </tr>
                             </tbody>
                         </table>

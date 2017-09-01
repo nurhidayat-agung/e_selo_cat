@@ -93,7 +93,7 @@
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>
   <form class="login-form" method="post"  ng-controller="cLogin">
-    <input type="text" placeholder="username" required="true" name="username" ng-model="lUsername"/>
+    <input type="text" placeholder="NIS" required="true" name="username" ng-model="lUsername"/>
     <input type="password" placeholder="password" required="true" name="password" ng-model="lPassword"/>
     <button type="submit" ng-click="login()">login</button>
     <p class="message">Not registered? <a href="#">Create an account</a></p>
