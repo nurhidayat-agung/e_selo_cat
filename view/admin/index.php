@@ -30,7 +30,7 @@ if($_SESSION['job'] == 'admin'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
         <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
-        <script src="../../controller/admin/profile.js"></script>
+        <script src="../../controller/admin/indexAdmin.js"></script>
 
         <!-- FONT -->
         <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
@@ -67,7 +67,7 @@ if($_SESSION['job'] == 'admin'){
         </div>
 
         <a href="index.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Home</span>
                 </div>
@@ -97,7 +97,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <a href="guru.php">
-            <div class="col-md-12 menu active">
+            <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Guru</span>
                 </div>
