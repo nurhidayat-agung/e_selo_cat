@@ -18,7 +18,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
             $scope.loadGuru();
         });
     };
- $scope.loadAngkatan = function () {
+    $scope.loadAngkatan = function () {
         $http.get(
             "../../php/angkatan/loadAngkatan.php"
         ).then(function successCallback(response) {
@@ -134,16 +134,16 @@ app4.controller('editGuruC', function($scope,$http,$window,close,guru) {
         $http.post(
             "../../php/guru/editGuru.php",
             {'nip_nrp':$scope.nip_nrp,
-            'username':$scope.username,
-            'password':$scope.password,
-            'job':$scope.job,
-            'nama':$scope.nama,
-            'email':$scope.email
-        }
+                'username':$scope.username,
+                'password':$scope.password,
+                'job':$scope.job,
+                'nama':$scope.nama,
+                'email':$scope.email
+            }
         ).then(function successCallback(response) {
             if (response.data){
                 alert("edit angkatan berhasil");
-                
+
             }else {
                 alert("edit angkatan gagal");;
             }
@@ -166,11 +166,11 @@ app4.controller('tambahGuru', function($scope,$http,$window,close) {
         $http.post(
             "../../php/angkatan/pushGuru.php",
             {'nip_nrp':$scope.nip_nrp,
-            'username':$scope.username,
-            'password':$scope.password,
-            'job':$scope.job,
-            'nama':$scope.nama,
-            'email':$scope.email}
+                'username':$scope.username,
+                'password':$scope.password,
+                'job':$scope.job,
+                'nama':$scope.nama,
+                'email':$scope.email}
         ).then(function successCallback(response) {
             if (response.data){
                 alert("tambah Guru berhasil");

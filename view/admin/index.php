@@ -76,7 +76,7 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
-       <a href="angkatan.php">
+        <a href="angkatan.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Angkatan</span>
@@ -105,7 +105,7 @@ if($_SESSION['job'] == 'admin'){
                     <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
                 </div>
             </div>
-            </a> 
+        </a>
         <a href="timpengajar.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
@@ -162,46 +162,46 @@ if($_SESSION['job'] == 'admin'){
         <!-- Content Isi Atas -->
         <div class="no-padd col-md-12" id="homeTop" ng-controller="addGuru">
             <div class="col-md-4 data"">
+            <div class="dataIn">
+                <div class="col-md-12" id="dataUser">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <div class="col-md-12" id="jumlahUser" ng-click="tambahGuru()">
+                    <span>200</span>
+                    <div class="divider"></div>
+                    <span  >Change My Profile</span>
+                </div>
+            </div>
+        </div>
+        <a href="statistik.php">
+            <div class="col-md-4 data">
                 <div class="dataIn">
-                    <div class="col-md-12" id="dataUser">
-                       <i class="fa fa-user-circle-o"></i>
-                   </div>
-                    <div class="col-md-12" id="jumlahUser" >
+                    <div class="col-md-12" id="dataResponse">
+                        <i class="fa fa-check-circle-o"></i>
+                    </div>
+                    <div class="col-md-12" id="jumlahResponse">
                         <span>200</span>
                         <div class="divider"></div>
-                        <span  ng-click="tambahGuru()">Change My Profile</span>
+                        <span>Response</span>
                     </div>
                 </div>
             </div>
-             <a href="statistik.php">
-                <div class="col-md-4 data">
-                    <div class="dataIn">
-                        <div class="col-md-12" id="dataResponse">
-                            <i class="fa fa-check-circle-o"></i>
-                        </div>
-                        <div class="col-md-12" id="jumlahResponse">
-                            <span>200</span>
-                            <div class="divider"></div>
-                            <span>Response</span>
-                        </div>
+        </a>
+        <a href="test.php">
+            <div class="col-md-4 data">
+                <div class="dataIn">
+                    <div class="col-md-12" id="dataSoal">
+                        <i class="fa fa-file-text"></i>
+                    </div>
+                    <div class="col-md-12" id="jumlahSoal">
+                        <span>200</span>
+                        <div class="divider"></div>
+                        <span>Soal</span>
                     </div>
                 </div>
-            </a>
-            <a href="test.php">
-                <div class="col-md-4 data">
-                    <div class="dataIn">
-                        <div class="col-md-12" id="dataSoal">
-                            <i class="fa fa-file-text"></i>
-                        </div>
-                        <div class="col-md-12" id="jumlahSoal">
-                            <span>200</span>
-                            <div class="divider"></div>
-                            <span>Soal</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="no-padd col-md-12" id="homeBottom" style="padding-top: 30px;">
+            </div>
+        </a>
+        <div class="no-padd col-md-12" id="homeBottom" style="padding-top: 30px;">
             <div class="col-md-6 recent">
                 <div class="col-md-12 recentIn">
                     <div class="col-md-12 recentTitle" id="jumlahSoal">
@@ -245,7 +245,7 @@ if($_SESSION['job'] == 'admin'){
                         <span>Data Angkatan</span>
                         <div class="divider"></div>
                     </div>
-                   <div class="col-md-12 recentContent" ng-init="loadAngkatan()">
+                    <div class="col-md-12 recentContent" ng-init="loadAngkatan()">
                         <table class="table table-hover">
                             <thead>
                             <tr>
@@ -273,7 +273,7 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
 
-             <div class="col-md-6 recent" style="padding-top: 30px;">
+            <div class="col-md-6 recent" style="padding-top: 30px;">
                 <div class="col-md-12 recentIn">
                     <div class="col-md-12 recentTitle" id="jumlahSoal">
                         <i class="fa fa-user-circle-o"></i>
@@ -285,20 +285,16 @@ if($_SESSION['job'] == 'admin'){
                             <thead>
                             <tr>
                                 <th width="20px">NIK/NRP</th>
-                                <th>Username</th>
-                                <th>Password</th>
-                                <th>Job</th>
                                 <th>Nama</th>
+                                <th>Job</th>
                                 <th>Email</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr ng-repeat="guru in gurus">
                                 <th class="col-md-1 " >{{guru.nip_nrp}}</th>
-                                <th class="col-md-2 " >{{guru.username}}</th>
-                                <th class="col-md-2 " >{{guru.password}}</th>
-                                <th class="col-md-2 " >{{guru.job}}</th>
                                 <th class="col-md-2 " >{{guru.nama}}</th>
+                                <th class="col-md-2 " >{{guru.job}}</th>
                                 <th class="col-md-1 " >{{guru.email}}</th>
                             </tr>
                             </tbody>
@@ -347,75 +343,75 @@ if($_SESSION['job'] == 'admin'){
                     </div>
                 </div>
             </div>
-                     <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="modalGuru.html" id="myModal">
-                        <div class="modal fade container" >
-                            <div class="modal-dialog">
-                                <div class="modal-content col-md-12">
-                                    <div class="modal-header col-md-12">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title titleGenerate">Tambah/Edit Guru </h4>
+            <!-- The actual modal template, just a bit o bootstrap -->
+            <script type="text/ng-template" id="modalGuru.html" id="myModal">
+                <div class="modal fade container" >
+                    <div class="modal-dialog">
+                        <div class="modal-content col-md-12">
+                            <div class="modal-header col-md-12">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title titleGenerate">Tambah/Edit Guru </h4>
+                            </div>
+                            <div class="modal-body col-md-12">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate">NIK/NRP : </span>
+                                        <input type="text" class="form-control" ng-model="nip_nrp" placeholder="Masukkan NIP/NRP">
                                     </div>
-                                    <div class="modal-body col-md-12">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">NIK/NRP : </span>
-                                                <input type="text" class="form-control" ng-model="nip_nrp" placeholder="Masukkan NIP/NRP">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Username : </span>
-                                                <input type="password" ng-model="username" class="form-control" placeholder="Masukkan Username">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Password : </span>
-                                                <input type="password" ng-model="password" class="form-control" placeholder="Masukkan Password">
-                                            </div>
-                                        </div>
-                                          <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Job : </span>
-                                                <input type="text" ng-model="job" class="form-control" placeholder="Masukkan pekerjaan">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Nama : </span>
-                                                <input type="text" ng-model="nama" class="form-control" placeholder="Masukkan nama">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Email : </span>
-                                                <input type="email" ng-model="email" class="form-control" placeholder="example@gmail.com">
-                                            </div>
-                                        </div>
-                                           
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate">Username : </span>
+                                        <input type="password" ng-model="username" class="form-control" placeholder="Masukkan Username">
                                     </div>
-                                    <div class="modal-footer col-md-12">
-                                        <div class="col-md-6">
-<!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
-                                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
-                                        </div>
-                                        <div class="col-lg-6">
-<!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
-                                            <button type="button" ng-click="modalyes()" class="btn" style="background-color: #42a5f5; color: white;">Simpan</button>
-                                        </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate">Password : </span>
+                                        <input type="password" ng-model="password" class="form-control" placeholder="Masukkan Password">
                                     </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate">Job : </span>
+                                        <input type="text" ng-model="job" class="form-control" placeholder="Masukkan pekerjaan">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate">Nama : </span>
+                                        <input type="text" ng-model="nama" class="form-control" placeholder="Masukkan nama">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate">Email : </span>
+                                        <input type="email" ng-model="email" class="form-control" placeholder="example@gmail.com">
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="modal-footer col-md-12">
+                                <div class="col-md-6">
+                                    <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                                    <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                                    <button type="button" ng-click="modalyes()" class="btn" style="background-color: #42a5f5; color: white;">Simpan</button>
                                 </div>
                             </div>
-                        </div>
-                    </script>
-            </div>
-            <!-- Content Bawah -->
-            <div class="no-padd col-md-12" id="homeBottom">
 
-            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
         </div>
+        <!-- Content Bawah -->
+        <div class="no-padd col-md-12" id="homeBottom">
+
+        </div>
+    </div>
     </body>
 
     <script>
