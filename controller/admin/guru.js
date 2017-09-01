@@ -25,7 +25,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         ).then(function successCallback(response) {
             $scope.gurus = response.data;
         },function errorCallback(response) {
-            alert("load Gurugagal");
+            alert("load Guru gagal");
         });
     };
 
@@ -134,7 +134,7 @@ app4.controller('tambahGuru', function($scope,$http,$window,close) {
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/angkatan/pushGuru.php",
+            "../../php/guru/pushGuru.php",
             {'nip_nrp':$scope.nip_nrp,
             'password':$scope.password,
             'job':$scope.job,
@@ -143,6 +143,11 @@ app4.controller('tambahGuru', function($scope,$http,$window,close) {
         ).then(function successCallback(response) {
             if (response.data){
                 alert("tambah Guru berhasil");
+                $scope.nip_nrp = null;
+                $scope.password = null;
+                $scope.job = null;
+                $scope.nama = null;
+                $scope.email = null;
             }else {
                 alert("tambah Guru gagal");
             }

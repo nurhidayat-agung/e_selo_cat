@@ -67,7 +67,7 @@ if($_SESSION['job'] == 'admin'){
         </div>
 
         <a href="index.php">
-            <div class="col-md-12 menu active">
+            <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Home</span>
                 </div>
@@ -97,7 +97,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <a href="guru.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Guru</span>
                 </div>
@@ -266,7 +266,7 @@ if($_SESSION['job'] == 'admin'){
                             <div class="modal-dialog">
                                 <div class="modal-content col-md-12">
                                     <div class="modal-header col-md-12">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         <h4 class="modal-title titleGenerate">Tambah/Edit Guru </h4>
                                     </div>
                                     <div class="modal-body col-md-12">
