@@ -18,6 +18,16 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
             $scope.loadGuru();
         });
     };
+ $scope.loadAngkatan = function () {
+        $http.get(
+            "../../php/angkatan/loadAngkatan.php"
+        ).then(function successCallback(response) {
+            $scope.angkatans = response.data;
+        },function errorCallback(response) {
+            alert("load angkatan gagal");
+        });
+    };
+
 
     $scope.loadGuru = function () {
         $http.get(
@@ -25,10 +35,29 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         ).then(function successCallback(response) {
             $scope.gurus = response.data;
         },function errorCallback(response) {
-            alert("load Gurugagal");
+            alert("load Guru gagal");
         });
     };
 
+    $scope.loadTimPengajar = function () {
+        $http.get(
+            "../../php/timpengajar/loadTimPengajar.php"
+        ).then(function successCallback(response) {
+            $scope.timpengajars = response.data;
+        },function errorCallback(response) {
+            alert("load Tim Pengajar gagal");
+        });
+    };
+
+    $scope.loadPleton = function () {
+        $http.get(
+            "../../php/pleton/loadPleton.php"
+        ).then(function successCallback(response) {
+            $scope.pletons = response.data;
+        },function errorCallback(response) {
+            alert("load Pleton gagal");
+        });
+    };
     $scope.editGuru = function (pushGuru) {
         ModalService.showModal({
             templateUrl: 'modalGuru.html',
