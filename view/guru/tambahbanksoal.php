@@ -194,48 +194,36 @@
 				<div class="generateSoal" ng-controller="addBankSoal">
                     <form ng-init="initial()">
                         <div class="col-md-12" id="paramMapel">
-                            <!-- <div class="col-md-12 titleGenerate">
-                                <span>Mata Pelajaran</span>
-                            </div>
-                            <div class="col-md-12 contentGenerate" ng-init="loadMapel()">
-                                <div class="input-group">
-                                    <select name="mapel" ng-model="mapel" class="form-control" ng-change="cekMapel(mapel)" required="true">
-                                        <option value="">pilih mapel</option>
-										<option ng-repeat="mapel in mapels" value="{{mapel.idMapel}}">{{mapel.namaMapel}}</option>
-                                    </select>
+
+                            <div class="col-md-6">
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Nama Mata Nama Bank Soal</span>
                                 </div>
-                            </div> -->
-							<div class="col-md-12 titleGenerate">
-								<span>Nama Mata Nama Bank Soal</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="form-group">
-									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true"></input>
-								</div>
-							</div>
-                            <div class="col-md-12 titleGenerate">
-                                <span>Pilih Tim Pengajar</span>
-                            </div>
-                            <div class="col-md-12 contentGenerate">
-                                <div class="form-group">
-                                    <input ng-model="timpengajar" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true"></input>
+                                <div class="col-md-12 contentGenerate">
+                                    <div class="form-group">
+                                        <input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true"></input>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Nama Tim Pengajar</span>
+                                </div>
+                                <div class="col-md-12 contentGenerate">
+                                    <div class="input-group">
+                                        <select name="banksoal" ng-model="timPengajar" class="form-control" ng-init="loadTimPengajar()">
+                                            <option value="">pilih tim pengajar</option>
+                                            <option ng-repeat="pengajar in pengajars" value="{{pengajar.idTimPengajar}}">{{pengajar.namaTimPengajar}}</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-							<!-- <div class="col-md-12 titleGenerate">
-								<span>Jumlah Soal</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="form-group">
-									<input ng-model="jumlahsoal" type="number" name="jumlahsoal" placeholder="jumlah soal ..." class="form-control" required="true" ng-disabled="!bankSoalValid" ng-change="cekJumlahSoal(jumlahsoal)"></input>
-								</div>
-							</div>
-							 -->
-							<div class="col-md-12 titleGenerate">
-								<span>Deskripsi Bank Soal</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<textarea class="form-control" placeholder="keteragan bank soal" required="true" name="deskripsibanksoal" ng-model="deskripsibanksoal"></textarea>
-							</div>
+                            <div class="col-md-6">
+                                <div class="col-md-12 titleGenerate">
+                                    <span>Deskripsi Bank Soal</span>
+                                </div>
+                                <div class="col-md-12 contentGenerate">
+                                    <textarea class="form-control" placeholder="keteragan bank soal" required="true" name="deskripsibanksoal" ng-model="deskripsibanksoal"></textarea>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-12" id="paramGenerate">
                                 <div class="col-md-12 tombol">
