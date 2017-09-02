@@ -166,10 +166,10 @@ if($_SESSION['job'] == 'admin'){
                 <div class="col-md-12" id="dataUser">
                     <i class="fa fa-user-circle-o"></i>
                 </div>
-                <div class="col-md-12" id="jumlahUser" ng-click="tambahGuru()">
+                <div class="col-md-12" id="jumlahUser">
                     <span>200</span>
                     <div class="divider"></div>
-                    <span  >Change My Profile</span>
+                    <button  data-toggle="modal" data-target="#exampleModal" data-nama="<?=$_SESSION["nama"];?>" data-nipnrp="<?=$_SESSION["idUser"];?>" data-password="<?=$_SESSION["password"];?>" data-email="<?=$_SESSION["email"];?>" ><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>   change my Profile</button>
                 </div>
             </div>
         </div>
@@ -182,11 +182,7 @@ if($_SESSION['job'] == 'admin'){
                     <div class="col-md-12" id="jumlahResponse">
                         <span>200</span>
                         <div class="divider"></div>
-<<<<<<< HEAD
-                       <button  data-toggle="modal" data-target="#exampleModal" data-nama="<?=$_SESSION["nama"];?>" data-nipnrp="<?=$_SESSION["idUser"];?>" data-password="<?=$_SESSION["password"];?>" data-email="<?=$_SESSION["email"];?>" ><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>   change my Profile</button>
-=======
                         <span>Response</span>
->>>>>>> a5769bb7ff8ba511e7f45e7890842ef17b8065e7
                     </div>
                 </div>
             </div>
@@ -347,7 +343,6 @@ if($_SESSION['job'] == 'admin'){
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -385,7 +380,6 @@ if($_SESSION['job'] == 'admin'){
             </div>
             <!-- Content Bawah -->
             <div class="no-padd col-md-12" id="homeBottom">
-=======
             <!-- The actual modal template, just a bit o bootstrap -->
             <script type="text/ng-template" id="modalGuru.html" id="myModal">
                 <div class="modal fade container" >
@@ -452,14 +446,8 @@ if($_SESSION['job'] == 'admin'){
         </div>
         <!-- Content Bawah -->
         <div class="no-padd col-md-12" id="homeBottom">
->>>>>>> a5769bb7ff8ba511e7f45e7890842ef17b8065e7
-
         </div>
-<<<<<<< HEAD
-        
-=======
     </div>
->>>>>>> a5769bb7ff8ba511e7f45e7890842ef17b8065e7
     </body>
     
     <script>

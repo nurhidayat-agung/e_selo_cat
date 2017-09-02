@@ -19,9 +19,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         });
     };
 
-
     $scope.loadAngkatan = function () {
-
         $http.get(
             "../../php/angkatan/loadAngkatan.php"
         ).then(function successCallback(response) {
