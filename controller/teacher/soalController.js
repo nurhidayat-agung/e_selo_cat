@@ -27,8 +27,9 @@ app4.controller("addSoal",function($scope,$http,$window,$compile,ModalService){
     $scope.loadBankSoal = function(){
         $scope.selectMapel = $scope.mapel;
         console.log($scope.selectMapel);
-        $http.get(
-            "../../php/utilFunction/loadbanksoal.php"
+        $http.post(
+            "../../php/tambahbanksoal/loadBankSoal.php",
+            {'nip_nrp':$scope.idUser}
         ).then(function successCallback(response) {
             $scope.banksoals = response.data;
         }, function errorCallback(response) {

@@ -182,7 +182,6 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
                 // $scope.message = "You said " + result;;
                 $scope.getBankSoal();
             });
-            $scope.getBankSoal();
         });
     };
 });
@@ -195,8 +194,8 @@ app.controller('DeleteController', function($scope,$http,$window,close,banksoal)
             {'idBankSoal':banksoal.idBankSoal}
         ).then(function successCallback(response) {
             if (response.data){
-                alert("delete berhasil");
                 close("berhasil");
+                alert("delete berhasil");
             }else {
                 alert("delete gagal");
             }
