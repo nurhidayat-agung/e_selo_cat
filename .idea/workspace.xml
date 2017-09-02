@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" afterPath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
-    </list>
+    <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +51,8 @@
       <file leaf-file-name="tambahbanksoal.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="220" column="64" lean-forward="false" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+            <state relative-caret-position="853">
+              <caret line="304" column="46" lean-forward="false" selection-start-line="304" selection-start-column="40" selection-end-line="304" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -293,12 +285,12 @@
       <workItem from="1504219114301" duration="1035000" />
       <workItem from="1504252132715" duration="2520000" />
       <workItem from="1504261395882" duration="4072000" />
-      <workItem from="1504271980341" duration="30952000" />
+      <workItem from="1504271980341" duration="31616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88730000" />
+    <option name="totallyTimeSpent" value="89394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -777,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="220" column="64" lean-forward="false" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+        <state relative-caret-position="853">
+          <caret line="304" column="46" lean-forward="false" selection-start-line="304" selection-start-column="40" selection-end-line="304" selection-end-column="46" />
           <folding />
         </state>
       </provider>
