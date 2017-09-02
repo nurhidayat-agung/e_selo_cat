@@ -26,7 +26,7 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
     $scope.editBankSoal = function () {
         if($scope.selectBankSoal > 0){
             $http.post(
-                "../../php/tambahbanksoal/isKetua.php",
+                "../../php/tambahbanksoal/editBankSoal.php",
                 {'idBankSoal':$scope.selectBankSoal,'idTimPengajar':$scope.timPengajar,'namaBankSoal':$scope.namabanksoal,'deskripsiBankSoal':$scope.deskripsibanksoal}
             ).then(function successCallback(response) {
                 if (response.data){
