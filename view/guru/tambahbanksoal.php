@@ -223,13 +223,29 @@
                                 <div class="col-md-12 contentGenerate">
                                     <textarea class="form-control" placeholder="keteragan bank soal" required="true" name="deskripsibanksoal" ng-model="deskripsibanksoal"></textarea>
                                 </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-6 tombol">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="editBankSoal()" ng-hide="!isEditBankSoal">Edit Bank Soal</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 tombol">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="batalEditBankSoal()" ng-hide="!isEditBankSoal">Batal</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12" id="paramGenerate">
                                 <div class="col-md-12 tombol">
                                         <div class="input-group">
                                             <span class="input-group-btn">
-                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!isKetua">Tambah Bank Soal</button>
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!isKetua" ng-hide="isEditBankSoal">Tambah Bank Soal</button>
                                             </span>
                                         </div>
                                 </div>
@@ -242,7 +258,9 @@
                                 <thead>
                                 <tr >
                                     <th class="col-md-1 titleGenerate" ><center>Id BankSoal</center></th>
-                                    <th class="col-md-7 titleGenerate" ><center>Nama Bank Soal</center></th>
+                                    <th class="col-md-3 titleGenerate" ><center>Nama Bank Soal</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Tim Pengajar</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Posisi</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
@@ -250,16 +268,22 @@
                                 <tbody>
                                 <tr ng-repeat="banksoal in banksoals">
                                     <th class="col-md-1 " >{{banksoal.idBankSoal}}</th>
-                                    <th class="col-md-7 " >{{banksoal.namaBankSoal}}</th>
-                                    <th class="col-md-1 btn-lg" ng-click="editTambahBankSoal(banksoal.idBankSoal)" >
-                                        <a href="#">
-                                            <span class="glyphicon glyphicon-edit" ></span>
-                                        </a>
+                                    <th class="col-md-3 " >{{banksoal.namaBankSoal}}</th>
+                                    <th class="col-md-2 " >{{banksoal.namaTimPengajar}}</th>
+                                    <th class="col-md-2 " >{{banksoal.posisi}}</th>
+                                    <th class="col-md-1 btn-lg">
+                                        <div class="col-md-12">
+                                            <a href="#" ng-click="editTambahBankSoal(banksoal)" class="col-md-12">
+                                                <span class="glyphicon glyphicon-edit col-md-12" ></span>
+                                            </a>
+                                        </div>
                                     </th>
                                     <th class="col-md-1 btn-lg">
-                                        <a href="#">
-                                            <span class="glyphicon glyphicon-trash"   ng-click="deleteBankSoal(banksoal.idBankSoal)"></span>
-                                        </a>
+                                        <div class="col-md-12">
+                                            <a href="#" ng-click="deleteBankSoal(banksoal)" class="col-md-12">
+                                                <span class="glyphicon glyphicon-trash col-md-12"></span>
+                                            </a>
+                                        </div>
                                     </th>
                                 </tr>
                                 </tbody>
@@ -282,12 +306,12 @@
                                     <div class="modal-content col-md-12">
                                         <div class="modal-header col-md-12">
                                             <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                                            <h4 class="modal-title titleGenerate">Hapus Bank Soal</h4>
                                         </div>
                                         <div class="modal-body col-md-12">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus BankSoal nomor {{idBankSoal}}</span>
+                                                    <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus BankSoal {{banksoal.namaBankSoal}}</span>
                                                 </div>
                                             </div>
                                         </div>

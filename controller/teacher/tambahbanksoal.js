@@ -20,6 +20,49 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
     $scope.idUser = serverVariable;
     $scope.isThereBankSoal = false;
     $scope.isKetua = false;
+    $scope.isEditBankSoal = false;
+    $scope.selectBankSoal = 0;
+
+    $scope.editBankSoal = function () {
+        if($scope.selectBankSoal > 0){
+            $http.post(
+                "../../php/tambahbanksoal/editBankSoal.php",
+                {'idBankSoal':$scope.selectBankSoal,'idTimPengajar':$scope.timPengajar,'namaBankSoal':$scope.namabanksoal,'deskripsiBankSoal':$scope.deskripsibanksoal}
+            ).then(function successCallback(response) {
+                if (response.data){
+                    $scope.isEditBankSoal = false;
+                    $scope.selectBankSoal = 0;
+                    $scope.namabanksoal = "";
+                    $scope.timPengajar = "";
+                    $scope.deskripsibanksoal = "";
+                    alert("bank soal berhasil di edit");
+                    $scope.getBankSoal();
+                }else {
+                    alert("edit gagal");
+                }
+            },function errorCallback(response) {
+                alert("koneksi bermasalah");
+            });
+        }else {
+            alert("pilih bank soal terlebih dahulu");
+        }
+    };
+
+    $scope.batalEditBankSoal = function () {
+        $scope.isEditBankSoal = false;
+        $scope.selectBankSoal = 0;
+        $scope.namabanksoal = "";
+        $scope.timPengajar = "";
+        $scope.deskripsibanksoal = "";
+    };
+
+    $scope.editTambahBankSoal = function (pushBankSoal) {
+        $scope.namabanksoal = pushBankSoal.namaBankSoal;
+        $scope.timPengajar = pushBankSoal.idTimPengajar;
+        $scope.deskripsibanksoal = pushBankSoal.deskripsiBankSoal;
+        $scope.isEditBankSoal = true;
+        $scope.selectBankSoal = pushBankSoal.idBankSoal;
+    };
 
     $scope.initial = function () {
         $scope.loadKetua();
@@ -126,26 +169,38 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
         });
     };
 
-    $scope.deleteBankSoal = function (idBankSoal) {
+    $scope.deleteBankSoal = function (pushBankSoal) {
         ModalService.showModal({
             templateUrl: 'delete.html',
             controller: "DeleteController",
             inputs: {
-                idBankSoal: idBankSoal
+                banksoal: pushBankSoal
             }
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
-                // $scope.message = "You said " + result;
+                // $scope.message = "You said " + result;;
                 $scope.getBankSoal();
             });
         });
     };
 });
 
-app.controller('DeleteController', function($scope,$http,$window,close,idBankSoal) {
-    $scope.idBankSoal = idBankSoal;
+app.controller('DeleteController', function($scope,$http,$window,close,banksoal) {
+    $scope.banksoal = banksoal;
     $scope.modalyes = function () {
-
+        $http.post(
+            "../../php/tambahbanksoal/deleteBankSoal.php",
+            {'idBankSoal':banksoal.idBankSoal}
+        ).then(function successCallback(response) {
+            if (response.data){
+                close("berhasil");
+                alert("delete berhasil");
+            }else {
+                alert("delete gagal");
+            }
+        },function errorCallback(response) {
+            alert("koneksi gagal");
+        });
     };
 });

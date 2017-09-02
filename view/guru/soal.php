@@ -328,7 +328,7 @@ if($_SESSION['job'] == 'guru'){
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <span class="titleGenerate">Isi Butir Soal</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model ="tambahIsiSoal" placeholder="Masukan Isi Butir Soal"></textarea>
+                                                <textarea class="form-control textArea" style="height: 90px;" ng-model ="tambahIsiSoal" placeholder="Masukan Isi Butir Soal"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -343,23 +343,23 @@ if($_SESSION['job'] == 'guru'){
                                         <div class="col-md-12">
                                             <div class="form-group col-md-6">
                                                 <span class="titleGenerate">Opsi A</span>
-                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan1" placeholder="pilihan 1"></textarea>
+                                                <textarea class="form-control textArea" style="height: 60px;" ng-model="pilihan1" placeholder="pilihan 1"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <span class="titleGenerate">Opsi B</span>
-                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan2" placeholder="pilihan 2"></textarea>
+                                                <textarea class="form-control textArea" style="height: 60px;" ng-model="pilihan2" placeholder="pilihan 2"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <span class="titleGenerate">Opsi C</span>
-                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan3" placeholder="pilihan 3"></textarea>
+                                                <textarea class="form-control textArea" style="height: 60px;" ng-model="pilihan3" placeholder="pilihan 3"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <span class="titleGenerate">Opsi D</span>
-                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan4" placeholder="pilihan 4"></textarea>
+                                                <textarea class="form-control textArea" style="height: 60px;" ng-model="pilihan4" placeholder="pilihan 4"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <span class="titleGenerate">Opsi E</span>
-                                                <textarea class="form-control textArea" style="height: 75px;" ng-model="pilihan5" placeholder="pilihan 5"></textarea>
+                                                <textarea class="form-control textArea" style="height: 60px;" ng-model="pilihan5" placeholder="pilihan 5"></textarea>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <div class="input-group">
