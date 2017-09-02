@@ -19,36 +19,62 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
     $scope.namaMapel = [];
     $scope.idUser = serverVariable;
     $scope.isThereBankSoal = false;
+    $scope.isKetua = false;
 
     $scope.initial = function () {
-        $scope.mapelValid = false;
-        $scope.bankSoalValid = false;
-        $scope.jumlahSoalValid = false;
-        $scope.dataValid = false;
-        $scope.namabanksoal = null;
-        $scope.jumlahsoal = null;
-        $scope.deskripsibanksoal = null;
-        console.log("initial");
+        $scope.loadKetua();
     };
 
-
-    $scope.cekBankSoal = function (namabanksoal) {
+    $scope.loadKetua =  function () {
         $http.post(
-            "../../php/tambahbanksoal/isbanksoal.php",
-            {'namabanksoal': namabanksoal}
+            "../../php/tambahbanksoal/isKetua.php",
+            {"idUser":$scope.idBankSoal}
         ).then(function successCallback(response) {
-            if (response.data){
-                console.log("nama bank soal valid");
-                $scope.bankSoalValid = true;
-                $scope.dataValid = true;
+            if(response.data){
+                $scope.isKetua = true;
             }else {
-                console.log("nama bank soal tidak valid");
-                $scope.bankSoalValid = false;
-                $scope.dataValid = false;
+                $scope.isKetua = false;
             }
-        }, function errorCallback(response) {
-            alert("sambungan gagal");
+        },function errorCallback(response) {
+            alert("gagalmelihat status ketua")
         });
+    };
+
+    $scope.loadTimPengajar = function () {
+        console.log("idUser : "+ $scope.idUser);
+        $http.post(
+            "../../php/tambahbanksoal/loadTimPengajarUser.php",
+            {'nip_nrp':$scope.idUser}
+        ).then(function successCallback(response) {
+            $scope.pengajars = response.data;
+        },function errorCallback(response) {
+            alert("gagal load tim pengajar");
+        });
+    };
+
+    $scope.cekBankSoal = function () {
+        if ($scope.timPengajar > 0){
+            console.log("idTimPengajar : "+ $scope.timPengajar);
+            console.log("namaBankSoal : " + $scope.namabanksoal);
+            console.log("deskripsiBankSoal : " + $scope.deskripsibanksoal);
+            $http.post(
+                "../../php/tambahbanksoal/isbanksoal.php",
+                {'nip_nrp':$scope.idUser,'namaBankSoal': $scope.namabanksoal}
+            ).then(function successCallback(response) {
+                console.log("respon : "+response.data);
+                if (response.data){
+                    console.log("ready push bank soal");
+                    $scope.pushBankSoal();
+                }else {
+                    alert("nama bank soal sudah ada dalam data base");
+                }
+            }, function errorCallback(response) {
+                alert("sambungan gagal");
+            });
+        }else {
+            alert("pilih tim pengajar terlebih dahulu");
+        }
+
     };
 
 
@@ -58,10 +84,16 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
         console.log("jumlah soal = " + $scope.jumlahsoal);
         console.log("deskripsi bank soal = " + $scope.deskripsibanksoal);
         console.log("idUser = " + $scope.idUser);
+        $scope.cekBankSoal()
+    };
 
+    $scope.pushBankSoal = function () {
+        console.log("idTimPengajar : "+ $scope.timPengajar);
+        console.log("namaBankSoal : " + $scope.namabanksoal);
+        console.log("deskripsiBankSoal : " + $scope.deskripsibanksoal);
         $http.post(
             "../../php/tambahbanksoal/pushbanksoal.php",
-            {'idUser': $scope.idUser, 'namaBankSoal': $scope.namabanksoal,'deskripsiBankSoal': $scope.deskripsibanksoal}
+            {'idTimPengajar': $scope.timPengajar,'namaBankSoal': $scope.namabanksoal,'deskripsiBankSoal': $scope.deskripsibanksoal}
         ).then(function successCallback(response) {
             if(response.data){
                 console.log("sukses");

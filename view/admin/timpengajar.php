@@ -311,7 +311,7 @@ if($_SESSION['job'] == 'admin'){
                                     <th class="col-md-2 " >{{member.posisi}}</th>
                                     <th class="col-md-1">
                                         <a href="#" class="col-md-12">
-                                            <span class="glyphicon glyphicon-trash col-md-12" ng-click="deleteDetailPengajar(pengajar)"></span>
+                                            <span class="glyphicon glyphicon-trash col-md-12" ng-click="deleteDetailPengajar(member)"></span>
                                         </a>
                                     </th>
                                 </tr>
@@ -343,12 +343,12 @@ if($_SESSION['job'] == 'admin'){
                 <div class="modal-content col-md-12">
                     <div class="modal-header col-md-12">
                         <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                        <h4 class="modal-title titleGenerate">Hapus ?</h4>
                     </div>
                     <div class="modal-body col-md-12">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus {{timPengajar.namaTimPengajar}}</span>
+                                <span class="titleGenerate" id="deleteModalContent">{{pesanHapus}}</span>
                             </div>
                         </div>
                     </div>

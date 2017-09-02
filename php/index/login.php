@@ -21,14 +21,17 @@ if (isset($data->nip_nrp)) {
         $_SESSION['password'] = $row['password'];
         $_SESSION['job'] = $row['job'];
         echo $row['job'];
+        mysqli_close($conn);
         exit;
     }else {
         echo "gagal";
+        mysqli_close($conn);
         exit;
     }
 }else{
     echo "gagal";
+    mysqli_close($conn);
     exit;
 }
-mysqli_close($conn);
+
 ?>

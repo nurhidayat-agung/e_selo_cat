@@ -19,4 +19,17 @@ app.controller("contentController", function ($scope,$http,$window,$compile) {
             alert("sambungan gagal");
         });
     };
+    $scope.loadGuruProfile = function () {
+        $http.post(
+            "../../php/utilFunction/loadProfileUser.php",
+            {'idUser':$scope.idUser}
+        ).then(function successCallback(response) {
+            $scope.userName = response.data.nama;
+            $scope.userPass = response.data.password;
+            $scope.userEmail = response.data.email;
+        },function errorCallback(response) {
+            alert("load profile gagal");
+        });
+    };
+
 });
