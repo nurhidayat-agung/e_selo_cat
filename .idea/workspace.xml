@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/soalController.js" afterPath="$PROJECT_DIR$/controller/teacher/soalController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/soal.php" afterPath="$PROJECT_DIR$/view/guru/soal.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,22 +15,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="soal.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="soal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="364" column="73" lean-forward="true" selection-start-line="364" selection-start-column="73" selection-end-line="364" selection-end-column="73" />
+            <state relative-caret-position="-414">
+              <caret line="265" column="94" lean-forward="false" selection-start-line="265" selection-start-column="88" selection-end-line="265" selection-end-column="94" />
+              <folding>
+                <marker date="1504371460101" expanded="false" signature="9618:9658" ph="..." />
+                <marker date="1504371460101" expanded="false" signature="10333:10373" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="soalController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="921">
+              <caret line="204" column="36" lean-forward="false" selection-start-line="204" selection-start-column="36" selection-end-line="204" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="soalController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <file leaf-file-name="loadbanksoal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadbanksoal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1503961581028" expanded="true" signature="136:193" ph="SELECT * FRO... banksoal" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadsoal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadsoal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1504047653335" expanded="true" signature="343:389" ph="SELECT * FRO... soaldetail" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadBankSoalUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+              <folding>
+                <marker date="1504359017879" expanded="true" signature="259:343" ph="SELECT * FRO... banksoal" />
+                <marker date="1504359017879" expanded="true" signature="259:430" ph="SELECT * FRO... banksoal" />
+                <marker date="1504359017879" expanded="true" signature="259:509" ph="SELECT * FRO... banksoal" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,7 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>EditModalController</find>
       <find>ng-con</find>
       <find>iduse</find>
       <find>iduser</find>
@@ -60,6 +99,9 @@
       <find>cekBankSoal</find>
       <find>push</find>
       <find>selectBankSoal</find>
+      <find>EditModalController</find>
+      <find>delete</find>
+      <find>tambahban</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,8 +159,8 @@
         <option value="$PROJECT_DIR$/php/tambahbanksoal/deleteBankSoal.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
         <option value="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" />
-        <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
         <option value="$PROJECT_DIR$/view/guru/soal.php" />
+        <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
       </list>
     </option>
   </component>
@@ -190,13 +232,13 @@
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tambahbanksoal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="statistik" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="utilFunction" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tambahbanksoal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
@@ -263,12 +305,12 @@
       <workItem from="1504252132715" duration="2520000" />
       <workItem from="1504261395882" duration="4072000" />
       <workItem from="1504271980341" duration="43681000" />
-      <workItem from="1504355620647" duration="3744000" />
+      <workItem from="1504355620647" duration="5788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105203000" />
+    <option name="totallyTimeSpent" value="107247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -306,13 +348,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/angkatan/editAngkatan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/pleton/editPleton.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -534,6 +569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="250" column="77" lean-forward="false" selection-start-line="250" selection-start-column="77" selection-end-line="250" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,22 +720,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadbanksoal.php">
+    <entry file="file://$PROJECT_DIR$/php/statistik/loadNilai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1503961581028" expanded="true" signature="136:193" ph="SELECT * FRO... banksoal" />
+            <marker date="1504370436362" expanded="true" signature="54:78" ph="select * fro... respontest" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadsoal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-51">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1504047653335" expanded="true" signature="343:389" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="265" column="94" lean-forward="false" selection-start-line="265" selection-start-column="88" selection-end-line="265" selection-end-column="94" />
+          <folding>
+            <marker date="1504371460101" expanded="false" signature="9618:9658" ph="..." />
+            <marker date="1504371460101" expanded="false" signature="10333:10373" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/loadbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503961581028" expanded="true" signature="136:193" ph="SELECT * FRO... banksoal" />
           </folding>
         </state>
       </provider>
@@ -718,16 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="364" column="73" lean-forward="true" selection-start-line="364" selection-start-column="73" selection-end-line="364" selection-end-column="73" />
+        <state relative-caret-position="921">
+          <caret line="204" column="36" lean-forward="false" selection-start-line="204" selection-start-column="36" selection-end-line="204" selection-end-column="36" />
           <folding />
         </state>
       </provider>

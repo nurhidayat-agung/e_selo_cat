@@ -28,7 +28,7 @@ app4.controller("addSoal",function($scope,$http,$window,$compile,ModalService){
         $scope.selectMapel = $scope.mapel;
         console.log($scope.selectMapel);
         $http.post(
-            "../../php/tambahbanksoal/loadBankSoal.php",
+            "../../php/tambahbanksoal/loadBankSoalUser.php",
             {'nip_nrp':$scope.idUser}
         ).then(function successCallback(response) {
             $scope.banksoals = response.data;
@@ -107,6 +107,7 @@ app4.controller("addSoal",function($scope,$http,$window,$compile,ModalService){
                     // $scope.message = "You said " + result;
                     $scope.loadSoal();
                 });
+                $scope.loadSoal();
             });
         }else {
             ModalService.showModal({
@@ -201,6 +202,7 @@ app4.controller('EditModalEsayController', function($scope,$http,$window,close,i
                     "color" : "black"
                 };
                 $scope.mMessage = "Soal berhasil diubah";
+                close('sukses',500);
             }else {
                 $scope.mWarning = {
                     "color" : "red"
@@ -228,6 +230,7 @@ app4.controller('ModalEsayController',function ($scope, $http, $window, close, i
                     "color" : "black"
                 };
                 $scope.mMessage = "soal berhasil ditambahkan ke database";
+                close('sukses',500);
             }else {
                 $scope.mWarning = {
                     "color" : "red"
@@ -287,6 +290,7 @@ app4.controller('ModalController', function($scope,$http,$window,close,idBankSoa
                     "color" : "black"
                 };
                 $scope.mMessage = "soal berhasil ditambahkan ke database";
+                close('sukses', 500);
             }else {
                 $scope.mWarning = {
                     "color" : "red"
@@ -350,6 +354,7 @@ app4.controller('EditModalController', function($scope,$http,$window,close,idSoa
                     "color" : "black"
                 };
                 $scope.mMessage = "Soal berhasil diubah";
+                close('sukses',500);
             }else {
                 $scope.mWarning = {
                     "color" : "red"

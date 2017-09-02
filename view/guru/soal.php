@@ -383,7 +383,7 @@ if($_SESSION['job'] == 'guru'){
                                         </div>
                                         <div class="col-lg-6">
 <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
-                                            <button type="button" ng-click="modalyes()" class="btn btn-primary">Simpan</button>
+                                            <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-primary">Simpan</button>
                                         </div>
                                     </div>
 
