@@ -3,12 +3,12 @@ include "../connection.php";
 
 $data = json_decode(file_get_contents("php://input"));
 if ($data != null){
-    $username =  $data->username;       
+    $nis =  $data->nis;       
+    $namaSiswa = $data->namaSiswa;
     $password = $data->password;
-    $nama = $data->nama;
-    $job = $data->job;
-    $email = $data->email;
-    $query = "insert into user(username,password,nama,job,email) values('$username','$password','$nama','$job','$email')";
+    $idAngkatan = $data->idAngkatan;
+    $idPleton = $data->idPleton;
+    $query = "insert into siswa(nis, namaSiswa, password, idAngkatan, idPleton) values($nis,'$namaSiswa','$password',$idAngkatan,$idPleton)";
     if (mysqli_query($conn,$query)) {
         echo true;
         mysqli_close($conn);
