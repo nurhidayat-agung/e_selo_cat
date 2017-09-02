@@ -11,13 +11,16 @@ $data = json_decode(file_get_contents("php://input"));
 if (isset($data->nip_nrp)) {
     $nip_nrp = $data->nip_nrp;
     $password = $data->password;
-    $query = mysqli_query($conn,"SELECT nip_nrp,username,job,nama,password FROM user WHERE nip_nrp = $nip_nrp");
+    $query = mysqli_query($conn,"SELECT * FROM user WHERE nip_nrp = $nip_nrp");
     $row = mysqli_fetch_assoc($query);
     if($row['password']==$password){
         $_SESSION['idUser'] = $row['nip_nrp'];
         $_SESSION['login_username'] = $row['username'];
         $_SESSION['nama'] = $row['nama'];
         $_SESSION['job'] = $row['job'];
+        $_SESSION['password'] = $row['password'];
+        $_SESSION['email'] = $row['email'];
+
         echo $row['job'];
         exit;
     }else {

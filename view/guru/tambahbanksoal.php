@@ -60,7 +60,7 @@
 		<div class="col-md-12 profil">
 			<div class="cen">
                 <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-				<span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
+				<span id="nama"><?php echo $_SESSION['nama']; ?>, S.Pd</span><br />
 				<span id="level">Guru</span><br />
 			</div>
 		</div>
@@ -210,7 +210,7 @@
 							</div>
 							<div class="col-md-12 contentGenerate">
 								<div class="form-group">
-									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true" ng-change="cekBankSoal(namabanksoal)"></input>
+									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true"></input>
 								</div>
 							</div>
 							<!-- <div class="col-md-12 titleGenerate">
@@ -226,14 +226,14 @@
 								<span>Deskripsi Bank Soal</span>
 							</div>
 							<div class="col-md-12 contentGenerate">
-								<textarea class="form-control" placeholder="keteragan bank soal" required="true" name="deskripsibanksoal" ng-model="deskripsibanksoal" ng-disabled="!bankSoalValid"></textarea>
+								<textarea class="form-control" placeholder="keteragan bank soal" required="true" name="deskripsibanksoal" ng-model="deskripsibanksoal"></textarea>
 							</div>
                         </div>
                         <div class="col-md-12" id="paramGenerate">
                                 <div class="col-md-12 tombol">
                                         <div class="input-group">
                                             <span class="input-group-btn">
-                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!dataValid">Tambah Bank Soal</button>
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahBankSoal()" ng-disabled="!isKetua">Tambah Bank Soal</button>
                                             </span>
                                         </div>
                                 </div>

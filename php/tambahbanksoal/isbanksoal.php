@@ -6,7 +6,6 @@
  * Time: 11:13 AM
  */
     include "../connection.php";
-
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
         if (isset($data->namabanksoal)){

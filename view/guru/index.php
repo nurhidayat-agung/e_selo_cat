@@ -39,7 +39,6 @@
 	    $scope.lastName = "Doe";
 	});
 	</script>
-	<script src="../../library/clock/angular.min.js"></script>
 	<script src="../../library/clock/angular-clock.js"></script>
 	<link rel="stylesheet" href="../../library/clock/angular-clock.css">
 	<!-- Jquery Loaded -->
@@ -67,7 +66,7 @@
 		<div class="col-md-12 profil">
 			<div class="cen">
 				<img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-				<span id="nama"><?php echo $_SESSION['login_username']; ?>, S.Pd</span><br />
+				<span id="nama"><?php echo $_SESSION['nama']; ?>, S.Pd</span><br />
 				<span id="level">Guru</span>
 			</div>
 		</div>
@@ -246,35 +245,27 @@
 					<div class="col-md-12 recentIn">
 						<div class="col-md-12 recentTitle" id="jumlahSoal">
 							<i class="fa fa-user-circle-o"></i>
-							<span style="margin-bottom: 10px; padding-bottom: 10px;">Profil : <?php echo $_SESSION['login_username']; ?>, S.Pd</span>
+							<span style="margin-bottom: 10px; padding-bottom: 10px;">Profil : <?php echo $_SESSION['nama']; ?>, S.Pd</span>
 							
 						</div>
-						<div class="col-md-12 recentContent" ng-init="getUserInformation()">
+						<div class="col-md-12 recentContent" ng-init="loadGuruProfile()">
 	                        <table class="table ">
 	                            <thead>
 	                            <tr>
-	                                <th><label>ID User</label></th>
+	                                <th><label>NRP/NIK</label></th>
 	                                <th>: {{idUser}}</th>
 	                            </tr>
 	                            <tr>
-	                                <th>Username</th>
-	                                <th>: {{username}}</th>
+	                                <th>Nama</th>
+	                                <th>: {{userName}}</th>
 	                            </tr>
 	                            <tr>
 	                                <th>Password</th>
-	                                <th>: {{maskPass}}</th>
-	                            </tr>
-	                            <tr>
-	                                <th>NRP/NIP</th>
-	                                <th>: {{status}}</th>
-	                            </tr>
-	                            <tr>
-	                                <th>Pangkat</th>
-	                                <th>: brigadir</th>
+	                                <th>: {{userPass}}</th>
 	                            </tr>
 	                            <tr>
 	                                <th>Email</th>
-	                                <th>: <a href="mailto:{{email}}">{{email}}</a></th>
+	                                <th>: <a href="mailto:{{userEmail}}">{{userEmail}}</a></th>
 	                            </tr>
 	                        </table>
 	                    </div>
@@ -323,12 +314,13 @@
 						</div>
 					</div>
 				</div>
-			
 		</div>	
 		<!-- Content Bawah -->
 	</div>
 </body>
-<script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
+<script>
+    var serverVariable = <?=$_SESSION["idUser"];?>;
+</script>
 <script>
 $(document).ready(function() {
   $(".data").hover(function(){ $(this).toggleClass('.shad'); });
