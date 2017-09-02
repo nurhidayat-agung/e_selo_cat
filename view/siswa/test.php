@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if($_SESSION['job'] == 'siswa'){
+	if($_SESSION['status'] == 'siswa'){
 ?>
 <!DOCTYPE html>
 <html>
@@ -59,7 +59,7 @@
 		<div class="col-md-12 profil">
 			<div class="cen">
 				<img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-                <span id="nama"><h4 style="margin-bottom: 0px;"><?php echo $_SESSION['login_username']; ?></h4></span><br />
+                <span id="nama"><h4 style="margin-bottom: 0px;"><?php echo $_SESSION['idUser']; ?></h4></span><br />
                 <span id="level">Siswa</span>
 			</div>
 		</div>

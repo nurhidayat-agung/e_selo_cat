@@ -282,7 +282,7 @@ if($_SESSION['job'] == 'guru'){
                                 </div>
                             </div>
                         -->
-                        <p><a href="export.php"><button>Export Data ke Excel</button></a></p>
+                        <!-- <p><a href="export.php"><button>Export Data ke Excel</button></a></p> -->
                         <div id="isiLoop">
                             <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="displayData()">
                                 <table class="table table-bordered" >
