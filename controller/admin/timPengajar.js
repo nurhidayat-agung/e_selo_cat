@@ -1,114 +1,140 @@
 /**
  * Created by kazt on 7/12/2017.
  */
-var app4 = angular.module("moduleTambahPleton",['angularModalService']);
-app4.controller("addPleton",function($scope,$http,$window,$compile,ModalService){
-    $scope.tambahPleton = function () {
-        ModalService.showModal({
-            templateUrl: 'modalAddEdit.html',
-            controller: "tambahPleton"
-        }).then(function(modal) {
-            modal.element.modal();
-            modal.close.then(function(result) {
-                // $scope.message = "You said " + result;
-                $scope.loadPleton();
-            });
-        });
-    };
-
-    $scope.loadPleton = function () {
+var app4 = angular.module("moduleTimPengajar",['angularModalService']);
+app4.controller("addPengajar",function($scope,$http,$window,$compile,ModalService){
+    $scope.isDetailTim = false;
+    $scope.selectTimId = 0;
+    $scope.initial = function () {
+        $scope.spnposisi = "anggota";
         $http.get(
-            "../../php/pleton/loadPleton.php"
+            "../../php/guru/loadGuru.php"
         ).then(function successCallback(response) {
-            $scope.pletons = response.data;
+            if (response.data.length > 0){
+                $scope.users = response.data;
+            }
         },function errorCallback(response) {
-            alert("load pleton gagal");
+            alert("load guru gagal");
         });
     };
 
-    $scope.editPleton = function (pushPleton) {
+    $scope.loadDetailTimPengajar = function () {
+        if($scope.selectTimId > 0){
+            $http.post(
+                "../../php/timpengajar/loadDetailTimPengajar.php",
+                {"idTimPengajar":$scope.selectTimId}
+            ).then(function successCallback(response) {
+                console.log(JSON.stringify(response.data));
+                $scope.members = response.data;
+            },function errorCallback(response) {
+                alert("gagal Load anggota");
+            });
+        }else {
+            alert("silahkan pilih tim pengajar");
+        }
+    };
+
+    $scope.tambahTimPengajar = function () {
         ModalService.showModal({
             templateUrl: 'modalAddEdit.html',
-            controller: "editPletonC",
-            inputs: {
-                pleton: pushPleton
-            }
+            controller: "tambahTimPengajar"
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadPleton();
+                $scope.loadTimPengajar();
             });
+            $scope.loadTimPengajar();
         });
     };
 
-    $scope.deletePleton = function (pushPleton) {
+    $scope.loadTimPengajar = function () {
+        $http.get(
+            "../../php/timpengajar/loadTimPengajar.php"
+        ).then(function successCallback(response) {
+            if (response.data.length > 0){
+
+                $scope.pengajars = response.data;
+            }
+        },function errorCallback(response) {
+            alert("load Tim pengajar gagal");
+        });
+    };
+
+
+    $scope.deleteTimPengajar = function (pushTimPengajar) {
         ModalService.showModal({
             templateUrl: 'delete.html',
-            controller: "deletePletonC",
+            controller: "deleteTimPengajarC",
             inputs: {
-                pleton: pushPleton
+                timPengajar: pushTimPengajar
             }
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadPleton();
+                $scope.loadTimPengajar();
             });
+            $scope.loadTimPengajar();
         });
     };
-});
 
-app4.controller('deletePletonC', function($scope,$http,$window,close,pleton) {
-    $scope.pleton = pleton;
-    $scope.modalno = function (result) {
-        close(result, 500);
+    $scope.editAnggotaTimPengajar = function (pushTimPengajar) {
+        $scope.isDetailTim = true;
+        $scope.edtNama = pushTimPengajar.namaTimPengajar;
+        $scope.edtKeterangan = pushTimPengajar.keterangan;
+        $scope.selectTimId = pushTimPengajar.idTimPengajar;
+        $scope.loadDetailTimPengajar();
     };
 
-    $scope.close = function(result) {
-        close(result, 500); // close, but give 500ms for bootstrap to animate
+    $scope.editTimPengajar = function () {
+        if ($scope.selectTimId > 0){
+            $http.post(
+                "../../php/timpengajar/editTimPengajar.php",
+                {'idTimPengajar':$scope.selectTimId,'namaTimPengajar':$scope.edtNama,'keterangan':$scope.edtKeterangan}
+            ).then(function successCallback(response) {
+                if (response.data){
+                    alert("edit berhasil");
+                    $scope.loadTimPengajar();
+                }else {
+                    alert("gagal edit");
+                }
+            },function errorCallback(response) {
+                alert("koneksi bermasalah");
+            });
+        }else {
+            alert("silahkan pilih tim pengajar terlebih dahulu");
+        }
     };
 
-    $scope.modalyes = function () {
-        $http.post(
-            "../../php/pleton/deletePleton.php",
-            {'idPleton':pleton.idPleton}
-        ).then(function successCallback(response) {
-            $scope.modalno("sukses")
-        },function errorCallback(response) {
-            alert("koneksi bermasalah");
-        });
-    };
-});
-
-app4.controller('editPletonC', function($scope,$http,$window,close,pleton) {
-    $scope.namaPleton = pleton.namaPleton;
-    $scope.keterangan = pleton.keterangan;
-    $scope.modalno = function (result) {
-        close(result, 500);
-    };
-
-    $scope.close = function(result) {
-        close(result, 500); // close, but give 500ms for bootstrap to animate
-    };
-
-    $scope.modalyes = function () {
-        $http.post(
-            "../../php/pleton/editPleton.php",
-            {'idPleton':pleton.idPleton,'namaPleton':$scope.namaPleton,'keterangan':$scope.keterangan}
-        ).then(function successCallback(response) {
-            if (response.data){
-                alert("edit pleton berhasil");
+    $scope.tambahAnggota = function () {
+        console.log("selected id : " + $scope.selectTimId);
+        console.log("nip_nrp : " + $scope.spnnipnrp);
+        console.log("status : " + $scope.spnposisi);
+        if($scope.selectTimId > 0){
+            if($scope.spnnipnrp > 0){
+                $http.post(
+                    "../../php/timpengajar/pushDetailTimPengajar.php",
+                    {'idTimPengajar':$scope.selectTimId,'nip_nrp':$scope.spnnipnrp,'posisi':$scope.spnposisi}
+                ).then(function successCallback(response) {
+                    if(response.data){
+                        alert("tambah anggota sukses");
+                        $scope.loadDetailTimPengajar();
+                    }
+                },function errorCallback(response) {
+                    alert("koneksi bermasalah");
+                });
             }else {
-                alert("edi pleton gagal");
+                alert("silahkan pilih guru terlebih dahulu");
             }
-        },function errorCallback(response) {
-            alert("koneksi bermasalah");
-        });
+        }else{
+            alert("silahkan pilih tim pengajar terlebih dahulu");
+        }
     };
 });
 
-app4.controller('tambahPleton', function($scope,$http,$window,close) {
+app4.controller('deleteTimPengajarC', function($scope,$http,$window,close,timPengajar) {
+    $scope.timPengajar = timPengajar;
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -119,13 +145,35 @@ app4.controller('tambahPleton', function($scope,$http,$window,close) {
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/pleton/pushPleton.php",
-            {'namaPleton':$scope.namaPleton,'keterangan':$scope.keterangan}
+            "../../php/timpengajar/deleteTimPengajar.php",
+            {'idTimPengajar':timPengajar.idTimPengajar}
+        ).then(function successCallback(response) {
+            $scope.modalno("gagal")
+        },function errorCallback(response) {
+            alert("koneksi bermasalah");
+        });
+    };
+});
+
+
+app4.controller('tambahTimPengajar', function($scope,$http,$window,close) {
+    $scope.modalno = function (result) {
+        close(result, 500);
+    };
+
+    $scope.close = function(result) {
+        close(result, 500); // close, but give 500ms for bootstrap to animate
+    };
+
+    $scope.modalyes = function () {
+        $http.post(
+            "../../php/timpengajar/pushTimPengajar.php",
+            {'namaTimPengajar':$scope.namaTimPengajar,'keterangan':$scope.keterangan}
         ).then(function successCallback(response) {
             if (response.data){
-                alert("tambah pleton berhasil");
+                alert("tambah Tim Pengajar berhasil");
             }else {
-                alert("tambah pleton gagal");
+                alert("tambah Tim Pengajar gagal");
             }
         },function errorCallback(response) {
             alert("koneksi bermasalah");

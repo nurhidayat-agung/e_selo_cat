@@ -220,82 +220,6 @@ if($_SESSION['job'] == 'admin'){
                             {{response}}
                         </div>
                     </div>
-
-
-                    <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="delete.html" id="delete">
-                        <div class="modal fade container">
-                            <div class="modal-dialog">
-                                <div class="modal-content col-md-12">
-                                    <div class="modal-header col-md-12">
-                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title titleGenerate">Hapus Soal</h4>
-                                    </div>
-                                    <div class="modal-body col-md-12">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus Angkatan {{angkatan.namaAngkatan}}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer col-md-12">
-                                        <div class="col-md-6">
-                                            <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
-                                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
-                                            <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-warning">Hapus</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </script>
-
-
-                    <!-- The actual modal template, just a bit o bootstrap -->
-                    <script type="text/ng-template" id="modalAngkatan.html" id="myModal">
-                        <div class="modal fade container">
-                            <div class="modal-dialog">
-                                <div class="modal-content col-md-12">
-                                    <div class="modal-header col-md-12">
-                                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title titleGenerate">Tambah/Edit Angkatan </h4>
-                                    </div>
-                                    <div class="modal-body col-md-12">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Nama : </span>
-                                                <input type="text" class="form-control" placeholder="masukkan nama angkatan" ng-model="namaAngkatan">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <span class="titleGenerate">Deskripsi</span>
-                                                <textarea class="form-control textArea" style="height: 100px;" ng-model="deskripsiAngkatan" placeholder="Deskripsi angkatan" ></textarea>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="modal-footer col-md-12">
-                                        <div class="col-md-6">
-<!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
-                                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
-                                        </div>
-                                        <div class="col-lg-6">
-<!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
-                                            <button type="button" ng-click="modalyes()" class="btn" style="background-color: #42a5f5; color: white;">Simpan</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </script>
-
-
                 </div> <!-- <div class="col-md-12 soal" ng-controller="addSoal"> -->
             </div>
             <!-- Content Bawah -->
@@ -304,7 +228,78 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </div>
     </body>
+    <!-- The actual modal template, just a bit o bootstrap -->
+    <script type="text/ng-template" id="delete.html" id="delete">
+        <div class="modal fade container">
+            <div class="modal-dialog">
+                <div class="modal-content col-md-12">
+                    <div class="modal-header col-md-12">
+                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus Angkatan {{angkatan.namaAngkatan}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer col-md-12">
+                        <div class="col-md-6">
+                            <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                            <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-warning">Hapus</button>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+    <!-- The actual modal template, just a bit o bootstrap -->
+    <script type="text/ng-template" id="modalAngkatan.html" id="myModal">
+        <div class="modal fade container">
+            <div class="modal-dialog">
+                <div class="modal-content col-md-12">
+                    <div class="modal-header col-md-12">
+                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title titleGenerate">Tambah/Edit Angkatan </h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <span class="titleGenerate">Nama : </span>
+                                <input type="text" class="form-control" placeholder="masukkan nama angkatan" ng-model="namaAngkatan">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <span class="titleGenerate">Deskripsi</span>
+                                <textarea class="form-control textArea" style="height: 100px;" ng-model="deskripsiAngkatan" placeholder="Deskripsi angkatan" ></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer col-md-12">
+                        <div class="col-md-6">
+                            <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                            <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                            <button type="button" ng-click="modalyes()" class="btn" style="background-color: #42a5f5; color: white;">Simpan</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </script>
     <script>
 
     </script>
