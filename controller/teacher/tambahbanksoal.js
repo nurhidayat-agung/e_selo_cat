@@ -44,16 +44,12 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
     $scope.cekBankSoal = function (namabanksoal) {
         $http.post(
             "../../php/tambahbanksoal/isbanksoal.php",
-            {'namabanksoal': namabanksoal}
+            {'nip_nrp':$scope.idUser,'namabanksoal': namabanksoal}
         ).then(function successCallback(response) {
             if (response.data){
-                console.log("nama bank soal valid");
-                $scope.bankSoalValid = true;
-                $scope.dataValid = true;
+
             }else {
-                console.log("nama bank soal tidak valid");
-                $scope.bankSoalValid = false;
-                $scope.dataValid = false;
+                alert("nama bank soal sudah ada dalam data base");
             }
         }, function errorCallback(response) {
             alert("sambungan gagal");
@@ -67,23 +63,26 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
         console.log("jumlah soal = " + $scope.jumlahsoal);
         console.log("deskripsi bank soal = " + $scope.deskripsibanksoal);
         console.log("idUser = " + $scope.idUser);
+        $scope.cekBankSoal()
+    };
 
-        // $http.post(
-        //     "../../php/tambahbanksoal/pushbanksoal.php",
-        //     {'idUser': $scope.idUser, 'namaBankSoal': $scope.namabanksoal,'deskripsiBankSoal': $scope.deskripsibanksoal}
-        // ).then(function successCallback(response) {
-        //     if(response.data){
-        //         console.log("sukses");
-        //         $scope.namabanksoal = "";
-        //         $scope.deskripsibanksoal = "";
-        //         $scope.dataValid = false;
-        //     }else {
-        //         console.log("gagal");
-        //     }
-        //     $scope.getBankSoal();
-        // }, function errorCallback(response) {
-        //     alert("sambungan gagal");
-        // });
+    $scope.pushBankSoal = function () {
+        $http.post(
+            "../../php/tambahbanksoal/pushbanksoal.php",
+            {'$idTimPengajar': $scope.idUser, 'namaBankSoal': $scope.namabanksoal,'deskripsiBankSoal': $scope.deskripsibanksoal}
+        ).then(function successCallback(response) {
+            if(response.data){
+                console.log("sukses");
+                $scope.namabanksoal = "";
+                $scope.deskripsibanksoal = "";
+                $scope.dataValid = false;
+            }else {
+                console.log("gagal");
+            }
+            $scope.getBankSoal();
+        }, function errorCallback(response) {
+            alert("sambungan gagal");
+        });
     };
 
     $scope.getBankSoal = function () {

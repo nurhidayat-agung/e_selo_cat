@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logoutAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/guru/editProfile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/index/profile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/indexAdmin.js" afterPath="$PROJECT_DIR$/controller/admin/indexAdmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/pushGuru.php" afterPath="$PROJECT_DIR$/php/guru/pushGuru.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/login.php" afterPath="$PROJECT_DIR$/php/index/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/index.php" afterPath="$PROJECT_DIR$/view/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" afterPath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,42 +22,60 @@
       <file leaf-file-name="tambahbanksoal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/teacher/tambahbanksoal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="85" selection-end-column="14" />
+            <state relative-caret-position="266">
+              <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/index/login.php">
+      <file leaf-file-name="pushbanksoal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="289">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
-                <marker date="1504323514845" expanded="true" signature="312:386" ph="SELECT nip_n... user" />
+                <marker date="1504327034913" expanded="true" signature="452:578" ph="INSERT INTO banksoal... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tambahbanksoal.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="isbanksoal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="37" />
+              <folding>
+                <marker date="1504326742669" expanded="true" signature="382:461" ph="SELECT COUNT... banksoal" />
+                <marker date="1504326742669" expanded="true" signature="382:552" ph="SELECT COUNT... banksoal" />
+                <marker date="1504326742669" expanded="true" signature="382:668" ph="SELECT COUNT... banksoal" />
+                <marker date="1504326742669" expanded="true" signature="382:676" ph="SELECT COUNT... banksoal" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tambahbanksoal.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="235" column="218" lean-forward="false" selection-start-line="235" selection-start-column="218" selection-end-line="235" selection-end-column="218" />
+            <state relative-caret-position="241">
+              <caret line="220" column="64" lean-forward="false" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="isKetua.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/isKetua.php">
+      <file leaf-file-name="loadTimPengajarUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding>
-                <marker date="1504321302811" expanded="true" signature="278:370" ph="SELECT COUNT... detailtimpengajar" />
+                <marker date="1504327528825" expanded="true" signature="259:266" ph="SELECT b.idB... banksoal" />
+                <marker date="1504327528825" expanded="true" signature="259:321" ph="SELECT t.idT... timpengajar" />
+                <marker date="1504327528825" expanded="true" signature="259:408" ph="SELECT t.idT... timpengajar" />
+                <marker date="1504327528825" expanded="true" signature="259:474" ph="SELECT t.idT... timpengajar" />
               </folding>
             </state>
           </provider>
@@ -84,6 +101,8 @@
       <find>angkatan</find>
       <find>ng-app</find>
       <find>ng-a</find>
+      <find>cekBankSoal</find>
+      <find>isThereBankSoal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php" />
-        <option value="$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php" />
         <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
         <option value="$PROJECT_DIR$/view/guru/test.php" />
@@ -137,12 +154,14 @@
         <option value="$PROJECT_DIR$/php/utilFunction/loadProfileUser.php" />
         <option value="$PROJECT_DIR$/controller/teacher/indexGuru.js" />
         <option value="$PROJECT_DIR$/view/guru/index.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
         <option value="$PROJECT_DIR$/php/tambahbanksoal/isKetua.php" />
-        <option value="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
-        <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
         <option value="$PROJECT_DIR$/php/index/login.php" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
+        <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
+        <option value="$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php" />
+        <option value="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
       </list>
     </option>
   </component>
@@ -166,7 +185,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="72" />
     <option name="width" value="1036" />
     <option name="height" value="768" />
@@ -209,13 +228,13 @@
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tambahbanksoal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tambahbanksoal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="timpengajar" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
@@ -274,15 +293,15 @@
       <workItem from="1504219114301" duration="1035000" />
       <workItem from="1504252132715" duration="2520000" />
       <workItem from="1504261395882" duration="4072000" />
-      <workItem from="1504271980341" duration="27858000" />
+      <workItem from="1504271980341" duration="30952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85636000" />
+    <option name="totallyTimeSpent" value="88730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -317,28 +336,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/admin/siswa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="135" column="12" lean-forward="false" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/loadSoalFirst.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/loadProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/angkatan/isAngkatan.php" />
     <entry file="file://$PROJECT_DIR$/php/pleton.php" />
     <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
@@ -597,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/loadTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <marker date="1504272234870" expanded="true" signature="54:79" ph="select * fro... timpengajar" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/timpengajar/pushDetailTimPengajar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -675,28 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <marker date="1504321118527" expanded="true" signature="339:401" ph="SELECT * FRO... banksoal" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <marker date="1504320394852" expanded="true" signature="258:265" ph="SELECT * FRO... banksoal" />
-            <marker date="1504320394852" expanded="true" signature="258:561" ph="SELECT * FRO... banksoal" />
-            <marker date="1504320394852" expanded="true" signature="258:562" ph="SELECT b.idB... banksoal" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/guru/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -713,6 +678,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/index/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <marker date="1504323514845" expanded="true" signature="312:386" ph="SELECT nip_n... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <marker date="1504326742669" expanded="true" signature="382:461" ph="SELECT COUNT... banksoal" />
+            <marker date="1504326742669" expanded="true" signature="382:552" ph="SELECT COUNT... banksoal" />
+            <marker date="1504326742669" expanded="true" signature="382:668" ph="SELECT COUNT... banksoal" />
+            <marker date="1504326742669" expanded="true" signature="382:676" ph="SELECT COUNT... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/isKetua.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -723,29 +711,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
+    <entry file="file://$PROJECT_DIR$/php/timpengajar/loadTimPengajar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="235" column="218" lean-forward="false" selection-start-line="235" selection-start-column="218" selection-end-line="235" selection-end-column="218" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <marker date="1504272234870" expanded="true" signature="54:79" ph="select * fro... timpengajar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/loadmapel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503961581006" expanded="true" signature="145:180" ph="SELECT idMap... mapel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1504327034924" expanded="true" signature="258:265" ph="SELECT * FRO... banksoal" />
+            <marker date="1504327034924" expanded="true" signature="258:369" ph="SELECT b.idB... banksoal" />
+            <marker date="1504327034924" expanded="true" signature="258:561" ph="SELECT * FRO... banksoal" />
+            <marker date="1504327034924" expanded="true" signature="258:562" ph="SELECT b.idB... banksoal" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/tambahbanksoal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="85" selection-end-column="14" />
+        <state relative-caret-position="266">
+          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/index/login.php">
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="289">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
-            <marker date="1504323514845" expanded="true" signature="312:386" ph="SELECT nip_n... user" />
+            <marker date="1504327034913" expanded="true" signature="452:578" ph="INSERT INTO banksoal... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <marker date="1504327528825" expanded="true" signature="259:266" ph="SELECT b.idB... banksoal" />
+            <marker date="1504327528825" expanded="true" signature="259:321" ph="SELECT t.idT... timpengajar" />
+            <marker date="1504327528825" expanded="true" signature="259:408" ph="SELECT t.idT... timpengajar" />
+            <marker date="1504327528825" expanded="true" signature="259:474" ph="SELECT t.idT... timpengajar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="220" column="64" lean-forward="false" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

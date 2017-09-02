@@ -9,10 +9,10 @@
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
         if (isset($data->idUser) && isset($data->namaBankSoal)){
-            $idUser = $data->idUser;
+            $idTimPengajar = $data->idTimPengajar;
             $namaBankSoal = $data->namaBankSoal;
             $deskripsiBankSoal = $data->deskripsiBankSoal;
-            $query = "INSERT INTO banksoal(idUser,namaBankSoal,deskripsiBankSoal) VALUES($idUser,'$namaBankSoal','$deskripsiBankSoal');";
+            $query = "INSERT INTO banksoal(idTimPengajar,namaBankSoal,deskripsiBankSoal) VALUES($idTimPengajar,'$namaBankSoal','$deskripsiBankSoal');";
             if (mysqli_query($conn, $query))
             {
                 echo true;

@@ -213,6 +213,14 @@
 									<input ng-model="namabanksoal" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true"></input>
 								</div>
 							</div>
+                            <div class="col-md-12 titleGenerate">
+                                <span>Pilih Tim Pengajar</span>
+                            </div>
+                            <div class="col-md-12 contentGenerate">
+                                <div class="form-group">
+                                    <input ng-model="timpengajar" type="text" name="namabanksoal" placeholder="masukan nama bank soal" class="form-control" required="true"></input>
+                                </div>
+                            </div>
 							<!-- <div class="col-md-12 titleGenerate">
 								<span>Jumlah Soal</span>
 							</div>
