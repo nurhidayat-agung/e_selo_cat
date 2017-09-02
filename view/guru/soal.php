@@ -256,15 +256,19 @@ if($_SESSION['job'] == 'guru'){
                                     <th class="col-md-1 " >{{soal.idSoal}}</th>
                                     <th class="col-md-5 " >{{soal.isiSoal}}</th>
                                     <th class="col-md-2 " >{{soal.jenisSoal}}</th>
-                                    <th class="col-md-1 btn-lg" ng-click="editTambahSoal(soal.idSoal,soal.jenisSoal)" >
-                                    <a href="#">
-                                    <span class="glyphicon glyphicon-edit" ></span>
-                                    </a>
+                                    <th class="col-md-1 btn-lg">
+                                        <div class="col-md-12">
+                                            <a href="#" ng-click="editTambahSoal(soal.idSoal,soal.jenisSoal)" class="col-md-12">
+                                                <span class="glyphicon glyphicon-edit col-md-12"></span>
+                                            </a>
+                                        </div>
                                     </th> 
                                     <th class="col-md-1 btn-lg">
-                                    <a href="#">
-                                    <span class="glyphicon glyphicon-trash"   ng-click="deleteSoal(soal.idSoal)"></span>
-                                    </a>
+                                        <div class="col-md-12">
+                                            <a href="#" ng-click="deleteSoal(soal.idSoal)" class="col-md-12">
+                                                <span class="glyphicon glyphicon-trash col-md-12"></span>
+                                            </a>
+                                        </div>
                                     </th>
                                 </tr>
                                 </tbody>
@@ -449,7 +453,7 @@ if($_SESSION['job'] == 'guru'){
                                         </div>
                                         <div class="col-lg-6">
                                             <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
-                                            <button type="button" ng-click="modalyes()" class="btn btn-primary">Simpan</button>
+                                            <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-primary">Simpan</button>
                                         </div>
                                     </div>
 

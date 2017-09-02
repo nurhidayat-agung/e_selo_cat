@@ -57,11 +57,17 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
     };
 
     $scope.editTambahBankSoal = function (pushBankSoal) {
-        $scope.namabanksoal = pushBankSoal.namaBankSoal;
-        $scope.timPengajar = pushBankSoal.idTimPengajar;
-        $scope.deskripsibanksoal = pushBankSoal.deskripsiBankSoal;
-        $scope.isEditBankSoal = true;
-        $scope.selectBankSoal = pushBankSoal.idBankSoal;
+        console.log(pushBankSoal.posisi);
+        if (pushBankSoal.posisi === 'ketua'){
+            $scope.namabanksoal = pushBankSoal.namaBankSoal;
+            $scope.timPengajar = pushBankSoal.idTimPengajar;
+            $scope.deskripsibanksoal = pushBankSoal.deskripsiBankSoal;
+            $scope.isEditBankSoal = true;
+            $scope.selectBankSoal = pushBankSoal.idBankSoal;
+        }else {
+            alert("maaf hanya ketua yang dapat melakukan perubahan");
+        }
+
     };
 
     $scope.initial = function () {
@@ -170,19 +176,25 @@ app.controller("addBankSoal",function ($scope,$http,ModalService,$window) {
     };
 
     $scope.deleteBankSoal = function (pushBankSoal) {
-        ModalService.showModal({
-            templateUrl: 'delete.html',
-            controller: "DeleteController",
-            inputs: {
-                banksoal: pushBankSoal
-            }
-        }).then(function(modal) {
-            modal.element.modal();
-            modal.close.then(function(result) {
-                // $scope.message = "You said " + result;;
-                $scope.getBankSoal();
+        console.log(pushBankSoal.posisi);
+        if (pushBankSoal.posisi === 'ketua'){
+            ModalService.showModal({
+                templateUrl: 'delete.html',
+                controller: "DeleteController",
+                inputs: {
+                    banksoal: pushBankSoal
+                }
+            }).then(function(modal) {
+                modal.element.modal();
+                modal.close.then(function(result) {
+                    // $scope.message = "You said " + result;;
+                    $scope.getBankSoal();
+                });
             });
-        });
+        }else {
+            alert("maaf hanya ketua yang dapat melakukan perubahan");
+        }
+
     };
 });
 

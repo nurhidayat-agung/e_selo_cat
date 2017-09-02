@@ -11,7 +11,7 @@
         $nip_nrp = $data->nip_nrp;
         $query = "SELECT b.idBankSoal,b.namaBankSoal FROM banksoal AS b INNER JOIN timpengajar AS t ON "
             ."b.idTimPengajar = t.idTimPengajar INNER JOIN detailtimpengajar AS d ON "
-            ."t.idTimPengajar = d.idTimPengajar WHERE d.nip_nrp = '$nip_nrp'";
+            ."t.idTimPengajar = d.idTimPengajar WHERE d.nip_nrp = '$nip_nrp' and d.posisi like 'ketua'";
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $output[] = $row;
