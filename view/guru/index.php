@@ -150,7 +150,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="#">
+		<a href="statistik.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
 					<span>Statistik</span>
