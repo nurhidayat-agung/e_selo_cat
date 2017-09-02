@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isKetua.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/utilFunction/loadProfileUser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logoutAdmin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/guru/editProfile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/index/profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/timPengajar.js" afterPath="$PROJECT_DIR$/controller/admin/timPengajar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/indexGuru.js" afterPath="$PROJECT_DIR$/controller/teacher/indexGuru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/indexAdmin.js" afterPath="$PROJECT_DIR$/controller/admin/indexAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/pushGuru.php" afterPath="$PROJECT_DIR$/php/guru/pushGuru.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/login.php" afterPath="$PROJECT_DIR$/php/index/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/timpengajar.php" afterPath="$PROJECT_DIR$/view/admin/timpengajar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/index.php" afterPath="$PROJECT_DIR$/view/guru/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" afterPath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/index.php" afterPath="$PROJECT_DIR$/view/admin/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tambahbanksoal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tambahbanksoal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/teacher/tambahbanksoal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -34,11 +30,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/index/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <folding>
+                <marker date="1504323514845" expanded="true" signature="312:386" ph="SELECT nip_n... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tambahbanksoal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="235" column="218" lean-forward="true" selection-start-line="235" selection-start-column="218" selection-end-line="235" selection-end-column="218" />
+              <caret line="235" column="218" lean-forward="false" selection-start-line="235" selection-start-column="218" selection-end-line="235" selection-end-column="218" />
               <folding />
             </state>
           </provider>
@@ -126,7 +134,6 @@
         <option value="$PROJECT_DIR$/php/timpengajar/loadDetailTimPengajar.php" />
         <option value="$PROJECT_DIR$/view/admin/timpengajar.php" />
         <option value="$PROJECT_DIR$/controller/admin/timPengajar.js" />
-        <option value="$PROJECT_DIR$/php/index/login.php" />
         <option value="$PROJECT_DIR$/php/utilFunction/loadProfileUser.php" />
         <option value="$PROJECT_DIR$/controller/teacher/indexGuru.js" />
         <option value="$PROJECT_DIR$/view/guru/index.php" />
@@ -135,6 +142,7 @@
         <option value="$PROJECT_DIR$/php/tambahbanksoal/isKetua.php" />
         <option value="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
+        <option value="$PROJECT_DIR$/php/index/login.php" />
       </list>
     </option>
   </component>
@@ -158,7 +166,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="72" />
     <option name="width" value="1036" />
     <option name="height" value="768" />
@@ -196,6 +204,12 @@
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
@@ -260,15 +274,15 @@
       <workItem from="1504219114301" duration="1035000" />
       <workItem from="1504252132715" duration="2520000" />
       <workItem from="1504261395882" duration="4072000" />
-      <workItem from="1504271980341" duration="27006000" />
+      <workItem from="1504271980341" duration="27858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84784000" />
+    <option name="totallyTimeSpent" value="85636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -459,8 +473,8 @@
         <state relative-caret-position="408">
           <caret line="24" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <marker date="1504264888664" expanded="true" signature="324:373" ph="INSERT INTO user... " />
-            <marker date="1504264888664" expanded="true" signature="324:426" ph="INSERT INTO user... " />
+            <marker date="1504323394779" expanded="true" signature="324:373" ph="INSERT INTO user... " />
+            <marker date="1504323394779" expanded="true" signature="324:428" ph="INSERT INTO user... " />
           </folding>
         </state>
       </provider>
@@ -622,16 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/index/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <marker date="1504316436783" expanded="true" signature="312:347" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/utilFunction/loadbanksoal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -722,7 +726,7 @@
     <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="235" column="218" lean-forward="true" selection-start-line="235" selection-start-column="218" selection-end-line="235" selection-end-column="218" />
+          <caret line="235" column="218" lean-forward="false" selection-start-line="235" selection-start-column="218" selection-end-line="235" selection-end-column="218" />
           <folding />
         </state>
       </provider>
@@ -732,6 +736,16 @@
         <state relative-caret-position="225">
           <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="85" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/index/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <marker date="1504323514845" expanded="true" signature="312:386" ph="SELECT nip_n... user" />
+          </folding>
         </state>
       </provider>
     </entry>

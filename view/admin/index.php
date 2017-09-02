@@ -166,10 +166,10 @@ if($_SESSION['job'] == 'admin'){
                 <div class="col-md-12" id="dataUser">
                     <i class="fa fa-user-circle-o"></i>
                 </div>
-                <div class="col-md-12" id="jumlahUser" ng-click="tambahGuru()">
+                <div class="col-md-12" id="jumlahUser">
                     <span>200</span>
                     <div class="divider"></div>
-                    <span  >Change My Profile</span>
+                    <button  data-toggle="modal" data-target="#exampleModal" data-nama="<?=$_SESSION["nama"];?>" data-nipnrp="<?=$_SESSION["idUser"];?>" data-password="<?=$_SESSION["password"];?>" data-email="<?=$_SESSION["email"];?>" ><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>   change my Profile</button>
                 </div>
             </div>
         </div>
@@ -343,6 +343,43 @@ if($_SESSION['job'] == 'admin'){
                     </div>
                 </div>
             </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                      </div>
+                      <form action="../../php/guru/editProfile.php" method="post">
+                      <div class="modal-body">            
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">NIP/NRP:</label>
+                            <input type="text" class="form-control" id="nip_nrp" name="nip_nrp">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">Nama:</label>
+                            <input type="text" class="form-control" id="nama" name="nama">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">Email:</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="control-label">Password :</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                          </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" onclick="return confirm('Apakah anda yakin untuk edit Profile???');">SIMPAN</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>     
+            </div>
+            <!-- Content Bawah -->
+            <div class="no-padd col-md-12" id="homeBottom">
             <!-- The actual modal template, just a bit o bootstrap -->
             <script type="text/ng-template" id="modalGuru.html" id="myModal">
                 <div class="modal fade container" >
@@ -409,13 +446,27 @@ if($_SESSION['job'] == 'admin'){
         </div>
         <!-- Content Bawah -->
         <div class="no-padd col-md-12" id="homeBottom">
-
         </div>
     </div>
     </body>
-
+    
     <script>
-
+        $('#exampleModal').on('show.bs.modal', function (event) {
+          var button = $(event.relatedTarget) // Button that triggered the modal
+          var nama = button.data('nama')
+          var nip_nrp = button.data('nipnrp')
+          var email = button.data('email')
+          var password = button.data('password')
+           // Extract info from data-* attributes
+          // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+          // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+          var modal = $(this)
+          modal.find('.modal-title').text('Edit Profile : ' + nama)
+          modal.find('.modal-body #nama ').val(nama)
+          modal.find('.modal-body #nip_nrp ').val(nip_nrp)
+          modal.find('.modal-body #email ').val(email)
+          modal.find('.modal-body #password ').val(password)
+        })
     </script>
     <script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
     <script src="../../library/js/creartive.js"></script>
