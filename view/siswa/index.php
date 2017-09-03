@@ -87,6 +87,16 @@ if($_SESSION['status'] == 'siswa'){
                 </div>
             </div>
         </a>
+        <a href="response.php">
+                <div class="col-md-12 menu">
+                    <div class="col-md-10">
+                        <span>Response</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+        </a>
         <!-- <a href="#">
             <div class="col-md-12 menu">
                 <div class="col-md-10">

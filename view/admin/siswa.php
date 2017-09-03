@@ -100,7 +100,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <a href="guru.php">
-            <div class="col-md-12 menu active">
+            <div class="col-md-12 menu ">
                 <div class="col-md-10">
                     <span>Guru</span>
                 </div>
@@ -120,7 +120,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <a href="siswa.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Data Siswa</span>
                 </div>
