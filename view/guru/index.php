@@ -140,7 +140,7 @@
 <!--				</div>-->
 <!--			</div>-->
 <!--		</a>-->
-		<a href="analisis.php">
+		<!-- <a href="analisis.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
 					<span>Analisis</span>
@@ -149,7 +149,7 @@
 					<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				</div>
 			</div>
-		</a>
+		</a> -->
 		<a href="statistik.php">
 			<div class="col-md-12 menu">
 				<div class="col-md-10">
@@ -322,8 +322,7 @@
                       <form action="../../php/guru/editProfile.php" method="post">
                       <div class="modal-body">            
                           <div class="form-group">
-                            <label for="recipient-name" class="control-label">NIP/NRP:</label>
-                            <input type="text" class="form-control" id="nip_nrp" name="nip_nrp">
+                            <input type="hidden" class="form-control" id="nip_nrp" name="nip_nrp">
                           </div>
                           <div class="form-group">
                             <label for="recipient-name" class="control-label">Nama:</label>

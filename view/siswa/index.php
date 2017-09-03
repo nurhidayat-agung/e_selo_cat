@@ -1,3 +1,7 @@
+<?php 
+    include('../../php/angkatan/loadAngkatanSiswa.php');
+    include('../../php/pleton/loadPletonSiswa.php');
+?>
 <?php
 session_start();
 if($_SESSION['status'] == 'siswa'){
@@ -138,6 +142,18 @@ if($_SESSION['status'] == 'siswa'){
     <div id="main">
         <!-- Content Isi Atas -->
         <div class="no-padd col-md-12" id="homeTop">
+            <div class="col-md-4 data"">
+            <div class="dataIn">
+                <div class="col-md-12" id="dataUser">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <div class="col-md-12" id="jumlahUser">
+                    <span>200</span>
+                    <div class="divider"></div>
+                    <button  data-toggle="modal" data-target="#exampleModal"  data-nis="<?=$_SESSION["nis"];?>" data-namasiswa="<?=$_SESSION["idUser"];?>" data-password="<?=$_SESSION["password"];?>"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>   change my Profile</button>
+                </div>
+            </div>
+            </div>
             <a href="test.php">
                 <div class="col-md-4 data">
                     <div class="dataIn">
@@ -147,26 +163,12 @@ if($_SESSION['status'] == 'siswa'){
                         <div class="col-md-12" id="jumlahSoal">
                             <span>200</span>
                             <div class="divider"></div>
-                            <span>Soal</span>
+                            <span>Test</span>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="siswa.php">
-                <div class="col-md-4 data">
-                    <div class="dataIn">
-                        <div class="col-md-12" id="dataUser">
-                            <i class="fa fa-user-circle-o"></i>
-                        </div>
-                        <div class="col-md-12" id="jumlahUser">
-                            <span>200</span>
-                            <div class="divider"></div>
-                            <span>Siswa</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="statistik.php">
+            <a href="response.php">
                 <div class="col-md-4 data">
                     <div class="dataIn">
                         <div class="col-md-12" id="dataResponse">
@@ -195,28 +197,20 @@ if($_SESSION['status'] == 'siswa'){
                         <table class="table ">
                             <thead>
                             <tr>
-                                <th><label>ID User</label></th>
-                                <th>: {{idUser}}</th>
+                                <th><label>NIS</label></th>
+                                <th>: {{nis}}</th>
                             </tr>
                             <tr>
-                                <th>Username</th>
-                                <th>: {{username}}</th>
+                                <th>Nama Siswa</th>
+                                <th>: {{namaSiswa}}</th>
                             </tr>
                             <tr>
-                                <th>Password</th>
-                                <th>: {{maskPass}}</th>
+                                <th>Angkatan</th>
+                                <th>: {{namaAngkatan}}</th>
                             </tr>
                             <tr>
-                                <th>Nomor Siswa</th>
-                                <th>: {{status}}</th>
-                            </tr>
-                            <tr>
-                                <th>Pangkat</th>
-                                <th>: brigadir</th>
-                            </tr>
-                            <tr>
-                                <th>Email</th>
-                                <th>: <a href="mailto:{{email}}">{{email}}</a></th>
+                                <th>Pleton</th>
+                                <th>: {{namaPleton}}</th>
                             </tr>
                         </table>
                     </div>
@@ -241,7 +235,7 @@ if($_SESSION['status'] == 'siswa'){
                             </thead>
                             <tbody>
                             <tr ng-repeat="respon in respons">
-                                <td>{{respon.namaBankSoal}}</td>
+                                <td>{{respon.namaTest}}</td>
                                 <td>{{respon.nilaiResponTest}}</td>
                             </tr>
                             </tbody>
@@ -256,12 +250,73 @@ if($_SESSION['status'] == 'siswa'){
                     </div>
                 </div>
             </div>
-
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                      </div>
+                      <form action="../../php/siswa/editProfile.php" method="post">
+                      <div class="modal-body">            
+                          <div class="form-group">
+                            <input type="hidden" class="form-control" id="nis" name="nis">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">Nama Siswa:</label>
+                            <input type="text" class="form-control" id="namaSiswa" name="namaSiswa">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">Password :</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                          </div>
+                          <div class="form-group">
+                            <select name="idAngkatan" ng-model="idAngkatan" class="form-control" required="true">
+                                <option value="">Pilih Angkatan </option>
+                                    <?php foreach ($angkatan as $key) { ?>                                                    
+                                <option value="<?php echo $key['idAngkatan']; ?>"><?php echo $key['namaAngkatan']; ?></option>
+                                    <?php } ?>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <select name="idPleton" ng-model="idPleton" class="form-control" required="true">
+                                <option value="">Pilih Pleton </option>
+                                    <?php foreach ($pleton as $key) { ?>                                       
+                                <option value="<?php echo $key['idPleton']; ?>"><?php echo $key['namaPleton']; ?></option>
+                                                      <?php } ?>
+                            </select>
+                          </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" onclick="return confirm('Apakah anda yakin untuk edit Profile???');">SIMPAN</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div> 
         </div>
         <!-- Content Bawah -->
     </div>
     </body>
-    <script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
+    <script>
+        $('#exampleModal').on('show.bs.modal', function (event) {
+          var button = $(event.relatedTarget) // Button that triggered the modal
+          var nis = button.data('nis')
+          var namaSiswa = button.data('namasiswa')
+          var password = button.data('password')
+           // Extract info from data-* attributes
+          // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+          // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+          var modal = $(this)
+          modal.find('.modal-title').text('Edit Profile dengan NIS: ' + nis)
+       
+          modal.find('.modal-body #nis ').val(nis)
+          modal.find('.modal-body #namaSiswa ').val(namaSiswa)
+          modal.find('.modal-body #password ').val(password)
+        })
+    </script>
+    <script>var serverVariable=<?=$_SESSION["nis"];?>;</script>
     <script>
         $(document).ready(function() {
             $(".data").hover(function(){ $(this).toggleClass('.shad'); });

@@ -8,8 +8,9 @@
     include "../connection.php";
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
-        $idUser = $data->idUser;
-        $query = "SELECT b.namaBankSoal,r.nilaiResponTest FROM respontest as r INNER JOIN banksoal AS b ON r.idBanksoal = b.idBankSoal WHERE r.idUser = $idUser AND r.STATUS = 'finish'";
+        $nis = $data->nis;
+        $query = "SELECT * FROM respontest LEFT JOIN testing
+        ON respontest.idTest = testing.idTest where nis = $nis";
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $output[] = $row;

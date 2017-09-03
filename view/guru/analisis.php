@@ -137,7 +137,7 @@ if($_SESSION['job'] == 'guru'){
 <!--                    </div>-->
 <!--                </div>-->
 <!--            </a>-->
-            <a href="analisis.php">
+            <!-- <a href="analisis.php">
                 <div class="col-md-12 menu active">
                     <div class="col-md-10">
                         <span>Analisis</span>
@@ -146,7 +146,7 @@ if($_SESSION['job'] == 'guru'){
                         <span><i class="fa fa-search" aria-hidden="true"></i></span>
                     </div>
                 </div>
-            </a>
+            </a> -->
             <a href="statistik.php">
                 <div class="col-md-12 menu">
                     <div class="col-md-10">
