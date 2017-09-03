@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahTest/changeStatTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahtest.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php" afterPath="$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/deleteTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/deleteTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/loadTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/loadTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/test.php" afterPath="$PROJECT_DIR$/view/guru/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +21,11 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="pushTest.php" pinned="false" current-in-tab="true">
+            <file leaf-file-name="pushTest.php" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/php/tambahTest/pushTest.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="340">
-                    <caret line="20" column="108" lean-forward="false" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+                  <state relative-caret-position="370">
+                    <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
                     <folding>
                       <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
                       <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
@@ -39,6 +41,26 @@
                 </provider>
               </entry>
             </file>
+            <file leaf-file-name="soal.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="466">
+                    <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="109" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="soalController.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="102">
+                    <caret line="6" column="77" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="77" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
           </leaf>
         </state>
       </content>
@@ -49,9 +71,14 @@
       <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/guru/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="230" column="137" lean-forward="false" selection-start-line="230" selection-start-column="128" selection-end-line="230" selection-end-column="137" />
-              <folding />
+            <state relative-caret-position="228">
+              <caret line="388" column="137" lean-forward="false" selection-start-line="388" selection-start-column="129" selection-end-line="388" selection-end-column="137" />
+              <folding>
+                <element signature="e#2456#2489#0#HTML" expanded="true" />
+                <element signature="e#9270#9276#0#HTML" expanded="true" />
+                <element signature="e#9294#9300#0#HTML" expanded="true" />
+                <element signature="e#9318#9324#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +86,8 @@
       <file leaf-file-name="tambahtest.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+            <state relative-caret-position="508">
+              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -68,15 +95,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cekJmlSoal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php">
+      <file leaf-file-name="deleteTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahTest/deleteTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="187">
+              <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
               <folding>
-                <marker date="1504430333032" expanded="true" signature="306:383" ph="SELECT COUNT... soaldetail" />
-                <marker date="1504430333032" expanded="true" signature="306:497" ph="SELECT COUNT... soaldetail" />
-                <marker date="1504430333032" expanded="true" signature="672:859" ph="SELECT COUNT... soaldetail" />
+                <marker date="1504441006092" expanded="true" signature="257:292" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteSoal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahsoal/deleteSoal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <marker date="1503961581018" expanded="true" signature="258:296" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -109,6 +146,8 @@
       <find>delete</find>
       <find>tambahban</find>
       <find>jmlEssay</find>
+      <find>ng-ini</find>
+      <find>test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/angkatan/loadAngkatan.php" />
-        <option value="$PROJECT_DIR$/php/angkatan/pushAngkatan.php" />
         <option value="$PROJECT_DIR$/php/angkatan/isAngkatan.php" />
         <option value="$PROJECT_DIR$/php/angkatan/editAngkatan.php" />
         <option value="$PROJECT_DIR$/php/angkatan/deleteAngkatan.php" />
@@ -162,11 +199,13 @@
         <option value="$PROJECT_DIR$/php/utilFunction/loadbanksoal.php" />
         <option value="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" />
         <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
-        <option value="$PROJECT_DIR$/php/tambahTest/deleteTest.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
-        <option value="$PROJECT_DIR$/view/guru/test.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/pushTest.php" />
+        <option value="$PROJECT_DIR$/php/tambahTest/loadTest.php" />
+        <option value="$PROJECT_DIR$/php/tambahTest/changeStatTest.php" />
+        <option value="$PROJECT_DIR$/view/guru/test.php" />
+        <option value="$PROJECT_DIR$/php/tambahTest/deleteTest.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
       </list>
     </option>
@@ -228,7 +267,19 @@
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tambahsoal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
@@ -240,12 +291,6 @@
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="guru" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -304,12 +349,12 @@
       <workItem from="1504271980341" duration="43681000" />
       <workItem from="1504355620647" duration="18413000" />
       <workItem from="1504399873067" duration="6090000" />
-      <workItem from="1504428365106" duration="3192000" />
+      <workItem from="1504428365106" duration="10795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129154000" />
+    <option name="totallyTimeSpent" value="136757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -347,20 +392,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/guru/pushGuru.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/guru/editGuru.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/guru/deleteGuru.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -421,6 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
           <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,22 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="271" column="41" lean-forward="false" selection-start-line="241" selection-start-column="20" selection-end-line="285" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/tambahTest/editTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -619,14 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/deleteTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -659,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/analisis/loadSoalParameter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -677,6 +679,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/pushTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
+            <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
+            <marker date="1504430669324" expanded="true" signature="894:984" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="894:1094" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="894:1095" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="1374:1452" ph="INSERT INTO detailtest... " />
+            <marker date="1504430669324" expanded="true" signature="1639:1840" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="1639:1841" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="2139:2217" ph="INSERT INTO detailtest... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,36 +712,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/changeStatTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="230" column="137" lean-forward="false" selection-start-line="230" selection-start-column="128" selection-end-line="230" selection-end-column="137" />
+          <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+          <folding>
+            <marker date="1504439295228" expanded="true" signature="290:342" ph="UPDATE testi... " />
+            <marker date="1504439295228" expanded="true" signature="290:343" ph="UPDATE testi... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1504434678611" expanded="true" signature="259:341" ph="SELECT * FRO... testing" />
+            <marker date="1504434678611" expanded="true" signature="259:459" ph="SELECT * FRO... testing" />
+            <marker date="1504434678611" expanded="true" signature="259:534" ph="SELECT * FRO... testing" />
+            <marker date="1504434678611" expanded="true" signature="259:542" ph="SELECT * FRO... testing" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="109" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/pushTest.php">
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/deleteSoal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="108" lean-forward="false" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
-            <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
-            <marker date="1504430669324" expanded="true" signature="894:984" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="894:1094" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="894:1095" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="1374:1452" ph="INSERT INTO detailtest... " />
-            <marker date="1504430669324" expanded="true" signature="1639:1840" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="1639:1841" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="2139:2217" ph="INSERT INTO detailtest... " />
+            <marker date="1503961581018" expanded="true" signature="258:296" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/deleteTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
+          <folding>
+            <marker date="1504441006092" expanded="true" signature="257:292" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="77" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="388" column="137" lean-forward="false" selection-start-line="388" selection-start-column="129" selection-end-line="388" selection-end-column="137" />
+          <folding>
+            <element signature="e#2456#2489#0#HTML" expanded="true" />
+            <element signature="e#9270#9276#0#HTML" expanded="true" />
+            <element signature="e#9294#9300#0#HTML" expanded="true" />
+            <element signature="e#9318#9324#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+        <state relative-caret-position="508">
+          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

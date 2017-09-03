@@ -1,8 +1,8 @@
 /// <reference path="../../type_master/angularjs/angular.d.ts" />
 /// <reference path="../../type_master/angularjs/angular-resource.d.ts" />
 
-var app = angular.module("moduleTambahTest",[]);
-app.controller("addTest", function($scope, $http){
+var app = angular.module("moduleTambahTest",['angularModalService']);
+app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
     $scope.idUser = serverVariable;
     $scope.isDataValid = false;
     $scope.isNamaNotValid = true;
@@ -65,6 +65,7 @@ app.controller("addTest", function($scope, $http){
                         $scope.scoreItem = null;
                         $scope.jmlPilGan = null;
                         $scope.jmlEssay = null;
+                        $scope.loadTest();
                     }else {
                         alert("test gagal ditambahkan");
                     }
@@ -80,10 +81,83 @@ app.controller("addTest", function($scope, $http){
     };
 
     $scope.loadTest = function () {
-        
+        console.log("nip_nrp : "+ $scope.idUser);
+        $http.post(
+            "../../php/tambahTest/loadTest.php",
+            {'nip_nrp':$scope.idUser}
+        ).then(function successCallback(response) {
+            $scope.tests = response.data;
+            console.log(JSON.stringify(response.data));
+        },function errorCallback(response) {
+            alert("sambungan gagal");
+        });
     };
 
- });
+    $scope.ubahStatus = function (pushTest) {
+        console.log("idTest : " + pushTest.idTest);
+        console.log("status : " + pushTest.status);
+        if(pushTest.status === 'close'){
+            $http.post(
+                "../../php/tambahTest/changeStatTest.php",
+                {'idTest':pushTest.idTest,'status':"open"}
+            ).then(function successCallback(response) {
+                $scope.loadTest();
+            },function errorCallback(response) {
+                alert("gagal ubah status");
+            });
+        }else {
+            $http.post(
+                "../../php/tambahTest/changeStatTest.php",
+                {'idTest':pushTest.idTest,'status':"close"}
+            ).then(function successCallback(response) {
+                $scope.loadTest();
+            },function errorCallback(response) {
+                alert("gagal ubah status");
+            });
+        }
+    };
+
+    $scope.deleteTest = function (pushTest) {
+        ModalService.showModal({
+            templateUrl: 'delete.html',
+            controller: "DeleteController",
+            inputs: {
+                test: pushTest
+            }
+        }).then(function(modal) {
+            modal.element.modal();
+            modal.close.then(function(result) {
+                // $scope.message = "You said " + result;
+                $scope.loadTest();
+            });
+        });
+    };
+});
+
+app.controller('DeleteController', function($scope,$http,$window,close,test) {
+    $scope.namaTest = test.namaTest;
+    $scope.modalyes = function () {
+        $http.post(
+            "../../php/tambahTest/deleteTest.php",
+            {'idTest':test.idTest}
+        ).then(function successCallback(response) {
+            if(response.data){
+                close('sukses', 500);
+            }
+        },function errorCallback(response) {
+            alert("delete soal gagal");
+        });
+    };
+
+    $scope.modalno = function () {
+        close('Cansel', 500);
+    };
+
+    $scope.close = function(result) {
+        close(result, 500); // close, but give 500ms for bootstrap to animate
+    };
+
+});
 
 
  
