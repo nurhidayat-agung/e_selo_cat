@@ -106,7 +106,7 @@ if($_SESSION['job'] == 'guru'){
             </div>
         </a>
         <a href="soal.php">
-            <div class="col-md-12 menu active">
+            <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Soal</span>
                 </div>
@@ -146,7 +146,7 @@ if($_SESSION['job'] == 'guru'){
             </div>
         </a> -->
         <a href="statistik.php">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Statistik</span>
                 </div>
