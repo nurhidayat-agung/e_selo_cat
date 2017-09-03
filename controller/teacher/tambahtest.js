@@ -33,8 +33,20 @@ app.controller("addTest", function($scope, $http){
             },function errorCallback(response) {
                 alert("gagal load soal bank soal");
             });
+        }else {
+            $scope.jmlPilGand = 0;
+            $scope.jmlEssay = 0;
+            $scope.msgBankSoal = "";
         }
     }
+
+    $scope.pushTest = function () {
+        if($scope.banksoal > 0){
+
+        }else {
+            alert("silahkan pilih banksoal terlebih dahulu");
+        }
+    };
 
  });
 

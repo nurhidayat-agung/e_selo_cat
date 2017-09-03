@@ -216,7 +216,7 @@
                                 </div>
                                 <div class="col-md-12 contentGenerate">
                                     <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaptif &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Classic<br>
+                                    <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Klasik<br>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +253,7 @@
                         <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushMapel()"></input>
+                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushTest()"></input>
                                     </span>
                                 </div>
                         </div>
