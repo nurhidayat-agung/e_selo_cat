@@ -191,7 +191,7 @@
                             </div>
                             <div class="col-md-12 contentGenerate">
                                 <div class="form-group">
-                                    <input ng-model="namaTest" type="text" name="namatest" placeholder="masukan nama test" class="form-control" ng-change="" required></input>
+                                    <input ng-model="namaTest" type="text" name="namatest" placeholder="masukan nama test" class="form-control" ng-change="" required />
                                 </div>
                             </div>
                         </div>
@@ -228,11 +228,11 @@
                                 <div class="col-md-12 contentGenerate">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="sizing-addon2">Pilihan Ganda </span>
-                                        <input type="number" name="pilihanganda" required="" class="form-control" aria-describedby="sizing-addon2">
+                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="jmlPilGan" aria-describedby="sizing-addon2">
                                     </div>
                                     <div class="input-group">
                                         <span class="input-group-addon" id="sizing-addon2">Uraian &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                        <input type="number" name="uraian" required="" class="form-control" aria-describedby="sizing-addon2">
+                                        <input type="number" name="uraian" required="true" class="form-control" ng-model="jmlEssay" aria-describedby="sizing-addon2">
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@
                                 </div>
                                 <div class="col-md-12 contentGenerate">
                                     <div class="form-group">
-                                        <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required></input>
+                                        <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required />
                                     </div>
                                 </div>
                             </div>
