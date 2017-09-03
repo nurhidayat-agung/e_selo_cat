@@ -288,7 +288,7 @@ app4.controller('DeleteController', function($scope,$http,$window,close,idSoal) 
 app4.controller('ModalController', function($scope,$http,$window,close,idBankSoal) {
     $scope.mIdBankSoal = idBankSoal;
     $scope.modalyes = function () {
-        if ($scope.jawaban === ""){
+        if ($scope.jawaban !== ""){
             $http.post(
                 "../../php/tambahsoal/pushSoalPilGan.php",
                 {'idBankSoal': $scope.mIdBankSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'pil4':$scope.pilihan4, 'pil5': $scope.pilihan5, 'kunci':$scope.jawaban}
@@ -356,7 +356,7 @@ app4.controller('EditModalController', function($scope,$http,$window,close,idSoa
     };
 
     $scope.modalyes = function () {
-        if ($scope.jawaban === ""){
+        if ($scope.jawaban !== ""){
             $http.post(
                 "../../php/tambahsoal/editSoalPilihanGanda.php",
                 {'idSoal': idSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'pil4':$scope.pilihan4, 'pil5': $scope.pilihan5, 'kunci':$scope.jawaban}
@@ -378,7 +378,7 @@ app4.controller('EditModalController', function($scope,$http,$window,close,idSoa
                 alert("gagal push soal");
             });
         }else {
-            alert("silahkan pilih unci jawab terlebih dahulu");
+            alert("silahkan pilih kunci jawab terlebih dahulu");
         }
     };
 });
