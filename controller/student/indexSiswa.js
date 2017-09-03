@@ -1,25 +1,23 @@
 var app = angular.module("indekSiswa",[]);
 app.controller("indexSiswaController", function ($scope,$http,$window,$compile) {
-    $scope.idUser = serverVariable;
+    $scope.nis = serverVariable;
     $scope.getUserInformation = function () {
         $http.post(
             "../../php/siswa/loadProfile.php",
-            {'idUser':$scope.idUser}
+            {'nis':$scope.nis}
         ).then(function successCallback(response) {
-            var jsonProfil = angular.fromJson(response.data);
-            $scope.username = jsonProfil.username;
-            $scope.maskPass = jsonProfil.password;
-            $scope.status = jsonProfil.job;
-            $scope.nama = jsonProfil.nama;
-            $scope.email = jsonProfil.email;
+            $scope.nis = response.data.nis;
+            $scope.namaSiswa = response.data.namaSiswa;
+            $scope.namaAngkatan = response.data.namaAngkatan;
+            $scope.namaPleton = response.data.namaPleton;
         },function errorCallback(response) {
-            alert("sambungan gagal");
+            alert("load profile gagal");
         });
     };
     $scope.getResponData = function () {
         $http.post(
             "../../php/siswa/getLastRespon.php",
-            {'idUser':$scope.idUser}
+            {'nis':$scope.nis}
         ).then(function successCallback(response) {
             $scope.respons = response.data;
         },function errorCallback(response) {

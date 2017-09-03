@@ -310,7 +310,7 @@ app4.controller('ModalController', function($scope,$http,$window,close,idBankSoa
                 alert("gagal push soal")
             });
         }else {
-            alert("silahkan pilih unci jawab terlebih dahulu");
+            alert("silahkan pilih kunci jawab terlebih dahulu");
         }
     };
 
