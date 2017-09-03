@@ -27,6 +27,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         },function errorCallback(response) {
             alert("load angkatan gagal");
         });
+        $scope.quantity = 10;
     };
 
 
@@ -38,6 +39,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         },function errorCallback(response) {
             alert("load Guru gagal");
         });
+        $scope.quantity = 10;
     };
 
     $scope.loadTimPengajar = function () {
@@ -48,6 +50,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         },function errorCallback(response) {
             alert("load Tim Pengajar gagal");
         });
+        $scope.quantity = 10;
     };
 
     $scope.loadPleton = function () {
@@ -58,6 +61,7 @@ app4.controller("addGuru",function($scope,$http,$window,$compile,ModalService){
         },function errorCallback(response) {
             alert("load Pleton gagal");
         });
+        $scope.quantity = 10;
     };
     $scope.editGuru = function (pushGuru) {
         ModalService.showModal({

@@ -195,34 +195,32 @@
 	<div id="main" ng-app="indekGuru">
 	<!-- Content Isi Atas -->
 		<div class="no-padd col-md-12" id="homeTop">
-			<a href="soal.php">
-				<div class="col-md-4 data">
-					<div class="dataIn">
-						<div class="col-md-12" id="dataSoal">
-							<i class="fa fa-file-text"></i>
-						</div>
-						<div class="col-md-12" id="jumlahSoal">
-							<span>200</span>
-							<div class="divider"></div>
-							<span>Soal</span>
-						</div>
-					</div>
-				</div>
-			</a>
-			<a href="siswa.php">
-				<div class="col-md-4 data">
-					<div class="dataIn">
-						<div class="col-md-12" id="dataUser">
-							<i class="fa fa-user-circle-o"></i>
-						</div>
-						<div class="col-md-12" id="jumlahUser">
-							<span>200</span>
-							<div class="divider"></div>
-							<span>Siswa</span>
-						</div>
-					</div>
-				</div>
-			</a>
+			<div class="col-md-4 data"">
+            <div class="dataIn">
+                <div class="col-md-12" id="dataUser">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <div class="col-md-12" id="jumlahUser">
+                    <span>200</span>
+                    <div class="divider"></div>
+                    <button  data-toggle="modal" data-target="#exampleModal" data-nama="<?=$_SESSION["nama"];?>" data-nipnrp="<?=$_SESSION["idUser"];?>" data-password="<?=$_SESSION["password"];?>" data-email="<?=$_SESSION["email"];?>" ><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>   change my Profile</button>
+                </div>
+            </div>
+       		</div>
+			<a href="test.php">
+            <div class="col-md-4 data">
+                <div class="dataIn">
+                    <div class="col-md-12" id="dataSoal">
+                        <i class="fa fa-file-text"></i>
+                    </div>
+                    <div class="col-md-12" id="jumlahSoal">
+                        <span>200</span>
+                        <div class="divider"></div>
+                        <span>Soal</span>
+                    </div>
+                </div>
+            </div>
+        </a>
 			<a href="statistik.php">
 				<div class="col-md-4 data">
 					<div class="dataIn">
@@ -232,7 +230,7 @@
 						<div class="col-md-12" id="jumlahResponse">
 							<span>200</span>
 							<div class="divider"></div>
-							<span>Response</span>	
+							<span>Statistik</span>	
 						</div>
 					</div>
 				</div>
@@ -287,20 +285,20 @@
 							<span>Respon Terbaru</span>
 							<div class="divider"></div>
 						</div>
-						<div class="col-md-12 recentContent">
-							<table class="table table-hover" ng-init="getLastRespon()">
+						<div class="col-md-12 recentContent" ng-init="loadNilai()">
+							<table class="table table-hover" >
 							    <thead>
 							      <tr>
-							        <th>Nama Siswa</th>
-							        <th>Bank Soal</th>
+							        <th>NIS</th>
+							        <th>Jenis Soal</th>
 							        <th>Nilai</th>
 							      </tr>
 							    </thead>
 							    <tbody>
-							      <tr ng-repeat="respon in respons">
-							        <td>{{respon.nama}}</td>
-							        <td>{{respon.namaBankSoal}}</td>
-							        <td>{{respon.nilaiResponTest}}</td>
+							      <tr ng-repeat="nilai in nilais | limitTo:quantity">
+							        <td>{{nilai.nis}}</td>
+							        <td>{{nilai.jenis}}</td>
+							        <td>{{nilai.nilaiResponTest}}</td>
 							      </tr>
 							    </tbody>
 						  	</table>
@@ -314,9 +312,61 @@
 						</div>
 					</div>
 				</div>
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                      </div>
+                      <form action="../../php/guru/editProfile.php" method="post">
+                      <div class="modal-body">            
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">NIP/NRP:</label>
+                            <input type="text" class="form-control" id="nip_nrp" name="nip_nrp">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">Nama:</label>
+                            <input type="text" class="form-control" id="nama" name="nama">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="control-label">Email:</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="control-label">Password :</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                          </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" onclick="return confirm('Apakah anda yakin untuk edit Profile???');">SIMPAN</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div> 
 		</div>	
 		<!-- Content Bawah -->
 	</div>
+	<script>
+        $('#exampleModal').on('show.bs.modal', function (event) {
+          var button = $(event.relatedTarget) // Button that triggered the modal
+          var nama = button.data('nama')
+          var nip_nrp = button.data('nipnrp')
+          var email = button.data('email')
+          var password = button.data('password')
+           // Extract info from data-* attributes
+          // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+          // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+          var modal = $(this)
+          modal.find('.modal-title').text('Edit Profile : ' + nama)
+          modal.find('.modal-body #nama ').val(nama)
+          modal.find('.modal-body #nip_nrp ').val(nip_nrp)
+          modal.find('.modal-body #email ').val(email)
+          modal.find('.modal-body #password ').val(password)
+        })
+    </script>
 </body>
 <script>
     var serverVariable = <?=$_SESSION["idUser"];?>;
