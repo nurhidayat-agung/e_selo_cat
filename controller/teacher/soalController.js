@@ -28,7 +28,7 @@ app4.controller("addSoal",function($scope,$http,$window,$compile,ModalService){
         $scope.selectMapel = $scope.mapel;
         console.log($scope.selectMapel);
         $http.post(
-            "../../php/tambahbanksoal/loadBankSoalUser.php",
+            "../../php/utilFunction/loadbanksoal.php",
             {'nip_nrp':$scope.idUser}
         ).then(function successCallback(response) {
             $scope.banksoals = response.data;
@@ -192,26 +192,30 @@ app4.controller('EditModalEsayController', function($scope,$http,$window,close,i
     };
 
     $scope.modalyes = function () {
-        $http.post(
-            "../../php/tambahsoal/editSoalPilihanGanda.php",
-            {'idSoal': idSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'jumlahEsay':$scope.jumlahEsay}
-        ).then(function successCallback(response) {
-            // console.log(response.data.toString());
-            if (response.data){
-                $scope.mWarning = {
-                    "color" : "black"
-                };
-                $scope.mMessage = "Soal berhasil diubah";
-                close('sukses',500);
-            }else {
-                $scope.mWarning = {
-                    "color" : "red"
-                };
-                $scope.mMessage = "soal gagal diubah ke data base";
-            }
-        },function errorCallback(response) {
-
-        });
+        if ($scope.jumlahEsay > 0){
+            $http.post(
+                "../../php/tambahsoal/editSoalPilihanGanda.php",
+                {'idSoal': idSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'jumlahEsay':$scope.jumlahEsay}
+            ).then(function successCallback(response) {
+                // console.log(response.data.toString());
+                if (response.data){
+                    $scope.mWarning = {
+                        "color" : "black"
+                    };
+                    $scope.mMessage = "Soal berhasil diubah";
+                    close('sukses',500);
+                }else {
+                    $scope.mWarning = {
+                        "color" : "red"
+                    };
+                    $scope.mMessage = "soal gagal diubah ke data base";
+                }
+            },function errorCallback(response) {
+                alert("gagal load soal");
+            });
+        }else {
+            alert("silahkan pilih jumlah esay terlebih dahulu");
+        }
     };
 });
 
@@ -220,26 +224,30 @@ app4.controller('ModalEsayController',function ($scope, $http, $window, close, i
     $scope.eIdBankSoal = idBankSoal;
     $scope.modalyes = function () {
         console.log("cek");
-        $http.post(
-            "../../php/tambahsoal/pushSoalEsay.php",
-            {'idBankSoal': $scope.eIdBankSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'jumlahEsay':$scope.jumlahEsay}
-        ).then(function successCallback(response) {
-            // console.log(response.data.toString());
-            if (response.data){
-                $scope.mWarning = {
-                    "color" : "black"
-                };
-                $scope.mMessage = "soal berhasil ditambahkan ke database";
-                close('sukses',500);
-            }else {
-                $scope.mWarning = {
-                    "color" : "red"
-                };
-                $scope.mMessage = "soal gagal ditambahkan ke data base";
-            }
-        },function errorCallback(response) {
-
-        });
+        if($scope.jumlahEsay > 0){
+            $http.post(
+                "../../php/tambahsoal/pushSoalEsay.php",
+                {'idBankSoal': $scope.eIdBankSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'jumlahEsay':$scope.jumlahEsay}
+            ).then(function successCallback(response) {
+                // console.log(response.data.toString());
+                if (response.data){
+                    $scope.mWarning = {
+                        "color" : "black"
+                    };
+                    $scope.mMessage = "soal berhasil ditambahkan ke database";
+                    close('sukses',500);
+                }else {
+                    $scope.mWarning = {
+                        "color" : "red"
+                    };
+                    $scope.mMessage = "soal gagal ditambahkan ke data base";
+                }
+            },function errorCallback(response) {
+                alert("gagal load soal");
+            });
+        }else {
+            alert("silahkan pilih jumlah esay terlebih dahulu");
+        }
     };
 
     $scope.modalno = function () {
@@ -280,26 +288,30 @@ app4.controller('DeleteController', function($scope,$http,$window,close,idSoal) 
 app4.controller('ModalController', function($scope,$http,$window,close,idBankSoal) {
     $scope.mIdBankSoal = idBankSoal;
     $scope.modalyes = function () {
-        $http.post(
-            "../../php/tambahsoal/pushSoalPilGan.php",
-            {'idBankSoal': $scope.mIdBankSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'pil4':$scope.pilihan4, 'pil5': $scope.pilihan5, 'kunci':$scope.jawaban}
-        ).then(function successCallback(response) {
-            // console.log(response.data.toString());
-            if (response.data){
-                $scope.mWarning = {
-                    "color" : "black"
-                };
-                $scope.mMessage = "soal berhasil ditambahkan ke database";
-                close('sukses', 500);
-            }else {
-                $scope.mWarning = {
-                    "color" : "red"
-                };
-                $scope.mMessage = "soal gagal ditambahkan ke data base";
-            }
-        },function errorCallback(response) {
-
-        });
+        if ($scope.jawaban === ""){
+            $http.post(
+                "../../php/tambahsoal/pushSoalPilGan.php",
+                {'idBankSoal': $scope.mIdBankSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'pil4':$scope.pilihan4, 'pil5': $scope.pilihan5, 'kunci':$scope.jawaban}
+            ).then(function successCallback(response) {
+                // console.log(response.data.toString());
+                if (response.data){
+                    $scope.mWarning = {
+                        "color" : "black"
+                    };
+                    $scope.mMessage = "soal berhasil ditambahkan ke database";
+                    close('sukses', 500);
+                }else {
+                    $scope.mWarning = {
+                        "color" : "red"
+                    };
+                    $scope.mMessage = "soal gagal ditambahkan ke data base";
+                }
+            },function errorCallback(response) {
+                alert("gagal push soal")
+            });
+        }else {
+            alert("silahkan pilih unci jawab terlebih dahulu");
+        }
     };
 
     $scope.modalno = function () {
@@ -344,25 +356,29 @@ app4.controller('EditModalController', function($scope,$http,$window,close,idSoa
     };
 
     $scope.modalyes = function () {
-        $http.post(
-            "../../php/tambahsoal/editSoalPilihanGanda.php",
-            {'idSoal': idSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'pil4':$scope.pilihan4, 'pil5': $scope.pilihan5, 'kunci':$scope.jawaban}
-        ).then(function successCallback(response) {
-            // console.log(response.data.toString());
-            if (response.data){
-                $scope.mWarning = {
-                    "color" : "black"
-                };
-                $scope.mMessage = "Soal berhasil diubah";
-                close('sukses',500);
-            }else {
-                $scope.mWarning = {
-                    "color" : "red"
-                };
-                $scope.mMessage = "soal gagal diubah ke data base";
-            }
-        },function errorCallback(response) {
-
-        });
+        if ($scope.jawaban === ""){
+            $http.post(
+                "../../php/tambahsoal/editSoalPilihanGanda.php",
+                {'idSoal': idSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'pil4':$scope.pilihan4, 'pil5': $scope.pilihan5, 'kunci':$scope.jawaban}
+            ).then(function successCallback(response) {
+                // console.log(response.data.toString());
+                if (response.data){
+                    $scope.mWarning = {
+                        "color" : "black"
+                    };
+                    $scope.mMessage = "Soal berhasil diubah";
+                    close('sukses',500);
+                }else {
+                    $scope.mWarning = {
+                        "color" : "red"
+                    };
+                    $scope.mMessage = "soal gagal diubah ke data base";
+                }
+            },function errorCallback(response) {
+                alert("gagal push soal");
+            });
+        }else {
+            alert("silahkan pilih unci jawab terlebih dahulu");
+        }
     };
 });

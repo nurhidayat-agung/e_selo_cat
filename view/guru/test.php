@@ -122,7 +122,7 @@
                     <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
                 </div>
             </div>
-            </a> 
+            </a>
 <!--		<a href="respon.php">-->
 <!--			<div class="col-md-12 menu">-->
 <!--				<div class="col-md-10">-->
@@ -191,7 +191,7 @@
                             </div>
                             <div class="col-md-12 contentGenerate">
                                 <div class="form-group">
-                                    <input ng-model="namaTest" type="text" name="namatest" placeholder="masukan nama test" class="form-control" ng-change="" required></input>
+                                    <input ng-model="namaTest" type="text" name="namatest" placeholder="masukan nama test" class="form-control" ng-change="" required />
                                 </div>
                             </div>
                         </div>
@@ -202,11 +202,12 @@
                                 </div>
                                 <div class="col-md-12 contentGenerate">
                                     <div class="input-group">
-                                        <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()">
+                                        <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()" ng-change="cekJmlSoal()">
                                             <option value="">Select banksoal</option>
                                             <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
                                         </select>
                                     </div>
+                                    <span>{{msgBankSoal}}</span>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -214,8 +215,8 @@
                                     <span>Jenis Test</span>
                                 </div>
                                 <div class="col-md-12 contentGenerate">
-                                    <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaftip &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Classic<br>
+                                    <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaptif &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Klasik<br>
                                 </div>
                             </div>
                         </div>
@@ -227,11 +228,11 @@
                                 <div class="col-md-12 contentGenerate">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="sizing-addon2">Pilihan Ganda </span>
-                                        <input type="number" name="pilihanganda" required="" class="form-control" aria-describedby="sizing-addon2">
+                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="jmlPilGan" aria-describedby="sizing-addon2">
                                     </div>
                                     <div class="input-group">
                                         <span class="input-group-addon" id="sizing-addon2">Uraian &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                        <input type="number" name="uraian" required="" class="form-control" aria-describedby="sizing-addon2">
+                                        <input type="number" name="uraian" required="true" class="form-control" ng-model="jmlEssay" aria-describedby="sizing-addon2">
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +242,7 @@
                                 </div>
                                 <div class="col-md-12 contentGenerate">
                                     <div class="form-group">
-                                        <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required></input>
+                                        <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required />
                                     </div>
                                 </div>
                             </div>
@@ -252,43 +253,126 @@
                         <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushMapel()"></input>
+                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushTest()"></input>
                                     </span>
                                 </div>
                         </div>
                     </div>
                 </form>
 			</div>
-            <div class="col-md-12 soal">
-                <div class="col-md-12 recent">
-                    <div class="col-md-6">
-                        <div class="col-md-12 titleGenerate">
-                            <span>Sumber Bank Soal</span>
-                        </div>
-                        <div class="col-md-12 contentGenerate">
-                            <div class="input-group">
-                                <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()">
-                                    <option value="">Select banksoal</option>
-                                    <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="col-md-12 titleGenerate">
-                            <span>Sumber Bank Soal</span>
-                        </div>
-                        <div class="col-md-12 contentGenerate">
-                            <div class="input-group">
-                                <select name="banksoal" ng-model="banksoal" class="form-control" ng-init="loadBankSoal()">
-                                    <option value="">Select banksoal</option>
-                                    <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="col-md-12 soal" id="inputSoal">
+                <div class="col-md-12">
+                    <center class="col-md-12">
+                        <span class="titleGenerate">Daftar Test Dalam Data Base</span>
+                    </center>
+                </div>
+                <div class="col-md-12 title table-responsive" id="inputSoal" >
+                    <table class="table table-bordered" ng-init="loadTest()">
+                        <thead>
+                        <tr >
+                            <th class="col-md-1 titleGenerate" ><center>Id Test</center></th>
+                            <th class="col-md-4 titleGenerate" ><center>Nama Test</center></th>
+                            <th class="col-md-2 titleGenerate" ><center>Tim Pengajar</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Jenis Test</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Status</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Ubah Status</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Preview</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="test in tests">
+                            <th class="col-md-1 " >{{test.idtTest}}</th>
+                            <th class="col-md-4 " >{{soal.namaTest}}</th>
+                            <th class="col-md-2 " >{{soal.namaTimPengajar}}</th>
+                            <th class="col-md-1 " >{{soal.jenisTest}}</th>
+                            <th class="col-md-1 " >{{soal.status}}</th>
+                            <th class="col-md-1 btn-lg">
+                                <div class="col-md-12">
+                                    <a href="#" ng-click="ubahStatus(test)" class="col-md-12">
+                                        <span class="glyphicon glyphicon-open col-md-12"></span>
+                                    </a>
+                                </div>
+                            </th>
+                            <th class="col-md-1 btn-lg">
+                                <div class="col-md-12">
+                                    <a href="#" ng-click="previewTest(test)" class="col-md-12">
+                                        <span class="glyphicon glyphicon-glass col-md-12"></span>
+                                    </a>
+                                </div>
+                            </th>
+                            <th class="col-md-1 btn-lg">
+                                <div class="col-md-12">
+                                    <a href="#" ng-click="deleteTest(test)" class="col-md-12">
+                                        <span class="glyphicon glyphicon-trash col-md-12"></span>
+                                    </a>
+                                </div>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <span class="col-md-12 " ng-hide="!isNoSoal"><center>Tidak Ada soal dalam data base</center></span>
+                </div>
+                <div>
+                    <span class="col-md-12 " ng-hide="!isNoSoal"><center>{{message}}</center></span>
+                </div>
+                <div>
+                    {{response}}
                 </div>
             </div>
+
+
+            <div class="col-md-12 soal" id="inputSoal">
+                <div class="col-md-12 title table-responsive" id="inputSoal">
+                    <table class="table table-bordered" >
+                        <thead>
+                        <tr >
+                            <th class="col-md-1 titleGenerate" ><center>Id Soal</center></th>
+                            <th class="col-md-5 titleGenerate" ><center>Butir Soal</center></th>
+                            <th class="col-md-2 titleGenerate" ><center>Jenis Soal</center></th>
+                            <th class="col-md-2 titleGenerate" ><center>Bobot Soal</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Priview</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Set Bobot</center></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="soal in soals">
+                            <th class="col-md-1 " >{{soal.idSoal}}</th>
+                            <th class="col-md-5 " >{{soal.isiSoal}}</th>
+                            <th class="col-md-2 " >{{soal.jenisSoal}}</th>
+                            <th class="col-md-2 " >{{soal.bobotSoal}}</th>
+                            <th class="col-md-1 btn-lg">
+                                <div class="col-md-12">
+                                    <a href="#" ng-click="editTambahSoal(soal.idSoal,soal.jenisSoal)" class="col-md-12">
+                                        <span class="glyphicon glyphicon-edit col-md-12"></span>
+                                    </a>
+                                </div>
+                            </th>
+                            <th class="col-md-1 btn-lg">
+                                <div class="col-md-12">
+                                    <a href="#" ng-click="deleteSoal(soal.idSoal)" class="col-md-12">
+                                        <span class="glyphicon glyphicon-trash col-md-12"></span>
+                                    </a>
+                                </div>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <span class="col-md-12 " ng-hide="!isNoSoal"><center>Tidak Ada soal dalam data base</center></span>
+                </div>
+                <div>
+                    <span class="col-md-12 " ng-hide="!isNoSoal"><center>{{message}}</center></span>
+                </div>
+                <div>
+                    {{response}}
+                </div>
+            </div>
+
 		</div>
 
 
