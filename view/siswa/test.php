@@ -32,7 +32,7 @@
     <script src="../../library/js/jquery-2.1.1.min.js"></script>
     <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../library/node_modules/angular/angular.min.js"></script>
-    <script src="../../controller/student/testController.js"></script>
+    <script src="../../controller/student/newTest.js"></script>
 
 	<!-- Jquery Loaded -->
 	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
@@ -116,49 +116,51 @@
 	</nav>
 
 			<!-- content -->
-	<div id="main" ng-app="moduleTambahSoal" >
+	<div id="main" ng-app="testSiswa" >
 	<!-- Content Isi Atas -->
-		<div class="no-padd col-md-12" id="homeTop" ng-controller="addSoal" ng-init="loadMapel()">
-			<div class="col-md-12 soal" ng-controller="addSoal">
+		<div class="no-padd col-md-12" id="homeTop" ng-controller="testSiswa">
+			<div class="col-md-12 soal">
 				<div class="generateSoal">
-					<div class="col-md-12" id="paramMapel">
-						<div class="col-md-4">
-							<div class="col-md-12 titleGenerate">
-								<div>Mapel</div>
-							</div>
-							<div class="col-md-12 contentGenerate" >
-									<div class="input-group">
-										<select name="mapel" ng-model="mapel" class="form-control" ng-change="loadbanksoal()" required="true">
-											<option value="">pilih mapel</option>
-											<option ng-repeat="mapel in mapels" value="{{mapel.idMapel}}">{{mapel.namaMapel}}</option> 
-										</select>
-									</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="col-md-12 titleGenerate">
-								<span>Bank Soal</span>
-							</div>
-							<div class="col-md-12 contentGenerate">
-								<div class="input-group">
-									<select name="banksoal" ng-model="banksoal" class="form-control" ng-change="loadbabmapel()">  
-										<option value="">Select banksoal</option>  
-										<option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>  
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4" id="paramGenerate">
-							<div class="col-md-6 tombol">
-									<div class="input-group">
-										<span class="input-group-btn">
-											<button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="mulai_ujian" name="mulai_ujian" ng-click="mulaiUjian()">Mulai Ujian</button>
-										</span>
-									</div>
-							</div>
-						</div>
+					<div class="col-md-12" id="paramMapel" ng-hide="isMulaiTest">
+                        <div class="col-md-12 soal" id="inputSoal">
+                            <div class="col-md-12 title table-responsive" id="inputSoal" >
+                                <table class="table table-bordered" ng-init="loadTestSiswa()">
+                                    <thead>
+                                    <tr >
+                                        <th class="col-md-1 titleGenerate" ><center>Id Test</center></th>
+                                        <th class="col-md-5 titleGenerate" ><center>Nama Test</center></th>
+                                        <th class="col-md-3 titleGenerate" ><center>Jenis Test</center></th>
+                                        <th class="col-md-2 titleGenerate" ><center>Waktu Test</center></th>
+                                        <th class="col-md-1 titleGenerate" ><center>Mulai Test</center></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr ng-repeat="test in tests">
+                                        <th class="col-md-1 " >{{test.idTest}}</th>
+                                        <th class="col-md-5 " >{{test.namaTest}}</th>
+                                        <th class="col-md-3 " >{{test.jenisTest}}</th>
+                                        <th class="col-md-2 " >{{test.waktuTest}}</th>
+                                        <th class="col-md-1">
+                                            <a href="#" class="col-md-12" ng-click="mulaiTest(test)">
+                                                <span class="glyphicon glyphicon-play-circle col-md-12"></span>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <span class="col-md-12 " ng-hide="!isNoSoal"><center>Tidak Ada Angkatan dalam data base</center></span>
+                            </div>
+                            <div>
+                                <span class="col-md-12 " ng-hide="!isNoSoal"><center>{{message}}</center></span>
+                            </div>
+                            <div>
+                                {{response}}
+                            </div>
+                        </div>
 					</div>
-					<div id="isiLoop" ng-hide="myValue" ng-init="hideSoal()">				
+					<div id="isiLoop"  ng-hide="!isMulaiTest" ">
 						<div class="no-padd col-md-12" id="homeBottom">
 							<div class="col-md-12 soal" id="inputSoal">
 								<div class="col-md-4 col-md-offset-8 waktu" id="waktu">
@@ -172,8 +174,8 @@
 										<div class="col-md-11 isiSoal" >
 											<span>{{isiSoal}}?</span>
 										</div>
-										<div class="col-md-11 col-md-offset-1">
-											<div class="col-md-12 jawaban">
+										<div class="col-md-12 col-md-offset-1">
+											<div class="col-md-12 jawaban" ng-hide="!isPilgan">
 												<div class="radio">
 													<label><input type="radio" name="optradio" ng-model="radioValue" value = "a" ng-change="readyNext()" >A. {{pil1}}</label>
 												</div>
@@ -186,8 +188,25 @@
 												<div class="radio">
 													<label><input type="radio" name="optradio" ng-model="radioValue" value = "d" ng-change="readyNext()" >D. {{pil4}}</label>
 												</div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="optradio" ng-model="radioValue" value = "d" ng-change="readyNext()" >e. {{pil5}}</label>
+                                                </div>
 											</div>
 										</div>
+                                        <div class="col-md-12" ng-hide="isPilgan">
+                                            <div class="form-group col-md-6" ng-hide="isPil1">
+                                                <span class="titleGenerate">Point ke 1</span>
+                                                <textarea class="form-control textArea" style="height: 50px;" ng-model="pilihan1" placeholder="Essay ke 1"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6" ng-hide="isPil2">
+                                                <span class="titleGenerate">Point ke 2</span>
+                                                <textarea class="form-control textArea" style="height: 50px;" ng-model="pilihan2" placeholder="Essay ke 2"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-6" ng-hide="isPil3">
+                                                <span class="titleGenerate">Point ke 3</span>
+                                                <textarea class="form-control textArea" style="height: 50px;" ng-model="pilihan3" placeholder="Essay ke 3"></textarea>
+                                            </div>
+                                        </div>
 									</div>
 			
 									<div id="btn_inputSoal">
@@ -195,7 +214,7 @@
 											<div class="col-md-6 tombolNextPrev">
 													<div class="input-group">
 														<span class="input-group-btn">
-															<button class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="nextQuestion()" ng-disabled="cekJawab"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"> <strong>Next</strong></span></button>
+															<button style="background-color: #42a5f5" class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="nextQuestion()"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"> <strong>Next</strong></span></button>
 														</span>
 													</div>
 											</div>
@@ -205,11 +224,11 @@
 							</div>
 						</div>							
 					</div>
-					<div id="btn_inputSoal">
+					<div id="btn_inputSoal" ng-hide="!isMulaiTest">
 						<div class="col-md-1 tombol">
 							<div class="input-group">
 								<span class="input-group-btn">
-									<input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonInputSoal" value="Submit Response" name="submitResponse" ng-click="submitRespon()">Ahiri Test</input>
+									<input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonInputSoal" value="Submit Response" name="submitResponse" ng-click="submitResponFinish()">Ahiri Test</input>
 								</span>
 							</div>
 						</div>
@@ -289,7 +308,7 @@ $(document).ready(function() {
 
 
 </script>
-<script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
+<script>var serverVariable=<?=$_SESSION["nis"];?>;</script>
 
 <script src="../../library/js/creartive.js"></script>
 </html>

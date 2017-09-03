@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/tambahTest/setBobot.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/student/newTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/loadSoal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/pushResponStart.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/soalController.js" afterPath="$PROJECT_DIR$/controller/teacher/soalController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahtest.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/test.php" afterPath="$PROJECT_DIR$/view/guru/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/indexSiswa.js" afterPath="$PROJECT_DIR$/controller/student/indexSiswa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/pleton.php" afterPath="$PROJECT_DIR$/view/admin/pleton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/siswa/test.php" afterPath="$PROJECT_DIR$/view/siswa/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,49 +21,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DockManager">
-    <window id="1">
+    <window id="2">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="pushTest.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/php/tambahTest/pushTest.php">
+            <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="370">
-                    <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+                  <state relative-caret-position="-1485">
+                    <caret line="195" column="59" lean-forward="true" selection-start-line="195" selection-start-column="59" selection-end-line="195" selection-end-column="59" />
                     <folding>
-                      <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
-                      <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
-                      <marker date="1504430669324" expanded="true" signature="894:984" ph="SELECT idSoa... soaldetail" />
-                      <marker date="1504430669324" expanded="true" signature="894:1094" ph="SELECT idSoa... soaldetail" />
-                      <marker date="1504430669324" expanded="true" signature="894:1095" ph="SELECT idSoa... soaldetail" />
-                      <marker date="1504430669324" expanded="true" signature="1374:1452" ph="INSERT INTO detailtest... " />
-                      <marker date="1504430669324" expanded="true" signature="1639:1840" ph="SELECT idSoa... soaldetail" />
-                      <marker date="1504430669324" expanded="true" signature="1639:1841" ph="SELECT idSoa... soaldetail" />
-                      <marker date="1504430669324" expanded="true" signature="2139:2217" ph="INSERT INTO detailtest... " />
+                      <element signature="e#8956#8977#0#HTML" expanded="true" />
+                      <element signature="e#9363#9384#0#HTML" expanded="true" />
+                      <element signature="e#9770#9791#0#HTML" expanded="true" />
+                      <element signature="e#10225#10258#0#HTML" expanded="true" />
                     </folding>
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="soal.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+            <file leaf-file-name="pushResponStart.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="313">
-                    <caret line="441" column="84" lean-forward="true" selection-start-line="441" selection-start-column="84" selection-end-line="441" selection-end-column="84" />
+                  <state relative-caret-position="170">
+                    <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
                     <folding>
-                      <marker date="1504447782039" expanded="false" signature="9627:9667" ph="..." />
-                      <marker date="1504447782039" expanded="false" signature="10342:10382" ph="..." />
+                      <marker date="1504467100229" expanded="true" signature="315:386" ph="INSERT INTO respontest... " />
                     </folding>
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="soalController.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+            <file leaf-file-name="loadSoal.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="249">
-                    <caret line="312" column="37" lean-forward="false" selection-start-line="312" selection-start-column="19" selection-end-line="312" selection-end-column="37" />
-                    <folding />
+                  <state relative-caret-position="357">
+                    <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+                    <folding>
+                      <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
+                      <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
+                      <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
+                      <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
+                      <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -71,11 +75,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tambahtest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
+      <file leaf-file-name="newTest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
+            <state relative-caret-position="950">
+              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexSiswa.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/student/indexSiswa.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pushDetailRespon.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding>
+                <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -83,71 +119,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setBobot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/tambahTest/setBobot.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <marker date="1504452606695" expanded="true" signature="301:362" ph="UPDATE detai... " />
-                <marker date="1504452606695" expanded="true" signature="301:363" ph="UPDATE detai... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadSoalTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <marker date="1504449440217" expanded="true" signature="256:358" ph="SELECT * FRO... detailtest" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistik.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/guru/statistik.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="137" column="36" lean-forward="true" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/tambahTest/deleteTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
-              <folding>
-                <marker date="1504441006092" expanded="true" signature="257:292" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteSoal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/tambahsoal/deleteSoal.php">
+      <file leaf-file-name="pushResponDetail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/siswa/pushResponDetail.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
               <folding>
-                <marker date="1503961581018" expanded="true" signature="258:296" ph="DELETE FROM " />
+                <marker date="1503961580993" expanded="true" signature="407:518" ph="INSERT INTO detailrespon... " />
+                <marker date="1503961580993" expanded="true" signature="588:842" ph="SELECT idSoa... soalDetail" />
+                <marker date="1503961580993" expanded="true" signature="722:777" ph="SELECT idSoa... detailrespon" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+      <file leaf-file-name="soal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="442" column="109" lean-forward="false" selection-start-line="442" selection-start-column="109" selection-end-line="442" selection-end-column="109" />
+            <state relative-caret-position="330">
+              <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadTestSiswa.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <marker date="1504465241323" expanded="true" signature="260:282" ph="SELECT * FRO... testing" />
+                <marker date="1504465241323" expanded="true" signature="260:376" ph="SELECT * FRO... testing" />
+                <marker date="1504465241323" expanded="true" signature="260:396" ph="SELECT * FRO... testing" />
+                <marker date="1504465241323" expanded="true" signature="303:375" ph="SELECT idTes... respontest" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,6 +190,9 @@
       <find>pushI</find>
       <find>silahkan</find>
       <find>silahkan pilih kun</find>
+      <find>mulaiTest</find>
+      <find>$scope.scoreTest</find>
+      <find>scoreTest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,15 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/pleton/editPleton.php" />
-        <option value="$PROJECT_DIR$/php/pleton/loadPleton.php" />
-        <option value="$PROJECT_DIR$/php/pleton/pushPleton.php" />
-        <option value="$PROJECT_DIR$/view/admin/pleton.php" />
-        <option value="$PROJECT_DIR$/controller/admin/pleton.js" />
-        <option value="$PROJECT_DIR$/controller/admin/angkatan.js" />
-        <option value="$PROJECT_DIR$/controller/admin/angkatan.js" />
-        <option value="$PROJECT_DIR$/controller/admin/guru.js" />
-        <option value="$PROJECT_DIR$/php/guru/pushGuru.php" />
         <option value="$PROJECT_DIR$/view/admin/guru.php" />
         <option value="$PROJECT_DIR$/view/admin/guru.php" />
         <option value="$PROJECT_DIR$/php/guru/editGuru.php" />
@@ -243,6 +243,15 @@
         <option value="$PROJECT_DIR$/php/tambahTest/setBobot.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
         <option value="$PROJECT_DIR$/view/guru/test.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/admin/pleton.php" />
+        <option value="$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php" />
+        <option value="$PROJECT_DIR$/controller/student/indexSiswa.js" />
+        <option value="$PROJECT_DIR$/php/testSiswa/pushResponStart.php" />
+        <option value="$PROJECT_DIR$/php/testSiswa/loadSoal.php" />
+        <option value="$PROJECT_DIR$/view/siswa/test.php" />
+        <option value="$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php" />
+        <option value="$PROJECT_DIR$/controller/student/newTest.js" />
       </list>
     </option>
   </component>
@@ -304,7 +313,7 @@
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
@@ -315,24 +324,12 @@
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tambahbanksoal" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tambahTest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="testSiswa" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="guru" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -391,12 +388,12 @@
       <workItem from="1504271980341" duration="43681000" />
       <workItem from="1504355620647" duration="18413000" />
       <workItem from="1504399873067" duration="6090000" />
-      <workItem from="1504428365106" duration="20838000" />
+      <workItem from="1504428365106" duration="39743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146800000" />
+    <option name="totallyTimeSpent" value="165705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -434,112 +431,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/editTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/pushTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/deleteTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/deleteDetailTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/admin/timPengajar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="82" column="34" lean-forward="false" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="295" column="73" lean-forward="false" selection-start-line="295" selection-start-column="73" selection-end-line="295" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/loadDetailTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/timpengajar/pushDetailTimPengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/timpengajar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="350" column="96" lean-forward="false" selection-start-line="350" selection-start-column="96" selection-end-line="350" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="59" column="40" lean-forward="false" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/guru/loadGuru.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadProfileUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/student/indexSiswa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="250" column="77" lean-forward="false" selection-start-line="250" selection-start-column="77" selection-end-line="250" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/indexGuru.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -565,13 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/pleton.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="269" column="56" lean-forward="false" selection-start-line="269" selection-start-column="56" selection-end-line="269" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -703,44 +587,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <marker date="1504434678611" expanded="true" signature="259:341" ph="SELECT * FRO... testing" />
-            <marker date="1504434678611" expanded="true" signature="259:459" ph="SELECT * FRO... testing" />
-            <marker date="1504434678611" expanded="true" signature="259:534" ph="SELECT * FRO... testing" />
-            <marker date="1504434678611" expanded="true" signature="259:542" ph="SELECT * FRO... testing" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahsoal/deleteSoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <marker date="1503961581018" expanded="true" signature="258:296" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="229" column="220" lean-forward="true" selection-start-line="229" selection-start-column="220" selection-end-line="229" selection-end-column="228" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/deleteTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
-          <folding>
-            <marker date="1504441006092" expanded="true" signature="257:292" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,61 +609,6 @@
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="37" />
           <folding>
             <marker date="1504447055869" expanded="true" signature="333:430" ph="UPDATE banks... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/statistik.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="137" column="36" lean-forward="true" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/pushTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding>
-            <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
-            <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
-            <marker date="1504430669324" expanded="true" signature="894:984" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="894:1094" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="894:1095" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="1374:1452" ph="INSERT INTO detailtest... " />
-            <marker date="1504430669324" expanded="true" signature="1639:1840" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="1639:1841" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="2139:2217" ph="INSERT INTO detailtest... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="441" column="84" lean-forward="true" selection-start-line="441" selection-start-column="84" selection-end-line="441" selection-end-column="84" />
-          <folding>
-            <marker date="1504447782039" expanded="false" signature="9627:9667" ph="..." />
-            <marker date="1504447782039" expanded="false" signature="10342:10382" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="312" column="37" lean-forward="false" selection-start-line="312" selection-start-column="19" selection-end-line="312" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1504449440217" expanded="true" signature="256:358" ph="SELECT * FRO... detailtest" />
           </folding>
         </state>
       </provider>
@@ -838,11 +634,261 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1504449440217" expanded="true" signature="256:358" ph="SELECT * FRO... detailtest" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/statistik.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="137" column="36" lean-forward="true" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/deleteTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
+          <folding>
+            <marker date="1504441006092" expanded="true" signature="257:292" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/deleteSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <marker date="1503961581018" expanded="true" signature="258:296" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/guru/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="442" column="109" lean-forward="false" selection-start-line="442" selection-start-column="109" selection-end-line="442" selection-end-column="109" />
+        <state relative-caret-position="131">
+          <caret line="433" column="46" lean-forward="true" selection-start-line="433" selection-start-column="46" selection-end-line="433" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="82" column="106" lean-forward="false" selection-start-line="82" selection-start-column="106" selection-end-line="82" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="312" column="37" lean-forward="false" selection-start-line="312" selection-start-column="19" selection-end-line="312" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/pleton.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="199" column="118" lean-forward="false" selection-start-line="199" selection-start-column="118" selection-end-line="199" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/pleton/pushPleton.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1504135537738" expanded="true" signature="282:367" ph="INSERT INTO pletonsiswa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/pushTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
+            <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
+            <marker date="1504430669324" expanded="true" signature="894:984" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="894:1094" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="894:1095" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="1374:1452" ph="INSERT INTO detailtest... " />
+            <marker date="1504430669324" expanded="true" signature="1639:1840" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="1639:1841" ph="SELECT idSoa... soaldetail" />
+            <marker date="1504430669324" expanded="true" signature="2139:2217" ph="INSERT INTO detailtest... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/siswa/pushSiswa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504355534106" expanded="true" signature="346:473" ph="INSERT INTO siswa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/siswa/pushResponTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503961580993" expanded="true" signature="221:305" ph="INSERT INTO responTest... " />
+            <marker date="1503961580993" expanded="true" signature="418:469" ph="SELECT jml_s... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <marker date="1504465241323" expanded="true" signature="260:282" ph="SELECT * FRO... testing" />
+            <marker date="1504465241323" expanded="true" signature="260:376" ph="SELECT * FRO... testing" />
+            <marker date="1504465241323" expanded="true" signature="260:396" ph="SELECT * FRO... testing" />
+            <marker date="1504465241323" expanded="true" signature="303:375" ph="SELECT idTes... respontest" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <marker date="1504434678611" expanded="true" signature="259:341" ph="SELECT * FRO... testing" />
+            <marker date="1504434678611" expanded="true" signature="259:459" ph="SELECT * FRO... testing" />
+            <marker date="1504434678611" expanded="true" signature="259:534" ph="SELECT * FRO... testing" />
+            <marker date="1504434678611" expanded="true" signature="259:542" ph="SELECT * FRO... testing" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <marker date="1504467100229" expanded="true" signature="315:386" ph="INSERT INTO respontest... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
+            <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
+            <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
+            <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
+            <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/siswa/pushFinishRespon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <marker date="1503961580991" expanded="true" signature="307:394" ph="UPDATE respo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/siswa/pushResponDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <marker date="1503961580993" expanded="true" signature="407:518" ph="INSERT INTO detailrespon... " />
+            <marker date="1503961580993" expanded="true" signature="588:842" ph="SELECT idSoa... soalDetail" />
+            <marker date="1503961580993" expanded="true" signature="722:777" ph="SELECT idSoa... detailrespon" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/student/testController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="172" column="47" lean-forward="true" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/student/indexSiswa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1485">
+          <caret line="195" column="59" lean-forward="true" selection-start-line="195" selection-start-column="59" selection-end-line="195" selection-end-column="59" />
+          <folding>
+            <element signature="e#8956#8977#0#HTML" expanded="true" />
+            <element signature="e#9363#9384#0#HTML" expanded="true" />
+            <element signature="e#9770#9791#0#HTML" expanded="true" />
+            <element signature="e#10225#10258#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

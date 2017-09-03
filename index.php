@@ -81,7 +81,6 @@
     <span ng-style="myStyle" ng-hide="!isusername">{{message}}</span>
     <input type="text" placeholder="Nama Siswa" ng-model="namaSiswa" required ng-disabled="isusername"/>
     <input type="password" placeholder="password" ng-model="password" required ng-disabled="isusername" />
-    >
     <div ng-init="loadPleton()">
     <select name="idPleton" ng-model="idPleton" class="form-control" ng-change="change()" required="true">
       <option value="">Pilih Pleton </option>
