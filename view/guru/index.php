@@ -286,19 +286,19 @@
 							<div class="divider"></div>
 						</div>
 						<div class="col-md-12 recentContent" ng-init="loadNilai()">
-							<table class="table table-hover" >
+							<table class="table table-bordered">
 							    <thead>
 							      <tr>
 							        <th>NIS</th>
-							        <th>Jenis Soal</th>
+							        <th>Nama Test</th>
 							        <th>Nilai</th>
 							      </tr>
 							    </thead>
 							    <tbody>
 							      <tr ng-repeat="nilai in nilais | limitTo:quantity">
-							        <td>{{nilai.nis}}</td>
-							        <td>{{nilai.jenis}}</td>
-							        <td>{{nilai.nilaiResponTest}}</td>
+							        <td class="col-md-1 ">{{nilai.nis}}</td>
+							        <td class="col-md-1 ">{{nilai.jenis}}</td>
+							        <td class="col-md-1 ">{{nilai.nilaiResponTest}}</td>
 							      </tr>
 							    </tbody>
 						  	</table>
@@ -306,7 +306,7 @@
 						<div class="col-md-12 recentButton">
 							<div class="input-group">
 						     	<span class="input-group-btn">
-						    		<button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp " type="button">More</button>
+						    		<a href="statistik.php"  style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp " >More</a>
 						    	</span>
 						    </div>
 						</div>

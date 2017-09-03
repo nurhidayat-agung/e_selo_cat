@@ -229,8 +229,7 @@ if($_SESSION['job'] == 'guru'){
                                 <thead>
                                 <tr >
                                     <th class="col-md-1 titleGenerate" ><center>NIS</center></th>
-                                    <th class="col-md-1 titleGenerate" ><center>ID Test</center></th>
-                                    <th class="col-md-2 titleGenerate" ><center>Jenis Soal</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Nama Test</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Nilai</center></th>
                                     
                                 </tr>
@@ -238,7 +237,6 @@ if($_SESSION['job'] == 'guru'){
                                 <tbody>
                                 <tr ng-repeat="nilai in nilais">
                                     <th class="col-md-1 " >{{nilai.nis}}</th>
-                                    <th class="col-md-1 " >{{nilai.idTest}}</th>
                                     <th class="col-md-2 " >{{nilai.jenis}}</th>
                                     <th class="col-md-1 " >{{nilai.nilaiResponTest}}</th>
                                     

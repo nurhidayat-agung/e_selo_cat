@@ -230,7 +230,7 @@ if($_SESSION['job'] == 'admin'){
                     <div class="col-md-12 recentButton">
                         <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button">More</button>
+                                    <a href="pleton.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
                         </div>
                     </div>
@@ -266,7 +266,7 @@ if($_SESSION['job'] == 'admin'){
                     <div class="col-md-12 recentButton">
                         <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button">More</button>
+                                    <a href="angkatan.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
                         </div>
                     </div>
@@ -303,7 +303,7 @@ if($_SESSION['job'] == 'admin'){
                     <div class="col-md-12 recentButton">
                         <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button">More</button>
+                                    <a href="guru.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
                         </div>
                     </div>
@@ -337,7 +337,7 @@ if($_SESSION['job'] == 'admin'){
                     <div class="col-md-12 recentButton">
                         <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="button">More</button>
+                                    <a href="timpengajar.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
                         </div>
                     </div>
