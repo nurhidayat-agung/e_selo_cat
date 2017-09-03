@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['job'] == 'guru'){
+if($_SESSION['status'] == 'siswa'){
     ?>
     <!DOCTYPE html>
     <html>
@@ -29,7 +29,7 @@ if($_SESSION['job'] == 'guru'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
         <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
-        <script src="../../controller/teacher/export.js"></script>
+        <script src="../../controller/student/responseController.js"></script>
 
         <!-- FONT -->
         <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
@@ -54,64 +54,24 @@ if($_SESSION['job'] == 'guru'){
         <meta property="og:description" content="Learning, Pembelajaran, Pendukung Keputusan">
 
     </head>
-    <body onload="startTime()">
+     <body onload="startTime()">
     <div id="mySidenav" class="sidenav">
         <!-- Profile Admin -->
         <div class="col-md-12 profil">
             <div class="cen">
                 <img src="../../assets/sekpol.png" class="img-circle" style="width: 70; height: 100px;">
-                <span id="nama"><?php echo $_SESSION['nama']; ?>, S.Pd</span><br />
-                <span id="level">Guru</span>
+                <span id="nama"><h4 style="margin-bottom: 0px;"><?php echo $_SESSION['idUser']; ?></h4></span><br />
+                <span id="level">Siswa</span>
             </div>
         </div>
 
-        <a href="index.php">
-            <div class="col-md-12 menu">
+        <a href="#">
+            <div class="col-md-12 menu ">
                 <div class="col-md-10">
                     <span>Home</span>
                 </div>
                 <div class="col-md-2">
                     <span><i class="fa fa-home" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </a>
-       <!--  <a href="tambahmapel.php">
-            <div class="col-md-12 menu">
-                <div class="col-md-10">
-                    <span>Tambah Mapel</span>
-                </div>
-                <div class="col-md-2">
-                    <span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </a>
-        <a href="tambahbab.php">
-            <div class="col-md-12 menu">
-                <div class="col-md-10">
-                    <span>Tambah Bab Mapel</span>
-                </div>
-                <div class="col-md-2">
-                    <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </a> -->
-        <a href="tambahbanksoal.php">
-            <div class="col-md-12 menu">
-                <div class="col-md-10">
-                    <span>Tambah Bank Soal</span>
-                </div>
-                <div class="col-md-2">
-                    <span><i class="fa fa-plus" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </a>
-        <a href="soal.php">
-            <div class="col-md-12 menu">
-                <div class="col-md-10">
-                    <span>Soal</span>
-                </div>
-                <div class="col-md-2">
-                    <span><i class="fa fa-file-text" aria-hidden="true"></i></span>
                 </div>
             </div>
         </a>
@@ -121,21 +81,21 @@ if($_SESSION['job'] == 'guru'){
                     <span>Test</span>
                 </div>
                 <div class="col-md-2">
-                    <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-file-text" aria-hidden="true"></i></span>
                 </div>
             </div>
-            </a> 
-<!--        <a href="respon.php">-->
-<!--            <div class="col-md-12 menu">-->
-<!--                <div class="col-md-10">-->
-<!--                    <span>Input Respon</span>-->
-<!--                </div>-->
-<!--                <div class="col-md-2">-->
-<!--                    <span><i class="fa fa-book" aria-hidden="true"></i></span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </a>-->
-        <!-- <a href="analisis.php">
+        </a>
+        <a href="response.php">
+                <div class="col-md-12 menu active">
+                    <div class="col-md-10">
+                        <span>Response</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+        </a>
+        <!-- <a href="#">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Analisis</span>
@@ -144,9 +104,9 @@ if($_SESSION['job'] == 'guru'){
                     <span><i class="fa fa-search" aria-hidden="true"></i></span>
                 </div>
             </div>
-        </a> -->
-        <a href="statistik.php">
-            <div class="col-md-12 menu active">
+        </a>
+        <a href="#">
+            <div class="col-md-12 menu">
                 <div class="col-md-10">
                     <span>Statistik</span>
                 </div>
@@ -154,7 +114,7 @@ if($_SESSION['job'] == 'guru'){
                     <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
                 </div>
             </div>
-        </a>
+        </a> -->
 
         <a href="../../logout.php">
             <div class="col-md-12 logout">
@@ -187,57 +147,24 @@ if($_SESSION['job'] == 'guru'){
     </nav>
 
     <!-- content -->
-    <div id="main" ng-app="statistikNilai" >
+    <div id="main" ng-app="response" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="statistikC">
-            <div class="col-md-12 soal" ">
-                <div class="generateSoal">
-                    <div class="col-md-12" id="paramMapel">
-                        <!-- <div class="col-md-4">
-                            <div class="col-md-12 titleGenerate">
-                                <div>Mapel</div>
-                            </div>
-                            <div class="col-md-12 contentGenerate" >
-                                <div class="input-group">
-                                    <select name="mapel" ng-model="mapel" class="form-control" ng-change="loadbanksoal()" required="true">
-                                        <option value="">pilih mapel</option>
-                                        <option ng-repeat="mapel in mapels" value="{{mapel.idMapel}}">{{mapel.namaMapel}}</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="col-md-4">
-                          
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-md-12 tombol">
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="exportToExcel('#tableToExport')"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>  Download Data</button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            
-                        </div>
-                    </div>
-
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="responseC">
+            
+                    
                     <div class="col-md-12 soal">
-                        <div class="col-md-12 title table-responsive" ng-init="loadNilai()" >
+                        <div class="col-md-12 title table-responsive" ng-init="loadResponTest()" >
                             <table class="table table-bordered" id="tableToExport" >
                                 <thead>
                                 <tr >
-                                    <th class="col-md-1 titleGenerate" ><center>NIS</center></th>
-                                    <th class="col-md-1 titleGenerate" ><center>ID Test</center></th>
-                                    <th class="col-md-2 titleGenerate" ><center>Jenis Soal</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Nama Test</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Jenis</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Nilai</center></th>
                                     
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr ng-repeat="nilai in nilais">
-                                    <th class="col-md-1 " >{{nilai.nis}}</th>
                                     <th class="col-md-1 " >{{nilai.idTest}}</th>
                                     <th class="col-md-2 " >{{nilai.jenis}}</th>
                                     <th class="col-md-1 " >{{nilai.nilaiResponTest}}</th>
@@ -257,9 +184,6 @@ if($_SESSION['job'] == 'guru'){
                         </div>
                     </div>
 
-                </div> <!-- <div class="col-md-12 soal" ng-controller="addSoal"> -->
-            </div>
-            <!-- Content Bawah -->
             <div class="no-padd col-md-12" id="homeBottom">
 
             </div>
@@ -269,7 +193,7 @@ if($_SESSION['job'] == 'guru'){
     <script>
 
     </script>
-    <script>var serverVariable=<?=$_SESSION["idUser"];?>;</script>
+    <script>var serverVariable=<?=$_SESSION["nis"];?>;</script>
     <script src="../../library/js/creartive.js"></script>
     </html>
 
