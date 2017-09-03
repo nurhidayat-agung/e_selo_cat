@@ -32,6 +32,7 @@
 	<script src="../../library/js/jquery-2.1.1.min.js"></script>
 	<script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../library/node_modules/angular/angular.min.js"></script>
+    <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
 	<!-- angular -->
 	<script src="../../controller/teacher/tambahtest.js"></script>
 
@@ -180,10 +181,10 @@
 				      </div>
 				  </div>
 			</nav>
-	<div id="main">
-		<div class="no-padd col-md-12" id="homeTop" ng-app="moduleTambahTest">
-			<div class="col-md-12 soal">
-                <form ng-controller="addTest">
+	<div id="main" ng-app="moduleTambahTest">
+		<div class="no-padd col-md-12" id="homeTop" ng-controller="addTest">
+			<div class="col-md-12 soal" >
+                <form >
                     <div class="col-md-12">
                         <div class="col-md-12">
                             <div class="col-md-12 titleGenerate">
@@ -253,7 +254,7 @@
                         <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushTest()"></input>
+                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushTest()"/>
                                     </span>
                                 </div>
                         </div>
@@ -267,8 +268,8 @@
                         <span class="titleGenerate">Daftar Test Dalam Data Base</span>
                     </center>
                 </div>
-                <div class="col-md-12 title table-responsive" id="inputSoal" >
-                    <table class="table table-bordered" ng-init="loadTest()">
+                <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="loadTest()">
+                    <table class="table table-bordered">
                         <thead>
                         <tr >
                             <th class="col-md-1 titleGenerate" ><center>Id Test</center></th>
@@ -283,22 +284,22 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="test in tests">
-                            <th class="col-md-1 " >{{test.idtTest}}</th>
-                            <th class="col-md-4 " >{{soal.namaTest}}</th>
-                            <th class="col-md-2 " >{{soal.namaTimPengajar}}</th>
-                            <th class="col-md-1 " >{{soal.jenisTest}}</th>
-                            <th class="col-md-1 " >{{soal.status}}</th>
+                            <th class="col-md-1 " >{{test.idTest}}</th>
+                            <th class="col-md-4 " >{{test.namaTest}}</th>
+                            <th class="col-md-2 " >{{test.namaTimPengajar}}</th>
+                            <th class="col-md-1 " >{{test.jenisTest}}</th>
+                            <th class="col-md-1 " >{{test.status}}</th>
                             <th class="col-md-1 btn-lg">
                                 <div class="col-md-12">
                                     <a href="#" ng-click="ubahStatus(test)" class="col-md-12">
-                                        <span class="glyphicon glyphicon-open col-md-12"></span>
+                                        <span class="glyphicon glyphicon-refresh col-md-12"></span>
                                     </a>
                                 </div>
                             </th>
                             <th class="col-md-1 btn-lg">
                                 <div class="col-md-12">
                                     <a href="#" ng-click="previewTest(test)" class="col-md-12">
-                                        <span class="glyphicon glyphicon-glass col-md-12"></span>
+                                        <span class="glyphicon glyphicon-search col-md-12"></span>
                                     </a>
                                 </div>
                             </th>
@@ -372,6 +373,38 @@
                     {{response}}
                 </div>
             </div>
+
+            <!-- The actual modal template, just a bit o bootstrap -->
+            <script type="text/ng-template" id="delete.html" id="delete">
+                <div class="modal fade container">
+                    <div class="modal-dialog">
+                        <div class="modal-content col-md-12">
+                            <div class="modal-header col-md-12">
+                                <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                            </div>
+                            <div class="modal-body col-md-12">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus Test {{namaTest}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer col-md-12">
+                                <div class="col-md-6">
+                                    <!--                                            <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>-->
+                                    <button type="button" ng-click="modalno()" data-dismiss="modal" class="btn btn-default">Batal</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
+                                    <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-warning">Hapus</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </script>
 
 		</div>
 
