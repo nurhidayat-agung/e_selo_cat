@@ -212,13 +212,28 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="col-md-12 titleGenerate">
-                                    <span>Jenis Test</span>
+                                <div class="col-md-12">
+                                    <div class="col-md-6">
+                                        <div class="col-md-12 titleGenerate">
+                                            <span>Jenis Test</span>
+                                        </div>
+                                        <div class="col-md-12 contentGenerate">
+                                            <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaptif &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Klasik<br>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12 titleGenerate">
+                                            <span>Waktu Test</span>
+                                        </div>
+                                        <div class="col-md-12 contentGenerate">
+                                            <div class="form-group">
+                                                <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 contentGenerate">
-                                    <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaptif &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Klasik<br>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -238,12 +253,20 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="col-md-12 titleGenerate">
-                                    <span>Waktu Test</span>
-                                </div>
-                                <div class="col-md-12 contentGenerate">
-                                    <div class="form-group">
-                                        <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required />
+                                <div class="col-md-12">
+                                    <div class="col-md-6 tombol">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="pushEditTest()" ng-hide="!isEditTest">Edit Test</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 tombol">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button style="background-color: #42a5f5; color: white;" class="btn  btn-sm sharp" type="submit" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="batalEditTest()" ng-hide="!isEditTest">Batal</button>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -254,7 +277,7 @@
                         <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushTest()"/>
+                                        <input style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" type="submit" id="buttonGenerateSoal" value="Buat Test" name="input_soal" ng-click="pushTest()" ng-hide="isEditTest"/>
                                     </span>
                                 </div>
                         </div>

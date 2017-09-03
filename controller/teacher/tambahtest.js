@@ -9,6 +9,8 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
     $scope.msgBankSoal = "";
     $scope.jmlMaxPilGand = 0;
     $scope.jmlMaxEssay = 0;
+    $scope.isEditTest = false;
+    $scope.selectIdTest = 0;
 
     $scope.loadBankSoal = function(){
         $http.post(
@@ -131,6 +133,53 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
                 $scope.loadTest();
             });
         });
+    };
+
+    $scope.previewTest = function (pushTest) {
+        $scope.isEditTest = true;
+        $scope.selectIdTest = pushTest.idTest;
+        console.log(pushTest.jmlPilGanda);
+        console.log(pushTest.jmlEssay);
+        console.log(pushTest.waktuTest);
+        var time = pushTest.waktuTest;
+        var pilGan = pushTest.jmlPilGanda;
+        var essay = pushTest.jmlEssay;
+        $scope.namaTest = pushTest.namaTest;
+        $scope.banksoal = pushTest.idBankSoal;
+        $scope.radioJenis = pushTest.jenisTest;
+        $scope.waktuTest = parseInt(time);
+        $scope.jmlPilGan = parseInt(pilGan);
+        $scope.jmlEssay = parseInt(essay);
+    };
+
+    $scope.pushEditTest = function () {
+        if ($scope.namaTest !== '' && $scope.waktuTest > 0){
+            $http.post(
+                "../../php/tambahTest/editTest.php",
+                {'idTest':$scope.selectIdTest,'namaTest':$scope.namaTest,'waktuTest':$scope.waktuTest}
+            ).then(function successCallback(response) {
+                if(response.data){
+                    alert("edit berhasil");
+                    $scope.isEditTest = false;
+                    $scope.banksoal = null;
+                    $scope.namaTest = null;
+                    $scope.radioJenis = null;
+                    $scope.waktuTest = null;
+                    $scope.scoreItem = null;
+                    $scope.jmlPilGan = null;
+                    $scope.jmlEssay = null;
+                }else {
+                    alert("edit gagal");
+                }
+                $scope.loadTest();
+            },function errorCallback(response) {
+                alert("delete soal gagal");
+            });
+        }
+    };
+
+    $scope.batalEditTest = function () {
+        $scope.isEditTest = false;
     };
 });
 
