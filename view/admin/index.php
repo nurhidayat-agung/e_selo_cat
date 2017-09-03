@@ -187,16 +187,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
-        <a href="test.php">
+        <a href="siswa.php">
             <div class="col-md-4 data">
                 <div class="dataIn">
-                    <div class="col-md-12" id="dataSoal">
-                        <i class="fa fa-file-text"></i>
+                    <div class="col-md-12" id="dataUser">
+                      <i class="fa fa-user-circle-o"></i>
                     </div>
                     <div class="col-md-12" id="jumlahSoal">
                         <span>200</span>
                         <div class="divider"></div>
-                        <span>Soal</span>
+                        <span>Data Siswa</span>
                     </div>
                 </div>
             </div>
@@ -219,7 +219,7 @@ if($_SESSION['job'] == 'admin'){
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="pleton in pletons">
+                            <tr ng-repeat="pleton in pletons | limitTo:quantity">
                                 <td>{{pleton.idPleton}}</td>
                                 <td>{{pleton.namaPleton}}</td>
                                 <td>{{pleton.keterangan}}</td>
@@ -255,7 +255,7 @@ if($_SESSION['job'] == 'admin'){
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="angkatan in angkatans">
+                            <tr ng-repeat="angkatan in angkatans | limitTo:quantity">
                                 <td>{{angkatan.idAngkatan }}</td>
                                 <td>{{angkatan.namaAngkatan}}</td>
                                 <td>{{angkatan.deskripsiAngkatan}}</td>
@@ -291,7 +291,7 @@ if($_SESSION['job'] == 'admin'){
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="guru in gurus">
+                            <tr ng-repeat="guru in gurus | limitTo:quantity">
                                 <th class="col-md-1 " >{{guru.nip_nrp}}</th>
                                 <th class="col-md-2 " >{{guru.nama}}</th>
                                 <th class="col-md-2 " >{{guru.job}}</th>
@@ -326,7 +326,7 @@ if($_SESSION['job'] == 'admin'){
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="pengajar in timpengajars">
+                            <tr ng-repeat="pengajar in timpengajars | limitTo:quantity">
                                 <td>{{pengajar.idTimPengajar}}</td>
                                 <td>{{pengajar.namaTimPengajar}}</td>
                                 <td>{{pengajar.keterangan}}</td>

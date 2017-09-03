@@ -10,6 +10,18 @@ app.controller("contentController", function ($scope,$http,$window,$compile) {
             alert("sambungan gagal");
         });
     };
+
+    $scope.loadNilai = function () {
+        $http.get(
+            "../../php/statistik/loadNilai.php"
+        ).then(function successCallback(response) {
+            $scope.nilais = response.data;
+        },function errorCallback(response) {
+            alert("load Nilai gagal");
+        });
+        $scope.quantity = 10;
+    };
+
     $scope.getLastRespon = function () {
         $http.get(
             "../../php/index/loadListRespon.php"
