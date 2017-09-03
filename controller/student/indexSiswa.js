@@ -1,7 +1,9 @@
 var app = angular.module("indekSiswa",[]);
 app.controller("indexSiswaController", function ($scope,$http,$window,$compile) {
     $scope.nis = serverVariable;
+
     $scope.getUserInformation = function () {
+        $scope.isMulaiTest = false;
         $http.post(
             "../../php/siswa/loadProfile.php",
             {'nis':$scope.nis}
@@ -24,4 +26,7 @@ app.controller("indexSiswaController", function ($scope,$http,$window,$compile) 
             alert("sambungan gagal");
         });
     };
+
+
+
 });
