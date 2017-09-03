@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/student/newTest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/loadSoal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/testSiswa/pushResponStart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/indexSiswa.js" afterPath="$PROJECT_DIR$/controller/student/indexSiswa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/pleton.php" afterPath="$PROJECT_DIR$/view/admin/pleton.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/siswa/test.php" afterPath="$PROJECT_DIR$/view/siswa/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/newTest.js" afterPath="$PROJECT_DIR$/controller/student/newTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/soalController.js" afterPath="$PROJECT_DIR$/controller/teacher/soalController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahtest.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,16 +18,17 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+            <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="-1485">
-                    <caret line="195" column="59" lean-forward="true" selection-start-line="195" selection-start-column="59" selection-end-line="195" selection-end-column="59" />
+                    <caret line="204" column="59" lean-forward="true" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
                     <folding>
-                      <element signature="e#8956#8977#0#HTML" expanded="true" />
-                      <element signature="e#9363#9384#0#HTML" expanded="true" />
-                      <element signature="e#9770#9791#0#HTML" expanded="true" />
-                      <element signature="e#10225#10258#0#HTML" expanded="true" />
+                      <element signature="e#9337#9358#0#HTML" expanded="true" />
+                      <element signature="e#9744#9765#0#HTML" expanded="true" />
+                      <element signature="e#10151#10172#0#HTML" expanded="true" />
+                      <element signature="e#10606#10639#0#HTML" expanded="true" />
+                      <marker date="1504479559448" expanded="false" signature="11208:11248" ph="..." />
                     </folding>
                   </state>
                 </provider>
@@ -55,14 +49,38 @@
             <file leaf-file-name="loadSoal.php" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="357">
-                    <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+                  <state relative-caret-position="238">
+                    <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
                     <folding>
                       <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
                       <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
                       <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
                       <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
                       <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="pushDetailRespon.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="204">
+                    <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
+                    <folding>
+                      <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="editSoalEsay.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="0">
+                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                    <folding>
+                      <marker date="1504056656182" expanded="true" signature="462:594" ph="UPDATE soald... " />
                     </folding>
                   </state>
                 </provider>
@@ -75,43 +93,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newTest.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
+      <file leaf-file-name="tambahtest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexSiswa.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/student/indexSiswa.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pushDetailRespon.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="283">
+              <caret line="388" column="50" lean-forward="false" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -119,41 +105,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pushResponDetail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/siswa/pushResponDetail.php">
+      <file leaf-file-name="soalController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <marker date="1503961580993" expanded="true" signature="407:518" ph="INSERT INTO detailrespon... " />
-                <marker date="1503961580993" expanded="true" signature="588:842" ph="SELECT idSoa... soalDetail" />
-                <marker date="1503961580993" expanded="true" signature="722:777" ph="SELECT idSoa... detailrespon" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="soal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
+            <state relative-caret-position="1001">
+              <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loadTestSiswa.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php">
+      <file leaf-file-name="newTest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <marker date="1504465241323" expanded="true" signature="260:282" ph="SELECT * FRO... testing" />
-                <marker date="1504465241323" expanded="true" signature="260:376" ph="SELECT * FRO... testing" />
-                <marker date="1504465241323" expanded="true" signature="260:396" ph="SELECT * FRO... testing" />
-                <marker date="1504465241323" expanded="true" signature="303:375" ph="SELECT idTes... respontest" />
-              </folding>
+            <state relative-caret-position="406">
+              <caret line="99" column="17" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,9 +157,9 @@
       <find>pushI</find>
       <find>silahkan</find>
       <find>silahkan pilih kun</find>
-      <find>mulaiTest</find>
       <find>$scope.scoreTest</find>
       <find>scoreTest</find>
+      <find>mulaiTest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -239,9 +206,7 @@
         <option value="$PROJECT_DIR$/php/tambahTest/editTest.php" />
         <option value="$PROJECT_DIR$/view/guru/statistik.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" />
-        <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
         <option value="$PROJECT_DIR$/php/tambahTest/setBobot.php" />
-        <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
         <option value="$PROJECT_DIR$/view/guru/test.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/view/admin/pleton.php" />
@@ -252,6 +217,8 @@
         <option value="$PROJECT_DIR$/view/siswa/test.php" />
         <option value="$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php" />
         <option value="$PROJECT_DIR$/controller/student/newTest.js" />
+        <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
+        <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
       </list>
     </option>
   </component>
@@ -318,13 +285,19 @@
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="testSiswa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tambahsoal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
@@ -388,12 +361,12 @@
       <workItem from="1504271980341" duration="43681000" />
       <workItem from="1504355620647" duration="18413000" />
       <workItem from="1504399873067" duration="6090000" />
-      <workItem from="1504428365106" duration="39743000" />
+      <workItem from="1504428365106" duration="42725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165705000" />
+    <option name="totallyTimeSpent" value="168687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -431,13 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/teacher/indexGuru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/index/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -624,16 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -688,26 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="312" column="37" lean-forward="false" selection-start-line="312" selection-start-column="19" selection-end-line="312" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/admin/pleton.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="199" column="118" lean-forward="false" selection-start-line="199" selection-start-column="118" selection-end-line="199" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -797,20 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
-            <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
-            <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
-            <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
-            <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/siswa/pushFinishRespon.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -821,44 +747,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
+    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="-1485">
+          <caret line="204" column="59" lean-forward="true" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/pushResponDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <marker date="1503961580993" expanded="true" signature="407:518" ph="INSERT INTO detailrespon... " />
-            <marker date="1503961580993" expanded="true" signature="588:842" ph="SELECT idSoa... soalDetail" />
-            <marker date="1503961580993" expanded="true" signature="722:777" ph="SELECT idSoa... detailrespon" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/student/testController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="172" column="47" lean-forward="true" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#9337#9358#0#HTML" expanded="true" />
+            <element signature="e#9744#9765#0#HTML" expanded="true" />
+            <element signature="e#10151#10172#0#HTML" expanded="true" />
+            <element signature="e#10606#10639#0#HTML" expanded="true" />
+            <marker date="1504479559448" expanded="false" signature="11208:11248" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
           <folding>
             <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding>
+            <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
+            <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
+            <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
+            <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
+            <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
           </folding>
         </state>
       </provider>
@@ -871,24 +793,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
+    <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        <state relative-caret-position="318">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="62" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/siswa/pushResponDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <marker date="1503961580993" expanded="true" signature="407:518" ph="INSERT INTO detailrespon... " />
+            <marker date="1503961580993" expanded="true" signature="588:842" ph="SELECT idSoa... soalDetail" />
+            <marker date="1503961580993" expanded="true" signature="722:777" ph="SELECT idSoa... detailrespon" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
+    <entry file="file://$PROJECT_DIR$/controller/student/testController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1485">
-          <caret line="195" column="59" lean-forward="true" selection-start-line="195" selection-start-column="59" selection-end-line="195" selection-end-column="59" />
+        <state relative-caret-position="1494">
+          <caret line="182" column="66" lean-forward="false" selection-start-line="182" selection-start-column="57" selection-end-line="182" selection-end-column="66" />
           <folding>
-            <element signature="e#8956#8977#0#HTML" expanded="true" />
-            <element signature="e#9363#9384#0#HTML" expanded="true" />
-            <element signature="e#9770#9791#0#HTML" expanded="true" />
-            <element signature="e#10225#10258#0#HTML" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504056656182" expanded="true" signature="462:594" ph="UPDATE soald... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="388" column="50" lean-forward="false" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1001">
+          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="99" column="17" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
