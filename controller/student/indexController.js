@@ -32,10 +32,10 @@
      $scope.insertData = function(){            
         $http.post(  
             "php/index/register.php",  
-            {'nis':$scope.nis, 'namaSiswa':$scope.namaSiswa,'password':$scope.password,'idAngkatan':$scope.idAngkatan,'idPleton':$scope.idPleton}  
+            {'nis':$scope.nis, 'namaSiswa':$scope.namaSiswa,'password':$scope.password,'idAngkatan':$scope.idAngkatan,'idPleton':$scope.idPleton,'idKompi':$scope.idKompi}  
         ).then(function successCallback(response) {
             if(response.data){
-                alert('Registrasi Berhasil');
+                alert('Registrasi Berhasil, Silahkan login');
                 $scope.username = null;  
                 $scope.password = null;
                 $scope.nama = null;
@@ -53,6 +53,16 @@
             $scope.pletons = response.data;
         },function errorCallback(response) {
             alert("load Pleton gagal");
+        });
+    };
+
+    $scope.loadKompi = function () {
+        $http.get(
+            "php/kompi/loadKompi.php"
+        ).then(function successCallback(response) {
+            $scope.kompis = response.data;
+        },function errorCallback(response) {
+            alert("load Kompi gagal");
         });
     };
 

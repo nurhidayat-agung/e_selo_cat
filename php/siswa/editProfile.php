@@ -7,8 +7,9 @@
     $namaSiswa = $_POST['namaSiswa'];
     $idAngkatan = $_POST['idAngkatan'];
     $idPleton = $_POST['idPleton'];
+    $idKompi = $_POST['idKompi'];
 
-        $query = "UPDATE siswa SET namaSiswa = '$namaSiswa' , password='$password',idAngkatan = $idAngkatan, idPleton = $idPleton WHERE nis = $nis";
+        $query = "UPDATE siswa SET namaSiswa = '$namaSiswa' , password='$password',idAngkatan = $idAngkatan, idPleton = $idPleton, idKompi = $idKompi WHERE nis = $nis";
         if(mysqli_query($conn, $query))
         {   
             echo ("<SCRIPT LANGUAGE='JavaScript'>

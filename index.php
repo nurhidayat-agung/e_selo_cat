@@ -87,7 +87,13 @@
       <option ng-repeat="pleton in pletons" value="{{pleton.idPleton}}">{{pleton.namaPleton}}</option>
     </select>
     </div>
-    <div ng-init="loadAngkatan()">
+    <div ng-init="loadKompi()">
+    <select name="idKompi" ng-model="idKompi" class="form-control" ng-change="change()" required="true">
+      <option value="">Pilih Kompi </option>
+      <option ng-repeat="kompi in kompis" value="{{kompi.idKompi}}">{{kompi.namaKompi}}</option>
+    </select>
+    </div>
+     <div ng-init="loadAngkatan()">
      <select name="idAngkatan" ng-model="idAngkatan" class="form-control" ng-change="change()" required="true">
       <option value="">Pilih Angkatan </option>
       <option ng-repeat="angkatan in angkatans" value="{{angkatan.idAngkatan}}">{{angkatan.namaAngkatan}}</option>

@@ -5,7 +5,7 @@
 
 var app4 = angular.module("statistikNilai",['angularModalService']);
 app4.controller("statistikC",function($scope,Excel,$timeout,$http,$window,$compile,ModalService){
-
+    $scope.idUser = serverVariable;
     $scope.loadNilai = function () {
         $http.get(
             "../../php/statistik/loadNilai.php"
@@ -13,6 +13,43 @@ app4.controller("statistikC",function($scope,Excel,$timeout,$http,$window,$compi
             $scope.nilais = response.data;
         },function errorCallback(response) {
             alert("load statistik gagal");
+        });
+    };
+    $scope.loadKompi = function () {
+        $http.get(
+            "../../php/kompi/loadKompi.php"
+        ).then(function successCallback(response) {
+            $scope.kompis = response.data;
+        },function errorCallback(response) {
+            alert("load Kompi gagal");
+        });
+    };
+    $scope.loadBankSoal = function(){
+        $http.post(
+            "../../php/utilFunction/loadbanksoal.php",
+            {'nip_nrp':$scope.idUser}
+        ).then(function successCallback(response) {
+            $scope.banksoals = response.data;
+        }, function errorCallback(response) {
+            alert("sambungan gagal");
+        });
+    };
+    $scope.loadPleton = function () {
+        $http.get(
+            "../../php/pleton/loadPleton.php"
+        ).then(function successCallback(response) {
+            $scope.pletons = response.data;
+        },function errorCallback(response) {
+            alert("load Pleton gagal");
+        });
+    };
+    $scope.loadAngkatan = function () {
+        $http.get(
+            "../../php/angkatan/loadAngkatan.php"
+        ).then(function successCallback(response) {
+            $scope.angkatans = response.data;
+        },function errorCallback(response) {
+            alert("load angkatan gagal");
         });
     };
     $scope.exportToExcel=function(tableId){ // ex: '#my-table'

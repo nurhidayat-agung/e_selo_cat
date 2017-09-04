@@ -184,21 +184,27 @@ if($_SESSION['job'] == 'admin'){
                             <table class="table table-bordered" ng-init="loadPleton()">
                                 <thead>
                                 <tr >
-                                    <th class="col-md-1 titleGenerate" ><center>Id Test</center></th>
-                                    <th class="col-md-3 titleGenerate" ><center>Nama Test</center></th>
-                                    <th class="col-md-2 titleGenerate" ><center>Jenis Test</center></th>
-                                    <th class="col-md-1 titleGenerate" ><center>Mulai Test</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Id Pleton</center></th>
+                                    <th class="col-md-3 titleGenerate" ><center>Nama Pleton</center></th>
+                                    <th class="col-md-2 titleGenerate" ><center>Keterangan</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="test in tests">
-                                    <th class="col-md-1 " >{{test.idTest}}</th>
-                                    <th class="col-md-3 " >{{test.namaTest}}</th>
-                                    <th class="col-md-2 " >{{test.jenisTest}}</th>
-                                    <th class="col-md-1">
-                                        <a href="#" class="col-md-12">
-                                            <span class="glyphicon glyphicon-edit col-md-12" ng-click="mulaiUjian(test)"></span>
-                                        </a>
+                                <tr ng-repeat="pleton in pletons">
+                                    <th class="col-md-1 " >{{pleton.idPleton}}</th>
+                                    <th class="col-md-3 " >{{pleton.namaPleton}}</th>
+                                    <th class="col-md-2 " >{{pleton.keterangan}}</th>
+                                    <th class="col-md-1 btn-lg"  >
+                                    <a href="#" ng-click="editPleton(pleton)" class="col-md-12">
+                                    <span class="glyphicon glyphicon-edit" ></span>
+                                    </a>
+                                    </th> 
+                                    <th class="col-md-1 btn-lg">
+                                    <a href="#" ng-click="deletePleton(pleton)" class="col-md-12">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                    </a>
                                     </th>
                                 </tr>
                                 </tbody>

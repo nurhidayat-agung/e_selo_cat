@@ -192,34 +192,87 @@ if($_SESSION['job'] == 'guru'){
         <div class="no-padd col-md-12" id="homeTop" ng-controller="statistikC">
             <div class="col-md-12 soal" ">
                 <div class="generateSoal">
-                    <div class="col-md-12" id="paramMapel">
-                        <!-- <div class="col-md-4">
+
+                        <div class="col-md-3">
                             <div class="col-md-12 titleGenerate">
-                                <div>Mapel</div>
+                                <span>Mapel</span>
                             </div>
-                            <div class="col-md-12 contentGenerate" >
+                            <div class="col-md-12 contentGenerate">
                                 <div class="input-group">
-                                    <select name="mapel" ng-model="mapel" class="form-control" ng-change="loadbanksoal()" required="true">
-                                        <option value="">pilih mapel</option>
-                                        <option ng-repeat="mapel in mapels" value="{{mapel.idMapel}}">{{mapel.namaMapel}}</option>
+                                    <select name="banksoal" ng-model="idBankSoal" class="form-control" ng-change="loadSoal()" ng-init="loadBankSoal()">
+                                        <option value="">Select banksoal</option>
+                                        <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-12 titleGenerate">
+                                <span>Pleton</span>
+                            </div>
+                            <div class="col-md-12 contentGenerate">
+                                <div class="input-group">
+                                    <div ng-init="loadPleton()">
+                                    <select name="idPleton" ng-model="idPleton" class="form-control" ng-change="change()" required="true">
+                                      <option value="">Pilih Pleton </option>
+                                      <option ng-repeat="pleton in pletons" value="{{pleton.idPleton}}">{{pleton.namaPleton}}</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-12 titleGenerate">
+                                <span>Kompi</span>
+                            </div>
+                            <div class="col-md-12 contentGenerate">
+                                <div class="input-group">
+                                    <div ng-init="loadKompi()">
+                                    <select name="idKompi" ng-model="idKompi" class="form-control" ng-change="change()" required="true">
+                                      <option value="">Pilih Kompi </option>
+                                      <option ng-repeat="kompi in kompis" value="{{kompi.idKompi}}">{{kompi.namaKompi}}</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-12 titleGenerate">
+                                <span>Angkatan</span>
+                            </div>
+                            <div class="col-md-12 contentGenerate">
+                                <div class="input-group">
+                                    <div ng-init="loadAngkatan()">
+                                     <select name="idAngkatan" ng-model="idAngkatan" class="form-control" ng-change="change()" required="true">
+                                      <option value="">Pilih Angkatan </option>
+                                      <option ng-repeat="angkatan in angkatans" value="{{angkatan.idAngkatan}}">{{angkatan.namaAngkatan}}</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <!-- <div class="col-md-3">
+                            <div class="col-md-12 tombol">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="loadNilai()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Filter Nilai</button>
+                                    </span>
                                 </div>
                             </div>
                         </div> -->
                         <div class="col-md-4">
-                          
-                        </div>
-                        <div class="col-md-4">
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="exportToExcel('#tableToExport')"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>  Download Data</button>
+                                        <button onclick="return confirm('Apakah anda sudah memilih filter nilai dengan benar???');" style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="exportToExcel('#tableToExport')"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>  Download Data</button>
                                     </span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-4">
-                            
                         </div>
                     </div>
 
@@ -229,15 +282,23 @@ if($_SESSION['job'] == 'guru'){
                                 <thead>
                                 <tr >
                                     <th class="col-md-1 titleGenerate" ><center>NIS</center></th>
-                                    <th class="col-md-2 titleGenerate" ><center>Nama Test</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Nama Siswa</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Mapel</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Pleton</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Kompi</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Angkatan</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Nilai</center></th>
                                     
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="nilai in nilais">
+                                <tr ng-repeat="nilai in nilais | filter:{idBankSoal: idBankSoal, idPleton: idPleton, idAngkatan: idAngkatan, idKompi: idKompi}">
                                     <th class="col-md-1 " >{{nilai.nis}}</th>
-                                    <th class="col-md-2 " >{{nilai.jenis}}</th>
+                                    <th class="col-md-1 " >{{nilai.namaSiswa}}</th>
+                                    <th class="col-md-1 " >{{nilai.namaBankSoal}}</th>
+                                    <th class="col-md-1 " >{{nilai.namaPleton}}</th>
+                                    <th class="col-md-1 " >{{nilai.namaKompi}}</th>
+                                    <th class="col-md-1 " >{{nilai.namaAngkatan}}</th>
                                     <th class="col-md-1 " >{{nilai.nilaiResponTest}}</th>
                                     
                                 </tr>

@@ -8,7 +8,8 @@ if ($data != null){
     $password = $data->password;
     $idAngkatan = $data->idAngkatan;
     $idPleton = $data->idPleton;
-    $query = "insert into siswa(nis, namaSiswa, password, idAngkatan, idPleton) values($nis,'$namaSiswa','$password',$idAngkatan,$idPleton)";
+    $idKompi = $data->idKompi;
+    $query = "insert into siswa(nis, namaSiswa, password, idAngkatan, idPleton, idKompi) values($nis,'$namaSiswa','$password',$idAngkatan,$idPleton,$idKompi)";
     if (mysqli_query($conn,$query)) {
         echo true;
         mysqli_close($conn);

@@ -1,6 +1,7 @@
 <?php 
     include('../../php/angkatan/loadAngkatanSiswa.php');
     include('../../php/pleton/loadPletonSiswa.php');
+     include('../../php/kompi/loadKompiSiswa.php');
 ?>
 <?php
 session_start();
@@ -293,6 +294,14 @@ if($_SESSION['status'] == 'siswa'){
                                 <option value="">Pilih Pleton </option>
                                     <?php foreach ($pleton as $key) { ?>                                       
                                 <option value="<?php echo $key['idPleton']; ?>"><?php echo $key['namaPleton']; ?></option>
+                                                      <?php } ?>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <select name="idKompi" ng-model="idKompi" class="form-control" required="true">
+                                <option value="">Pilih Kompi </option>
+                                    <?php foreach ($kompi as $key) { ?>                                       
+                                <option value="<?php echo $key['idKompi']; ?>"><?php echo $key['namaKompi']; ?></option>
                                                       <?php } ?>
                             </select>
                           </div>
