@@ -386,7 +386,7 @@ app.controller('EditModalEsayController', function($scope,$http,$window,close,id
     $scope.modalyes = function () {
         if ($scope.jumlahEsay > 0){
             $http.post(
-                "../../php/tambahsoal/editSoalPilihanGanda.php",
+                "../../php/tambahsoal/editSoalEsay.php",
                 {'idSoal': idSoal, 'isiSoal':$scope.tambahIsiSoal, 'pil1':$scope.pilihan1, 'pil2':$scope.pilihan2, 'pil3':$scope.pilihan3, 'jumlahEsay':$scope.jumlahEsay}
             ).then(function successCallback(response) {
                 // console.log(response.data.toString());

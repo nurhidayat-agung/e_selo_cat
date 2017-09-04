@@ -96,6 +96,7 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
             if (response.data){
                 console.log("idResponTest : " + $scope.idRespon);
                 console.log("score : " + $scope.scoreTest);
+                $window.location = 'index.php';
             }else {
                 alert("gagal update nilai");
             }
@@ -110,61 +111,131 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
             if(test.jenisTest === "klasik"){
                 if ($scope.radioValue === soal.kunci){
                     $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
-                }
-                if ($scope.countSoal < test.jmlPilGanda){
-                    $scope.loadPilGan();
+                    $scope.crossCek = 1;
                 }else {
-                    $scope.loadEssay();
+                    $scope.crossCek = 0;
                 }
+                $http.post(
+                    "../../php/testSiswa/pushResponStart.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                ).then(function successCallback(response) {
+                    if (response.data){
+                        if ($scope.countSoal < test.jmlPilGanda){
+                            $scope.loadPilGan();
+                        }else {
+                            $scope.loadEssay();
+                        }
+                    }else {
+                        alert("gagal update soal");
+                    }
+                },function errorCallback(response) {
+                    alert("gagal update nilai");
+                });
             }else {
                 if ($scope.radioValue === soal.kunci){
                     $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
-                }
-                if ($scope.countSoal < test.jmlPilGanda){
-                    $scope.loadPilGan();
+                    $scope.crossCek = 1;
                 }else {
-                    $scope.loadEssay();
-                }
+                    $scope.crossCek = 0;
+                };
+                $http.post(
+                    "../../php/testSiswa/pushResponStart.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                ).then(function successCallback(response) {
+                    if (response.data){
+                        if ($scope.countSoal < test.jmlPilGanda){
+                            $scope.loadPilGan();
+                        }else {
+                            $scope.loadEssay();
+                        }
+                    }else {
+                        alert("gagal update soal");
+                    }
+                },function errorCallback(response) {
+                    alert("gagal update nilai");
+                });
             }
         }else {
             if(test.jenisTest === "klasik"){
                 if (soal.jumlahEsay === 1){
                     if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase()){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
+                        $scope.crossCek = 1;
+                    }else {
+                        $scope.crossCek = 0;
                     }
+
                 }else if (soal.jumlahEsay === 2){
                     if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase()){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
+                        $scope.crossCek = 1;
+                    }else {
+                        $scope.crossCek = 0;
                     }
                 }else {
                     if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase() && $scope.pilihan3.toUpperCase() === soal.pil3.toUpperCase()){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
+                        $scope.crossCek = 1;
+                    }else {
+                        $scope.crossCek = 0;
                     }
                 }
-                if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
-                    $scope.loadEssay();
-                }else {
-                    $scope.submitResponFinish();
-                }
+                $http.post(
+                    "../../php/testSiswa/pushResponStart.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                ).then(function successCallback(response) {
+                    if (response.data){
+                        if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
+                            $scope.loadEssay();
+                        }else {
+                            $scope.submitResponFinish();
+                        }
+                    }else {
+                        alert("gagal update soal");
+                    }
+                },function errorCallback(response) {
+                    alert("gagal update nilai");
+                });
             }else {
                 if (soal.jumlahEsay === 1){
                     if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase()){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
+                        $scope.crossCek = 1;
+                    }else {
+                        $scope.crossCek = 0;
                     }
                 }else if (soal.jumlahEsay === 2){
                     if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase()){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
+                        $scope.crossCek = 1;
+                    }else {
+                        scope.crossCek = 0
                     }
                 }else {
                     if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase() && $scope.pilihan3.toUpperCase() === soal.pil3.toUpperCase()){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
+                        scope.crossCek = 1;
+                    }else {
+                        scope.crossCek = 0;
                     }
                 }
-                if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
-                    $scope.loadEssay();
-                }else {
-                    $scope.submitResponFinish();
-                }
+                $http.post(
+                    "../../php/testSiswa/pushResponStart.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                ).then(function successCallback(response) {
+                    if (response.data){
+                        if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
+                            $scope.loadEssay();
+                        }else {
+                            $scope.submitResponFinish();
+                        }
+                    }else {
+                        alert("gagal update soal");
+                    }
+                },function errorCallback(response) {
+                    alert("gagal update nilai");
+                });
+
             }
         }
     };
