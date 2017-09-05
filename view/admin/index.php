@@ -202,143 +202,146 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <div class="no-padd col-md-12" id="homeBottom" style="padding-top: 30px;">
-            <div class="col-md-6 recent">
-                <div class="col-md-12 recentIn">
-                    <div class="col-md-12 recentTitle" id="jumlahSoal">
-                        <i class="fa fa-user-circle-o"></i>
-                        <span>Data Pleton </span>
-                        <div class="divider"></div>
-                    </div>
-                    <div class="col-md-12 recentContent" ng-init="loadPleton()">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th>ID Pleton</th>
-                                <th>Nama Pleton</th>
-                                <th>Keterangan</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr ng-repeat="pleton in pletons | limitTo:quantity">
-                                <td>{{pleton.idPleton}}</td>
-                                <td>{{pleton.namaPleton}}</td>
-                                <td>{{pleton.keterangan}}</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-12 recentButton">
-                        <div class="input-group">
+            <div class="col-md-6">
+                <div class="col-md-12 recent">
+                    <div class="col-md-12 recentIn">
+                        <div class="col-md-12 recentTitle" id="jumlahSoal">
+                            <i class="fa fa-user-circle-o"></i>
+                            <span>Data Pleton </span>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="col-md-12 recentContent" ng-init="loadPleton()">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>ID Pleton</th>
+                                    <th>Nama Pleton</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="pleton in pletons | limitTo:quantity">
+                                    <td>{{pleton.idPleton}}</td>
+                                    <td>{{pleton.namaPleton}}</td>
+                                    <td>{{pleton.keterangan}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 recentButton">
+                            <div class="input-group">
                                 <span class="input-group-btn">
                                     <a href="pleton.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="col-md-6 recent">
-                <div class="col-md-12 recentIn">
-                    <div class="col-md-12 recentTitle" id="jumlahResponse">
-                        <i class="fa fa-check-circle-o"></i>
-                        <span>Data Angkatan</span>
-                        <div class="divider"></div>
-                    </div>
-                    <div class="col-md-12 recentContent" ng-init="loadAngkatan()">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th>Id Angkatan</th>
-                                <th>Nama Angkatan</th>
-                                <th>Deskripsi</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr ng-repeat="angkatan in angkatans | limitTo:quantity">
-                                <td>{{angkatan.idAngkatan }}</td>
-                                <td>{{angkatan.namaAngkatan}}</td>
-                                <td>{{angkatan.deskripsiAngkatan}}</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-12 recentButton">
-                        <div class="input-group">
+                <div class="col-md-12 recent" style="padding-top: 30px;">
+                    <div class="col-md-12 recentIn">
+                        <div class="col-md-12 recentTitle" id="jumlahResponse">
+                            <i class="fa fa-check-circle-o"></i>
+                            <span>Data Angkatan</span>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="col-md-12 recentContent" ng-init="loadAngkatan()">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Id Angkatan</th>
+                                    <th>Nama Angkatan</th>
+                                    <th>Deskripsi</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="angkatan in angkatans | limitTo:quantity">
+                                    <td>{{angkatan.idAngkatan }}</td>
+                                    <td>{{angkatan.namaAngkatan}}</td>
+                                    <td>{{angkatan.deskripsiAngkatan}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 recentButton">
+                            <div class="input-group">
                                 <span class="input-group-btn">
                                     <a href="angkatan.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 recent" style="padding-top: 30px;">
-                <div class="col-md-12 recentIn">
-                    <div class="col-md-12 recentTitle" id="jumlahSoal">
-                        <i class="fa fa-user-circle-o"></i>
-                        <span>Data Guru </span>
-                        <div class="divider"></div>
-                    </div>
-                    <div class="col-md-12 recentContent" ng-init="loadGuru()">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th width="20px">NIK/NRP</th>
-                                <th>Nama</th>
-                                <th>Job</th>
-                                <th>Email</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr ng-repeat="guru in gurus | limitTo:quantity">
-                                <th class="col-md-1 " >{{guru.nip_nrp}}</th>
-                                <th class="col-md-2 " >{{guru.nama}}</th>
-                                <th class="col-md-2 " >{{guru.job}}</th>
-                                <th class="col-md-1 " >{{guru.email}}</th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-12 recentButton">
-                        <div class="input-group">
+            <div class="col-md-6">
+                <div class="col-md-12 recent">
+                    <div class="col-md-12 recentIn">
+                        <div class="col-md-12 recentTitle" id="jumlahSoal">
+                            <i class="fa fa-user-circle-o"></i>
+                            <span>Data Guru </span>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="col-md-12 recentContent" ng-init="loadGuru()">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th width="20px">NIK/NRP</th>
+                                    <th>Nama</th>
+                                    <th>Job</th>
+                                    <th>Email</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="guru in gurus | limitTo:quantity">
+                                    <th class="col-md-1 " >{{guru.nip_nrp}}</th>
+                                    <th class="col-md-2 " >{{guru.nama}}</th>
+                                    <th class="col-md-2 " >{{guru.job}}</th>
+                                    <th class="col-md-1 " >{{guru.email}}</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 recentButton">
+                            <div class="input-group">
                                 <span class="input-group-btn">
                                     <a href="guru.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 recent" style="padding-top: 30px;">
-                <div class="col-md-12 recentIn">
-                    <div class="col-md-12 recentTitle" id="jumlahSoal">
-                        <i class="fa fa-user-circle-o"></i>
-                        <span>Tim Pengajar</span>
-                        <div class="divider"></div>
-                    </div>
-                    <div class="col-md-12 recentContent" ng-init="loadTimPengajar()">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th>ID Tim</th>
-                                <th>Nama Tim Pengajar</th>
-                                <th>Keterangan</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr ng-repeat="pengajar in timpengajars | limitTo:quantity">
-                                <td>{{pengajar.idTimPengajar}}</td>
-                                <td>{{pengajar.namaTimPengajar}}</td>
-                                <td>{{pengajar.keterangan}}</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-12 recentButton">
-                        <div class="input-group">
+
+                <div class="col-md-12 recent" style="padding-top: 30px;">
+                    <div class="col-md-12 recentIn">
+                        <div class="col-md-12 recentTitle" id="jumlahSoal">
+                            <i class="fa fa-user-circle-o"></i>
+                            <span>Tim Pengajar</span>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="col-md-12 recentContent" ng-init="loadTimPengajar()">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>ID Tim</th>
+                                    <th>Nama Tim Pengajar</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="pengajar in timpengajars | limitTo:quantity">
+                                    <td>{{pengajar.idTimPengajar}}</td>
+                                    <td>{{pengajar.namaTimPengajar}}</td>
+                                    <td>{{pengajar.keterangan}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 recentButton">
+                            <div class="input-group">
                                 <span class="input-group-btn">
                                     <a href="timpengajar.php" style="background-color: #42a5f5; color: white;" class="btn btn-sm sharp" >More</a>
                                 </span>
+                            </div>
                         </div>
                     </div>
                 </div>

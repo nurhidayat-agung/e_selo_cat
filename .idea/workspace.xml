@@ -2,9 +2,649 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/background-1.jpg" afterPath="$PROJECT_DIR$/assets/background-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/background-2.jpg" afterPath="$PROJECT_DIR$/assets/background-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/background-3.jpg" afterPath="$PROJECT_DIR$/assets/background-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/bg_profil" afterPath="$PROJECT_DIR$/assets/bg_profil" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/bg_profil.jpg" afterPath="$PROJECT_DIR$/assets/bg_profil.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/bg_profil2.jpg" afterPath="$PROJECT_DIR$/assets/bg_profil2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/default-img.png" afterPath="$PROJECT_DIR$/assets/default-img.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/default-img1.jpg" afterPath="$PROJECT_DIR$/assets/default-img1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/favicon-32x32.png" afterPath="$PROJECT_DIR$/assets/favicon-32x32.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lemdikpol.jpg" afterPath="$PROJECT_DIR$/assets/lemdikpol.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lemdikpol.png" afterPath="$PROJECT_DIR$/assets/lemdikpol.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/polda.png" afterPath="$PROJECT_DIR$/assets/polda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sekpol.png" afterPath="$PROJECT_DIR$/assets/sekpol.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/library/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/oswald1.woff2" afterPath="$PROJECT_DIR$/library/fonts/oswald1.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/oswald2.woff2" afterPath="$PROJECT_DIR$/library/fonts/oswald2.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/oswald3.woff2" afterPath="$PROJECT_DIR$/library/fonts/oswald3.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/oswald4.woff2" afterPath="$PROJECT_DIR$/library/fonts/oswald4.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/woff1.woff2" afterPath="$PROJECT_DIR$/library/fonts/woff1.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/woff2.woff2" afterPath="$PROJECT_DIR$/library/fonts/woff2.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/woff3.woff2" afterPath="$PROJECT_DIR$/library/fonts/woff3.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/library/node_modules/angular/angular.min.js.gzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/skripsi.iml" afterPath="$PROJECT_DIR$/.idea/skripsi.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hat.svg" afterPath="$PROJECT_DIR$/assets/hat.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/angkatan.js" afterPath="$PROJECT_DIR$/controller/admin/angkatan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/guru.js" afterPath="$PROJECT_DIR$/controller/admin/guru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/indexAdmin.js" afterPath="$PROJECT_DIR$/controller/admin/indexAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/pleton.js" afterPath="$PROJECT_DIR$/controller/admin/pleton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/siswa.js" afterPath="$PROJECT_DIR$/controller/admin/siswa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin/timPengajar.js" afterPath="$PROJECT_DIR$/controller/admin/timPengajar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/indexController.js" afterPath="$PROJECT_DIR$/controller/student/indexController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/indexSiswa.js" afterPath="$PROJECT_DIR$/controller/student/indexSiswa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/newTest.js" afterPath="$PROJECT_DIR$/controller/student/newTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/responseController.js" afterPath="$PROJECT_DIR$/controller/student/responseController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/student/testController.js" afterPath="$PROJECT_DIR$/controller/student/testController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/analisisController.js" afterPath="$PROJECT_DIR$/controller/teacher/analisisController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/clock.js" afterPath="$PROJECT_DIR$/controller/teacher/clock.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/export.js" afterPath="$PROJECT_DIR$/controller/teacher/export.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/indexController.js" afterPath="$PROJECT_DIR$/controller/teacher/indexController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/indexGuru.js" afterPath="$PROJECT_DIR$/controller/teacher/indexGuru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/responController.js" afterPath="$PROJECT_DIR$/controller/teacher/responController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/soalController.js" afterPath="$PROJECT_DIR$/controller/teacher/soalController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbab.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/tambahtest.js" afterPath="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/.gitattributes" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/.gitignore" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/.travis.yml" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Autoloader.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Autoloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/APC.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/APC.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/CacheBase.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/CacheBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/DiscISAM.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/DiscISAM.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/ICache.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/ICache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Igbinary.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Igbinary.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Memcache.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Memcache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Memory.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Memory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/MemoryGZip.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/MemoryGZip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/MemorySerialized.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/MemorySerialized.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/PHPTemp.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/PHPTemp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/SQLite.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/SQLite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/SQLite3.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/SQLite3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Wincache.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Wincache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorageFactory.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorageFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CalcEngine/CyclicReferenceStack.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CalcEngine/CyclicReferenceStack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CalcEngine/Logger.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/CalcEngine/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Database.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/DateTime.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/DateTime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Engineering.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Engineering.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Exception.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/ExceptionHandler.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/ExceptionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Financial.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Financial.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/FormulaParser.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/FormulaParser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/FormulaToken.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/FormulaToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Function.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Functions.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Logical.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Logical.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/LookupRef.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/LookupRef.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/MathTrig.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/MathTrig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Statistical.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Statistical.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/TextData.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/TextData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Token/Stack.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Token/Stack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/functionlist.txt" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/functionlist.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/AdvancedValueBinder.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/AdvancedValueBinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DataType.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DataType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DataValidation.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DataValidation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DefaultValueBinder.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DefaultValueBinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/Hyperlink.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/Hyperlink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/IValueBinder.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Cell/IValueBinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Axis.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Axis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/DataSeries.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/DataSeries.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/DataSeriesValues.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/DataSeriesValues.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Exception.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/GridLines.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/GridLines.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Layout.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Legend.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Legend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/PlotArea.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/PlotArea.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Properties.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Properties.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Renderer/jpgraph.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Renderer/jpgraph.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Title.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Title.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Comment.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/DocumentProperties.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/DocumentProperties.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/DocumentSecurity.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/DocumentSecurity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Exception.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/HashTable.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/HashTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Helper/HTML.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Helper/HTML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/IComparable.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/IComparable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/IOFactory.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/IOFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/NamedRange.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/NamedRange.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Abstract.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Abstract.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/CSV.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/CSV.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/DefaultReadFilter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/DefaultReadFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2003XML.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2003XML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007/Chart.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007/Chart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007/Theme.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007/Theme.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BIFF5.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BIFF5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BIFF8.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BIFF8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BuiltIn.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BuiltIn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/ErrorCode.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/ErrorCode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Escher.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Escher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/MD5.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/MD5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/RC4.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/RC4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Style/Border.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Style/Border.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Style/FillPattern.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Style/FillPattern.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Exception.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Gnumeric.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Gnumeric.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/HTML.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/HTML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/IReadFilter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/IReadFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/IReader.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/IReader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/OOCalc.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/OOCalc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/SYLK.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Reader/SYLK.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/ReferenceHelper.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/ReferenceHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText/ITextElement.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText/ITextElement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText/Run.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText/Run.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText/TextElement.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/RichText/TextElement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Settings.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/CodePage.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/CodePage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Date.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Date.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Drawing.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Drawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Excel5.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Excel5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/File.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Font.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Font.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/CHANGELOG.TXT" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/CHANGELOG.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/LUDecomposition.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/LUDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/Matrix.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/Matrix.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/QRDecomposition.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/QRDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/utils/Error.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/utils/Error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/utils/Maths.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/utils/Maths.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/ChainedBlockStream.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/ChainedBlockStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS/File.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS/Root.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS/Root.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLERead.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLERead.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/pclzip.lib.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/pclzip.lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/readme.txt" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PasswordHasher.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PasswordHasher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/String.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/String.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/TimeZone.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/TimeZone.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/XMLWriter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/XMLWriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/ZipArchive.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/ZipArchive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/ZipStreamWrapper.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/ZipStreamWrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/bestFitClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/bestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/exponentialBestFitClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/exponentialBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/linearBestFitClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/linearBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/logarithmicBestFitClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/logarithmicBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/polynomialBestFitClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/polynomialBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/powerBestFitClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/powerBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/trendClass.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/trendClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Alignment.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Alignment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Border.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Border.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Borders.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Borders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Color.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Color.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Conditional.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Conditional.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Fill.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Fill.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Font.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Font.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/NumberFormat.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/NumberFormat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Protection.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Protection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Supervisor.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Style/Supervisor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter/Column.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter/Column.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/BaseDrawing.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/BaseDrawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/CellIterator.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/CellIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Column.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Column.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnCellIterator.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnCellIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnDimension.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnDimension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnIterator.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Dimension.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Dimension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Drawing.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Drawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Drawing/Shadow.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Drawing/Shadow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/HeaderFooter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/HeaderFooter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/HeaderFooterDrawing.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/HeaderFooterDrawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/MemoryDrawing.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/MemoryDrawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/PageMargins.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/PageMargins.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/PageSetup.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/PageSetup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Protection.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Protection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Row.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Row.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowCellIterator.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowCellIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowDimension.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowDimension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowIterator.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/SheetView.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/SheetView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/WorksheetIterator.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/WorksheetIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Abstract.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Abstract.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/CSV.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/CSV.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Chart.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Chart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Comments.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/ContentTypes.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/ContentTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/DocProps.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/DocProps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Drawing.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Drawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Rels.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Rels.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/RelsRibbon.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/RelsRibbon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/RelsVBA.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/RelsVBA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/StringTable.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/StringTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Style.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Theme.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Theme.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Workbook.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Workbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Worksheet.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Worksheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/WriterPart.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/WriterPart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/BIFFwriter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/BIFFwriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Escher.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Escher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Font.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Font.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Parser.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Parser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Workbook.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Workbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Worksheet.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Worksheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Xf.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Xf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Exception.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/HTML.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/HTML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/IWriter.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/IWriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Cell/Comment.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Cell/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Content.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Meta.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Meta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/MetaInf.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/MetaInf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Mimetype.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Mimetype.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Settings.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Styles.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Styles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Thumbnails.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Thumbnails.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/WriterPart.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/WriterPart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/Core.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/Core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/DomPDF.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/DomPDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/mPDF.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/mPDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/tcPDF.php" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/tcPDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/bg/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/bg/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/cs/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/cs/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/cs/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/cs/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/da/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/da/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/da/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/da/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/de/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/de/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/de/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/de/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/en/uk/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/en/uk/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/es/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/es/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/es/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/es/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fi/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fi/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fi/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fi/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fr/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fr/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fr/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/fr/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/hu/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/hu/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/hu/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/hu/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/it/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/it/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/it/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/it/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/nl/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/nl/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/nl/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/nl/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/no/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/no/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/no/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/no/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pl/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pl/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pl/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pl/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/br/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/br/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/br/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/br/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/ru/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/ru/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/ru/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/ru/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/sv/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/sv/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/sv/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/sv/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/tr/config" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/tr/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/tr/functions" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/Classes/PHPExcel/locale/tr/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/changelog.txt" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/composer.json" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/install.txt" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/install.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/PHPExcel-1.8/license.md" afterPath="$PROJECT_DIR$/library/PHPExcel-1.8/license.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/clock/angular-clock.css" afterPath="$PROJECT_DIR$/library/clock/angular-clock.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/clock/angular-clock.css.map" afterPath="$PROJECT_DIR$/library/clock/angular-clock.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/clock/angular-clock.js" afterPath="$PROJECT_DIR$/library/clock/angular-clock.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/clock/angular-clock.min.js" afterPath="$PROJECT_DIR$/library/clock/angular-clock.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/clock/angular-clock.min.js.map" afterPath="$PROJECT_DIR$/library/clock/angular-clock.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/animate.css" afterPath="$PROJECT_DIR$/library/css/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/library/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/library/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/library/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/library/css/bootstrap-theme.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap.css" afterPath="$PROJECT_DIR$/library/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/library/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/library/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/library/css/bootstrap.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/coba.css" afterPath="$PROJECT_DIR$/library/css/coba.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/font-awesome.css" afterPath="$PROJECT_DIR$/library/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/library/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/mine.css" afterPath="$PROJECT_DIR$/library/css/mine.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/css/reset.min.css" afterPath="$PROJECT_DIR$/library/css/reset.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/font-awesome.min.css" afterPath="$PROJECT_DIR$/library/fonts/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/font-montserrat.css" afterPath="$PROJECT_DIR$/library/fonts/font-montserrat.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/font-oswald.css" afterPath="$PROJECT_DIR$/library/fonts/font-oswald.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/library/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/library/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/js/angular-modal-service.js" afterPath="$PROJECT_DIR$/library/js/angular-modal-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/js/animateIndex.js" afterPath="$PROJECT_DIR$/library/js/animateIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/js/creartive.js" afterPath="$PROJECT_DIR$/library/js/creartive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/js/jquery-2-1-3.min.js" afterPath="$PROJECT_DIR$/library/js/jquery-2-1-3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/js/jquery-2.1.1.min.js" afterPath="$PROJECT_DIR$/library/js/jquery-2.1.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/js/npm.js" afterPath="$PROJECT_DIR$/library/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/.npmignore" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/.travis.yml" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/CHANGELOG.md" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/LICENSE" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/README.md" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/bower.json" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.js.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.min.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.min.js.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/dst/angular-modal-service.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/karma.config.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/karma.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/package.json" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/complex/complex.html" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/complex/complex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/complex/complexcontroller.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/complex/complexcontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/custom/custom.css" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/custom/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/custom/custom.html" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/custom/custom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/custom/customcontroller.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/custom/customcontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/index.html" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/sampleapp.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/sampleapp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/bootstrap/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/yesno/yesno.html" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/yesno/yesno.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/yesno/yesnocontroller.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/samples/yesno/yesnocontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/src/angular-modal-service.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/src/angular-modal-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/basics.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/basics.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/bodyClass.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/bodyClass.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/closeModals.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/closeModals.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/controller.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/controller.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/dom.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/dom.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/index.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/parameters.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/parameters.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/template.spec.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/test/template.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular-modal-service/webpack.config.js" afterPath="$PROJECT_DIR$/library/node_modules/angular-modal-service/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/LICENSE.md" afterPath="$PROJECT_DIR$/library/node_modules/angular/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/README.md" afterPath="$PROJECT_DIR$/library/node_modules/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/angular-csp.css" afterPath="$PROJECT_DIR$/library/node_modules/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/angular.js" afterPath="$PROJECT_DIR$/library/node_modules/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/angular.min.js" afterPath="$PROJECT_DIR$/library/node_modules/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/library/node_modules/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/bower.json" afterPath="$PROJECT_DIR$/library/node_modules/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/index.js" afterPath="$PROJECT_DIR$/library/node_modules/angular/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/angular/package.json" afterPath="$PROJECT_DIR$/library/node_modules/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/CHANGELOG.md" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/Gruntfile.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/README.md" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/js/npm.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/dist/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/.jshintrc" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-commonjs-generator.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-raw-files-generator.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/configBridge.json" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/configBridge.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/npm-shrinkwrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/sauce_browsers.yml" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/grunt/sauce_browsers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/affix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/alert.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/button.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/collapse.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/dropdown.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/modal.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/popover.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/scrollspy.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/tab.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/js/transition.js" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/js/transition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/alerts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/badges.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/bootstrap.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/breadcrumbs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/button-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/carousel.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/close.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/code.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/component-animations.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/dropdowns.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/glyphicons.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/glyphicons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/grid.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/input-groups.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/jumbotron.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/jumbotron.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/labels.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/labels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/list-group.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/media.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/media.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/alerts.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/alerts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/background-variant.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/border-radius.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/center-block.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/clearfix.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/forms.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/gradients.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/grid-framework.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/grid.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/grid.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/hide-text.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/image.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/image.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/labels.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/labels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/list-group.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/list-group.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/nav-divider.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/opacity.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/panels.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/panels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/progress-bar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/reset-filter.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/reset-text.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/reset-text.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/resize.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/resize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/responsive-visibility.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/size.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/size.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/tab-focus.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/table-row.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/table-row.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/text-emphasis.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/text-overflow.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/modals.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/navbar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/navs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/normalize.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/normalize.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/pager.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/panels.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/panels.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/popovers.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/print.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/print.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/progress-bars.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/responsive-embed.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/responsive-embed.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/responsive-utilities.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/scaffolding.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/tables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/theme.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/thumbnails.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/tooltip.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/type.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/utilities.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/less/wells.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/node_modules/bootstrap/package.json" afterPath="$PROJECT_DIR$/library/node_modules/bootstrap/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logoutAdmin.php" afterPath="$PROJECT_DIR$/logoutAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/analisisClustering.php" afterPath="$PROJECT_DIR$/php/analisis/analisisClustering.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/analisisDayaBeda.php" afterPath="$PROJECT_DIR$/php/analisis/analisisDayaBeda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php" afterPath="$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php" afterPath="$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/loadAnalisis.php" afterPath="$PROJECT_DIR$/php/analisis/loadAnalisis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/loadSoalParameter.php" afterPath="$PROJECT_DIR$/php/analisis/loadSoalParameter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/loadbanksoal.php" afterPath="$PROJECT_DIR$/php/analisis/loadbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/loadmapel.php" afterPath="$PROJECT_DIR$/php/analisis/loadmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/angkatan/deleteAngkatan.php" afterPath="$PROJECT_DIR$/php/angkatan/deleteAngkatan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/angkatan/editAngkatan.php" afterPath="$PROJECT_DIR$/php/angkatan/editAngkatan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/angkatan/loadAngkatan.php" afterPath="$PROJECT_DIR$/php/angkatan/loadAngkatan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/angkatan/loadAngkatanSiswa.php" afterPath="$PROJECT_DIR$/php/angkatan/loadAngkatanSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/angkatan/pushAngkatan.php" afterPath="$PROJECT_DIR$/php/angkatan/pushAngkatan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/connection.php" afterPath="$PROJECT_DIR$/php/connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/deleteGuru.php" afterPath="$PROJECT_DIR$/php/guru/deleteGuru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/editGuru.php" afterPath="$PROJECT_DIR$/php/guru/editGuru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/editProfile.php" afterPath="$PROJECT_DIR$/php/guru/editProfile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/loadGuru.php" afterPath="$PROJECT_DIR$/php/guru/loadGuru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guru/pushGuru.php" afterPath="$PROJECT_DIR$/php/guru/pushGuru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/cekuser.php" afterPath="$PROJECT_DIR$/php/index/cekuser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/loadListBankSoal.php" afterPath="$PROJECT_DIR$/php/index/loadListBankSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/loadListRespon.php" afterPath="$PROJECT_DIR$/php/index/loadListRespon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/login.php" afterPath="$PROJECT_DIR$/php/index/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/loginSiswa.php" afterPath="$PROJECT_DIR$/php/index/loginSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/profile.php" afterPath="$PROJECT_DIR$/php/index/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index/register.php" afterPath="$PROJECT_DIR$/php/index/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/getFormResponse.php" afterPath="$PROJECT_DIR$/php/inputRespon/getFormResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/getJmlSoal.php" afterPath="$PROJECT_DIR$/php/inputRespon/getJmlSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/loadbanksoal.php" afterPath="$PROJECT_DIR$/php/inputRespon/loadbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/loadmapel.php" afterPath="$PROJECT_DIR$/php/inputRespon/loadmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/loadsiswa.php" afterPath="$PROJECT_DIR$/php/inputRespon/loadsiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/pushDetailRespon.php" afterPath="$PROJECT_DIR$/php/inputRespon/pushDetailRespon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/pushResponTest.php" afterPath="$PROJECT_DIR$/php/inputRespon/pushResponTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/inputRespon/updateStatusRespon.php" afterPath="$PROJECT_DIR$/php/inputRespon/updateStatusRespon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/kompi/loadKompi.php" afterPath="$PROJECT_DIR$/php/kompi/loadKompi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/kompi/loadKompiSiswa.php" afterPath="$PROJECT_DIR$/php/kompi/loadKompiSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/pleton/deletePleton.php" afterPath="$PROJECT_DIR$/php/pleton/deletePleton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/pleton/editPleton.php" afterPath="$PROJECT_DIR$/php/pleton/editPleton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/pleton/loadPleton.php" afterPath="$PROJECT_DIR$/php/pleton/loadPleton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/pleton/loadPletonSiswa.php" afterPath="$PROJECT_DIR$/php/pleton/loadPletonSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/pleton/pushPleton.php" afterPath="$PROJECT_DIR$/php/pleton/pushPleton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/deleteSiswa.php" afterPath="$PROJECT_DIR$/php/siswa/deleteSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/editProfile.php" afterPath="$PROJECT_DIR$/php/siswa/editProfile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/editSiswa.php" afterPath="$PROJECT_DIR$/php/siswa/editSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/getLastRespon.php" afterPath="$PROJECT_DIR$/php/siswa/getLastRespon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/loadProfile.php" afterPath="$PROJECT_DIR$/php/siswa/loadProfile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/loadResponTest.php" afterPath="$PROJECT_DIR$/php/siswa/loadResponTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/loadSiswa.php" afterPath="$PROJECT_DIR$/php/siswa/loadSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/loadSoalFirst.php" afterPath="$PROJECT_DIR$/php/siswa/loadSoalFirst.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/pushFinishRespon.php" afterPath="$PROJECT_DIR$/php/siswa/pushFinishRespon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/pushResponDetail.php" afterPath="$PROJECT_DIR$/php/siswa/pushResponDetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/pushResponTest.php" afterPath="$PROJECT_DIR$/php/siswa/pushResponTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/siswa/pushSiswa.php" afterPath="$PROJECT_DIR$/php/siswa/pushSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/sql_complek" afterPath="$PROJECT_DIR$/php/sql_complek" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/statistik/loadNilai.php" afterPath="$PROJECT_DIR$/php/statistik/loadNilai.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php" afterPath="$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/changeStatTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/changeStatTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/deleteTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/deleteTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/editTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/editTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/loadTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/loadTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/loadTesting.php" afterPath="$PROJECT_DIR$/php/tambahTest/loadTesting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/pushTest.php" afterPath="$PROJECT_DIR$/php/tambahTest/pushTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahTest/setBobot.php" afterPath="$PROJECT_DIR$/php/tambahTest/setBobot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbab/isbabmapel.php" afterPath="$PROJECT_DIR$/php/tambahbab/isbabmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbab/loadmapel.php" afterPath="$PROJECT_DIR$/php/tambahbab/loadmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbab/pushbab.php" afterPath="$PROJECT_DIR$/php/tambahbab/pushbab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/deleteBankSoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/deleteBankSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/editBankSoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/editBankSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/isKetua.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isKetua.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/loadmapel.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/loadmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahmapel/isNamaMapel.php" afterPath="$PROJECT_DIR$/php/tambahmapel/isNamaMapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahmapel/pushMapel.php" afterPath="$PROJECT_DIR$/php/tambahmapel/pushMapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/deleteSoal.php" afterPath="$PROJECT_DIR$/php/tambahsoal/deleteSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php" afterPath="$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/editSoalPilihanGanda.php" afterPath="$PROJECT_DIR$/php/tambahsoal/editSoalPilihanGanda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/loadSoalDetail.php" afterPath="$PROJECT_DIR$/php/tambahsoal/loadSoalDetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/loadbabmapel.php" afterPath="$PROJECT_DIR$/php/tambahsoal/loadbabmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/loadbanksoal.php" afterPath="$PROJECT_DIR$/php/tambahsoal/loadbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/loadsoal.php" afterPath="$PROJECT_DIR$/php/tambahsoal/loadsoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php" afterPath="$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php" afterPath="$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/testSiswa/loadSoal.php" afterPath="$PROJECT_DIR$/php/testSiswa/loadSoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php" afterPath="$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php" afterPath="$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/testSiswa/pushResponStart.php" afterPath="$PROJECT_DIR$/php/testSiswa/pushResponStart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/deleteDetailTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/deleteDetailTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/deleteTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/deleteTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/editTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/editTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/loadDetailTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/loadDetailTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/loadTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/loadTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/pushDetailTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/pushDetailTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timpengajar/pushTimPengajar.php" afterPath="$PROJECT_DIR$/php/timpengajar/pushTimPengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/utilFunction/loadProfileUser.php" afterPath="$PROJECT_DIR$/php/utilFunction/loadProfileUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/utilFunction/loadbanksoal.php" afterPath="$PROJECT_DIR$/php/utilFunction/loadbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/utilFunction/loadsoal.php" afterPath="$PROJECT_DIR$/php/utilFunction/loadsoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/styleIndex.css" afterPath="$PROJECT_DIR$/style/styleIndex.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/angkatan.php" afterPath="$PROJECT_DIR$/view/admin/angkatan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/guru.php" afterPath="$PROJECT_DIR$/view/admin/guru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/index.php" afterPath="$PROJECT_DIR$/view/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/pleton.php" afterPath="$PROJECT_DIR$/view/admin/pleton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/siswa.php" afterPath="$PROJECT_DIR$/view/admin/siswa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin/timpengajar.php" afterPath="$PROJECT_DIR$/view/admin/timpengajar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/analisis.php" afterPath="$PROJECT_DIR$/view/guru/analisis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/cobamodal.php" afterPath="$PROJECT_DIR$/view/guru/cobamodal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/index.php" afterPath="$PROJECT_DIR$/view/guru/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/respon.php" afterPath="$PROJECT_DIR$/view/guru/respon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/soal.php" afterPath="$PROJECT_DIR$/view/guru/soal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/statistik.php" afterPath="$PROJECT_DIR$/view/guru/statistik.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbab.php" afterPath="$PROJECT_DIR$/view/guru/tambahbab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" afterPath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahmapel.php" afterPath="$PROJECT_DIR$/view/guru/tambahmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/test.php" afterPath="$PROJECT_DIR$/view/guru/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/siswa/index.php" afterPath="$PROJECT_DIR$/view/siswa/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/siswa/response.php" afterPath="$PROJECT_DIR$/view/siswa/response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/siswa/test.php" afterPath="$PROJECT_DIR$/view/siswa/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,90 +653,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1485">
-                    <caret line="204" column="59" lean-forward="true" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
-                    <folding>
-                      <element signature="e#9337#9358#0#HTML" expanded="true" />
-                      <element signature="e#9744#9765#0#HTML" expanded="true" />
-                      <element signature="e#10151#10172#0#HTML" expanded="true" />
-                      <element signature="e#10606#10639#0#HTML" expanded="true" />
-                      <marker date="1504479559448" expanded="false" signature="11208:11248" ph="..." />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="pushResponStart.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="170">
-                    <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-                    <folding>
-                      <marker date="1504467100229" expanded="true" signature="315:386" ph="INSERT INTO respontest... " />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="loadSoal.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="238">
-                    <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-                    <folding>
-                      <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
-                      <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
-                      <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
-                      <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
-                      <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="pushDetailRespon.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="204">
-                    <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
-                    <folding>
-                      <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="editSoalEsay.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding>
-                      <marker date="1504056656182" expanded="true" signature="462:594" ph="UPDATE soald... " />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="tambahtest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="6579">
               <caret line="388" column="50" lean-forward="false" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -108,19 +671,32 @@
       <file leaf-file-name="soalController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1001">
-              <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state relative-caret-position="3128">
+              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newTest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="1683">
               <caret line="99" column="17" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="240" column="72" lean-forward="false" selection-start-line="240" selection-start-column="72" selection-end-line="240" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,7 +748,6 @@
         <option value="$PROJECT_DIR$/view/admin/guru.php" />
         <option value="$PROJECT_DIR$/php/guru/editGuru.php" />
         <option value="$PROJECT_DIR$/controller/admin/indexAdmin.js" />
-        <option value="$PROJECT_DIR$/view/admin/index.php" />
         <option value="$PROJECT_DIR$/php/timpengajar/pushTimPengajar.php" />
         <option value="$PROJECT_DIR$/php/timpengajar/editTimPengajar.php" />
         <option value="$PROJECT_DIR$/view/admin/angkatan.php" />
@@ -219,6 +794,7 @@
         <option value="$PROJECT_DIR$/controller/student/newTest.js" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
         <option value="$PROJECT_DIR$/controller/teacher/soalController.js" />
+        <option value="$PROJECT_DIR$/view/admin/index.php" />
       </list>
     </option>
   </component>
@@ -242,11 +818,11 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="93" />
-    <option name="y" value="277" />
-    <option name="width" value="1036" />
-    <option name="height" value="768" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="76" />
+    <option name="y" value="-11" />
+    <option name="width" value="1291" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -263,57 +839,59 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tambahsoal" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e_selo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e_selo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e_selo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e_selo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e_selo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e_selo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
@@ -362,37 +940,38 @@
       <workItem from="1504355620647" duration="18413000" />
       <workItem from="1504399873067" duration="6090000" />
       <workItem from="1504428365106" duration="42725000" />
+      <workItem from="1504581789348" duration="650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168687000" />
+    <option name="totallyTimeSpent" value="169337000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="76" y="-11" width="1291" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23773006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23739333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -404,13 +983,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/index/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/timpengajar/loadTimPengajar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -534,11 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <marker date="1504430333032" expanded="true" signature="306:383" ph="SELECT COUNT... soaldetail" />
-            <marker date="1504430333032" expanded="true" signature="306:497" ph="SELECT COUNT... soaldetail" />
-            <marker date="1504430333032" expanded="true" signature="672:859" ph="SELECT COUNT... soaldetail" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,10 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
-          <folding>
-            <marker date="1504439295228" expanded="true" signature="290:342" ph="UPDATE testi... " />
-            <marker date="1504439295228" expanded="true" signature="290:343" ph="UPDATE testi... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="229" column="220" lean-forward="true" selection-start-line="229" selection-start-column="220" selection-end-line="229" selection-end-column="228" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,7 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,9 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <marker date="1504447055869" expanded="true" signature="333:430" ph="UPDATE banks... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,10 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <marker date="1504452606695" expanded="true" signature="301:362" ph="UPDATE detai... " />
-            <marker date="1504452606695" expanded="true" signature="301:363" ph="UPDATE detai... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,9 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1504449440217" expanded="true" signature="256:358" ph="SELECT * FRO... detailtest" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,7 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="137" column="36" lean-forward="true" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,9 +1162,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
-          <folding>
-            <marker date="1504441006092" expanded="true" signature="257:292" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,9 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <marker date="1503961581018" expanded="true" signature="258:296" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -632,7 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="433" column="46" lean-forward="true" selection-start-line="433" selection-start-column="46" selection-end-line="433" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="82" column="106" lean-forward="false" selection-start-line="82" selection-start-column="106" selection-end-line="82" selection-end-column="106" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,9 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <marker date="1504135537738" expanded="true" signature="282:367" ph="INSERT INTO pletonsiswa... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,17 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <marker date="1504430669324" expanded="true" signature="577:675" ph="INSERT INTO testing... " />
-            <marker date="1504430669324" expanded="true" signature="577:780" ph="INSERT INTO testing... " />
-            <marker date="1504430669324" expanded="true" signature="894:984" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="894:1094" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="894:1095" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="1374:1452" ph="INSERT INTO detailtest... " />
-            <marker date="1504430669324" expanded="true" signature="1639:1840" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="1639:1841" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504430669324" expanded="true" signature="2139:2217" ph="INSERT INTO detailtest... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,9 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504355534106" expanded="true" signature="346:473" ph="INSERT INTO siswa... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,10 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503961580993" expanded="true" signature="221:305" ph="INSERT INTO responTest... " />
-            <marker date="1503961580993" expanded="true" signature="418:469" ph="SELECT jml_s... banksoal" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,12 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <marker date="1504465241323" expanded="true" signature="260:282" ph="SELECT * FRO... testing" />
-            <marker date="1504465241323" expanded="true" signature="260:376" ph="SELECT * FRO... testing" />
-            <marker date="1504465241323" expanded="true" signature="260:396" ph="SELECT * FRO... testing" />
-            <marker date="1504465241323" expanded="true" signature="303:375" ph="SELECT idTes... respontest" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,22 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <marker date="1504434678611" expanded="true" signature="259:341" ph="SELECT * FRO... testing" />
-            <marker date="1504434678611" expanded="true" signature="259:459" ph="SELECT * FRO... testing" />
-            <marker date="1504434678611" expanded="true" signature="259:534" ph="SELECT * FRO... testing" />
-            <marker date="1504434678611" expanded="true" signature="259:542" ph="SELECT * FRO... testing" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <marker date="1504467100229" expanded="true" signature="315:386" ph="INSERT INTO respontest... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,47 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <marker date="1503961580991" expanded="true" signature="307:394" ph="UPDATE respo... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1485">
-          <caret line="204" column="59" lean-forward="true" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
-          <folding>
-            <element signature="e#9337#9358#0#HTML" expanded="true" />
-            <element signature="e#9744#9765#0#HTML" expanded="true" />
-            <element signature="e#10151#10172#0#HTML" expanded="true" />
-            <element signature="e#10606#10639#0#HTML" expanded="true" />
-            <marker date="1504479559448" expanded="false" signature="11208:11248" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <marker date="1504475359704" expanded="true" signature="337:432" ph="INSERT INTO detailrespon... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding>
-            <marker date="1504468269183" expanded="true" signature="337:418" ph="SELECT * FRO... soaldetail" />
-            <marker date="1504468269183" expanded="true" signature="337:527" ph="SELECT * FRO... soaldetail" />
-            <marker date="1504468269183" expanded="true" signature="337:618" ph="SELECT * FRO... soalDetail" />
-            <marker date="1504468269183" expanded="true" signature="458:513" ph="SELECT idSoa... detailrespon" />
-            <marker date="1504468269183" expanded="true" signature="458:526" ph="SELECT idSoa... detailrespon" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,9 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,11 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <marker date="1503961580993" expanded="true" signature="407:518" ph="INSERT INTO detailrespon... " />
-            <marker date="1503961580993" expanded="true" signature="588:842" ph="SELECT idSoa... soalDetail" />
-            <marker date="1503961580993" expanded="true" signature="722:777" ph="SELECT idSoa... detailrespon" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,25 +1275,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1494">
           <caret line="182" column="66" lean-forward="false" selection-start-line="182" selection-start-column="57" selection-end-line="182" selection-end-column="66" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504056656182" expanded="true" signature="462:594" ph="UPDATE soald... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/tambahtest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="6579">
           <caret line="388" column="50" lean-forward="false" selection-start-line="388" selection-start-column="50" selection-end-line="388" selection-end-column="50" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -855,17 +1290,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1001">
-          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        <state relative-caret-position="3128">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="204" column="59" lean-forward="false" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="1683">
           <caret line="99" column="17" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="240" column="72" lean-forward="false" selection-start-line="240" selection-start-column="72" selection-end-line="240" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
