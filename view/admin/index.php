@@ -202,7 +202,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <div class="no-padd col-md-12" id="homeBottom" style="padding-top: 30px;">
-            <div class="col-md-6 recent">
+            <div class="col-md-6 recent" style="height: 550px;">
                 <div class="col-md-12 recentIn">
                     <div class="col-md-12 recentTitle" id="jumlahSoal">
                         <i class="fa fa-user-circle-o"></i>
@@ -238,8 +238,8 @@ if($_SESSION['job'] == 'admin'){
             </div>
 
 
-            <div class="col-md-6 recent">
-                <div class="col-md-12 recentIn">
+            <div class="col-md-6 recent" >
+                <div class="col-md-12 recentIn" style="height: 550px;">
                     <div class="col-md-12 recentTitle" id="jumlahResponse">
                         <i class="fa fa-check-circle-o"></i>
                         <span>Data Angkatan</span>
@@ -274,7 +274,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
 
             <div class="col-md-6 recent" style="padding-top: 30px;">
-                <div class="col-md-12 recentIn">
+                <div class="col-md-12 recentIn" style="height: 550px;">
                     <div class="col-md-12 recentTitle" id="jumlahSoal">
                         <i class="fa fa-user-circle-o"></i>
                         <span>Data Guru </span>
@@ -309,8 +309,8 @@ if($_SESSION['job'] == 'admin'){
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 recent" style="padding-top: 30px;">
-                <div class="col-md-12 recentIn">
+            <div class="col-md-6 recent" style="padding-top: 30px;" >
+                <div class="col-md-12 recentIn" style="height: 550px;">
                     <div class="col-md-12 recentTitle" id="jumlahSoal">
                         <i class="fa fa-user-circle-o"></i>
                         <span>Tim Pengajar</span>
