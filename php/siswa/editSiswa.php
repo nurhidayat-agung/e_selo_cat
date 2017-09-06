@@ -8,7 +8,8 @@
         $password = $request->password;
         $idAngkatan = $request->idAngkatan;
         $idPleton = $request->idPleton;
-        $query = "UPDATE siswa SET nis = $nis, namaSiswa = '$namaSiswa' , password='$password',idAngkatan = $idAngkatan, idPleton = $idPleton WHERE nis = $nis";
+        $idKompi = $request->idKompi;
+        $query = "UPDATE siswa SET nis = $nis, namaSiswa = '$namaSiswa' , password='$password',idAngkatan = $idAngkatan, idPleton = $idPleton, idKompi = $idKompi WHERE nis = $nis";
         if(mysqli_query($conn, $query))
         {
             echo true;

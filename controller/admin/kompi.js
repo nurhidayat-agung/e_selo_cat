@@ -3,70 +3,69 @@
  */
 
 
-var app4 = angular.module("moduleTambahSiswa",['angularModalService']);
-app4.controller("addSiswa",function($scope,$http,$window,$compile,ModalService){
-    $scope.tambahSiswa = function () {
+var app4 = angular.module("moduleTambahKompi",['angularModalService']);
+app4.controller("addKompi",function($scope,$http,$window,$compile,ModalService){
+    $scope.tambahKompi = function () {
         ModalService.showModal({
-            templateUrl: 'modalSiswa.html',
-            controller: "tambahSiswa"
+            templateUrl: 'modalKompi.html',
+            controller: "tambahKompi"
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadSiswa();
+                $scope.loadKompi();
             });
-            $scope.loadSiswa();
+            $scope.loadKompi();
         });
     };
 
-    $scope.loadSiswa = function () {
+    $scope.loadKompi = function () {
         $http.get(
-            "../../php/siswa/loadSiswa.php"
+            "../../php/kompi/loadKompi.php"
         ).then(function successCallback(response) {
-            $scope.siswas = response.data;
+            $scope.kompis = response.data;
         },function errorCallback(response) {
-            alert("load Siswa gagal");
+            alert("load Kompi gagal");
         });
     };
 
-    $scope.editSiswa = function (pushSiswa) {
+    $scope.editKompi = function (pushKompi) {
         ModalService.showModal({
-            templateUrl: 'modalSiswa.html',
-            controller: "editSiswaC",
+            templateUrl: 'modalKompi.html',
+            controller: "editKompiC",
             inputs: {
-                siswa: pushSiswa
+                kompi: pushKompi
             }
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadSiswa();
+                $scope.loadKompi();
             });
-            $scope.loadSiswa();
+            $scope.loadKompi();
         });
     };
 
-    $scope.deleteSiswa = function (pushSiswa) {
+    $scope.deleteKompi = function (pushKompi) {
         ModalService.showModal({
             templateUrl: 'delete.html',
-            controller: "deleteSiswaC",
+            controller: "deleteKompiC",
             inputs: {
-                siswa: pushSiswa
+                kompi: pushKompi
             }
         }).then(function(modal) {
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadSiswa();
+                $scope.loadKompi();
             });
-            $scope.loadSiswa();
+            $scope.loadKompi();
         });
     };
 });
 
-
-app4.controller('deleteSiswaC', function($scope,$http,$window,close,siswa) {
-    $scope.siswa = siswa;
+app4.controller('deleteKompiC', function($scope,$http,$window,close,kompi) {
+    $scope.kompi = kompi;
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -77,8 +76,8 @@ app4.controller('deleteSiswaC', function($scope,$http,$window,close,siswa) {
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/siswa/deleteSiswa.php",
-            {'nis':siswa.nis}
+            "../../php/kompi/deleteKompi.php",
+            {'idKompi':kompi.idKompi}
         ).then(function successCallback(response) {
             $scope.modalno("sukses")
         },function errorCallback(response) {
@@ -87,13 +86,10 @@ app4.controller('deleteSiswaC', function($scope,$http,$window,close,siswa) {
     };
 });
 
-app4.controller('editSiswaC', function($scope,$http,$window,close,siswa) {
-    $scope.nis = siswa.nis;
-    $scope.namaSiswa = siswa.namaSiswa;
-    $scope.password = siswa.password;
-    $scope.idAngkatan = siswa.idAngkatan;
-    $scope.idPleton = siswa.idPleton;
-    
+app4.controller('editKompiC', function($scope,$http,$window,close,kompi) {
+    $scope.idKompi = kompi.idKompi;
+    $scope.namaKompi = kompi.namaKompi;
+    $scope.keterangan = kompi.keterangan;
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -104,19 +100,17 @@ app4.controller('editSiswaC', function($scope,$http,$window,close,siswa) {
 
     $scope.modalyes = function () {
         $http.post(
-            "../../php/siswa/editSiswa.php",
-            {'nis':$scope.nis,
-            'namaSiswa':$scope.namaSiswa,
-            'password':$scope.password,
-            'idAngkatan':$scope.idAngkatan,
-            'idPleton':$scope.idPleton
+            "../../php/kompi/editKompi.php",
+            {'idKompi':$scope.idKompi,
+            'namaKompi':$scope.namaKompi,
+            'keterangan':$scope.keterangan
         }
         ).then(function successCallback(response) {
             if (response.data){
-                alert("edit siswa berhasil");
+                alert("edit kompi berhasil");
                 
             }else {
-                alert("edit siswa gagal");;
+                alert("edit kompi gagal");;
             }
         },function errorCallback(response) {
             alert("koneksi bermasalah");
@@ -124,7 +118,8 @@ app4.controller('editSiswaC', function($scope,$http,$window,close,siswa) {
     };
 });
 
-app4.controller('tambahSiswa', function($scope,$http,$window,close) {
+
+app4.controller('tambahKompi', function($scope,$http,$window,close) {
     $scope.modalno = function (result) {
         close(result, 500);
     };
@@ -132,26 +127,16 @@ app4.controller('tambahSiswa', function($scope,$http,$window,close) {
     $scope.close = function(result) {
         close(result, 500); // close, but give 500ms for bootstrap to animate
     };
+
     $scope.modalyes = function () {
         $http.post(
-            "../../php/siswa/pushSiswa.php",
-            {'nis':$scope.nis,
-            'namaSiswa':$scope.namaSiswa,
-            'password':$scope.password,
-            'idAngkatan':$scope.idAngkatan,
-            'idPleton':$scope.idPleton,
-            'idKompi' :$scope.idKompi}
+            "../../php/kompi/pushKompi.php",
+            {'namaKompi':$scope.namaKompi,'keterangan':$scope.keterangan}
         ).then(function successCallback(response) {
             if (response.data){
-                alert("tambah siswa berhasil");
-                $scope.nis = null;
-                $scope.namaSiswa = null;
-                $scope.password = null;
-                $scope.idAngkatan = null;
-                $scope.idPleton = null;
-                $scope.idKompi = null;
+                alert("tambah Kompi berhasil");
             }else {
-                alert("tambah siswa gagal");
+                alert("tambah Kompi gagal");
             }
         },function errorCallback(response) {
             alert("koneksi bermasalah");

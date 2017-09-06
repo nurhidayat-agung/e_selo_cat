@@ -73,7 +73,7 @@
 </div>
     <footer>
       <div class="container" >
-        <p class="text-muted" align="center"><b><strong>&copy; Copyright SPN Selopamioro - 2017</strong></b> </p>
+        <p class="text-muted" align="center"><br><br><br><b><strong>&copy;  Copyright SPN Selopamioro - 2017</strong></b> </p>
       </div>
     </footer>
   <script src='../library/js/jquery-2-1-3.min.js'></script>

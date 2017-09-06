@@ -95,6 +95,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
+        <a href="kompi.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Kompi</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
         <a href="guru.php">
             <div class="col-md-12 menu">
                 <div class="col-md-10">
@@ -122,6 +132,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
                 <div class="col-md-2">
                     <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
+        <a href="statistik.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Statistik</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
                 </div>
             </div>
         </a>
