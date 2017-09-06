@@ -4,7 +4,9 @@
     $query = "SELECT * FROM siswa LEFT JOIN angkatansiswa
 			ON angkatansiswa.idAngkatan = siswa.idAngkatan
 			LEFT JOIN pletonsiswa
-			ON pletonsiswa.idPleton = siswa.idPleton";
+			ON pletonsiswa.idPleton = siswa.idPleton
+            LEFT JOIN kompisiswa
+            ON siswa.idKompi = kompisiswa.idKompi";
     $result = mysqli_query($conn, $query);
     while ($row = mysqli_fetch_assoc($result)){
         $output[] = $row;

@@ -9,7 +9,7 @@ include "../connection.php";
 $data = json_decode(file_get_contents("php://input"));
 if (count($data) > 0){
     $idPleton = $data->idPleton;
-    $query = "DELETE FROM `pletonsiswa` WHERE `idPleton`= $idPleton";
+    $query = "DELETE FROM pletonsiswa WHERE idPleton = $idPleton";
     if(mysqli_query($conn, $query))
     {
         echo true;

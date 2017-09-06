@@ -1,6 +1,7 @@
 <?php 
     include('../../php/angkatan/loadAngkatanSiswa.php');
     include('../../php/pleton/loadPletonSiswa.php');
+    include('../../php/kompi/loadKompiSiswa.php');
 ?>
 <?php
 session_start();
@@ -99,6 +100,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
             </div>
         </a>
+        <a href="kompi.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Kompi</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
         <a href="guru.php">
             <div class="col-md-12 menu ">
                 <div class="col-md-10">
@@ -126,6 +137,16 @@ if($_SESSION['job'] == 'admin'){
                 </div>
                 <div class="col-md-2">
                     <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </a>
+        <a href="statistik.php">
+            <div class="col-md-12 menu">
+                <div class="col-md-10">
+                    <span>Statistik</span>
+                </div>
+                <div class="col-md-2">
+                    <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
                 </div>
             </div>
         </a>
@@ -193,6 +214,7 @@ if($_SESSION['job'] == 'admin'){
                                     <th class="col-md-2 titleGenerate" ><center>Password</center></th>
                                     <th class="co2-md-2 titleGenerate" ><center>Angkatan</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Pleton</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Kompi</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
@@ -204,6 +226,7 @@ if($_SESSION['job'] == 'admin'){
                                     <th class="col-md-2 " >{{siswa.password}}</th>
                                     <th class="col-md-2 " >{{siswa.namaAngkatan}}</th>
                                     <th class="col-md-1 " >{{siswa.namaPleton}}</th>
+                                    <th class="col-md-1 " >{{siswa.namaKompi}}</th>
                                     <th class="col-md-1 btn-lg"  >
                                     <a href="#" ng-click="editSiswa(siswa)" class="col-md-12">
                                     <span class="glyphicon glyphicon-edit" ></span>
@@ -314,7 +337,17 @@ if($_SESSION['job'] == 'admin'){
                                                     </select>
                                                     </div>
                                         </div>
-                                           
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="titleGenerate">Kompi : </span>
+                                                 <select name="idKompi" ng-model="idKompi" class="form-control" required="true">
+                                                  <option value="">Pilih Kompi </option>
+                                                    <?php foreach ($kompi as $key) { ?>                                                        
+                                                    <option value="<?php echo $key['idKompi']; ?>"><?php echo $key['namaKompi']; ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+                                        </div> 
                                     </div>
                                     <div class="modal-footer col-md-12">
                                         <div class="col-md-6">

@@ -29,7 +29,7 @@ if($_SESSION['job'] == 'admin'){
         <script src="../../library/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../../library/node_modules/angular/angular.min.js"></script>
         <script src="../../library/node_modules/angular-modal-service/dst/angular-modal-service.js"></script>
-        <script src="../../controller/admin/angkatan.js"></script>
+        <script src="../../controller/admin/kompi.js"></script>
 
         <!-- FONT -->
         <link href="../../library/fonts/font-oswald.css" rel="stylesheet">
@@ -76,7 +76,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
        <a href="angkatan.php">
-            <div class="col-md-12 menu active">
+            <div class="col-md-12 menu ">
                 <div class="col-md-10">
                     <span>Angkatan</span>
                 </div>
@@ -96,7 +96,7 @@ if($_SESSION['job'] == 'admin'){
             </div>
         </a>
         <a href="kompi.php">
-            <div class="col-md-12 menu ">
+            <div class="col-md-12 menu active">
                 <div class="col-md-10">
                     <span>Kompi</span>
                 </div>
@@ -177,9 +177,9 @@ if($_SESSION['job'] == 'admin'){
     </nav>
 
     <!-- content -->
-    <div id="main" ng-app="moduleTambahAngkatan" >
+    <div id="main" ng-app="moduleTambahKompi" >
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-controller="addAngkatan">
+        <div class="no-padd col-md-12" id="homeTop" ng-controller="addKompi">
             <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
@@ -190,7 +190,7 @@ if($_SESSION['job'] == 'admin'){
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahAngkatan()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Angkatan </button>
+                                        <button style="background-color: #42a5f5; color: white;"  class="btn btn-sm sharp" type="button" id="buttonGenerateSoal" value="input_soal" name="input_soal" ng-click="tambahKompi()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Kompi </button>
                                     </span>
                                 </div>
                             </div>
@@ -201,29 +201,29 @@ if($_SESSION['job'] == 'admin'){
 
                     <div class="col-md-12 soal" id="inputSoal">
                         <div class="col-md-12 title table-responsive" id="inputSoal" >
-                            <table class="table table-bordered" ng-init="loadAngkatan()">
+                            <table class="table table-bordered" ng-init="loadKompi()">
                                 <thead>
                                 <tr >
-                                    <th class="col-md-1 titleGenerate" ><center>Id Angkatan</center></th>
-                                    <th class="col-md-3 titleGenerate" ><center>Nama </center></th>
-                                    <th class="col-md-5 titleGenerate" ><center>Deskripsi</center></th>
+                                    <th class="col-md-1 titleGenerate" ><center>Id Kompi</center></th>
+                                    <th class="col-md-3 titleGenerate" ><center>Nama Kompi </center></th>
+                                    <th class="col-md-5 titleGenerate" ><center>Keterangan</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Edit</center></th>
                                     <th class="col-md-1 titleGenerate" ><center>Hapus</center></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="angkatan in angkatans">
-                                    <th class="col-md-1 " >{{angkatan.idAngkatan}}</th>
-                                    <th class="col-md-3 " >{{angkatan.namaAngkatan}}</th>
-                                    <th class="col-md-5 " >{{angkatan.deskripsiAngkatan}}</th>
+                                <tr ng-repeat="kompi in kompis">
+                                    <th class="col-md-1 " >{{kompi.idKompi}}</th>
+                                    <th class="col-md-3 " >{{kompi.namaKompi}}</th>
+                                    <th class="col-md-5 " >{{kompi.keterangan}}</th>
                                     <th class="col-md-1">
                                     <a href="#" class="col-md-12">
-                                    <span class="glyphicon glyphicon-edit col-md-12" ng-click="editAngkatan(angkatan)"></span>
+                                    <span class="glyphicon glyphicon-edit col-md-12" ng-click="editKompi(kompi)"></span>
                                     </a>
                                     </th> 
                                     <th class="col-md-1">
                                     <a href="#" class="col-md-12">
-                                    <span class="glyphicon glyphicon-trash col-md-12" ng-click="deleteAngkatan(angkatan)"></span>
+                                    <span class="glyphicon glyphicon-trash col-md-12" ng-click="deleteKompi(kompi)"></span>
                                     </a>
                                     </th>
                                 </tr>
@@ -231,7 +231,7 @@ if($_SESSION['job'] == 'admin'){
                             </table>
                         </div>
                         <div>
-                            <span class="col-md-12 " ng-hide="!isNoSoal"><center>Tidak Ada Angkatan dalam data base</center></span>
+                            <span class="col-md-12 " ng-hide="!isNoSoal"><center>Tidak Ada Kompi dalam data base</center></span>
                         </div>
                         <div>
                             <span class="col-md-12 " ng-hide="!isNoSoal"><center>{{message}}</center></span>
@@ -255,12 +255,12 @@ if($_SESSION['job'] == 'admin'){
                 <div class="modal-content col-md-12">
                     <div class="modal-header col-md-12">
                         <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                        <h4 class="modal-title titleGenerate">Hapus Kompi</h4>
                     </div>
                     <div class="modal-body col-md-12">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus Angkatan {{angkatan.namaAngkatan}}</span>
+                                <span class="titleGenerate" id="deleteModalContent">apa anda yakin akan menghapus Kompi {{kompi.namaAngkatan}}</span>
                             </div>
                         </div>
                     </div>
@@ -282,7 +282,7 @@ if($_SESSION['job'] == 'admin'){
 
 
     <!-- The actual modal template, just a bit o bootstrap -->
-    <script type="text/ng-template" id="modalAngkatan.html" id="myModal">
+    <script type="text/ng-template" id="modalKompi.html" id="myModal">
         <div class="modal fade container">
             <div class="modal-dialog">
                 <div class="modal-content col-md-12">
@@ -294,13 +294,13 @@ if($_SESSION['job'] == 'admin'){
                         <div class="col-md-12">
                             <div class="form-group">
                                 <span class="titleGenerate">Nama : </span>
-                                <input type="text" class="form-control" placeholder="masukkan nama angkatan" ng-model="namaAngkatan">
+                                <input type="text" class="form-control" placeholder="masukkan nama kompi" ng-model="namaKompi">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <span class="titleGenerate">Deskripsi</span>
-                                <textarea class="form-control textArea" style="height: 100px;" ng-model="deskripsiAngkatan" placeholder="Deskripsi angkatan" ></textarea>
+                                <textarea class="form-control textArea" style="height: 100px;" ng-model="keterangan" placeholder="Deskripsi kompi" ></textarea>
                             </div>
                         </div>
 

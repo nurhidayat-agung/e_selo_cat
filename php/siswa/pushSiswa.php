@@ -8,7 +8,8 @@
         $password = $request->password;
         $idAngkatan = $request->idAngkatan;
         $idPleton = $request->idPleton;
-        $query = "INSERT INTO siswa(nis, namaSiswa, password, idAngkatan, idPleton) VALUES($nis, '$namaSiswa','$password',$idAngkatan, $idPleton)";
+        $idKompi = $request->idKompi;
+        $query = "INSERT INTO siswa(nis, namaSiswa, password, idAngkatan, idPleton, idKompi) VALUES($nis, '$namaSiswa','$password',$idAngkatan, $idPleton, $idKompi)";
         if(mysqli_query($conn, $query))
         {
             echo true;
