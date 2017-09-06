@@ -11,7 +11,9 @@
         $idResponTest = $data->idResponTest;
         $idSoal = $data->idSoal;
         $croscek = $data->croscek;
-        $query = "INSERT INTO detailrespon(idResponTest, idSoal, croscek) VALUES ($idResponTest,$idSoal,$croscek)";
+        $kunci = $data->kunci;
+        $jawab = $data->jawab;
+        $query = "INSERT INTO detailrespon(idResponTest,idSoal,croscek,kunci,jawab) VALUES ($idResponTest,$idSoal,$croscek,'$kunci','$jawab')";
         if (mysqli_query($conn,$query)){
             echo true;
             mysqli_close($conn);

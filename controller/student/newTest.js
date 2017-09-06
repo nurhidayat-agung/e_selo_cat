@@ -1,5 +1,5 @@
 var app = angular.module("testSiswa",[]);
-app.controller("testSiswa", function ($scope,$http,$window,$compile) {
+app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
     $scope.nis = serverVariable;
     var test;
     var soal;
@@ -7,6 +7,25 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
     $scope.scoreTest = 0;
     $scope.idRespon = 0;
     $scope.crossCek = 0;
+    $scope.kunci = '';
+    $scope.jawab = '';
+    $scope.waktuTest = 0;
+    $scope.sec = 0;
+    $scope.min = 0;
+    $scope.hour = 0;
+
+    $scope.initTime = function (pushMin) {
+
+    };
+
+    $scope.runTime = function () {
+
+    };
+
+
+    $scope.removeString = function (string) {
+        return string.replace(/[\s]/g, '');
+    };
 
     $scope.loadTestSiswa = function () {
         console.log("nip_nrp : " + $scope.nis);
@@ -23,11 +42,13 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
 
     $scope.loadPilGan = function () {
         $scope.isPilgan=true;
+        $scope.radioValue = "";
         $http.post(
             "../../php/testSiswa/loadSoal.php",
             {'idResponTest':$scope.idRespon,'idTest':test.idTest,'jenis':"Pilihan Ganda"}
         ).then(function successCallback(response) {
             soal = angular.fromJson(response.data);
+            console.log("idSoal : " + soal.idSoal);
             $scope.countSoal ++;
             $scope.isiSoal = soal.isiSoal;
             $scope.pil1 = soal.pil1;
@@ -41,21 +62,33 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
     };
     $scope.loadEssay = function () {
         $scope.isPilgan=false;
+        $scope.pilihan1 = "";
+        $scope.pilihan2 = "";
+        $scope.pilihan3 = "";
         $http.post(
             "../../php/testSiswa/loadSoal.php",
             {'idResponTest':$scope.idRespon,'idTest':test.idTest,'jenis':"Melengkapi"}
         ).then(function successCallback(response) {
             soal = angular.fromJson(response.data);
+            console.log("idSoal : " + soal.idSoal);
             $scope.countSoal ++;
             $scope.isiSoal = soal.isiSoal;
-            console.log("jumlah essay : " + soal.jumlahEsay)
-            if (soal.jumlahEsay === 1){
-                $scope.isPil2 =true;
+            console.log("jumlah essay : " + soal.jumlahEsay);
+            if (parseInt(soal.jumlahEsay) === 1){
+                $scope.isPil1 = false;
+                $scope.isPil2 = true;
                 $scope.isPil3 = true;
-            }else if (soal.jumlahEsay === 2){
+                $scope.kunci = soal.pil1;
+            }else if (parseInt(soal.jumlahEsay) === 2){
+                $scope.isPil1 = false;
+                $scope.isPil2 = false;
                 $scope.isPil3 = true;
+                $scope.kunci = soal.pil1 + "," + soal.pil2;
             }else {
-
+                $scope.isPil1 = false;
+                $scope.isPil2 = false;
+                $scope.isPil3 = false;
+                $scope.kunci = soal.pil1 + "," + soal.pil2 + "," + soal.pil3;
             }
         },function errorCallback(response) {
             alert("gagal load soal");
@@ -65,11 +98,12 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
         console.log("mulai test");
         test = pushTest;
         console.log("jumlah pilgan "+ test.jmlPilGanda);
-        console.log("jumlah essay " + pushTest.jmlEssay);
-        console.log("nama test " + pushTest.namaTest);
-        console.log("waktu test " + pushTest.waktuTest);
-        console.log("score item " + pushTest.scoreItem);
-        console.log("jenis test "+ pushTest.jenisTest);
+        console.log("jumlah essay " + test.jmlEssay);
+        console.log("nama test " + test.namaTest);
+        console.log("waktu test " + test.waktuTest);
+        console.log("score item " + test.scoreItem);
+        console.log("jenis test "+ test.jenisTest);
+        $scope.waktuTest = parseInt(test.waktuTest);
         $scope.isMulaiTest = true;
         $http.post(
             "../../php/testSiswa/pushResponStart.php",
@@ -106,7 +140,7 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
     };
     $scope.nextQuestion = function () {
         console.log("skore : "+ $scope.scoreTest);
-        console.log("score test : " + test.scoreItem)
+        console.log("score test : " + test.scoreItem);
         if($scope.isPilgan){
             if(test.jenisTest === "klasik"){
                 if ($scope.radioValue === soal.kunci){
@@ -116,8 +150,8 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
                     $scope.crossCek = 0;
                 }
                 $http.post(
-                    "../../php/testSiswa/pushResponStart.php",
-                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                    "../../php/testSiswa/pushDetailRespon.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':soal.kunci,'jawab':$scope.radioValue}
                 ).then(function successCallback(response) {
                     if (response.data){
                         if ($scope.countSoal < test.jmlPilGanda){
@@ -139,8 +173,8 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
                     $scope.crossCek = 0;
                 };
                 $http.post(
-                    "../../php/testSiswa/pushResponStart.php",
-                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                    "../../php/testSiswa/pushDetailRespon.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':soal.kunci,'jawab':$scope.radioValue}
                 ).then(function successCallback(response) {
                     if (response.data){
                         if ($scope.countSoal < test.jmlPilGanda){
@@ -157,23 +191,27 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
             }
         }else {
             if(test.jenisTest === "klasik"){
-                if (soal.jumlahEsay === 1){
-                    if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase()){
+                console.log("jumlah esay : " + soal.jumlahEsay);
+                if (parseInt(soal.jumlahEsay) === 1){
+                    $scope.jawab = $scope.pilihan1;
+                    if($scope.removeString($scope.pilihan1.toUpperCase()) === $scope.removeString(soal.pil1.toUpperCase())){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
                         $scope.crossCek = 1;
                     }else {
                         $scope.crossCek = 0;
                     }
 
-                }else if (soal.jumlahEsay === 2){
-                    if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase()){
+                }else if (parseInt(soal.jumlahEsay) === 2){
+                    $scope.jawab = $scope.pilihan2 + "," + $scope.pilihan2;
+                    if($scope.removeString($scope.pilihan1.toUpperCase()) === $scope.removeString(soal.pil1.toUpperCase()) && $scope.removeString($scope.pilihan2.toUpperCase()) === $scope.removeString(soal.pil2.toUpperCase())){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
                         $scope.crossCek = 1;
                     }else {
                         $scope.crossCek = 0;
                     }
                 }else {
-                    if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase() && $scope.pilihan3.toUpperCase() === soal.pil3.toUpperCase()){
+                    $scope.jawab = $scope.pilihan1 + "," + $scope.pilihan2 + "," + $scope.pilihan3;
+                    if($scope.removeString($scope.pilihan1.toUpperCase()) === $scope.removeString(soal.pil1.toUpperCase()) && $scope.removeString($scope.pilihan2.toUpperCase()) === $scope.removeString(soal.pil2.toUpperCase()) && $scope.removeString($scope.pilihan3.toUpperCase()) === $scope.removeString(soal.pil3.toUpperCase())){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + parseFloat(test.scoreItem);
                         $scope.crossCek = 1;
                     }else {
@@ -181,8 +219,8 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
                     }
                 }
                 $http.post(
-                    "../../php/testSiswa/pushResponStart.php",
-                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                    "../../php/testSiswa/pushDetailRespon.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':$scope.kunci,'jawab':$scope.jawab}
                 ).then(function successCallback(response) {
                     if (response.data){
                         if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
@@ -197,22 +235,25 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
                     alert("gagal update nilai");
                 });
             }else {
-                if (soal.jumlahEsay === 1){
-                    if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase()){
+                if (parseInt(soal.jumlahEsay) === 1){
+                    $scope.jawab = $scope.pilihan1;
+                    if($scope.removeString($scope.pilihan1.toUpperCase()) === $scope.removeString(soal.pil1.toUpperCase())){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
                         $scope.crossCek = 1;
                     }else {
                         $scope.crossCek = 0;
                     }
-                }else if (soal.jumlahEsay === 2){
-                    if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase()){
+                }else if (parseInt(soal.jumlahEsay) === 2){
+                    $scope.jawab = $scope.pilihan2 + "," + $scope.pilihan2;
+                    if($scope.removeString($scope.pilihan1.toUpperCase()) === $scope.removeString(soal.pil1.toUpperCase()) && $scope.removeString($scope.pilihan2.toUpperCase()) === $scope.removeString(soal.pil2.toUpperCase())){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
                         $scope.crossCek = 1;
                     }else {
                         scope.crossCek = 0
                     }
                 }else {
-                    if($scope.pilihan1.toUpperCase() === soal.pil1.toUpperCase() && $scope.pilihan2.toUpperCase() === soal.pil2.toUpperCase() && $scope.pilihan3.toUpperCase() === soal.pil3.toUpperCase()){
+                    $scope.jawab = scope.pilihan1 + "," + $scope.pilihan2 + "," + $scope.pilihan3;
+                    if($scope.removeString($scope.pilihan1.toUpperCase()) === $scope.removeString(soal.pil1.toUpperCase()) && $scope.removeString($scope.pilihan2.toUpperCase()) === $scope.removeString(soal.pil2.toUpperCase()) && $scope.removeString($scope.pilihan3.toUpperCase()) === $scope.removeString(soal.pil3.toUpperCase())){
                         $scope.scoreTest = parseFloat($scope.scoreTest) + ((parseFloat(test.scoreItem) * parseFloat(soal.bobotSoal)));
                         scope.crossCek = 1;
                     }else {
@@ -220,8 +261,8 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile) {
                     }
                 }
                 $http.post(
-                    "../../php/testSiswa/pushResponStart.php",
-                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek}
+                    "../../php/testSiswa/pushDetailRespon.php",
+                    {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':$scope.kunci,'jawab':$scope.jawab}
                 ).then(function successCallback(response) {
                     if (response.data){
                         if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){

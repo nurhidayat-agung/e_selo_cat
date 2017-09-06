@@ -173,7 +173,7 @@
 						<div class="no-padd col-md-12" id="homeBottom">
 							<div class="col-md-12 soal" id="inputSoal">
 								<div class="col-md-4 col-md-offset-8 waktu" id="waktu">
-									waktu
+									{{min}}:{{sec}}
 								</div>
 								<div class="divider"></div>
 									<div class="col-md-12" id="isiSoal">
@@ -186,19 +186,19 @@
 										<div class="col-md-12 col-md-offset-1">
 											<div class="col-md-12 jawaban" ng-hide="!isPilgan">
 												<div class="radio">
-													<label><input type="radio" name="optradio" ng-model="radioValue" value = "a" ng-change="readyNext()" >A. {{pil1}}</label>
+													<label><input type="radio" name="optradio" ng-model="radioValue" value = "a">A. {{pil1}}</label>
 												</div>
 												<div class="radio">
-													<label><input type="radio" name="optradio" ng-model="radioValue" value = "b" ng-change="readyNext()" >B. {{pil2}}</label>
+													<label><input type="radio" name="optradio" ng-model="radioValue" value = "b">B. {{pil2}}</label>
 												</div>
 												<div class="radio">
-													<label><input type="radio" name="optradio" ng-model="radioValue" value = "c" ng-change="readyNext()" >C. {{pil3}}</label>
+													<label><input type="radio" name="optradio" ng-model="radioValue" value = "c">C. {{pil3}}</label>
 												</div>
 												<div class="radio">
-													<label><input type="radio" name="optradio" ng-model="radioValue" value = "d" ng-change="readyNext()" >D. {{pil4}}</label>
+													<label><input type="radio" name="optradio" ng-model="radioValue" value = "d">D. {{pil4}}</label>
 												</div>
                                                 <div class="radio">
-                                                    <label><input type="radio" name="optradio" ng-model="radioValue" value = "d" ng-change="readyNext()" >e. {{pil5}}</label>
+                                                    <label><input type="radio" name="optradio" ng-model="radioValue" value = "d">e. {{pil5}}</label>
                                                 </div>
 											</div>
 										</div>
@@ -254,69 +254,6 @@
 		</div>
 	</div><!--<div id="main" ng-app="moduleTambahSoal" >-->
 </body>
-
-<script>
-$(document).ready(function() {
-
- var detik = 00;
-              var menit = 00;
-              var jam   = 1;
-              
-             /**
-               * Membuat function hitung() sebagai Penghitungan Waktu
-             */
-            function hitung() {
-                /** setTimout(hitung, 1000) digunakan untuk 
-                    * mengulang atau merefresh halaman selama 1000 (1 detik) 
-                */
-                setTimeout(hitung,1000);
-  
-               /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
-               if(menit < 10 && jam == 0){
-                     var peringatan = 'style="color:red"';
-               };
- 
-               /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
-               $('#waktu').html(
-                      '' + jam + ' : ' + menit + ' : ' + detik + ''
-                );
-  
-                /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
-                detik --;
- 
-                /** Jika var detik < 0
-                    * var detik akan dikembalikan ke 59
-                    * Menit akan Berkurang 1
-                */
-                if(detik < 0) {
-                    detik = 59;
-                    menit --;
- 
-                    /** Jika menit < 0
-                        * Maka menit akan dikembali ke 59
-                        * Jam akan Berkurang 1
-                    */
-                    if(menit < 0) {
-                        menit = 59;
-                        jam --;
- 
-                        /** Jika var jam < 0
-                            * clearInterval() Memberhentikan Interval dan submit secara otomatis
-                        */
-                        if(jam < 0) {                                                                 
-                            clearInterval();  
-                        } 
-                    } 
-                } 
-            }           
-            /** Menjalankan Function Hitung Waktu Mundur */
-            hitung();
-
-});
-
-
-
-</script>
 <script>var serverVariable=<?=$_SESSION["nis"];?>;</script>
 
 <script src="../../library/js/creartive.js"></script>

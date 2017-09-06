@@ -11,8 +11,8 @@
         $idResponTest = $data->idResponTest;
         $idTest = $data->idTest;
         $jenis = $data->jenis;
-        $queryNext = "SELECT * FROM soaldetail AS s INNER JOIN detailtest AS dt ON s.idSoal = dt.idSoal ".
-            "WHERE s.idSoal not in (SELECT idSoal FROM `detailrespon` WHERE idResponTest = $idResponTest) ".
+        $queryNext = "SELECT * FROM detailtest AS dt INNER JOIN soaldetail AS s ON dt.idSoal = s.idSoal ".
+            "WHERE dt.idSoal not in (SELECT idSoal FROM `detailrespon` WHERE idResponTest = $idResponTest) ".
             "AND dt.idTest = $idTest AND s.jenisSoal = '$jenis' ORDER BY RAND() limit 1";
         $getNext = mysqli_query($conn, $queryNext);
         while($rowNext = mysqli_fetch_array($getNext))
@@ -24,3 +24,5 @@
 
     }
 ?>
+
+
