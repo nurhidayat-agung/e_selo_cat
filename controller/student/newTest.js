@@ -3,23 +3,43 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
     $scope.nis = serverVariable;
     var test;
     var soal;
+    var timeTest;
     $scope.countSoal = 0;
     $scope.scoreTest = 0;
     $scope.idRespon = 0;
     $scope.crossCek = 0;
     $scope.kunci = '';
     $scope.jawab = '';
-    $scope.waktuTest = 0;
     $scope.sec = 0;
     $scope.min = 0;
-    $scope.hour = 0;
-
-    $scope.initTime = function (pushMin) {
-
-    };
+    $scope.isTimeOut = false;
 
     $scope.runTime = function () {
-
+        $scope.onTimeout = function(){
+            if($scope.sec > 0){
+                $scope.sec --;
+                if ($scope.sec === 0) {
+                    if($scope.min > 0){
+                        $scope.sec = 59;
+                        $scope.min --;
+                    }
+                }
+            }else{
+                if ($scope.sec === 0) {
+                    if($scope.min > 0){
+                        $scope.sec = 59;
+                        $scope.min --;
+                    }
+                }
+            }
+            if($scope.min == 0 && $scope.sec == 0){
+                $scope.isTimeOut = true;
+                $scope.nextQuestion();
+            }else{
+                mytimeout = $timeout($scope.onTimeout,1000);
+            }
+        }
+        var mytimeout = $timeout($scope.onTimeout,1000);
     };
 
 
@@ -38,7 +58,7 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
         },function errorCallback(response) {
             alert("gagal load test");
         });
-    }
+    };
 
     $scope.loadPilGan = function () {
         $scope.isPilgan=true;
@@ -103,7 +123,8 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
         console.log("waktu test " + test.waktuTest);
         console.log("score item " + test.scoreItem);
         console.log("jenis test "+ test.jenisTest);
-        $scope.waktuTest = parseInt(test.waktuTest);
+        $scope.min = parseInt(test.waktuTest);
+        $scope.runTime();
         $scope.isMulaiTest = true;
         $http.post(
             "../../php/testSiswa/pushResponStart.php",
@@ -154,7 +175,9 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
                     {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':soal.kunci,'jawab':$scope.radioValue}
                 ).then(function successCallback(response) {
                     if (response.data){
-                        if ($scope.countSoal < test.jmlPilGanda){
+                        if ($scope.isTimeOut){
+                            $scope.submitResponFinish();
+                        }else if ($scope.countSoal < test.jmlPilGanda){
                             $scope.loadPilGan();
                         }else {
                             $scope.loadEssay();
@@ -177,7 +200,9 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
                     {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':soal.kunci,'jawab':$scope.radioValue}
                 ).then(function successCallback(response) {
                     if (response.data){
-                        if ($scope.countSoal < test.jmlPilGanda){
+                        if ($scope.isTimeOut){
+                            $scope.submitResponFinish();
+                        }else if ($scope.countSoal < test.jmlPilGanda){
                             $scope.loadPilGan();
                         }else {
                             $scope.loadEssay();
@@ -223,7 +248,9 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
                     {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':$scope.kunci,'jawab':$scope.jawab}
                 ).then(function successCallback(response) {
                     if (response.data){
-                        if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
+                        if ($scope.isTimeOut){
+                            $scope.submitResponFinish();
+                        }else if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
                             $scope.loadEssay();
                         }else {
                             $scope.submitResponFinish();
@@ -265,7 +292,9 @@ app.controller("testSiswa", function ($scope,$http,$window,$compile,$timeout) {
                     {'idResponTest':$scope.idRespon,'idSoal':soal.idSoal,'croscek':$scope.crossCek,'kunci':$scope.kunci,'jawab':$scope.jawab}
                 ).then(function successCallback(response) {
                     if (response.data){
-                        if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
+                        if ($scope.isTimeOut){
+                            $scope.submitResponFinish();
+                        }else if ($scope.countSoal < (parseInt(test.jmlPilGanda) + parseInt(test.jmlEssay))){
                             $scope.loadEssay();
                         }else {
                             $scope.submitResponFinish();
