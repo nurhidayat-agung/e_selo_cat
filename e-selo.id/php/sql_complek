@@ -1,0 +1,3 @@
+SELECT SUM(tingkatKesulitanSoal) as rasScore FROM soaldetail as s INNER JOIN detailrespon AS d
+ON s.idSoal = d.idSoal INNER JOIN respontest as r on r.idResponTest = d.idResponTest
+WHERE r.idResponTest = 52 AND d.croscek = 1;

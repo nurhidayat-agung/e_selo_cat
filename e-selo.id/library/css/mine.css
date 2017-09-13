@@ -1,0 +1,179 @@
+
+
+body {
+	background: #ececec;
+}
+
+.log {
+     margin-top: 10%;
+}
+
+.login-form {
+	box-shadow: 0px 0px 5px #888888;
+	background: #FFF;
+	border-top: 3px solid #64b5f6;
+	padding: 0 0 0 0;
+}
+
+div .login-form .title {
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+}
+
+div .login-form .title span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: normal;
+  text-transform: bold;
+  font-family: 'Oswald', sans-serif;
+  color: #90caf9;
+}
+
+div .login-form .forgot {
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	background-color: #eceff1;
+	width:100%;
+}
+
+div .login-form .forgot span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: normal;
+  text-transform: bold;
+  font-family: 'Oswald', sans-serif;
+  color: #263238;
+}
+
+
+.input-group{
+	width: 100%;
+}
+
+div .login-form .login {
+  padding: 20px 20px 0px 20px;
+}
+
+div .login-form .login .input-group{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div .login-form .login .input-group select{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.tombol {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #64b5f6;
+}
+
+.btn {
+	width: 100%;
+	  display: inline-block;
+	  padding: 6px 12px;
+	  margin-bottom: 0;
+	  font-size: 14px;
+	  font-weight: normal;
+	  line-height: 1.42857143;
+	  text-align: center;
+	  white-space: nowrap;
+	  vertical-align: middle;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+	  background-image: none;
+	  padding: 10px 16px;
+}
+  
+.btn-sm {
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+}
+
+/***********************
+  SHARP BUTTONS
+************************/
+.sharp {
+  border-radius:0;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+    width: 100%;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #64b5f6;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+
+.btn-primary {
+    background-image: none;
+}
+
+    /*Dashbard*/
+
+#myModal
+{
+    width: 700px;
+    margin-top: -300px;
+    margin-left:  -350px;
+}
+
+#deleteModalContent{
+    font-size: large;
+}

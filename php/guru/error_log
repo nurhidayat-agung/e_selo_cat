@@ -1,0 +1,3 @@
+[06-Sep-2017 17:20:56 UTC] PHP Notice:  Undefined property: stdClass::$email in /home/u6312633/public_html/php/guru/pushGuru.php on line 10
+[07-Sep-2017 00:04:23 UTC] PHP Notice:  Undefined property: stdClass::$email in /home/u6312633/public_html/php/guru/pushGuru.php on line 10
+[10-Sep-2017 16:30:28 UTC] PHP Notice:  Undefined property: stdClass::$email in /home/u6312633/public_html/php/guru/pushGuru.php on line 10

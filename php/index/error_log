@@ -1,0 +1,37 @@
+[06-Sep-2017 16:43:56 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
+[06-Sep-2017 16:44:03 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
+[06-Sep-2017 16:44:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
+[06-Sep-2017 16:44:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
+[06-Sep-2017 16:45:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
+[06-Sep-2017 17:22:01 UTC] PHP Notice:  Undefined property: stdClass::$password in /home/u6312633/public_html/php/index/loginSiswa.php on line 13
+[07-Sep-2017 03:19:23 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:19:26 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:19:26 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:19:28 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:19:38 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:19:52 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:20:44 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:20:44 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:20:49 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:20:50 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:23:06 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:23:06 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:27:49 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:27:49 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:28:29 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:28:30 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:28:30 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:28:30 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:28:52 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:28:58 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:29:04 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:29:22 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:35:26 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:35:26 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:35:43 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 03:36:20 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/u6312633/public_html/php/index/cekuser.php on line 11
+[07-Sep-2017 10:12:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/index/login.php on line 15
+[10-Sep-2017 11:54:49 UTC] PHP Notice:  Undefined property: stdClass::$password in /home/u6312633/public_html/php/index/loginSiswa.php on line 13
+[10-Sep-2017 16:24:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/index/login.php on line 15
+[10-Sep-2017 16:29:00 UTC] PHP Notice:  Undefined property: stdClass::$password in /home/u6312633/public_html/php/index/login.php on line 13
+[13-Sep-2017 12:47:53 UTC] PHP Notice:  Undefined property: stdClass::$password in /home/u6312633/public_html/php/index/loginSiswa.php on line 13

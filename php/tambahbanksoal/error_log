@@ -1,0 +1,82 @@
+[06-Sep-2017 17:09:32 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[06-Sep-2017 17:09:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[06-Sep-2017 17:09:42 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[06-Sep-2017 17:09:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[06-Sep-2017 17:28:20 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadBankSoalUser.php on line 19
+[06-Sep-2017 17:28:25 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadBankSoalUser.php on line 19
+[07-Sep-2017 00:02:08 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadBankSoalUser.php on line 19
+[07-Sep-2017 00:02:11 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:02:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:02:11 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadTimPengajarUser.php on line 19
+[07-Sep-2017 00:02:11 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:02:26 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:02:26 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:02:26 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadTimPengajarUser.php on line 19
+[07-Sep-2017 00:02:26 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:02:27 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadBankSoalUser.php on line 19
+[07-Sep-2017 00:02:29 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadBankSoalUser.php on line 19
+[07-Sep-2017 00:02:31 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:02:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:02:31 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/loadTimPengajarUser.php on line 19
+[07-Sep-2017 00:02:31 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:06:42 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:06:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:06:42 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:07:16 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:07:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:07:16 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:07:19 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:07:19 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:07:19 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:07:29 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:07:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:07:29 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:12:00 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:12:00 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:12:00 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:12:06 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:12:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:12:06 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:12:39 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:12:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:12:40 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:12:51 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:12:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:12:51 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 00:14:42 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 00:14:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 00:14:42 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 02:57:15 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 02:57:15 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 02:57:15 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 02:58:25 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 02:58:25 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 02:58:25 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 02:59:47 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 02:59:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 02:59:47 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 02:59:52 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 02:59:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 02:59:52 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 03:09:47 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 03:09:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 03:09:47 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/tambahbanksoal/getBankSoal.php on line 19
+[07-Sep-2017 04:32:03 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 04:32:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 05:12:31 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 05:12:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[07-Sep-2017 05:12:51 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[07-Sep-2017 05:12:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[11-Sep-2017 03:40:51 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[11-Sep-2017 03:40:51 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[13-Sep-2017 13:16:04 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[13-Sep-2017 13:16:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[13-Sep-2017 13:34:20 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[13-Sep-2017 13:34:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[13-Sep-2017 13:35:21 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[13-Sep-2017 13:35:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[13-Sep-2017 13:35:32 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[13-Sep-2017 13:35:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[13-Sep-2017 13:36:02 UTC] PHP Notice:  Undefined property: stdClass::$idUser in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 12
+[13-Sep-2017 13:36:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/u6312633/public_html/php/tambahbanksoal/isKetua.php on line 15
+[13-Sep-2017 13:36:11 UTC] PHP Notice:  Undefined property: stdClass::$deskripsiBankSoal in /home/u6312633/public_html/php/tambahbanksoal/pushbanksoal.php on line 14
