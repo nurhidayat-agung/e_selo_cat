@@ -12,7 +12,7 @@
     LEFT JOIN banksoal
     ON banksoal.idBankSoal = testing.idBankSoal
     LEFT JOIN kompisiswa
-    ON siswa.idKompi = kompisiswa.idKompi
+    ON siswa.idKompi = kompisiswa.idKompi WHERE respontest.status = 'finish'
     ORDER BY siswa.nis";
     $result = mysqli_query($conn, $query);
     while ($row = mysqli_fetch_assoc($result)){

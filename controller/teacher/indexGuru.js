@@ -23,8 +23,10 @@ app.controller("contentController", function ($scope,$http,$window,$compile) {
     };
 
     $scope.getLastRespon = function () {
-        $http.get(
-            "../../php/index/loadListRespon.php"
+        console.log("last respon");
+        $http.post(
+            "../../php/index/loadListRespon.php",
+            {'nip_nrp':$scope.idUser}
         ).then(function successCallback(response) {
             $scope.respons = response.data;
         },function errorCallback(response) {

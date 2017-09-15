@@ -239,7 +239,7 @@
 		
 		<!-- Content Atas -->
 		<div class="no-padd col-md-12" id="homeBottom" ng-controller="contentController">
-				<div class="col-md-6 recent">
+				<div class="col-md-5 recent">
 					<div class="col-md-12 recentIn">
 						<div class="col-md-12 recentTitle" id="jumlahSoal">
 							<i class="fa fa-user-circle-o"></i>
@@ -278,27 +278,29 @@
 				</div>
 			
 			
-				<div class="col-md-6 recent">
+				<div class="col-md-7 recent">
 					<div class="col-md-12 recentIn">
 						<div class="col-md-12 recentTitle" id="jumlahResponse">
 							<i class="fa fa-check-circle-o"></i>
 							<span>Respon Terbaru</span>
 							<div class="divider"></div>
 						</div>
-						<div class="col-md-12 recentContent" ng-init="loadNilai()">
+						<div class="col-md-12 recentContent" ng-init="getLastRespon()">
 							<table class="table table-bordered">
 							    <thead>
 							      <tr>
-							        <th>NIS</th>
-							        <th>Nama Test</th>
-							        <th>Nilai</th>
+							        <th class="col-md-3">NIS</th>
+							        <th class="col-md-4">Nama</th>
+							        <th class="col-md-4">Nama Test</th>
+							        <th class="col-md-1">Nilai</th>
 							      </tr>
 							    </thead>
 							    <tbody>
-							      <tr ng-repeat="nilai in nilais | limitTo:quantity">
-							        <td class="col-md-1 ">{{nilai.nis}}</td>
-							        <td class="col-md-1 ">{{nilai.jenis}}</td>
-							        <td class="col-md-1 ">{{nilai.nilaiResponTest}}</td>
+							      <tr ng-repeat="respon in respons">
+							        <td class="col-md-3 ">{{respon.nis}}</td>
+							        <td class="col-md-4 ">{{respon.namaSiswa}}</td>
+							        <td class="col-md-4 ">{{respon.namaTest}}</td>
+							        <td class="col-md-1 ">{{respon.nilaiResponTest}}</td>
 							      </tr>
 							    </tbody>
 						  	</table>

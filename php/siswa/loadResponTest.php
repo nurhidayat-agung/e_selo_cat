@@ -19,7 +19,6 @@
         $query = "SELECT * FROM respontest LEFT JOIN testing
 			ON respontest.idTest = testing.idTest
 			where nis = $nis";
-
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $output[] = $row;
