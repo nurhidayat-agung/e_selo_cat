@@ -367,7 +367,7 @@
                             <th class="col-md-1 " >{{soal.idSoal}}</th>
                             <th class="col-md-5 " >{{soal.isiSoal}}</th>
                             <th class="col-md-2 " >{{soal.jenisSoal}}</th>
-                            <th class="col-md-2 " >{{soal.bobotSoal}}</th>
+                            <th class="col-md-2 " >{{soal.bobot}}</th>
                             <th class="col-md-1 btn-lg">
                                 <div class="col-md-12">
                                     <a href="#" ng-click="priviewSoal(soal)" class="col-md-12">
@@ -435,13 +435,13 @@
                         <div class="modal-content col-md-12">
                             <div class="modal-header col-md-12">
                                 <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title titleGenerate">Hapus Soal</h4>
+                                <h4 class="modal-title titleGenerate">Ubah Bobot Soal</h4>
                             </div>
                             <div class="modal-body col-md-12">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <span class="titleGenerate" id="deleteModalContent">Set Bobot Butir Soal</span>
-                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="bobot" aria-describedby="sizing-addon2">
+                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="bobot" aria-describedby="sizing-addon2" />
                                     </div>
                                 </div>
                             </div>

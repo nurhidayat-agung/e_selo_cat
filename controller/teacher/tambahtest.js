@@ -139,10 +139,21 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
         });
     };
 
-    $scope.loadTestDetail = function () {
+    // $scope.loadTestDetail = function () {
+    //     $http.post(
+    //         "../../php/tambahTest/loadSoalTest.php",
+    //         {'idTest':$scope.selectIdTest}
+    //     ).then(function successCallback(response) {
+    //         $scope.soals = response.data;
+    //     },function errorCallback(response) {
+    //         alert("gagal load soal test");
+    //     });
+    // };
+
+    $scope.loadTestDetail = function (idBankSoal) {
         $http.post(
-            "../../php/tambahTest/loadSoalTest.php",
-            {'idTest':$scope.selectIdTest}
+            "../../php/tambahTest/loadSoalBank.php",
+            {'idBankSoal':idBankSoal}
         ).then(function successCallback(response) {
             $scope.soals = response.data;
         },function errorCallback(response) {
@@ -165,7 +176,7 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
         $scope.waktuTest = parseInt(time);
         $scope.jmlPilGan = parseInt(pilGan);
         $scope.jmlEssay = parseInt(essay);
-        $scope.loadTestDetail();
+        $scope.loadTestDetail(pushTest.idBankSoal);
     };
 
     $scope.pushEditTest = function () {
@@ -210,9 +221,9 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
                 modal.element.modal();
                 modal.close.then(function(result) {
                     // $scope.message = "You said " + result;
-                    $scope.loadTestDetail();
+                    $scope.loadTestDetail($scope.banksoal);
                 });
-                $scope.loadTestDetail();
+                $scope.loadTestDetail($scope.banksoal);
             });
         }else {
             ModalService.showModal({
@@ -225,9 +236,9 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
                 modal.element.modal();
                 modal.close.then(function(result) {
                     // $scope.message = "You said " + result;
-                    $scope.loadTestDetail();
+                    $scope.loadTestDetail($scope.banksoal);
                 });
-                $scope.loadTestDetail();
+                $scope.loadTestDetail($scope.banksoal);
             });
         }
     };
@@ -243,18 +254,21 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
             modal.element.modal();
             modal.close.then(function(result) {
                 // $scope.message = "You said " + result;
-                $scope.loadTestDetail();
+                $scope.loadTestDetail($scope.banksoal);
             });
-            $scope.loadTestDetail();
+            $scope.loadTestDetail($scope.banksoal);
         });
     };
 });
 
 app.controller('BobotController', function($scope,$http,$window,close,soal) {
+    $scope.bobot = 1;
+    console.log("idSoal : " + soal.idSoal);
+    console.log("bobot : " + soal.bobot);
     $scope.modalyes = function () {
         $http.post(
             "../../php/tambahTest/setBobot.php",
-            {'idDetailTest':soal.idDetailTest,'bobot':$scope.bobot}
+            {'idSoal':soal.idSoal,'bobot':$scope.bobot}
         ).then(function successCallback(response) {
             if(response.data){
                 close('sukses', 500);

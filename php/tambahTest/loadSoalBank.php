@@ -2,14 +2,16 @@
 /**
  * Created by PhpStorm.
  * User: kazt
- * Date: 9/3/2017
- * Time: 11:14 PM
+ * Date: 9/16/2017
+ * Time: 6:27 AM
  */
     include "../connection.php";
     $data = json_decode(file_get_contents("php://input"));
-    if (count($data) > 0){
-        $nip_nrp = $data->nip_nrp;
-        $query = "SELECT * FROM testing WHERE idTest NOT IN (SELECT idTest FROM respontest WHERE nis = $nip_nrp AND status = 'finish') AND status = 'open'";
+    if(count($data) > 0){
+        $idBankSoal = $data->idBankSoal;
+        $query = "SELECT * FROM soaldetail AS sd INNER JOIN banksoal AS b ".
+            "ON sd.idBankSoal = b.idBankSoal WHERE sd.idBankSoal = $idBankSoal ".
+            "order by sd.jenisSoal desc";
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $output[] = $row;

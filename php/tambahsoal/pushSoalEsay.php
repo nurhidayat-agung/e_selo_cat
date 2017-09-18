@@ -14,7 +14,7 @@
         $pil2 = $data->pil2;
         $pil3 = $data->pil3;
         $jumlahEsay = $data->jumlahEsay;
-        $query = "INSERT INTO soaldetail(idBankSoal, isiSoal, pil1, pil2, pil3, jenisSoal, jumlahEsay) VALUES($idBankSoal,'$isiSoal','$pil1','$pil2','$pil3','Melengkapi',$jumlahEsay)";
+        $query = "INSERT INTO soaldetail(idBankSoal, isiSoal, pil1, pil2, pil3, jenisSoal, jumlahEsay, bobot) VALUES($idBankSoal,'$isiSoal','$pil1','$pil2','$pil3','Melengkapi',$jumlahEsay,1)";
         if (mysqli_query($conn, $query)){
             echo true;
             exit;

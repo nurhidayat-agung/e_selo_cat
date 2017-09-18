@@ -17,7 +17,7 @@
         $pil5 = $data->pil5;
         $babmapel = $data->babmapel;
         $kunci = $data->kunci;
-        $query = "INSERT INTO soaldetail(idBankSoal, isiSoal, pil1, pil2, pil3, pil4, pil5, kunci, jenisSoal) VALUES($idBankSoal,'$isiSoal','$pil1','$pil2','$pil3','$pil4','$pil5','$kunci','Pilihan Ganda')";
+        $query = "INSERT INTO soaldetail(idBankSoal, isiSoal, pil1, pil2, pil3, pil4, pil5, kunci, jenisSoal, bobot) VALUES($idBankSoal,'$isiSoal','$pil1','$pil2','$pil3','$pil4','$pil5','$kunci','Pilihan Ganda',1)";
         if (mysqli_query($conn, $query)){
             echo true;
             exit;

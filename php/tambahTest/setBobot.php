@@ -8,9 +8,9 @@
     include "../connection.php";
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
-        $idDetailTest = $data->idDetailTest;
+        $idSoal = $data->idSoal;
         $bobot = $data->bobot;
-        $query = "UPDATE detailtest SET bobotSoal = $bobot WHERE idDetailTest = $idDetailTest";
+        $query = "UPDATE soaldetail SET bobot = $bobot WHERE idSoal = $idSoal";
         if (mysqli_query($conn,$query)){
             echo true;
             mysqli_close($conn);
