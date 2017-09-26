@@ -1,3 +1,0 @@
-[06-Sep-2017 16:42:19 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
-[06-Sep-2017 16:43:06 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9
-[06-Sep-2017 16:43:38 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/u6312633/public_html/php/connection.php on line 9

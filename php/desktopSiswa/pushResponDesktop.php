@@ -15,9 +15,10 @@ if (count($data) > 0){
     $query = "INSERT INTO respontest(nis,idTest,nilaiResponTest,jenis,status) VALUES ($nis,$idTest,$nilai,'$jenis','finish')";
     if(mysqli_query($conn, $query))
     {
+        $idRespon = mysqli_insert_id($conn);
         $postData = array(
             'status' => 1,
-            'message' => 'insert respon sukses',
+            'messege' => $idRespon,
             'data' => null
         );
         echo json_encode($postData);
@@ -28,7 +29,7 @@ if (count($data) > 0){
     {
         $postData = array(
             'status' => 0,
-            'message' => 'insert respon gagal',
+            'messege' => 'insert respon gagal',
             'data' => null
         );
         echo json_encode($postData);

@@ -1,2 +1,0 @@
-[06-Sep-2017 23:58:58 UTC] PHP Notice:  Undefined property: stdClass::$keterangan in /home/u6312633/public_html/php/timpengajar/pushTimPengajar.php on line 7
-[07-Sep-2017 00:03:11 UTC] PHP Notice:  Undefined variable: output in /home/u6312633/public_html/php/timpengajar/loadDetailTimPengajar.php on line 18

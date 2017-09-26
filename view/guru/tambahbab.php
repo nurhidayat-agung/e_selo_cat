@@ -125,18 +125,18 @@ if($_SESSION['job'] == 'guru'){
                 </div>
             </div>
             </a> 
-            <a href="respon.php">
-                <div class="col-md-12 menu">
-                    <div class="col-md-10">
-                        <span>Input Respon</span>
-                    </div>
-                    <div class="col-md-2">
-                        <span><i class="fa fa-book" aria-hidden="true"></i></span>
-                    </div>
-                </div>
-            </a>
+<!--            <a href="respon.php">-->
+<!--                <div class="col-md-12 menu">-->
+<!--                    <div class="col-md-10">-->
+<!--                        <span>Input Respon</span>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-2">-->
+<!--                        <span><i class="fa fa-book" aria-hidden="true"></i></span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </a>-->
 
-            <!-- <a href="analisis.php">
+            <a href="analisis.php">
                 <div class="col-md-12 menu ">
                     <div class="col-md-10">
                         <span>Analisis</span>
@@ -145,7 +145,7 @@ if($_SESSION['job'] == 'guru'){
                         <span><i class="fa fa-search" aria-hidden="true"></i></span>
                     </div>
                 </div>
-            </a> -->
+            </a>
             <a href="statistik.php">
                 <div class="col-md-12 menu">
                     <div class="col-md-10">

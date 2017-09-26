@@ -55,7 +55,7 @@ app4.controller("statistikC",function($scope,Excel,$timeout,$http,$window,$compi
     $scope.exportToExcel=function(tableId){ // ex: '#my-table'
             var exportHref=Excel.tableToExcel(tableId,'WireWorkbenchDataExport');
             $timeout(function(){location.href=exportHref;},100); // trigger download
-        }
+    };
 
 });
 
@@ -73,4 +73,4 @@ app4.factory('Excel',function($window){
                 return href;
             }
         };
-    })
+    });

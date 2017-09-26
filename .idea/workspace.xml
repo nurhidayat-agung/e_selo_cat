@@ -2,8 +2,688 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/desktopSiswa/pushResponDesktop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/desktopSiswa/pushDetailResponDesktop.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/admin/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/background-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/background-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/background-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/bg_profil" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/bg_profil.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/bg_profil2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/default-img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/default-img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/favicon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/hat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/lemdikpol.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/lemdikpol.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/polda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/assets/sekpol.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/angkatan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/export.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/guru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/indexAdmin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/kompi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/pleton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/siswa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/admin/timPengajar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/student/indexController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/student/indexSiswa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/student/newTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/student/responseController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/student/testController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/analisisController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/clock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/export.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/indexController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/indexGuru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/responController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/soalController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/tambahbab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/tambahbanksoal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/controller/teacher/tambahtest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Autoloader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/APC.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/CacheBase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/DiscISAM.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/ICache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Igbinary.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Memcache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Memory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/MemoryGZip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/MemorySerialized.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/PHPTemp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/SQLite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/SQLite3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorage/Wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CachedObjectStorageFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CalcEngine/CyclicReferenceStack.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/CalcEngine/Logger.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/DateTime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Engineering.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/ExceptionHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Financial.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/FormulaParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/FormulaToken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Function.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Logical.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/LookupRef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/MathTrig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Statistical.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/TextData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/Token/Stack.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Calculation/functionlist.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell/AdvancedValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DataType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DataValidation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell/DefaultValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell/Hyperlink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Cell/IValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Axis.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/DataSeries.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/DataSeriesValues.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/GridLines.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Layout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Legend.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/PlotArea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Properties.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Renderer/jpgraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Chart/Title.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Comment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/DocumentProperties.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/DocumentSecurity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/HashTable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Helper/HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/IComparable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/IOFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/NamedRange.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/CSV.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/DefaultReadFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2003XML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007/Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel2007/Theme.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BIFF5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BIFF8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Color/BuiltIn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/ErrorCode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/MD5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/RC4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Style/Border.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Excel5/Style/FillPattern.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/Gnumeric.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/IReadFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/IReader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/OOCalc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Reader/SYLK.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/ReferenceHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/RichText.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/RichText/ITextElement.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/RichText/Run.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/RichText/TextElement.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/CodePage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/CHANGELOG.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/LUDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/Matrix.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/QRDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/utils/Error.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/JAMA/utils/Maths.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/ChainedBlockStream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLE/PPS/Root.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/OLERead.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/pclzip.lib.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PCLZip/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/PasswordHasher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/String.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/TimeZone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/XMLWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/ZipArchive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/ZipStreamWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/bestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/exponentialBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/linearBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/logarithmicBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/polynomialBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/powerBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Shared/trend/trendClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Alignment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Border.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Borders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Conditional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Fill.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/NumberFormat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Protection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Style/Supervisor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter/Column.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/BaseDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/CellIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Column.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnCellIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnDimension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/ColumnIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Dimension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Drawing/Shadow.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/HeaderFooter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/HeaderFooterDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/MemoryDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/PageMargins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/PageSetup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Protection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/Row.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowCellIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowDimension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/RowIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Worksheet/SheetView.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/WorksheetIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/CSV.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/ContentTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/DocProps.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Rels.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/RelsRibbon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/RelsVBA.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/StringTable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Style.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Theme.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Workbook.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007/WriterPart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/BIFFwriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Parser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Workbook.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5/Xf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/IWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Cell/Comment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Meta.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/MetaInf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Mimetype.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Styles.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/Thumbnails.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/OpenDocument/WriterPart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/Core.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/DomPDF.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/mPDF.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/Writer/PDF/tcPDF.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/bg/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/cs/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/cs/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/da/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/da/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/de/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/de/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/en/uk/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/es/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/es/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/fi/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/fi/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/fr/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/fr/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/hu/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/hu/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/it/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/it/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/nl/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/nl/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/no/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/no/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/pl/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/pl/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/br/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/br/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/pt/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/ru/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/ru/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/sv/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/sv/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/tr/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/Classes/PHPExcel/locale/tr/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/install.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/PHPExcel-1.8/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/clock/angular-clock.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/clock/angular-clock.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/clock/angular-clock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/clock/angular-clock.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/clock/angular-clock.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/coba.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/mine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/css/reset.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/font-montserrat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/font-oswald.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/oswald1.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/oswald2.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/oswald3.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/oswald4.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/woff1.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/woff2.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/fonts/woff3.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/js/angular-modal-service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/js/animateIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/js/creartive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/js/jquery-2-1-3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/js/jquery-2.1.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/dst/angular-modal-service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/dst/angular-modal-service.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/dst/angular-modal-service.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/dst/angular-modal-service.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/karma.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/complex/complex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/complex/complexcontroller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/custom/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/custom/custom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/custom/customcontroller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/sampleapp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/vendor/jquery/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/yesno/yesno.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/samples/yesno/yesnocontroller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/src/angular-modal-service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/basics.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/bodyClass.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/closeModals.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/controller.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/dom.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/parameters.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/test/template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular-modal-service/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/angular-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/angular.min.js.gzip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/angular/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/dist/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/bs-commonjs-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/bs-raw-files-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/change-version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/configBridge.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/npm-shrinkwrap.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/affix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/js/transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/background-variant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/border-radius.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/center-block.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/clearfix.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/gradients.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/grid-framework.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/hide-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/image.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/nav-divider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/nav-vertical-align.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/opacity.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/progress-bar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/reset-filter.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/reset-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/resize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/responsive-visibility.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/size.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/tab-focus.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/table-row.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/text-emphasis.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/text-overflow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/mixins/vendor-prefixes.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/print.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/responsive-embed.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/theme.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/less/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/library/node_modules/bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/logout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/logoutAdmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/npm-debug.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/analisisClustering.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/analisisDayaBeda.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/analisisTingkatKesulitan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/functionAnalisisResponButir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/loadAnalisis.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/loadSoalParameter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/loadbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/analisis/loadmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/angkatan/deleteAngkatan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/angkatan/editAngkatan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/angkatan/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/angkatan/loadAngkatan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/angkatan/loadAngkatanSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/angkatan/pushAngkatan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/connection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/guru/deleteGuru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/guru/editGuru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/guru/editProfile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/guru/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/guru/loadGuru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/guru/pushGuru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/cekuser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/loadListBankSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/loadListRespon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/login.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/loginSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/profile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/index/register.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/getFormResponse.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/getJmlSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/loadbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/loadmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/loadsiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/pushDetailRespon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/pushResponTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/inputRespon/updateStatusRespon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/kompi/deleteKompi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/kompi/editKompi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/kompi/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/kompi/loadKompi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/kompi/loadKompiSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/kompi/pushKompi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/pleton/deletePleton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/pleton/editPleton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/pleton/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/pleton/loadPleton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/pleton/loadPletonSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/pleton/pushPleton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/deleteSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/editProfile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/editSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/getLastRespon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/loadProfile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/loadResponTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/loadSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/loadSoalFirst.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/pushFinishRespon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/pushResponDetail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/pushResponTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/siswa/pushSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/sql_complek" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/statistik/loadNilai.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/statistik/loadbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/cekJmlSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/changeStatTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/deleteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/editTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/loadSoalTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/loadTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/loadTesting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/pushTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahTest/setBobot.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbab/isbabmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbab/loadmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbab/pushbab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/deleteBankSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/editBankSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/getBankSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/isKetua.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/isbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/loadBankSoalUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/loadTimPengajarUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/loadmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahbanksoal/pushbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahmapel/isNamaMapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahmapel/pushMapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/deleteSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/editSoalEsay.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/editSoalPilihanGanda.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/loadSoalDetail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/loadbabmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/loadbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/loadsoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/pushSoalEsay.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/tambahsoal/pushSoalPilGan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/testSiswa/loadSoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/testSiswa/loadTestSiswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/testSiswa/pushDetailRespon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/testSiswa/pushResponStart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/deleteDetailTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/deleteTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/editTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/loadDetailTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/loadTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/pushDetailTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/timpengajar/pushTimPengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/utilFunction/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/utilFunction/loadProfileUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/utilFunction/loadbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/php/utilFunction/loadsoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/ssl/certs/e_selo_ac_id_a4b95_d8725_1536063624_415df20c31b7838dab803b3f7592fe56.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/ssl/certs/e_selo_ac_id_a4b95_d8725_1536063624_415df20c31b7838dab803b3f7592fe56.crt.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/ssl/keys/a4b95_d8725_6a4d281761bd56e0579511c5612cda34.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/ssl/ssl.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/ssl/ssl.db.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/style/styleIndex.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/angkatan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/guru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/kompi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/pleton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/siswa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/statistik.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/admin/timpengajar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/analisis.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/cobamodal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/respon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/soal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/statistik.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/tambahbab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/tambahbanksoal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/tambahmapel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/guru/test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/siswa/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/siswa/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/siswa/response.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/e-selo.id/view/siswa/test.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/export.js" afterPath="$PROJECT_DIR$/controller/teacher/export.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/desktopSiswa/loadResponTest.php" afterPath="$PROJECT_DIR$/php/desktopSiswa/loadResponTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php" afterPath="$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/desktopSiswa/pushResponDesktop.php" afterPath="$PROJECT_DIR$/php/desktopSiswa/pushResponDesktop.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/analisis.php" afterPath="$PROJECT_DIR$/view/guru/analisis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/index.php" afterPath="$PROJECT_DIR$/view/guru/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/respon.php" afterPath="$PROJECT_DIR$/view/guru/respon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/soal.php" afterPath="$PROJECT_DIR$/view/guru/soal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/statistik.php" afterPath="$PROJECT_DIR$/view/guru/statistik.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbab.php" afterPath="$PROJECT_DIR$/view/guru/tambahbab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" afterPath="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/tambahmapel.php" afterPath="$PROJECT_DIR$/view/guru/tambahmapel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/test.php" afterPath="$PROJECT_DIR$/view/guru/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,14 +737,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/index/login.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/getBankSoal.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/loadTimPengajarUser.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/isbanksoal.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/pushbanksoal.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/editBankSoal.php" />
-        <option value="$PROJECT_DIR$/php/tambahbanksoal/deleteBankSoal.php" />
-        <option value="$PROJECT_DIR$/view/guru/soal.php" />
         <option value="$PROJECT_DIR$/php/utilFunction/loadbanksoal.php" />
         <option value="$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahbanksoal.js" />
@@ -73,9 +745,7 @@
         <option value="$PROJECT_DIR$/php/tambahTest/loadTest.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/changeStatTest.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/deleteTest.php" />
-        <option value="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/editTest.php" />
-        <option value="$PROJECT_DIR$/view/guru/statistik.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/view/admin/pleton.php" />
@@ -92,7 +762,6 @@
         <option value="$PROJECT_DIR$/php/desktopSiswa/cekNis.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/desktopLogin.php" />
         <option value="$PROJECT_DIR$/php/statistik/loadNilai.php" />
-        <option value="$PROJECT_DIR$/view/guru/index.php" />
         <option value="$PROJECT_DIR$/controller/teacher/indexGuru.js" />
         <option value="$PROJECT_DIR$/php/index/loadListRespon.php" />
         <option value="$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php" />
@@ -100,13 +769,24 @@
         <option value="$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/loadSoalBank.php" />
         <option value="$PROJECT_DIR$/php/tambahTest/setBobot.php" />
-        <option value="$PROJECT_DIR$/view/guru/test.php" />
         <option value="$PROJECT_DIR$/controller/teacher/tambahtest.js" />
-        <option value="$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php" />
         <option value="$PROJECT_DIR$/php/siswa/loadResponTest.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/editSiswa.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/loadSoalTest.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/pushResponStart.php" />
+        <option value="$PROJECT_DIR$/view/guru/analisis.php" />
+        <option value="$PROJECT_DIR$/view/guru/index.php" />
+        <option value="$PROJECT_DIR$/view/guru/respon.php" />
+        <option value="$PROJECT_DIR$/view/guru/soal.php" />
+        <option value="$PROJECT_DIR$/view/guru/statistik.php" />
+        <option value="$PROJECT_DIR$/view/guru/tambahbab.php" />
+        <option value="$PROJECT_DIR$/view/guru/tambahbanksoal.php" />
+        <option value="$PROJECT_DIR$/view/guru/tambahmapel.php" />
+        <option value="$PROJECT_DIR$/view/guru/test.php" />
+        <option value="$PROJECT_DIR$/controller/teacher/export.js" />
+        <option value="$PROJECT_DIR$/php/desktopSiswa/loadResponTest.php" />
+        <option value="$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php" />
+        <option value="$PROJECT_DIR$/php/desktopSiswa/pushDetailResponDesktop.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/pushResponDesktop.php" />
       </list>
     </option>
@@ -125,7 +805,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/e-selo.id/library/node_modules" />
     <handled-path value="$PROJECT_DIR$/library/node_modules" />
   </component>
   <component name="PhpServers">
@@ -133,10 +812,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="88" />
-    <option name="y" value="11" />
-    <option name="width" value="1291" />
-    <option name="height" value="780" />
+    <option name="x" value="-8" />
+    <option name="y" value="-908" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -153,41 +832,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="e_selo_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="e_selo_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo_new" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="desktopSiswa" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo_new" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="testSiswa" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo_new" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,13 +858,14 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\e_selo\admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\e_selo_cat\php\desktopSiswa" />
       <recent name="C:\xampp\htdocs\e_selo_new\php\desktopSiswa" />
       <recent name="C:\xampp\htdocs\e_selo\php\angkatan" />
       <recent name="C:\xampp\htdocs\e_selo\php\utilFunction" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\e_selo\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,16 +912,19 @@
       <workItem from="1505642304911" duration="9547000" />
       <workItem from="1505730091612" duration="4674000" />
       <workItem from="1505860298447" duration="69000" />
+      <workItem from="1506152499678" duration="5501000" />
+      <workItem from="1506405924358" duration="3464000" />
+      <workItem from="1506398721445" duration="2745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214796000" />
+    <option name="totallyTimeSpent" value="226506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-908" width="1456" height="916" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2315951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -290,101 +956,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/admin/pleton.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="199" column="118" lean-forward="false" selection-start-line="199" selection-start-column="118" selection-end-line="199" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/pleton/pushPleton.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/pushResponTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/student/indexSiswa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/pushResponDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="430" column="50" lean-forward="true" selection-start-line="430" selection-start-column="50" selection-end-line="430" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/student/testController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="182" column="66" lean-forward="false" selection-start-line="182" selection-start-column="57" selection-end-line="182" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/siswa/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3468">
-          <caret line="204" column="59" lean-forward="false" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahsoal/editSoalEsay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="225" column="66" lean-forward="false" selection-start-line="225" selection-start-column="66" selection-end-line="225" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/student/newTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="99" column="17" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -465,13 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="308" column="24" lean-forward="false" selection-start-line="308" selection-start-column="24" selection-end-line="308" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/indexGuru.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -528,27 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <marker date="1505644225035" expanded="true" signature="232:364" ph="SELECT * FRO... testing" />
-            <marker date="1505644225035" expanded="true" signature="275:343" ph="SELECT idTes... respontest" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadResponTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1505651861275" expanded="true" signature="170:270" ph="SELECT * FRO... respontest" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/siswa/editProfile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -595,6 +1142,154 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/desktopSiswa/pushResponStart.php" />
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/siswa/pushFinishRespon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/analisis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="129" column="16" lean-forward="false" selection-start-line="129" selection-start-column="16" selection-end-line="138" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="132" column="12" lean-forward="false" selection-start-line="132" selection-start-column="12" selection-end-line="141" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/respon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="131" column="12" lean-forward="false" selection-start-line="131" selection-start-column="12" selection-end-line="140" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/soal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="127" column="12" lean-forward="false" selection-start-line="127" selection-start-column="12" selection-end-line="136" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/tambahbab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="127" column="16" lean-forward="true" selection-start-line="127" selection-start-column="16" selection-end-line="136" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/tambahbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="126" column="12" lean-forward="false" selection-start-line="126" selection-start-column="12" selection-end-line="135" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/tambahmapel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="12" lean-forward="false" selection-start-line="127" selection-start-column="12" selection-end-line="136" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/teacher/export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/admin/export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/statistik.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin/siswa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/statistik.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="204" column="45" lean-forward="false" selection-start-line="204" selection-start-column="45" selection-end-line="204" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadResponTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <marker date="1506214761078" expanded="true" signature="197:323" ph="SELECT * FRO... respontest" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadSoalTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -609,69 +1304,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/test.php">
+    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="359" column="24" lean-forward="false" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <marker date="1506216318159" expanded="true" signature="255:387" ph="SELECT * FRO... testing" />
+            <marker date="1506216318159" expanded="true" signature="298:366" ph="SELECT idTes... respontest" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushResponStart.php">
+    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/pushDetailResponDesktop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="357">
+          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
           <folding>
-            <marker date="1504758335000" expanded="true" signature="315:386" ph="INSERT INTO respontest... " />
+            <marker date="1506413666298" expanded="true" signature="417:520" ph="INSERT INTO detailrespon... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/desktopSiswa/pushResponDesktop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="501">
+          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
           <folding>
-            <marker date="1505771062989" expanded="true" signature="314:424" ph="INSERT INTO respontest... " />
+            <marker date="1506413731011" expanded="true" signature="314:424" ph="INSERT INTO respontest... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/pushDetailRespon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadTestSiswa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <marker date="1505510169470" expanded="true" signature="260:396" ph="SELECT * FRO... testing" />
-            <marker date="1505510169470" expanded="true" signature="303:375" ph="SELECT idTes... respontest" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/testSiswa/loadSoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding>
-            <marker date="1504758335000" expanded="true" signature="337:619" ph="SELECT * FRO... detailtest" />
-            <marker date="1504758335000" expanded="true" signature="459:514" ph="SELECT idSoa... detailrespon" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/pushFinishRespon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
