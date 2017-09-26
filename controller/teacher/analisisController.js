@@ -3,6 +3,8 @@
 
 var app4 = angular.module("analisisSoal",[]);
 app4.controller("addSoal", function($scope,$http,$window,$compile){
+    $scope.idUser = serverVariable;
+
     $scope.$watch('telephone', function (value) {
         console.log(value);
     }, true);
@@ -20,16 +22,13 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
         console.log($scope.idUser);
     };
     $scope.loadbanksoal = function(){
-      
         $scope.selectMapel = $scope.mapel;
-        console.log($scope.selectMapel);
         $http.post(
-            "../../php/analisis/loadbanksoal.php",
-            {'idMapel':$scope.mapel}
-        ).then(function successCallback(response){
-            //alert(data);
+            "../../php/utilFunction/loadbanksoal.php",
+            {'nip_nrp':$scope.idUser}
+        ).then(function successCallback(response) {
             $scope.banksoals = response.data;
-        },function errorCallback(response) {
+        }, function errorCallback(response) {
             alert("sambungan gagal");
         });
     };
@@ -88,6 +87,7 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
     };
 
     $scope.setResponButir = function () {
+        console.log("id bank soal : " + $scope.banksoal);
         $http.post(
             "../../php/analisis/analisisTingkatKesulitan.php",
             {'status':true,'idBankSoal': $scope.banksoal}

@@ -195,6 +195,7 @@ if($_SESSION['job'] == 'guru'){
             <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
+                        <!--
                         <div class="col-md-4">
                             <div class="col-md-12 titleGenerate">
                                 <div>Mapel</div>
@@ -208,20 +209,21 @@ if($_SESSION['job'] == 'guru'){
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        -->
+                        <div class="col-md-7">
                             <div class="col-md-12 titleGenerate">
                                 <span>Bank Soal</span>
                             </div>
                             <div class="col-md-12 contentGenerate">
                                 <div class="input-group">
-                                    <select name="banksoal" ng-model="banksoal" class="form-control" ng-change="loadbabmapel()">
+                                    <select name="banksoal" ng-model="banksoal" class="form-control"  ng-init="loadbanksoal()">
                                         <option value="">Select banksoal</option>
                                         <option ng-repeat="banksoal in banksoals" value="{{banksoal.idBankSoal}}">{{banksoal.namaBankSoal}}</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-5">
                             <div class="col-md-12 tombol">
                                 <div class="input-group">
 							     	<span class="input-group-btn">

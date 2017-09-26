@@ -6,28 +6,29 @@
  * Time: 10:22 AM
  */
     function getJmlSiswa($conn,$idBankSoal){
-        $queryJmlSiswa  = "SELECT COUNT(idUser) as jmlUser FROM respontest WHERE idBankSoal = $idBankSoal AND jenis = 'klasik' AND status = 'finish'";
+        $queryJmlSiswa  = "SELECT COUNT(r.nis) AS jmlUser FROM respontest AS r INNER JOIN testing AS t ON ".
+            "r.idTest = t.idTest WHERE t.idBankSoal = 12 AND r.jenis = 'klasik' AND r.status = 'finish'";
         $resultJmlSiswa = mysqli_query($conn,$queryJmlSiswa);
         $dataJmlSiswa = mysqli_fetch_assoc($resultJmlSiswa);
         return $dataJmlSiswa['jmlUser'];
     }
 
     function getJmlBenar($idBankSoal,$idSoal,$conn){
-        $queryBenar = "SELECT COUNT(idSoal) as jmlIdSoal FROM detailrespon as d INNER JOIN respontest AS r ".
-            "ON d.idResponTest = r.idResponTest WHERE r.idBanksoal = $idBankSoal AND d.idSoal = $idSoal".
-            " AND r.status = 'finish' AND r.jenis = 'klasik' AND d.croscek = 1";
+        $queryBenar = "SELECT COUNT(idSoal) as jmlBenar FROM detailrespon as d INNER JOIN respontest AS r".
+            " ON d.idResponTest = r.idResponTest INNER JOIN testing AS t ON r.idTest = t.idTest".
+            " WHERE t.idBanksoal = $idBankSoal AND d.idSoal = $idSoal AND r.status = 'finish' AND r.jenis = 'klasik' AND d.croscek = 1";
         $resultBenar = mysqli_query($conn,$queryBenar);
         $jml = mysqli_fetch_assoc($resultBenar);
-        return $jml['jmlIdSoal'];
+        return $jml['jmlBenar'];
     }
 
     function getJmlSalah($idBankSoal,$idSoal,$conn){
-        $queryBenar = "SELECT COUNT(idSoal) as jmlIdSoal FROM detailrespon as d INNER JOIN respontest AS r ".
-            "ON d.idResponTest = r.idResponTest WHERE r.idBanksoal = $idBankSoal AND d.idSoal = $idSoal".
-            " AND r.status = 'finish' AND r.jenis = 'klasik' AND d.croscek = 0";
-        $resultBenar = mysqli_query($conn,$queryBenar);
+        $querySalah = "SELECT COUNT(idSoal) as jmlSalah FROM detailrespon as d INNER JOIN respontest AS r".
+            " ON d.idResponTest = r.idResponTest INNER JOIN testing AS t ON r.idTest = t.idTest".
+            " WHERE t.idBanksoal = $idBankSoal AND d.idSoal = $idSoal AND r.status = 'finish' AND r.jenis = 'klasik' AND d.croscek = 0";
+        $resultBenar = mysqli_query($conn,$querySalah);
         $jml = mysqli_fetch_assoc($resultBenar);
-        return $jml['jmlIdSoal'];
+        return $jml['jmlSalah'];
     }
 
     function pushB($idSoal,$b,$conn){
