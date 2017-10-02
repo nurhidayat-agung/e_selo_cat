@@ -191,7 +191,7 @@ if($_SESSION['job'] == 'guru'){
     <!-- content -->
     <div id="main" ng-app="analisisSoal" ng-controller="addSoal">
         <!-- Content Isi Atas -->
-        <div class="no-padd col-md-12" id="homeTop" ng-init="loadMapel()">
+        <div class="no-padd col-md-12" id="homeTop">
             <div class="col-md-12 soal">
                 <div class="generateSoal">
                     <div class="col-md-12" id="paramMapel">
@@ -236,28 +236,28 @@ if($_SESSION['job'] == 'guru'){
                             <div class="col-md-3">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-							    		<button class="btn btn-info btn-sm sharp" type="button" id="buttonresetparameter" value="Resset Respon Butir" name="input_soal" ng-click="resetResponButir()">Reset Respon Butir</button>
+							    		<input class="btn btn-info btn-sm sharp" type="button" id="buttonresetparameter" value="Resset Respon Butir" name="input_soal" ng-click="resetResponButir()" ng-disabled="!isBankSoal">Reset Respon Butir</input>
                                     </span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonsetparameter" value="Analisis Respon Butir" name="input_soal" ng-click="setResponButir()">Analisis Respon Butir</button>
+							    		<input type="button" class="btn btn-primary btn-sm sharp" id="buttonsetparameter" value="Analisis Respon Butir" name="input_soal" ng-disabled="!isBankSoal" ng-click="setResponButir()">Analisis Respon Butir</input>
                                     </span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-							    		<button class="btn btn-info btn-sm sharp" type="button" id="buttonresetcluster" value="Reset Cluster" name="input_soal">Reset Cluster</button>
+							    		<input class="btn btn-info btn-sm sharp" type="button" id="buttonresetcluster" value="Reset Cluster" name="input_soal" ng-click="resetCluster()" ng-disabled="!isBankSoal">Reset Cluster</input>
                                     </span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-							    		<button class="btn btn-primary btn-sm sharp" type="button" id="buttonsetcluster" value="Analisis Analisis Cluster" name="input_soal">Analisis Cluster</button>
+							    		<input type="button" class="btn btn-primary btn-sm sharp" id="buttonsetcluster" value="Analisis Analisis Cluster" name="input_soal" ng-disabled="!isIRT" ng-click="setCluster()">Analisis Cluster</input>
                                     </span>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@ if($_SESSION['job'] == 'guru'){
                         -->
                         <!-- <p><a href="export.php"><button>Export Data ke Excel</button></a></p> -->
                         <div id="isiLoop">
-                            <div class="col-md-12 title table-responsive" id="inputSoal" ng-init="displayData()">
+                            <div class="col-md-12 title table-responsive" id="inputSoal">
                                 <table class="table table-bordered" >
                                     <thead>
                                     <tr >

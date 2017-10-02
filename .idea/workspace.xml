@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a097f2de-d32e-4f08-88b4-3b21e379bf78" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/analisis/NudyangKmeans.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/analisis/analisisKmeans.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/analisis/analisisClustering.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/analisis/loadAnalisis.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/teacher/analisisController.js" afterPath="$PROJECT_DIR$/controller/teacher/analisisController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/analisisDayaBeda.php" afterPath="$PROJECT_DIR$/php/analisis/analisisDayaBeda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php" afterPath="$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php" afterPath="$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/guru/analisis.php" afterPath="$PROJECT_DIR$/view/guru/analisis.php" />
     </list>
@@ -18,50 +24,23 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="analisis.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/view/guru/analisis.php">
+          <leaf>
+            <file leaf-file-name="NudyangKmeans.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/php/analisis/NudyangKmeans.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="3893">
-                    <caret line="229" column="179" lean-forward="false" selection-start-line="229" selection-start-column="179" selection-end-line="229" selection-end-column="179" />
+                  <state relative-caret-position="767">
+                    <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="analisisTingkatKesulitan.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php">
+            <file leaf-file-name="analisis.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/view/guru/analisis.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="612">
-                    <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-                    <folding>
-                      <marker date="1504695164000" expanded="true" signature="408:457" ph="SELECT idSoa... soaldetail" />
-                      <marker date="1504695164000" expanded="true" signature="1595:1664" ph="UPDATE soald... " />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="functionAnalisisResponButir.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="731">
-                    <caret line="43" column="56" lean-forward="true" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
-                    <folding>
-                      <marker date="1506409884588" expanded="true" signature="161:239" ph="SELECT COUNT... respontest" />
-                      <marker date="1506409884588" expanded="true" signature="161:346" ph="SELECT COUNT... respontest" />
-                      <marker date="1506409884588" expanded="true" signature="596:678" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="596:697" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="596:698" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="596:776" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="596:895" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="596:913" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="1137:1453" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="1137:1454" ph="SELECT COUNT... detailrespon" />
-                      <marker date="1506409884588" expanded="true" signature="1663:1726" ph="UPDATE soald... " />
-                      <marker date="1506409884588" expanded="true" signature="1864:2130" ph="SELECT SUM(t... soaldetail" />
-                      <marker date="1506409884588" expanded="true" signature="2377:2486" ph="SELECT idRes... respontest" />
-                    </folding>
+                  <state relative-caret-position="606">
+                    <caret line="264" column="26" lean-forward="true" selection-start-line="264" selection-start-column="26" selection-end-line="264" selection-end-column="26" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -73,59 +52,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="analisisController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="analisisController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/teacher/analisisController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadProfileUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/utilFunction/loadProfileUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="408">
+              <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding>
-                <marker date="1504695164000" expanded="true" signature="258:295" ph="select * fro... user" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analisisClustering.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/analisis/analisisClustering.php">
+      <file leaf-file-name="analisisTingkatKesulitan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="105" column="28" lean-forward="false" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+            <state relative-caret-position="765">
+              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
               <folding>
-                <marker date="1504695164000" expanded="true" signature="403:567" ph="select DISTI... detailrespon" />
-                <marker date="1504695164000" expanded="true" signature="895:1123" ph="select count... detailrespon" />
-                <marker date="1504695164000" expanded="true" signature="1287:1499" ph="select count... detailrespon" />
-                <marker date="1504695164000" expanded="true" signature="1708:1775" ph="update soalD... " />
-                <marker date="1504695164000" expanded="true" signature="2114:2411" ph="SELECT COUNT... detailrespon" />
-                <marker date="1504695164000" expanded="true" signature="2167:2307" ph="SELECT * FRO... responTest" />
-                <marker date="1504695164000" expanded="true" signature="2568:2864" ph="SELECT COUNT... detailrespon" />
-                <marker date="1504695164000" expanded="true" signature="2621:2760" ph="SELECT * FRO... responTest" />
-                <marker date="1504695164000" expanded="true" signature="3102:3157" ph="update soalD... " />
-                <marker date="1504695164000" expanded="true" signature="3669:3748" ph="select idSoa... soalDetail" />
-                <marker date="1504695164000" expanded="true" signature="5720:5769" ph="update soalD... " />
-                <marker date="1504695164000" expanded="true" signature="5947:5996" ph="update soalD... " />
-                <marker date="1504695164000" expanded="true" signature="6174:6223" ph="update soalD... " />
-                <marker date="1504695164000" expanded="true" signature="6401:6450" ph="update soalD... " />
+                <marker date="1506481698466" expanded="true" signature="1386:1455" ph="UPDATE soald... " />
+                <marker date="1506481698466" expanded="true" signature="1553:1610" ph="UPDATE soald... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="soalController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
+      <file leaf-file-name="loadSoalParameter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/analisis/loadSoalParameter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="-51">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1504695164000" expanded="true" signature="293:337" ph="SELECT * FRO... soaldetail" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadBankSoalUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <marker date="1504695164000" expanded="true" signature="259:535" ph="SELECT b.idB... banksoal" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analisisKmeans.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/analisis/analisisKmeans.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+              <folding>
+                <marker date="1506929442393" expanded="true" signature="473:536" ph="select idSoa... soalDetail" />
+                <marker date="1506929442393" expanded="true" signature="1323:1394" ph="UPDATE soald... " />
+                <marker date="1506929442393" expanded="true" signature="2335:2424" ph="UPDATE soald... " />
+                <marker date="1506929442393" expanded="true" signature="4387:4443" ph="UPDATE soald... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functionAnalisisResponButir.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1324">
+              <caret line="110" column="2" lean-forward="true" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="2" />
+              <folding>
+                <marker date="1506493451433" expanded="true" signature="157:206" ph="SELECT idSoa... soaldetail" />
+                <marker date="1506493451433" expanded="true" signature="157:217" ph="SELECT idRes... respontest" />
+                <marker date="1506493451433" expanded="true" signature="524:602" ph="SELECT COUNT... respontest" />
+                <marker date="1506493451433" expanded="true" signature="524:718" ph="SELECT COUNT... respontest" />
+                <marker date="1506493451433" expanded="true" signature="758:819" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="758:826" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1076:1158" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1076:1177" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1076:1178" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1076:1256" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1076:1375" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1076:1393" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1430:1514" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1737:2053" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="1737:2054" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="2091:2175" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="2384:2447" ph="UPDATE soald... " />
+                <marker date="1506493451433" expanded="true" signature="2585:2851" ph="SELECT SUM(t... soaldetail" />
+                <marker date="1506493451433" expanded="true" signature="3098:3134" ph="SELECT idRes... respontest" />
+                <marker date="1506493451433" expanded="true" signature="3098:3185" ph="SELECT idRes... respontest" />
+                <marker date="1506493451433" expanded="true" signature="3098:3281" ph="SELECT idRes... respontest" />
+                <marker date="1506493451433" expanded="true" signature="3645:3709" ph="UPDATE respo... " />
+                <marker date="1506493451433" expanded="true" signature="3645:3722" ph="UPDATE respo... " />
+                <marker date="1506493451433" expanded="true" signature="3940:4004" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="3940:4280" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="3940:4332" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="3940:4339" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4006:4028" ph="SELECT dr.id... " />
+                <marker date="1506493451433" expanded="true" signature="4006:4098" ph="SELECT dr.id... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4006:4130" ph="SELECT dr.id... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4006:4147" ph="SELECT dr.id... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4006:4218" ph="SELECT dr.id... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4006:4227" ph="SELECT dr.id... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4590:4983" ph="SELECT COUNT... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="4657:4869" ph="SELECT dr.id... detailrespon" />
+                <marker date="1506493451433" expanded="true" signature="5226:5277" ph="UPDATE soald... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,8 +174,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ng-con</find>
-      <find>iduse</find>
       <find>iduser</find>
       <find>echo</find>
       <find>loadAngkatan</find>
@@ -166,6 +197,13 @@
       <find>scoreTest</find>
       <find>mulaiTest</find>
       <find>loadTestDetail</find>
+      <find>getClose</find>
+      <find>analisisClustering</find>
+      <find>arrayDeepEqual</find>
+      <find>displayData</find>
+      <find>loadMapel</find>
+      <find>analisis</find>
+      <find>loadbanksoal()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,14 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/tambahTest/cekJmlSoal.php" />
-        <option value="$PROJECT_DIR$/php/tambahTest/pushTest.php" />
-        <option value="$PROJECT_DIR$/php/tambahTest/loadTest.php" />
-        <option value="$PROJECT_DIR$/php/tambahTest/changeStatTest.php" />
-        <option value="$PROJECT_DIR$/php/tambahTest/deleteTest.php" />
-        <option value="$PROJECT_DIR$/php/tambahTest/editTest.php" />
-        <option value="$PROJECT_DIR$/php/tambahTest/loadSoalTest.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/view/admin/pleton.php" />
         <option value="$PROJECT_DIR$/controller/student/indexSiswa.js" />
         <option value="$PROJECT_DIR$/php/testSiswa/pushResponStart.php" />
@@ -221,10 +251,18 @@
         <option value="$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/pushDetailResponDesktop.php" />
         <option value="$PROJECT_DIR$/php/desktopSiswa/pushResponDesktop.php" />
-        <option value="$PROJECT_DIR$/view/guru/analisis.php" />
-        <option value="$PROJECT_DIR$/controller/teacher/analisisController.js" />
         <option value="$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php" />
         <option value="$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php" />
+        <option value="$PROJECT_DIR$/php/analisis/analisisDayaBeda.php" />
+        <option value="$PROJECT_DIR$/php/analisis/kmeansEngine.php" />
+        <option value="$PROJECT_DIR$/php/analisis/NudyangKmean.php" />
+        <option value="$PROJECT_DIR$/php/analisis/functionKmeans.php" />
+        <option value="$PROJECT_DIR$/php/analisis/NudyangKmeans.php" />
+        <option value="$PROJECT_DIR$/php/analisis/loadAnalisis.php" />
+        <option value="$PROJECT_DIR$/php/analisis/loadmapel.php" />
+        <option value="$PROJECT_DIR$/php/analisis/analisisKmeans.php" />
+        <option value="$PROJECT_DIR$/view/guru/analisis.php" />
+        <option value="$PROJECT_DIR$/controller/teacher/analisisController.js" />
       </list>
     </option>
   </component>
@@ -249,8 +287,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-908" />
+    <option name="x" value="-71" />
+    <option name="y" value="189" />
     <option name="width" value="1456" />
     <option name="height" value="916" />
   </component>
@@ -269,6 +307,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,12 +324,6 @@
             <path>
               <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="teacher" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -297,6 +331,18 @@
               <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="analisis" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="desktopSiswa" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_selo_cat" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tambahTest" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="e_selo_cat" type="b2602c69:ProjectViewProjectNode" />
@@ -319,8 +365,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,33 +431,35 @@
       <workItem from="1506405924358" duration="3464000" />
       <workItem from="1506398721445" duration="3695000" />
       <workItem from="1506395095658" duration="6434000" />
-      <workItem from="1506433169767" duration="1031000" />
+      <workItem from="1506433169767" duration="31147000" />
+      <workItem from="1506679048218" duration="5066000" />
+      <workItem from="1506852210653" duration="24240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234921000" />
+    <option name="totallyTimeSpent" value="294343000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-908" width="1456" height="916" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20972222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2315951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -430,83 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/student/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/loadSoalFirst.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/statistik/loadNilai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/index/loadListRespon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/indexGuru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahsoal/pushSoalPilGan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahsoal/pushSoalEsay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="190" lean-forward="false" selection-start-line="16" selection-start-column="190" selection-end-line="16" selection-end-column="190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/editTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/setBobot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/siswa/loadResponTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/siswa/editProfile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -532,13 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalBank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -683,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/desktopSiswa/pushDetailResponDesktop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -718,33 +673,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadbanksoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadsoal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/teacher/soalController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+        <state relative-caret-position="85">
+          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/analisisDayaBeda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="44" column="79" lean-forward="false" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/teacher/analisisController.js">
+    <entry file="file://$PROJECT_DIR$/php/analisis/kmeansEngine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="60" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/functionKmeans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/analisisClustering.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2142">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/desktopSiswa/loadTestOpen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <marker date="1506216318159" expanded="true" signature="255:387" ph="SELECT * FRO... testing" />
+            <marker date="1506216318159" expanded="true" signature="298:366" ph="SELECT idTes... respontest" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahTest/loadSoalBank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <marker date="1505560883256" expanded="true" signature="265:445" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <marker date="1504695164000" expanded="true" signature="239:481" ph="SELECT b.idB... banksoal" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -758,67 +753,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/guru/analisis.php">
+    <entry file="file://$PROJECT_DIR$/php/utilFunction/loadsoal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3893">
-          <caret line="229" column="179" lean-forward="false" selection-start-line="229" selection-start-column="179" selection-end-line="229" selection-end-column="179" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504695164000" expanded="true" signature="343:389" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tambahbanksoal/loadBankSoalUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <marker date="1504695164000" expanded="true" signature="259:535" ph="SELECT b.idB... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/loadAnalisis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/student/testController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/loadSoalParameter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504695164000" expanded="true" signature="293:337" ph="SELECT * FRO... soaldetail" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/loadmapel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <marker date="1504695164000" expanded="true" signature="157:192" ph="SELECT idMap... mapel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/loadbanksoal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <marker date="1504695164000" expanded="true" signature="234:273" ph="SELECT * FRO... banksoal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/NudyangKmeans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/analisis/functionAnalisisResponButir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="56" lean-forward="true" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+        <state relative-caret-position="1324">
+          <caret line="110" column="2" lean-forward="true" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="2" />
           <folding>
-            <marker date="1506409884588" expanded="true" signature="161:239" ph="SELECT COUNT... respontest" />
-            <marker date="1506409884588" expanded="true" signature="161:346" ph="SELECT COUNT... respontest" />
-            <marker date="1506409884588" expanded="true" signature="596:678" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="596:697" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="596:698" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="596:776" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="596:895" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="596:913" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="1137:1453" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="1137:1454" ph="SELECT COUNT... detailrespon" />
-            <marker date="1506409884588" expanded="true" signature="1663:1726" ph="UPDATE soald... " />
-            <marker date="1506409884588" expanded="true" signature="1864:2130" ph="SELECT SUM(t... soaldetail" />
-            <marker date="1506409884588" expanded="true" signature="2377:2486" ph="SELECT idRes... respontest" />
+            <marker date="1506493451433" expanded="true" signature="157:206" ph="SELECT idSoa... soaldetail" />
+            <marker date="1506493451433" expanded="true" signature="157:217" ph="SELECT idRes... respontest" />
+            <marker date="1506493451433" expanded="true" signature="524:602" ph="SELECT COUNT... respontest" />
+            <marker date="1506493451433" expanded="true" signature="524:718" ph="SELECT COUNT... respontest" />
+            <marker date="1506493451433" expanded="true" signature="758:819" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="758:826" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1076:1158" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1076:1177" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1076:1178" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1076:1256" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1076:1375" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1076:1393" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1430:1514" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1737:2053" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="1737:2054" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="2091:2175" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="2384:2447" ph="UPDATE soald... " />
+            <marker date="1506493451433" expanded="true" signature="2585:2851" ph="SELECT SUM(t... soaldetail" />
+            <marker date="1506493451433" expanded="true" signature="3098:3134" ph="SELECT idRes... respontest" />
+            <marker date="1506493451433" expanded="true" signature="3098:3185" ph="SELECT idRes... respontest" />
+            <marker date="1506493451433" expanded="true" signature="3098:3281" ph="SELECT idRes... respontest" />
+            <marker date="1506493451433" expanded="true" signature="3645:3709" ph="UPDATE respo... " />
+            <marker date="1506493451433" expanded="true" signature="3645:3722" ph="UPDATE respo... " />
+            <marker date="1506493451433" expanded="true" signature="3940:4004" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="3940:4280" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="3940:4332" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="3940:4339" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4006:4028" ph="SELECT dr.id... " />
+            <marker date="1506493451433" expanded="true" signature="4006:4098" ph="SELECT dr.id... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4006:4130" ph="SELECT dr.id... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4006:4147" ph="SELECT dr.id... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4006:4218" ph="SELECT dr.id... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4006:4227" ph="SELECT dr.id... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4590:4983" ph="SELECT COUNT... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="4657:4869" ph="SELECT dr.id... detailrespon" />
+            <marker date="1506493451433" expanded="true" signature="5226:5277" ph="UPDATE soald... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/analisis/analisisKmeans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+          <folding>
+            <marker date="1506929442393" expanded="true" signature="473:536" ph="select idSoa... soalDetail" />
+            <marker date="1506929442393" expanded="true" signature="1323:1394" ph="UPDATE soald... " />
+            <marker date="1506929442393" expanded="true" signature="2335:2424" ph="UPDATE soald... " />
+            <marker date="1506929442393" expanded="true" signature="4387:4443" ph="UPDATE soald... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/analisis/analisisTingkatKesulitan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        <state relative-caret-position="765">
+          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
           <folding>
-            <marker date="1504695164000" expanded="true" signature="408:457" ph="SELECT idSoa... soaldetail" />
-            <marker date="1504695164000" expanded="true" signature="1595:1664" ph="UPDATE soald... " />
+            <marker date="1506481698466" expanded="true" signature="1386:1455" ph="UPDATE soald... " />
+            <marker date="1506481698466" expanded="true" signature="1553:1610" ph="UPDATE soald... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/analisis/analisisClustering.php">
+    <entry file="file://$PROJECT_DIR$/controller/teacher/analisisController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="105" column="28" lean-forward="false" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+        <state relative-caret-position="408">
+          <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
           <folding>
-            <marker date="1504695164000" expanded="true" signature="403:567" ph="select DISTI... detailrespon" />
-            <marker date="1504695164000" expanded="true" signature="895:1123" ph="select count... detailrespon" />
-            <marker date="1504695164000" expanded="true" signature="1287:1499" ph="select count... detailrespon" />
-            <marker date="1504695164000" expanded="true" signature="1708:1775" ph="update soalD... " />
-            <marker date="1504695164000" expanded="true" signature="2114:2411" ph="SELECT COUNT... detailrespon" />
-            <marker date="1504695164000" expanded="true" signature="2167:2307" ph="SELECT * FRO... responTest" />
-            <marker date="1504695164000" expanded="true" signature="2568:2864" ph="SELECT COUNT... detailrespon" />
-            <marker date="1504695164000" expanded="true" signature="2621:2760" ph="SELECT * FRO... responTest" />
-            <marker date="1504695164000" expanded="true" signature="3102:3157" ph="update soalD... " />
-            <marker date="1504695164000" expanded="true" signature="3669:3748" ph="select idSoa... soalDetail" />
-            <marker date="1504695164000" expanded="true" signature="5720:5769" ph="update soalD... " />
-            <marker date="1504695164000" expanded="true" signature="5947:5996" ph="update soalD... " />
-            <marker date="1504695164000" expanded="true" signature="6174:6223" ph="update soalD... " />
-            <marker date="1504695164000" expanded="true" signature="6401:6450" ph="update soalD... " />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/guru/analisis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="264" column="26" lean-forward="true" selection-start-line="264" selection-start-column="26" selection-end-line="264" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

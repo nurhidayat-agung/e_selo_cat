@@ -14,14 +14,10 @@
             $cekB = true;
             $idBankSoal = $data->idBankSoal;
             $idSoals = array();
-            $query = "SELECT idSoal FROM soaldetail WHERE idBankSoal = $idBankSoal";
-            $result = mysqli_query($conn, $query);
-            while ($row = mysqli_fetch_object($result)){
-                $idSoals[] = $row->idSoal;
-            }
-            $jmlSiswa = getJmlSiswa($conn,$idBankSoal);
+            $idSoals = getIdSoal($conn,$idBankSoal);
             foreach ($idSoals as $idSoal){
-                $b = getJmlBenar($idBankSoal,$idSoal,$conn)/$jmlSiswa;
+                $jmlSiswa = getJmlSiswa($conn,$idSoal);
+                $b = getJmlBenar($idSoal,$conn)/$jmlSiswa;
                 if (!pushB($idSoal,$b,$conn)){
                     $cekB = false;
                 }
@@ -47,13 +43,24 @@
             $idBankSoal = $data->idBankSoal;
             $queryResetB = "UPDATE soaldetail SET tingkatKesulitanSoal = null WHERE idBankSoal = $idBankSoal";
             if (mysqli_query($conn, $queryResetB)){
-                $postData = array(
-                    'status' => true,
-                    'message' => 'tingkat kesulitan direset'
-                );
-                echo json_encode($postData);
-                mysqli_close($conn);
-                exit;
+                $queryResetA = "UPDATE soaldetail SET dayaBeda = null WHERE idBankSoal = $idBankSoal";
+                if (mysqli_query($conn,$queryResetA)){
+                    $postData = array(
+                        'status' => true,
+                        'message' => 'daya beda dan tingkat kesulitan di reset'
+                    );
+                    echo json_encode($postData);
+                    mysqli_close($conn);
+                    exit;
+                }else{
+                    $postData = array(
+                        'status' => false,
+                        'message' => 'daya beda gagal direset'
+                    );
+                    echo json_encode($postData);
+                    mysqli_close($conn);
+                    exit;
+                }
             }else{
                 $postData = array(
                     'status' => false,
