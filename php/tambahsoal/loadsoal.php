@@ -11,7 +11,7 @@
         if (isset($data->idBankSoal)){
             $idBankSoal = $data->idBankSoal;
             $output = array();
-            $query = "SELECT * FROM `soaldetail` WHERE idBankSoal = $idBankSoal";
+            $query = "SELECT * FROM `soaldetail` WHERE idBankSoal = $idBankSoal ORDER BY jenisSoal DESC";
             $result = mysqli_query($conn, $query);
             while($row = mysqli_fetch_assoc($result))
             {

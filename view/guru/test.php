@@ -212,28 +212,25 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="col-md-12">
-                                    <div class="col-md-6">
+                                <div class="col-md-6">
                                         <div class="col-md-12 titleGenerate">
                                             <span>Jenis Test</span>
                                         </div>
                                         <div class="col-md-12 contentGenerate">
-                                            <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaptif &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Klasik<br>
+                                            <input type="radio" name="jenistest" value="adaptif" ng-model="radioJenis"> Adaptif<br />
+                                            <input type="radio" name="jenistest" value="klasik" ng-model="radioJenis"> Klasik
                                         </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-md-12 titleGenerate">
+                                        <span>Waktu Test</span>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="col-md-12 titleGenerate">
-                                            <span>Waktu Test</span>
-                                        </div>
-                                        <div class="col-md-12 contentGenerate">
-                                            <div class="form-group">
-                                                <input ng-model="waktuTest" type="number" name="skor" class="form-control" ng-change="" required />
-                                            </div>
+                                    <div class="col-md-12 contentGenerate">
+                                        <div class="form-group">
+                                            <input ng-model="waktuTest" watype="number" name="skor" class="form-control" required />
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -357,17 +354,17 @@
                             <th class="col-md-1 titleGenerate" ><center>Id Soal</center></th>
                             <th class="col-md-5 titleGenerate" ><center>Butir Soal</center></th>
                             <th class="col-md-2 titleGenerate" ><center>Jenis Soal</center></th>
-                            <th class="col-md-2 titleGenerate" ><center>Bobot Soal</center></th>
+                            <th class="col-md-2 titleGenerate" ><center>Bobot/kluster</center></th>
                             <th class="col-md-1 titleGenerate" ><center>Priview</center></th>
-                            <th class="col-md-1 titleGenerate" ><center>Set Bobot</center></th>
+                            <th class="col-md-1 titleGenerate" ><center>Karakteristik</center></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="soal in soals">
                             <th class="col-md-1 " >{{soal.idSoal}}</th>
                             <th class="col-md-5 " >{{soal.isiSoal}}</th>
-                            <th class="col-md-2 " >{{soal.jenisSoal}}</th>
-                            <th class="col-md-2 " >{{soal.bobot}}</th>
+                            <th class="col-md-2 " ><center>{{soal.jenisSoal}}</center></th>
+                            <th class="col-md-2 " ><center>{{soal.cluster}}</center></th>
                             <th class="col-md-1 btn-lg">
                                 <div class="col-md-12">
                                     <a href="#" ng-click="priviewSoal(soal)" class="col-md-12">
@@ -429,19 +426,35 @@
                 </div>
             </script>
 
-            <script type="text/ng-template" id="bobot.html" id="delete">
+            <script type="text/ng-template" id="bobot.html">
                 <div class="modal fade container">
                     <div class="modal-dialog">
                         <div class="modal-content col-md-12">
                             <div class="modal-header col-md-12">
                                 <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title titleGenerate">Ubah Bobot Soal</h4>
+                                <h4 class="modal-title titleGenerate">Ubah karakteritik butir soal</h4>
                             </div>
                             <div class="modal-body col-md-12">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <span class="titleGenerate" id="deleteModalContent">Set Bobot Butir Soal</span>
-                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="bobot" aria-describedby="sizing-addon2" />
+                                        <span class="titleGenerate" id="deleteModalContent">Set tingkat kesulitan soal</span>
+                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="tingkatKesulitanSoal" aria-describedby="sizing-addon2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body col-md-12">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate" id="deleteModalContent">Set daya beda soal</span>
+                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="dayaBeda" aria-describedby="sizing-addon2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body col-md-12">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <span class="titleGenerate" id="deleteModalContent">Set cluster Butir Soal</span>
+                                        <input type="number" name="pilihanganda" required="true" class="form-control" ng-model="cluster" aria-describedby="sizing-addon2" />
                                     </div>
                                 </div>
                             </div>
@@ -452,7 +465,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <!--                                            <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>-->
-                                    <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-info">Set Bobot</button>
+                                    <button type="button" ng-click="modalyes()" data-dismiss="modal" class="btn btn-info">Set Karakteristik</button>
                                 </div>
                             </div>
 

@@ -6,7 +6,8 @@
  * Time: 10:22 AM
  */
     function getIdSoal($conn,$idBankSoal){
-        $queryIdSoals = "SELECT idSoal FROM soaldetail WHERE idBankSoal = $idBankSoal";
+        $queryIdSoals = "select idSoal from soaldetail".
+            " where idBankSoal = $idBankSoal";
         $resIdSoals = mysqli_query($conn, $queryIdSoals);
         $idSoals = array();
         while ($row = mysqli_fetch_assoc($resIdSoals)){
@@ -15,24 +16,23 @@
         return $idSoals;
     }
 
+
     function getJmlSiswa($conn,$idSoal){
-        /*
-        $queryJmlSiswa  = "SELECT COUNT(r.nis) AS jmlUser FROM respontest AS r INNER JOIN testing AS t ON ".
-            "r.idTest = t.idTest WHERE t.idBankSoal = $idBankSoal AND r.jenis = 'klasik' AND r.status = 'finish'";
-        */
-        $queryJmlSiswa = "SELECT COUNT(*) AS jmlSiswa FROM detailrespon WHERE idSoal = $idSoal";
+        $queryJmlSiswa  = "SELECT COUNT(*) AS jmlSiswa FROM detailrespon".
+            " as dr INNER JOIN soaldetail AS sd ON dr.idSoal = sd.idSoal ".
+            "INNER JOIN respontest AS rt ON dr.idResponTest = rt.idResponTest ".
+            "WHERE dr.idSoal = $idSoal AND rt.jenis = 'klasik'";
         $resultJmlSiswa = mysqli_query($conn,$queryJmlSiswa);
         $dataJmlSiswa = mysqli_fetch_assoc($resultJmlSiswa);
         return $dataJmlSiswa['jmlSiswa'];
     }
 
     function getJmlBenar($idSoal,$conn){
-        /*
-        $queryBenar = "SELECT COUNT(idSoal) as jmlBenar FROM detailrespon as d INNER JOIN respontest AS r".
-            " ON d.idResponTest = r.idResponTest INNER JOIN testing AS t ON r.idTest = t.idTest".
-            " WHERE t.idBanksoal = $idBankSoal AND d.idSoal = $idSoal AND r.status = 'finish' AND r.jenis = 'klasik' AND d.croscek = 1";
-        */
-        $queryBenar = "SELECT COUNT(*) AS jmlBenar FROM detailrespon WHERE idSoal = $idSoal AND croscek = 1";
+        $queryBenar = "SELECT COUNT(idSoal) as jmlBenar FROM detailrespon".
+            " as d INNER JOIN respontest AS r ON d.idResponTest = r.idResponTest".
+            " INNER JOIN testing AS t ON r.idTest = t.idTest WHERE ".
+            "d.idSoal = $idSoal AND r.status = 'finish' AND r.jenis = 'klasik' ".
+            "AND d.croscek = 1";
         $resultBenar = mysqli_query($conn,$queryBenar);
         $jml = mysqli_fetch_assoc($resultBenar);
         return $jml['jmlBenar'];
@@ -51,7 +51,8 @@
     }
 
     function pushB($idSoal,$b,$conn){
-        $queryPushB = "UPDATE soaldetail SET tingkatKesulitanSoal = $b WHERE idSoal = $idSoal";
+        $queryPushB = "UPDATE soaldetail SET tingkatKesulitanSoal".
+            " = $b WHERE idSoal = $idSoal";
         return mysqli_query($conn,$queryPushB);
     }
 
@@ -84,28 +85,61 @@
         }
     }
 
+    function itemBValidCheck($conn, $idSoal){
+        $queryValidCheck = "SELECT COUNT(*) AS cek FROM detailrespon".
+            " as dr INNER JOIN soaldetail AS sd ON dr.idSoal = sd.idSoal".
+            " INNER JOIN respontest AS rt ON dr.idResponTest = rt.idResponTest".
+            " WHERE dr.idSoal = $idSoal AND rt.jenis ='klasik'";
+        $resValidCheck = mysqli_query($conn,$queryValidCheck);
+        $cek = mysqli_fetch_assoc($resValidCheck);
+        if ($cek['cek'] >= 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    function itemAValidCheck($conn, $idSoal){
+        $queryValidCheck = "SELECT COUNT(*) AS cek FROM detailrespon".
+            " as dr INNER JOIN soaldetail AS sd ON dr.idSoal = sd.idSoal".
+            " INNER JOIN respontest AS rt ON dr.idResponTest = rt.idResponTest".
+            " WHERE dr.idSoal = $idSoal AND rt.jenis ='klasik'";
+        $resValidCheck = mysqli_query($conn,$queryValidCheck);
+        $cek = mysqli_fetch_assoc($resValidCheck);
+        if ($cek['cek'] >= 3){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     function benarAtas($conn,$idSoal,$jmlKasta){
-        $queryBenarAtas = "SELECT COUNT(*) AS benarAtas FROM detailrespon AS dr1 INNER JOIN (SELECT dr.idRespontest ".
-            "FROM detailrespon AS dr INNER JOIN respontest AS r ON dr.idResponTest =r.idResponTest WHERE idSoal = 1 ".
-            "ORDER BY r.nilaiResponTest DESC, r.rawScore ASC LIMIT $jmlKasta) as respon ON dr1.idResponTest = respon.idResponTest ".
-            "WHERE croscek = 1 AND dr1.idSoal = $idSoal";
+        $queryBenarAtas = "SELECT COUNT(*) AS benarAtas FROM detailrespon".
+            " AS dr1 INNER JOIN (SELECT dr.idRespontest FROM detailrespon AS".
+            " dr INNER JOIN respontest AS r ON dr.idResponTest = r.idResponTest".
+            " WHERE idSoal = $idSoal ORDER BY r.nilaiResponTest DESC, r.rawScore ASC".
+            " LIMIT $jmlKasta) as respon ON dr1.idResponTest = respon.idResponTest".
+            " WHERE croscek = 1 AND dr1.idSoal = $idSoal";
         $resBenarAtas = mysqli_query($conn,$queryBenarAtas);
         $jmlBenarAtas = mysqli_fetch_assoc($resBenarAtas);
         return $jmlBenarAtas['benarAtas'];
     }
 
     function benarBawah($conn,$idSoal,$jmlKasta){
-        $queryBenarBawah = "SELECT COUNT(*) AS benarBawah FROM detailrespon AS dr1 INNER JOIN (SELECT dr.idRespontest ".
-            "FROM detailrespon AS dr INNER JOIN respontest AS r ON dr.idResponTest =r.idResponTest WHERE idSoal = 1 ".
-            "ORDER BY r.nilaiResponTest ASC, r.rawScore DESC LIMIT $jmlKasta) as respon ON dr1.idResponTest = respon.idResponTest ".
-            "WHERE croscek = 1 AND dr1.idSoal = $idSoal";
+        $queryBenarBawah = "SELECT COUNT(*) AS benarBawah FROM detailrespon".
+            " AS dr1 INNER JOIN (SELECT dr.idRespontest FROM detailrespon".
+            " AS dr INNER JOIN respontest AS r ON dr.idResponTest = r.idResponTest".
+            " WHERE idSoal = $idSoal ORDER BY r.nilaiResponTest ASC, r.rawScore DESC".
+            " LIMIT $jmlKasta) as respon ON dr1.idResponTest = respon.idResponTest".
+            " WHERE croscek = 1 AND dr1.idSoal = $idSoal";
         $resBenarBawah = mysqli_query($conn,$queryBenarBawah);
         $jmlBenarBawah = mysqli_fetch_assoc($resBenarBawah);
         return $jmlBenarBawah['benarBawah'];
     }
 
     function pushA($conn,$idSoal,$a){
-        $queryA = "UPDATE soaldetail SET dayaBeda = $a WHERE idSoal = $idSoal";
+        $queryA = "UPDATE soaldetail SET dayaBeda = $a WHERE".
+            " idSoal = $idSoal";
         return mysqli_query($conn,$queryA);
     }
 ?>

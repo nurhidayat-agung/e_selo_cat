@@ -26,7 +26,7 @@ class NudyangKmeans
         $this->b = $b;
         $this->idBankSoal = $idBankSoal;
         $this->nCluster = $nCluster;
-        sort($this->b);
+        rsort($this->b);
     }
 
     public function getCentroid(){
@@ -103,8 +103,8 @@ class NudyangKmeans
                 if (count($arr1[$key]) != count($arr2[$key]) || array_sum($arr1[$key]) != array_sum($arr2[$key])){
                     return false;
                 }else{
-                    sort($arr1[$key]);
-                    sort($arr2[$key]);
+                    rsort($arr1[$key]);
+                    rsort($arr2[$key]);
                     foreach ($item as $keyValue => $value){
                         if ($arr1[$key][$keyValue] != $arr2[$key][$keyValue]){
                             return false;

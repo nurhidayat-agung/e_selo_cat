@@ -9,7 +9,8 @@
     $data = json_decode(file_get_contents("php://input"));
     if(count($data) > 0){
         $idTest = $data->idTest;
-        $query = "SELECT * FROM detailtest AS dt INNER JOIN soaldetail AS sd ON dt.idSoal = sd.idSoal WHERE dt.idTest = $idTest order by sd.jenisSoal desc";
+        $query = "SELECT * FROM detailtest AS dt INNER JOIN soaldetail AS sd ON dt.idSoal = sd.idSoal ".
+            "WHERE dt.idTest = $idTest order by sd.jenisSoal desc";
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $output[] = $row;

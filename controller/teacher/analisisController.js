@@ -98,7 +98,7 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
 
     $scope.resetCluster = function () {
         $http.post(
-            "../../php/analisis/analisisKmeans.php",
+            "../../php/analisis/analisisKmeans2.php",
             {'status':false,'idBankSoal':$scope.banksoal}
         ).then(function successCallback(response) {
             $scope.showSoal();
@@ -110,7 +110,7 @@ app4.controller("addSoal", function($scope,$http,$window,$compile){
 
     $scope.setCluster = function () {
         $http.post(
-            "../../php/analisis/analisisKmeans.php",
+            "../../php/analisis/analisisKmeans2.php",
             {'status':true,'idBankSoal':$scope.banksoal}
         ).then(function successCallback(response) {
             $scope.showSoal();

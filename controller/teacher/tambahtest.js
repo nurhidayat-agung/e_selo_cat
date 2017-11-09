@@ -59,7 +59,7 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
                             'jmlEssay':$scope.jmlEssay
                         }
                     ).then(function successCallback(response) {
-                        if (response.data){
+                        if (response.data.status){
                             alert("test berhasil ditambahkan");
                             $scope.banksoal = null;
                             $scope.namaTest = null;
@@ -207,6 +207,12 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
 
     $scope.batalEditTest = function () {
         $scope.isEditTest = false;
+        $scope.namaTest = "";
+        $scope.radioJenis = "klasik";
+        $scope.waktuTest = 60;
+        $scope.jmlPilGan = 1;
+        $scope.jmlEssay = 1;
+        $scope.soals = null;
     };
 
     $scope.priviewSoal = function (pushSoal) {
@@ -262,13 +268,22 @@ app.controller("addTest", function($scope,$http,$window,$compile,ModalService){
 });
 
 app.controller('BobotController', function($scope,$http,$window,close,soal) {
-    $scope.bobot = 1;
+    $scope.cluster = parseInt(soal.cluster);
+    $scope.tingkatKesulitanSoal = parseFloat(soal.tingkatKesulitanSoal);
+    $scope.dayaBeda = parseFloat(soal.dayaBeda);
     console.log("idSoal : " + soal.idSoal);
-    console.log("bobot : " + soal.bobot);
+    console.log("cluster : " + soal.cluster);
+    console.log("tingkatKesulitanSoal : " + soal.tingkatKesulitanSoal);
+    console.log("dayaBeda : " + soal.dayaBeda);
     $scope.modalyes = function () {
         $http.post(
             "../../php/tambahTest/setBobot.php",
-            {'idSoal':soal.idSoal,'bobot':$scope.bobot}
+            {
+                'idSoal':soal.idSoal,
+                'bobot':$scope.cluster,
+                'tingkatKesulitanSoal':$scope.tingkatKesulitanSoal,
+                'dayaBeda':$scope.dayaBeda
+            }
         ).then(function successCallback(response) {
             if(response.data){
                 close('sukses', 500);

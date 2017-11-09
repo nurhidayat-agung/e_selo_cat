@@ -13,7 +13,7 @@
         $password = $request->password;
         $query = "SELECT * FROM siswa AS s INNER JOIN kompisiswa AS k on s.idKompi = k.idKompi ".
             "INNER JOIN pletonsiswa as p on s.idPleton = p.idPleton INNER JOIN angkatansiswa AS a ".
-            "on s.idAngkatan = a.idAngkatan WHERE nis = $nis AND password = $password";
+            "on s.idAngkatan = a.idAngkatan WHERE nis = $nis AND password = '$password'";
         $result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_assoc($result)){
             $output = $row;

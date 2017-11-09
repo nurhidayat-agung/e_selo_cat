@@ -14,29 +14,48 @@
         $isRawUpdate = true;
         foreach ($idRespontests  as $idRespontest ){
             $rawScore = getRawScore($conn,$idRespontest);
-            if (!updateRawScore($conn,$idRespontest,$rawScore)){
-                $isRawUpdate = false;
+            if ($rawScore >= 0){
+                if (!updateRawScore($conn,$idRespontest,$rawScore)){
+                    $isRawUpdate = false;
+                }
             }
         }
         if ($isRawUpdate){
             $idSoals = getIdSoal($conn,$idBankSoal);
             $isAUpdate = true;
             if (count($idSoals) > 0){
+
+                // lakukan perulangan proses untuk tiap idSoal
                 foreach ($idSoals as $idSoal){
-                    $jmlSiswa = getJmlSiswa($conn,$idSoal);
-                    $jmlKasta = floor($jmlSiswa/2);
-                    $ba = benarAtas($conn,$idSoal,$jmlKasta);
-                    $bb = benarBawah($conn,$idSoal,$jmlKasta);
-                    $dayaBeda = (2 * ($ba - $bb)) / $jmlSiswa;
-                    if (!pushA($conn,$idSoal,$dayaBeda)){
-                        $isAUpdate = false;
-                        $postData = array(
-                            'status' => false,
-                            'messege' => 'gagal saat update soal '. $idSoal
-                        );
-                        echo json_encode($postData);
-                        mysqli_close($conn);
-                        exit;
+                    if (itemAValidCheck($conn,$idSoal)){
+                        // mendapatkan jumlah siswa yang mengerjakan butir soal
+                        // fungsi ini sama seperti gambar 4.6
+                        $jmlSiswa = getJmlSiswa($conn,$idSoal);
+
+                        // mendapatkan jumlah siswa pada kelompok bwah/atas
+                        // bagi 3 berarti 33.33 % dari kelompok atas atau bawah
+                        $jmlKasta = floor($jmlSiswa/3);
+
+                        // mendapatkan jumlah benar pada kelompok atas
+                        $ba = benarAtas($conn,$idSoal,$jmlKasta);
+
+                        // mendapatkan jumlah benar pada kelompok bawah
+                        $bb = benarBawah($conn,$idSoal,$jmlKasta);
+
+                        // menghitung daya beda butir soal
+                        $dayaBeda = (2 * ($ba - $bb)) / ($jmlKasta*2);
+
+                        // update daya beda butir soal dalam data base
+                        if (!pushA($conn,$idSoal,$dayaBeda)){
+                            $isAUpdate = false;
+                            $postData = array(
+                                'status' => false,
+                                'messege' => 'gagal saat update soal '. $idSoal
+                            );
+                            echo json_encode($postData);
+                            mysqli_close($conn);
+                            exit;
+                        }
                     }
                 }
                 if ($isAUpdate){

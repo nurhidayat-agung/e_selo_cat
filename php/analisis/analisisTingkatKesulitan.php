@@ -14,13 +14,27 @@
             $cekB = true;
             $idBankSoal = $data->idBankSoal;
             $idSoals = array();
+
+            // ambil id soal dalam bank soal
             $idSoals = getIdSoal($conn,$idBankSoal);
+
+            //lakukan perhitungan ditiap idsoal yang ditemukan
             foreach ($idSoals as $idSoal){
-                $jmlSiswa = getJmlSiswa($conn,$idSoal);
-                $b = getJmlBenar($idSoal,$conn)/$jmlSiswa;
-                if (!pushB($idSoal,$b,$conn)){
-                    $cekB = false;
+
+                // cek apakah id soal butir soal pernah disajikan
+                if (itemBValidCheck($conn,$idSoal)){
+                    // mendapakan total jumalah siswa yang mengerjakan butir soal
+                    $jmlSiswa = getJmlSiswa($conn,$idSoal);
+
+                    // membagi jumlah benar dengan total siswa yang mengerjakan soal
+                    $b = getJmlBenar($idSoal,$conn)/$jmlSiswa;
+
+                    //update tingkat kesulitan dalam data base
+                    if (!pushB($idSoal,$b,$conn)){
+                        $cekB = false;
+                    }
                 }
+
             }
             if ($cekB){
                 $postData = array(

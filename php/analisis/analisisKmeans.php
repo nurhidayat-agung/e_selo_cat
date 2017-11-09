@@ -16,7 +16,8 @@
             $idSoalCluster = array();
             $tingkatKesulitan = array();
             $isClusterUpdate = true;
-            $cmdClustering = "select tingkatKesulitanSoal from soalDetail where idBankSoal = $idBanksoal";
+            $cmdClustering = "select tingkatKesulitanSoal from soalDetail where idBankSoal = $idBanksoal AND ".
+                "dayaBeda >= 0.2 AND tingkatKesulitanSoal >= 0 ORDER BY tingkatKesulitanSoal DESC ,dayaBeda ASC";
             $rClustering = mysqli_query($conn,$cmdClustering);
             while($rowCluster = mysqli_fetch_array($rClustering)){
                 $tingkatKesulitan[] = $rowCluster['tingkatKesulitanSoal'];
@@ -30,7 +31,7 @@
                         foreach ($output['cluster'] as $item => $value){
                             $cCluster = $item + 1;
                             if (count($value) == 1){
-                                $queryCLuster = "UPDATE soaldetail SET cluster = $cCluster WHERE tingkatKesulitanSoal = $value[0]";
+                                $queryCLuster = "UPDATE soaldetail SET cluster = $cCluster WHERE tingkatKesulitanSoal = $value[0] and dayaBeda >= 0.2";
                                 if (!mysqli_query($conn,$queryCLuster)){
                                     $isClusterUpdate = false;
                                     $postData = array(
@@ -47,7 +48,7 @@
                                 sort($value);
                                 $valLow = $value[0];
                                 $valHigh = $value[count($value) - 1];
-                                $queryCLuster = "UPDATE soaldetail SET cluster = $cCluster WHERE tingkatKesulitanSoal BETWEEN $valLow AND $valHigh";
+                                $queryCLuster = "UPDATE soaldetail SET cluster = $cCluster WHERE dayaBeda >= 0.2 AND tingkatKesulitanSoal BETWEEN $valLow AND $valHigh";
                                 if (!mysqli_query($conn,$queryCLuster)){
                                     $isClusterUpdate = false;
                                     $postData = array(

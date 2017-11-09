@@ -9,8 +9,10 @@
     $data = json_decode(file_get_contents("php://input"));
     if (count($data) > 0){
         $idSoal = $data->idSoal;
-        $bobot = $data->bobot;
-        $query = "UPDATE soaldetail SET bobot = $bobot WHERE idSoal = $idSoal";
+        $cluster = $data->cluster;
+        $tingkatKesulitanSoal = $data->tingkatKesulitanSoal;
+        $dayaBeda = $data->dayaBeda;
+        $query = "UPDATE soaldetail SET cluster = $cluster, tingkatKesulitanSoal = $tingkatKesulitanSoal, dayaBeda = $dayaBeda WHERE idSoal = $idSoal";
         if (mysqli_query($conn,$query)){
             echo true;
             mysqli_close($conn);
